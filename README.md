@@ -2,9 +2,10 @@
 
 ## Comunidad Bayesiana Plurinacional
 
+<!--
 <p align="center">
   <img src="https://raw.githubusercontent.com/glandfried/images/master/logos/cbp.png" style="width: 33%;"/>
-</p>
+</p>-->
 
 ![com](https://raw.githubusercontent.com/glandfried/images/master/whipalaNico.jpeg)
 
