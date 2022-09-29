@@ -2,6 +2,10 @@
 
 ## Comunidad Bayesiana Plurinacional
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/glandfried/images/master/logos/cbp.png" style="width: 33%;"/>
+</p>
+
 ![com](https://raw.githubusercontent.com/glandfried/images/master/whipalaNico.jpeg)
 
 ### Organiza el [**Congreso Bayesiano Plurinacional**.](https://bayesdelsur.com.ar/)
@@ -10,7 +14,7 @@ El 4 y 5 se agosto 2023.
 Nodo tecnológico, La Banda.
 Santiago del Estero, Argentina.
 
-[![logo](logos/CBP.png)](https://bayesdelsur.com.ar/)
+[![logo](https://raw.githubusercontent.com/glandfried/images/master/logos/CBP.png)](https://bayesdelsur.com.ar/)
 
 ### Con apoyo del grupo [**Bayes de las Provincias Unidas del Sur**](https://bayesdelasprovinciasunidasdelsur.github.io/)
 
