@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+  <html>
+    <!-- BEGIN HEADER -->
+    <head>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+      <title>Bayes</title>
+      <!--Let browser know website is optimized for mobile-->
+      <link rel="stylesheet" href="../css/cronograma.css">
+      <link rel="stylesheet" href="../css/base.css">
+      <link rel="stylesheet" href="../css/others.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta charset="utf-8">
+      <!--Latex Mode-->
+      <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      <!--One way to display figures side by side-->
+      <style>
+        .figcontainer {
+        display: flex;
+        justify-content: center;
+        }
+
+        .figure {
+        margin: 10px;
+        }
+      </style>
+      </head>
+    <body>
+        <ul id="dropdown0" class="dropdown-content">
+            <li><a href=""></a></li>
+            <li><a href="../es/index.html">Castellano</a></li>
+            <li><a href="../en/index.html">English</a></li>
+        </ul>
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href=""></a></li>
+            <li><a href="../es/index.html">Castellano</a></li>
+            <li><a href="../en/index.html">English</a></li>
+        </ul>
+        <ul id="dropdown2" class="dropdown-content">
+            <li><a href=""></a></li>
+            <li><a href="../es/plural.html">Plural</a></li>
+            <!--<li><a href="../es/organiza.html">Organización</a></li>-->
+            <li><a href="../es/comunidad.html">Comunidad</a></li>
+        </ul>
+
+        <ul id="dropdown3" class="dropdown-content">
+            <li><a href=""></a></li>
+            <li><a href="../es/descripcion.html">Descripción</a></li>
+            <li><a href="../es/ciudad.html">Ciudad</a></li>
+            <li><a href="../es/cronograma.html">Cronograma</a></li>
+            <li><a href="../es/charlas.html">Charlas</a></li>
+            <li><a href="../es/poster.html">Posters</a></li>
+            <li><a href="../es/taller.html">Taller</a></li>
+            <li><a href="../es/becas.html">Becas</a></li>
+        </ul>
+
+        <ul id="dropdown4" class="dropdown-content">
+            <li><a href=""></a></li>
+            <li><a href="../es/seminario.html">Seminario</a></li>
+            <!--<li><a href="../es/hackaton.html">Hackatón</a></li>-->
+        </ul>
+
+        <ul id="dropdown5" class="dropdown-content">
+            <li><a href=""></a></li>
+            <li><a href="../es/redes.html">Redes</a></li>
+            <li><a href="../es/conducta.html">Conducta</a></li>
+            <li><a href="../es/faq.html">FAQ</a></li>
+        </ul>
+
+        <nav class="blue-grey" role="navigation" style="position:fixed">
+            <div class="nav-wrapper container"><a id="logo-container" href="../es/index.html" class="brand-logo"><em>Bayes</em></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a class="dropdown-button" href="#!" data-target="dropdown2">Somos<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-button" href="#!" data-target="dropdown3">Congreso<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-button" href="#!" data-target="dropdown4">Virtual<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-button" href="#!" data-target="dropdown5">Contacto<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a href="musica.html">Música</a></li>
+                <li><a class="dropdown-button" href="#!" data-target="dropdown0"><i class="fa fa-language"></i></a></li>
+            </ul>
+        </nav>
+
+        <nav class="blue-grey" role="navigation">
+            <ul id="nav-mobile" class="sidenav">
+                <li><a class="dropdown-button" href="#!" data-target="dropdown1"><i class="fa fa-language"></i></a></li>
+                <li><a href="../es/index.html">Bayes Plurinacional</a></li>
+                <li><a href="">SOMOS:</a></li>
+                <li><a href="../es/plural.html">&#x2022; Plural</a></li>
+                <!--<li><a href="organiza.html">&#x2022; Organización</a></li>-->
+                <li><a href="../es/comunidad.html">&#x2022; Comunidad</a></li>
+                <li><a href="../es/musica.html">&#x2022; Música</a></li>
+                <li><a href="">CONGRESO:</a></li>
+                <li><a href="../es/descripcion.html">&#x2022; Descripción</a></li>
+                <li><a href="../es/ciudad.html">&#x2022; Ciudad</a></li>
+                <li><a href="../es/cronograma.html">&#x2022; Cronograma</a></li>
+                <li><a href="../es/charlas.html">&#x2022; Charlas</a></li>
+                <li><a href="../es/poster.html">&#x2022; Posters</a></li>
+                <li><a href="../es/taller.html">&#x2022; Taller</a></li>
+                <li><a href="../es/becas.html">&#x2022; Becas</a></li>
+                <li><a href="">VIRTUAL:</a></li>
+                <li><a href="../es/seminario.html">&#x2022; Seminario</a></li>
+                <!--<li><a href="../es/hackaton.html">&#x2022; Hackatón</a></li>-->
+                <li><a href="">CONTACTO:</a></li>
+                <li><a href="../es/redes.html">&#x2022; Redes</a></li>
+                <li><a href="../es/conducta.html">&#x2022; Conducta</a></li>
+                <li><a href="../es/faq.html">&#x2022; FAQ</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+        <!-- END HEADER -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="section" style="text-align: justify;">
+              <h4>Código de Conducta</h4>
+              <h5>El primer derecho es formar parte de una comunidad.</h5>
+              <hr></hr>
+              <p>Los códigos de conducta en general se parecen al Artículo 12 de la Constitución Nacional de Colombia: "Nadie será sometido a desaparición forzada, a torturas ni a tratos o penas crueles, inhumanas o degradantes". Cuando el pueblo originario Wayúu, que vivió 500 años de colonialismo en Colombia, tradujo este artículo escribió: <em>Nadie podrá llevar por encima de su corazón a nadie ni hacerle mal en su persona aunque piense y diga diferente</em>.</p>
+              <p>La experiencia acumulada por las comunidades más diversas del mundo ha llevado, de manera independiente, a una obligación universal de dar y recibir, y al desarrollo de tecnologías de reciprocidad que reactivan los vínculos comunitarios a través de ritos de intercambio (festivos o coercitivos).</p>
+              <p>El Congreso es en sí mismo un rito festivo que tiene por objetivo crear y actualizar nuestros vínculos. Por eso lo hacemos. Queremos conocernos y construir relaciones de reciprocidad. Pero sabemos que en toda sociedad surgen conflictos y es importante cuidar a las personas que puedan sentirse afectadas. Por eso, en caso de conflicto, comunicate con alguien en quien confíes y a algún miembro de la organización.</p>
+              <p>Para preservar la salud de los vínculos, los sistemas coercitivos comunitarios primero activan los tres tipos de relaciones posibles: (->) los gestos, actos u obsequios que la parte acusada ofrece a la parte afectada; (<-) la ayuda que se le ofrece a la parte acusada para modificar el comportamiento que dio origen al conflicto; (<->) y el intercambio que renueva el entendimiento. Solo en última instancia, en caso de que la persona persista en una actitud que afecta la salud de los vínculos comunitarios, la persona acusada podrá ser expulsada.</p>
+              <p>Como dice el último principio del Buen Vivir (en Aymara): <em>Suma Churaña, Suma Katukañaz</em>. Hay que saber dar y recibir con dicha y agradecimiento porque la vida es la unión de muchos seres y fuerzas. Nos vemos en la próxima fiesta para alimentar nuestros vínculos.</p>
+              <h5>Principios del Buen Vivir (versión Aymara)</h5>
+              <hr></hr>
+              <p>
+              <ul>
+                <li>1. <em>Suma Manq'aña</em>: (Saber comer). Comer es intercambio de vida. Somos lo que comemos.</li>
+                <li>2. <em>Suma Umaña</em>: (Saber beber). El agua es la fuente de toda forma de vida.</li>
+                <li>3. <em>Suma Thokoña</em>: (Saber danzar). Actuar siempre con una dimensión espiritual.</li>
+                <li>4. <em>Suma Ikiña</em>: (Saber dormir). Dormir antes de la media noche, para tener la energía de dos días.</li>
+                <li>5. <em>Suma Irnakaña</em>: (Saber trabajar). El trabajo comunitario es alegría.</li>
+                <li>6. <em>Suma Lupiña</em>: (Saber meditar). El silencio personal (<em>Amiki</em>) restablece el silencio del entorno (<em>Ch'uju</em>).</li>
+                <li>7. <em>Suma Amuyaña</em>: (Saber pensar). Sin perder la razón, caminemos la senda del corazón.</li>
+                <li>8. <em>Suma Munaña Munayasiña</em>: (Saber amar y ser amado). El proceso de complementariedad y respeto a todo lo que existe.</li>
+                <li>9. <em>Suma Ist'aña</em>: (Saber escuchar). Percibir, sentir, escuchar con todo el cuerpo.</li>
+                <li>10. <em>Suma Aruskipaña</em>: (Saber hablar). Antes de hablar hay que sentir y pensar bien. Lo que se habla se escribe en los corazones de quienes escuchan.</li>
+                <li>11. <em>Suma Samkasiña</em>: (Saber soñar). Todo empieza desde los sueños. Por eso, los sueños son el inicio de la realidad.</li>
+                <li>12. <em>Suma Sarnaqaña</em>: (Saber caminar). No existe el cansancio para quien sabe caminar. Nunca se camina solo, se camina junto a la Pachamama.</li>
+                <li>13. <em>Suma Churaña, suma Katukaña</em>: (Saber dar y saber recibir). Hay que saber dar y recibir con dicha y agradecimiento porque la vida es la unión de muchos seres y fuerzas.</li>
+              </ul>
+              </p>
+              <h5>Contacto</h5>
+              <hr></hr>
+              <p><a href="mailto:bayesplurinacional@gmail.com">bayesplurinacional@gmail.com</a></p>
+              <h5>Licencia</h5>
+              <hr></hr>
+              <p>Este Código de Conducta ha sido adaptado de las cosmovisiones indígenas del Abya Yala y se distribuye bajo licencia Creative Commons Zero.</p>
+                    </div>
+            </div>
+          
+        <p class="bottom-blank"><!--Vertical spacer--></p>
+
+        <!-- BEGIN FOOTER -->
+        <nav class="blue-grey" role="navigation" style="background-color:#1a1a1a; height:10%">
+          <div class="nav-wrapper container">
+              <ul class="social-links">
+                  <div class="footer" >
+                    <li><a href="mailto:bayesplurinacional@gmail.com"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="https://twitter.com/BayesPlurinacio" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <!--<li><a href="https://bayes.club/@BayesDelSur" target="_blank"><i class="fab fa-mastodon"></i></a></li>-->
+                    <!--<li><a href="https://facebook.com/bayesdelsur" target="_blank"><i class="fab fa-facebook"></i></a>-->
+                    <!--<li><a href="https://instagram.com/bayesdelsur" target="_blank"><i class="fab fa-instagram"></i></a>-->
+                    <li><a href="https://www.linkedin.com/company/bayes-plurinacional/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <!--<li><a href="https://www.youtube.com/@bayesdelsur" target="_blank"><i class="fab fa-youtube"></i></a></li>-->
+                  </div>
+              </ul>
+          </div>
+      </nav>
+      <!--JavaScript at end of body for optimized loading-->
+          <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+          <script src="js/materialize.js"></script>
+        <script src="js/init.js"></script>
+        <script>
+            $('.dropdown-button').dropdown({
+                inDuration: 300,
+                outDuration: 225,
+                constrain_width: false, // Does not change width of dropdown to that of the activator
+                gutter: 0, // Spacing from edge
+                alignment: 'left' // Displays dropdown with edge aligned to the left of button
+                }
+            );
+        </script>
+        <!-- END FOOTER -->
+    </body>
+  </html>
