@@ -7,3 +7,6 @@ HEADER:
 
 FOOTER:
 	sh footer.sh
+
+LOGOS:
+	sh logos.sh

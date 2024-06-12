@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cronograma de Actividades</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            table-layout: fixed;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .time-slot {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .activity {
+            font-weight: bold;
+        }
+        .acreditacion { background-color: #FFC0CB; }
+        .bienvenida { background-color: #FFB6C1; }
+        .grupos { background-color: #98FB98; }
+        .taller1-teorica { background-color: #ADD8E6; }
+        .taller1-practica { background-color: #B0E0E6; }
+        .charla-codigo { background-color: #CD5C5C; }
+        .poster { background-color: #FFD700; }
+        .taller2-teorica { background-color: #FFA500; }
+        .taller2-practica { background-color: #FF8C00; }
+        .almuerzo { background-color: #87CEEB; }
+        .asamblea { background-color: #D3D3D3; }
+        .taller3-teorica { background-color: #FFDEAD; }
+        .taller3-practica { background-color: #F4A460; }
+        .taller4-teorica { background-color: #FA8072; }
+        .taller4-practica { background-color: #E9967A; }
+        .mesa-debate { background-color: #20B2AA; }
+        .actividad-aire-libre { background-color: #000000; color: white; }
+        .cierre { background-color: #000000; color: white; }
+    </style>
+</head>
+<body>
+    <h1>Cronograma de Actividades</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="time-slot">8:30 - 8:45</td>
+                <td class="activity acreditacion">Acreditación</td>
+                <td class="activity bienvenida">Bienvenida</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="time-slot">8:45 - 9:00</td>
+                <td class="activity acreditacion">Acreditación</td>
+                <td class="activity bienvenida">Bienvenida</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="time-slot">9:00 - 9:15</td>
+                <td class="activity grupos">Grupos 1</td>
+                <td class="activity charla-codigo">Charla con código</td>
+                <td class="activity taller3-teorica">TALLER 2.3 Teórica</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="time-slot">9:15 - 9:30</td>
+                <td class="activity grupos">Grupos 1</td>
+                <td class="activity charla-codigo">Charla con código</td>
+                <td class="activity taller3-teorica">TALLER 2.3 Teórica</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="time-slot">9:30 - 9:45</td>
+                <td class="activity taller1-teorica">TALLER 1.1 Teórica. Introducción</td>
+                <td class="activity grupos">Grupos 3</td>
+                <td class="activity taller3-practica">TALLER 2.3 Práctica</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="time-slot">9:45 - 10:00</td>
+                <td class="activity taller1-teorica">TALLER 1.1 Teórica. Introducción</td>
+                <td class="activity grupos">Grupos 3</td>
+                <td class="activity taller3-practica">TALLER 2.3 Práctica</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="time-slot">10:00 - 10:15</td>
+                <td class="activity taller1-practica">TALLER 1.1 Práctica</td>
+                <td class="activity taller-corto">Taller Corto 2. Teórica</td>
+                <td class="activity taller3-practica">TALLER 2.3 Práctica</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="time-slot">10:15 - 10:30</td>
+                <td class="activity taller1-practica">TALLER 1.1 Práctica</td>
+                <td class="activity taller-corto">Taller Corto 2. Práctica</td>
+                <td class="activity charla-codigo">Charla con código</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="time-slot">10:30 - 10:45</td>
+                <td class="activity charla-codigo">Charla con código</td>
+                <td class="activity taller-corto">Taller Corto 2. Práctica</td>
+                <td class="activity charla-codigo">Charla con código</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="time-slot">10:45 - 11:00</td>
+                <td class="activity poster">Póster charlas 3 a 5 min</td>
+                <td class="activity taller-corto">Taller Corto 2. Práctica</td>
+                <td class="activity taller-corto">Taller Corto 3. Práctica</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="time-slot">11:00 - 11:15</td>
+                <td class="activity taller2-teorica">TALLER 1.2 Teórica</td>
+                <td class="activity taller2-teorica">TALLER 1.2 Teórica</td>
+                <td class="activity taller-corto">Taller Corto 3. Práctica</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="time-slot">11:15 - 11:30</td>
+                <td class="activity taller2-practica">TALLER 1.2 Práctica</td>
+                <td class="activity taller2-practica">TALLER 1.2 Práctica</td>
+                <td class="activity taller-corto">Taller Corto 3. Práctica</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="time-slot">11:30 - 11:45</td>
+                <td class="activity taller2-practica">TALLER 1.2 Práctica</td>
+                <td class="activity taller2-practica">TALLER 1.2 Práctica</td>
+                <td class="activity taller-corto">Taller Corto 3. Práctica</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="time-slot">11:45 - 12:00</td>
+                <td class="activity taller-corto">Taller Corto 1. Teórica</td>
+                <td class="activity taller-corto">Taller Corto 1. Teórica</td>
+                <td class="activity taller-corto">Taller Corto 3. Práctica</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="time-slot">12:00 - 12:15</td>
+                <td class="activity taller-corto">Taller Corto 1. Práctica</td>
+                <td class="activity taller-corto">Taller Corto 1. Práctica</td>
+                <td class="activity almuerzo">Almuerzo</td>
+                <td class="activity almuerzo">Almuerzo</td>
+            </tr>
+            <tr>
+                <td class="time-slot">12:15 - 12:30</td>
+                <td class="activity almuerzo">Almuerzo</td>
+                <td class="activity almuerzo">Almuerzo</td>
+                <td class="activity almuerzo">Almuerzo</td>
+                <td class="activity almuerzo">Almuerzo</td>
+            </tr>
+            <tr>
+                <td class="time-slot">12:30 - 12:45</td>
+                <td class="activity almuerzo">Almuerzo</td>
+                <td class="activity almuerzo">Almuerzo</td>
+                <td class="activity almuerzo">Almuerzo</td>
+                <td class="activity almuerzo">Almuerzo</td>
+            </tr>
+            <tr>
+                <td class="time-slot">12:45 - 13:00</td>
+                <td class="activity almuerzo">Almuerzo</td>
+                <td class="activity almuerzo">Almuerzo</td>
+                <td class="activity almuerzo">Almuerzo</td>
+                <td class="activity almuerzo">Almuerzo</td>
+            </tr>
+            <tr>
+                <td class="time-slot">13:00 - 13:15</td>
+                <td class="activity grupos">Grupos 2</td>
+                <td class="activity asamblea">ASAMBLEA ANUAL</td>
+                <td class="activity taller4-teorica">TALLER 1.3 Teórica</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="time-slot">13:15 - 13:30</td>
+                <td class="activity grupos">Grupos 2</td>
+                <td class="activity asamblea">ASAMBLEA ANUAL</td>
+                <td class="activity taller4-teorica">TALLER 1.3 Teórica</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="time-slot">13:30 - 13:45</td>
+                <td class="activity charla-codigo">Charlas 1 - 3 (20 min)</td>
+                <td class="activity asamblea">ASAMBLEA ANUAL</td>
+                <td class="activity taller4-practica">TALLER 1.3 Práctica</td>
+                <td class="activity actividad-aire-libre">Actividad al aire libre</td>
+            </tr>
+            <tr>
+                <td class="time-slot">13:45 - 14:00</td>
+                <td class="activity charla-codigo">Charlas 1 - 3 (20 min)</td>
+                <td class="activity asamblea">ASAMBLEA ANUAL</td>
+                <td class="activity taller4-practica">TALLER 1.3 Práctica</td>
+                <td class="activity cierre">Cierre - Premios (Rifa)</td>
+            </tr>
+            <tr>
+                <td class="time-slot">14:00 - 14:15</td>
+                <td class="activity taller4-practica">TALLER 2.1 Práctica</td>
+                <td class="activity asamblea">ASAMBLEA ANUAL</td>
+                <td class="activity taller4-practica">TALLER 2.1 Práctica</td>
+                <td class="activity cierre">Cierre - Premios (Rifa)</td>
+            </tr>
+            <tr>
+                <td class="time-slot">14:15 - 14:30</td>
+                <td class="activity charla-codigo">Charlas 4 - 5</td>
+                <td class="activity asamblea">ASAMBLEA ANUAL</td>
+                <td class="activity taller4-practica">TALLER 2.1 Práctica</td>
+                <td class="activity cierre">Cierre - Premios (Rifa)</td>
+            </tr>
+            <tr>
+                <td class="time-slot">14:30 - 14:45</td>
+                <td class="activity charla-codigo">Charlas 4 - 5</td>
+                <td class="activity asamblea">ASAMBLEA ANUAL</td>
+                <td class="activity taller4-practica">TALLER 2.1 Práctica</td>
+                <td class="activity cierre">Cierre - Premios (Rifa)</td>
+            </tr>
+            <tr>
+                <td class="time-slot">14:45 - 15:00</td>
+                <td class="activity charla-codigo">Charlas 4 - 5</td>
+                <td class="activity asamblea">ASAMBLEA ANUAL</td>
+                <td class="activity taller4-practica">TALLER 2.1 Práctica</td>
+                <td class="activity cierre">Cierre - Premios (Rifa)</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
