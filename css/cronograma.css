@@ -10,6 +10,28 @@
     text-align: center; /* Center the content in the column */
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}
+.activity {
+    height: 20px;
+}
+.Taller1 { background-color: #FFC0CB; }
+.Taller2 { background-color: #ADD8E6; }
+.CharlasCodigo { background-color: #98FB98; }
+.Charlas { background-color: #FFFFE0; }
+.Poster { background-color: #FFD700; }
+.GruposAsamblea { background-color: #D3D3D3; }
+.MesaDebate { background-color: #FFB6C1; }
+.AcreditacionPosterAlmuerzo { background-color: #FFA07A; }
+.Turismo { background-color: #AFEEEE; }
+
 img {
     width: 33%; /* Image size set to 33% */
     height: 33%; /* Maintain aspect ratio */
