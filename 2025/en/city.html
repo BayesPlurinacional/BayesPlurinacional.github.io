@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+  <html lang="en">
+<!-- BEGIN HEADER -->
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../../css/materialize.min.css"  media="screen,projection"/>
+    <title>Bayes</title>
+    <!--Let browser know website is optimized for mobile-->
+    <!--<link rel="stylesheet" href="../../css/cronograma.css">-->
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/others.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8">
+    <!--Latex Mode-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <!--One way to display figures side by side-->
+    <style>
+    .figcontainer {
+    display: flex;
+    justify-content: center;
+    }
+
+    .figure {
+    margin: 10px;
+    }
+    </style>
+</head>
+<body>
+    <ul id="dropdown0" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../es/index.html">Castellano</a></li>
+        <li><a href="../en/index.html">English</a></li>
+    </ul>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../es/index.html">Castellano</a></li>
+        <li><a href="../en/index.html">English</a></li>
+    </ul>
+    <ul id="dropdown_versiones" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../../2025/en/index.html"><b>2025</b></a></li>
+        <li><a href="../../2024/en/index.html">2024</a></li>
+        <li><a href="../../2023/index_en.html">2023</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../en/plural.html">Plural</a></li>
+        <li><a href="../en/organize.html">Organizers</a></li>
+        <li><a href="../en/community.html">Community</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../en/plural.html">Plural</a></li>
+        <li><a href="../en/organize.html">Organizers</a></li>
+        <li><a href="../en/community.html">Community</a></li>
+    </ul>
+
+    <ul id="dropdown3" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../en/city.html">City</a></li>
+        <li><a href="../en/schedule.html">Schedule</a></li>
+        <!--<li><a href="../en/speakers.html">Speakers</a></li>-->
+    </ul>
+
+    <!--<ul id="dropdown4" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../en/seminar.html">Seminar</a></li>
+        <li><a href="../en/hackathon.html">Hackathon</a></li>
+    </ul>-->
+
+    <ul id="dropdown5" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../en/sponsors.html">Sponsors</a></li>
+        <li><a href="../en/network.html">Social</a></li>
+        <li><a href="../en/conduct.html">Conduct</a></li>
+    </ul>
+
+    <nav class="blue-grey" role="navigation" style="position:fixed">
+        <div class="nav-wrapper container"><a id="logo-container" href="../en/index.html" class="brand-logo"><em>Bayes</em></a>
+            <ul class="right hide-on-med-and-down">
+            <li><a class="dropdown-button" href="#!" data-target="dropdown_versiones"><b>2025</b><i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="#!" data-target="dropdown2">We are<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="#!" data-target="dropdown3">Congress<i class="material-icons right">arrow_drop_down</i></a></li>
+            <!--<li><a class="dropdown-button" href="#!" data-target="dropdown4">Virtual<i class="material-icons right">arrow_drop_down</i></a></li>-->
+            <li><a class="dropdown-button" href="#!" data-target="dropdown5">Contact<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="../en/music.html">Music</a></li>
+            <li><a class="dropdown-button" href="#!" data-target="dropdown0"><i class="fa fa-language"></i></a></li>
+        </ul>
+    </nav>
+
+    <nav class="blue-grey" role="navigation">
+        <ul id="nav-mobile" class="sidenav">
+        <li><a class="dropdown-button" href="#!" data-target="dropdown1"><i class="fa fa-language"></i></a>
+        <li><a href="../en/index.html">Plurinational Bayes</a></li>
+        <li><a href="">WE ARE:</a></li>
+        <li><a href="../en/plural.html">&#x2022; Plural</a></li>
+        <li><a href="../en/organize.html">&#x2022; Organizers</a></li>
+        <li><a href="../en/community.html">&#x2022; Community</a></li>
+        <li><a href="../en/music.html">&#x2022; Music</a></li>
+        <li><a href="">EVENT 2025:</a></li>
+        <li><a href="../en/city.html">&#x2022; City</a></li>
+        <li><a href="../en/schedule.html">&#x2022; Schedule</a></li>
+        <li><a href="../en/speakers.html">&#x2022; Speakers</a></li>
+        <!--<li><a href="">VIRTUAL:</a></li>
+        <li><a href="../en/seminar.html">&#x2022; Seminar</a></li>-->
+        <!--<li><a href="../en/hackathon.html">&#x2022; Hackathon</a></li>-->
+        <li><a href="">CONTACT:</a></li>
+        <li><a href="../en/sponsors.html">&#x2022; Sponsors</a></li>
+        <li><a href="../en/network.html">&#x2022; Social</a></li>
+        <li><a href="../en/conduct.html">&#x2022; Conduct</a></li>
+        <li><a href="">YEAR:</a></li>
+        <li><a href="../../2025/en/index.html">&#x2022; <b>2025</b></a></li>
+        <li><a href="../../2024/en/index.html">&#x2022;    2024</a></li>
+        <li><a href="../../2023/index_en.html">&#x2022;    2023</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+    <!-- END HEADER -->
+
+
+
+
+
+
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h6>To organize your trip (accommodation, meals, etc.), contact the Bayes Plurinational team.<br> We will use the following <a url="https://chat.whatsapp.com/CWFZiP8On7RDRDGNL8y5US.">WhatsApp</a> group for communications during the event.</h6>
+
+                <h4 class="header col s12 light">
+                    Location:
+                </h4>
+
+                <div class="section" style="text-align: justify;">
+
+                    <p>The event will be held at the <a href="https://www.unsa.edu.ar/"><span class="blue-grey-text">Universidad Externado de Colombia</span></a>.</p>
+
+                    <p>Calle 12 #1-17 Este, Bogotá, Colombia</p>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4020.256064042538!2d-74.06990508749836!3d4.59557125457082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99af830cf371%3A0x10f9d8dc756362aa!2sUniversidad%20Externado%20de%20Colombia!5e1!3m2!1ses-419!2sco!4v1734896607498!5m2!1ses-419!2sco" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+        <p class="bottom-blank"><!--Vertical spacer--></p>
+
+        <!-- BEGIN LOGOS -->
+      <br>
+      <div class="container">
+
+        <!--
+        <h4 class="header col s12 light">
+            Sponsors
+        </h4>-->
+
+        <div class="figcontainer" style="align-items: center;">
+
+
+            <div class="figure" style="flex: 0.5; margin-right: 4%;margin-left: 4%; margin-bottom: 4%;">
+            <img class="responsive-img" src="../../logos/externado.jpg" alt="Externado"></a>
+            </div>
+        </div>
+
+
+        <div class="figcontainer" style="align-items: center;">
+            <!--<div class="figure" style="flex: 0.15; margin-right: -8%;margin-left: 8%">
+            <img class="responsive-img" src="../../logos/pythonNorte.jpg" alt="PythonNorte"></a>
+            </div>-->
+
+            <div class="figure" style="flex: 0.41; margin-right: 0%;margin-left: 5%">
+            <img class="responsive-img" src="../../logos/khipuX2.jpg" alt="khipu"></a>
+            </div>
+            <div class="figure" style="flex: 0.25; margin-right: 0%;margin-left: 1%">
+            <a href="https://khipu.ai/" target="_blank"><img class="responsive-img" src="../../logos/quipu.png" alt="khipu"></a>
+            </div>
+        </div>
+
+
+        <div class="figcontainer" style="align-items: center;">
+
+            <div class="figure" style="flex: 0.35; margin-top: 6%;margin-left: 2%">
+            <img class="responsive-img" src="../../logos/Metodos2.png" alt="Metodos">
+            </div>
+        </div>
+        </div>
+        <!-- END LOGOS -->
+
+        <!-- BEGIN FOOTER -->
+        <nav class="blue-grey" role="navigation" style="background-color:#1a1a1a; height:10%">
+          <div class="nav-wrapper container">
+              <ul class="social-links">
+                  <div class="footer" >
+                    <li><a href="mailto:bayesplurinacional@gmail.com"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="https://twitter.com/BayesPlural" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <!--<li><a href="https://bayes.club/@BayesDelSur" target="_blank"><i class="fab fa-mastodon"></i></a></li>-->
+                    <!--<li><a href="https://facebook.com/bayesdelsur" target="_blank"><i class="fab fa-facebook"></i></a>-->
+                    <li><a href="https://instagram.com/bayesplurinacional" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <li><a href="https://www.linkedin.com/company/bayes-plurinacional/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <!--<li><a href="https://www.youtube.com/@bayesdelsur" target="_blank"><i class="fab fa-youtube"></i></a></li>-->
+                  </div>
+              </ul>
+          </div>
+      </nav>
+      <!--JavaScript at end of body for optimized loading-->
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="../../js/materialize.js"></script>
+      <script src="../../js/init.js"></script>
+      <script>
+          $('.dropdown-button').dropdown({
+              inDuration: 300,
+              outDuration: 225,
+              constrain_width: false, // Does not change width of dropdown to that of the activator
+              gutter: 0, // Spacing from edge
+              alignment: 'left' // Displays dropdown with edge aligned to the left of button
+              }
+          );
+      </script>
+      <!-- END FOOTER -->
+    </body>
+  </html>

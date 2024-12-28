@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+  <html>
+<!-- BEGIN HEADER -->
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../../css/materialize.min.css"  media="screen,projection"/>
+    <title>Bayes</title>
+    <!--Let browser know website is optimized for mobile-->
+    <!--<link rel="stylesheet" href="../../css/cronograma.css">-->
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/others.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8">
+    <!--Latex Mode-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <!--One way to display figures side by side-->
+    <style>
+    .figcontainer {
+    display: flex;
+    justify-content: center;
+    }
+
+    .figure {
+    margin: 10px;
+    }
+    </style>
+</head>
+    <body>
+    <ul id="dropdown0" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../es/index.html">Castellano</a></li>
+        <li><a href="../en/index.html">English</a></li>
+    </ul>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../es/index.html">Castellano</a></li>
+        <li><a href="../en/index.html">English</a></li>
+    </ul>
+    <ul id="dropdown_versiones" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../../2025/es/index.html"><b>2025</b></a></li>
+        <li><a href="../../2024/es/index.html">2024</a></li>
+        <li><a href="../../2023/index.html">2023</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../es/plural.html">Plural</a></li>
+        <li><a href="../es/organiza.html">Organización</a></li>
+        <li><a href="../es/comunidad.html">Comunidad</a></li>
+    </ul>
+
+    <ul id="dropdown3" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../es/ciudad.html">Ciudad</a></li>
+        <!--<li><a href="../es/disertantes.html">Disertantes</a></li>-->
+        <li><a href="../es/cronograma.html">Cronograma</a></li>
+    </ul>
+
+    <!--<ul id="dropdown4" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../es/seminario.html">Seminario</a></li>
+        <li><a href="../es/hackaton.html">Hackatón</a></li>
+    </ul>-->
+
+    <ul id="dropdown5" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../es/auspiciantes.html">Auspiciantes</a></li>
+        <li><a href="../es/redes.html">Redes</a></li>
+        <li><a href="../es/conducta.html">Conducta</a></li>
+    </ul>
+
+    <nav class="blue-grey" role="navigation" style="position:fixed">
+        <div class="nav-wrapper container"><a id="logo-container" href="../es/index.html" class="brand-logo"><em>Bayes</em></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a class="dropdown-button" href="#!" data-target="dropdown_versiones"><b>2025</b><i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="#!" data-target="dropdown2">Somos<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="#!" data-target="dropdown3">Congreso<i class="material-icons right">arrow_drop_down</i></a></li>
+            <!--<li><a class="dropdown-button" href="#!" data-target="dropdown4">Virtual<i class="material-icons right">arrow_drop_down</i></a></li>-->
+            <li><a class="dropdown-button" href="#!" data-target="dropdown5">Contacto<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="musica.html">Música</a></li>
+            <li><a class="dropdown-button" href="#!" data-target="dropdown0"><i class="fa fa-language"></i></a></li>
+        </ul>
+    </nav>
+
+    <nav class="blue-grey" role="navigation">
+        <ul id="nav-mobile" class="sidenav">
+            <li><a class="dropdown-button" href="#!" data-target="dropdown1"><i class="fa fa-language"></i></a></li>
+            <li><a href="../es/index.html">Bayes Plurinacional</a></li>
+            <li><a href="">SOMOS:</a></li>
+            <li><a href="../es/plural.html">&#x2022; Plural</a></li>
+            <li><a href="organiza.html">&#x2022; Organización</a></li>
+            <li><a href="../es/comunidad.html">&#x2022; Comunidad</a></li>
+            <li><a href="../es/musica.html">&#x2022; Música</a></li>
+            <li><a href="">EVENTO 2025:</a></li>
+            <li><a href="../es/ciudad.html">&#x2022; Ciudad</a></li>
+            <li><a href="../es/cronograma.html">&#x2022; Cronograma</a></li>
+            <li><a href="../es/disertantes.html">&#x2022; Disertantes</a></li>
+            <!--<li><a href="">VIRTUAL:</a></li>
+            <li><a href="../es/seminario.html">&#x2022; Seminario</a></li>-->
+            <!--<li><a href="../es/hackaton.html">&#x2022; Hackatón</a></li>-->
+            <li><a href="">CONTACTO:</a></li>
+            <li><a href="../es/auspiciantes.html">&#x2022; Auspiciantes</a></li>
+            <li><a href="../es/redes.html">&#x2022; Redes</a></li>
+            <li><a href="../es/conducta.html">&#x2022; Conducta</a></li>
+            <!--<li><a href="../es/faq.html">&#x2022; FAQ</a></li>-->
+            <li><a href="">AÑO:</a></li>
+            <li><a href="../../2025/es/index.html">&#x2022; <b>2025</b></a></li>
+            <li><a href="../../2024/es/index.html">&#x2022;    2024</a></li>
+            <li><a href="../../2023/index.html">&#x2022;    2023</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+    <!-- END HEADER -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="section" style="text-align: justify;">
+              <h4>Seminario "Creencias óptimas"</h4>
+              <!--<h6>Hacia el Congreso Bayesiano Plurinacional 2023</h6>-->
+
+              <p>
+                El seminario virtual es una oportunidad para conversar una amplia gama de temas.
+                Nos enfocamos en los aspectos bayesianos de las aplicaciones prácticas, teóricas y filosóficas en todas las ramas de la ciencia y en todas las actividades productivas y sociales. Si quieres participar, envía tu propuesta a través del formulario <a href="https://bayesplurinacional.org/link/es/Virtual.html">https://bayesplurinacional.org/link/es/Virtual.html</a>.
+                </p>
+
+              <h5>Ciclo de Seminarios Virtuales</h5>
+
+
+              <p>
+              El 24 y 25 de julio tendremos de 14h a 18h hora Argentina (GMT-3): dos talleres virtuales y dos charlas.
+
+              <ul>
+                <li>&#x2022; <b>Sala de video conferencia</b>: <a href="https://bayesplurinacional.org/link/VideoConferencia.html" target="_blank">bayesplurinacional.org/link/VideoConferencia.html</a>
+               </li>
+               https://bayesplurinacional.org/link/Bayes2024.html
+               <li>&#x2022; <b>Transmisión en vivo</b>: <a href="https://www.youtube.com/@bayesplurinacional" target="_blank">youtube.com/@bayesplurinacional</a>
+               </li>
+               <li>&#x2022; <b>Inscripción a la comunidad</b>: <a href="https://bayesplurinacional.org/link/es/Comunidad.html" target="_blank">bayesplurinacional.org/link/es/Comunidad.html</a>
+               </li>
+               <li>&#x2022; <b>Recursos y materiales 2024</b>: <a href="https://bayesplurinacional.org/link/Bayes2024.html" target="_blank">bayesplurinacional.org/link/Bayes2024.html</a>
+               </li>
+               </ul>
+
+              <div class="figcontainer" style="align-items: center;">
+                  <div class="figure" style="flex: 0.6">
+                  <img class="responsive-img" src="../../img/2024/CicloVirtual/general.png"></a>
+                  </div>
+              </div>
+
+              </p>
+              <h6><b>Cronograma</b>. Hora ART (GMT-3).</h6>
+              <p>
+              <ul>
+              <b>Miércoles 24 de julio</b>
+
+              <li>&#x2022; 14h-17h Taller (en español). <em>Evaluación de modelos, series temporales y toma de decisiones</em>. Gustavo Landfried. Argentina.</li>
+              <li>&#x2022; 17h-18h Charla (en español). "Métodos de muestreo bayesiano para el entendimiento del ciclo sísmico y la fuente de terremotos". Francisco Ortega Culaciati. Chile.</li>
+
+
+              <div class="figcontainer" style="align-items: center;">
+                  <div class="figure" style="flex: 0.5">
+                  <img class="responsive-img" src="../../img/2024/CicloVirtual/gustavo.png"></a>
+                  </div>
+                  <div class="figure" style="flex: 0.5">
+                  <img class="responsive-img" src="../../img/2024/CicloVirtual/francisco.png"></a>
+                  </div>
+              </div>
+
+               </ul>
+
+              <ul>
+              <b>Jueves 25 de julio</b>
+
+              <li>&#x2022; 14h-15h Charla  (en español). "Aplicación de la estadística bayesiana en Paleontología". Jesús Alberto Diaz-Cruz. México.</li>
+              <li>&#x2022; 15h-18h Taller (en inglés). "Generative modeling". Michael Betancourt. Estados Unidos.</li>
+               </ul>
+
+               <div class="figcontainer" style="align-items: center;">
+                  <div class="figure" style="flex: 0.5">
+                  <img class="responsive-img" src="../../img/2024/CicloVirtual/jesus.png"></a>
+                  </div>
+                  <div class="figure" style="flex: 0.5">
+                  <img class="responsive-img" src="../../img/2024/CicloVirtual/Michael.png"></a>
+                  </div>
+              </div>
+              </p>
+
+              <br>
+              <br>
+
+              <h5>Seminarios 2023</h5>
+
+              <h6><b>Seminario 4.</b></h6>
+
+              <p>
+
+              <em>Bayesian Learning with Wasserstein Barycenters</em>
+
+              <ul>
+                <li>&#x2022; <b>Gonzalo Ríos.</b> Chief Scientific Officer - NoiseGrasp Spa.</li>
+                <li>&#x2022; <b> Cuándo:</b> 4 de septiembre del 2023</li>
+                <!--<li>&#x2022; <b> Dónde:</b>En vivo por youtube</li>-->
+                <li>&#x2022; <b>Resumen:</b> Se presenta un paradigma de selección de modelo basado en el criterio de transporte óptimo: el baricentro bajo la distancia de Wasserstein. Se caracterizará el modelo seleccionado además de entregar algunas herramientas para su cálculo.
+                </li>
+                <li>&#x2022; <b>Bio:</b> Jefe del área de Data Science para el desarrollo de modelos predictivos de marketing en la empresa NoiseGrasp Spa. Formado en la Universidad de Chile como Doctor en Ciencias de la Ingeniería, Magister en Ciencias de la Computación, Licenciado en Ciencias Matemáticas, Ingeniero Civil Matemático. Durante una década fue profesor de la Universidad de Chile en los departamentos de matemática, computación e ingeniería.</li>
+                </ul>
+              </p>
+
+              <br>
+
+                <h6><b>Seminario 3.</b></h6>
+
+              <p>
+
+              <em>Estimación de parámetros cosmológicos a través de la Estadística Bayesiana.</em>
+
+              <ul>
+                <li>&#x2022; <b>Francisco Xavier Linares Cedeno.</b> Investigador posdoctoral en el Instituto de Física y Matemáticas - Universidad Michoacana de San Nicolás de Hidalgo, México.</li>
+                <li>&#x2022; <b> Cuándo:</b> Jueves 1 de Junio 2023 a las 16h (hora argentina GMT-3)</li>
+                <!--<li>&#x2022; <b> Dónde:</b> Por <a href="https://www.youtube.com/@bayesdelsur" target="_blank">https://www.youtube.com/@bayesdelsur</a></li>-->
+                <li>&#x2022; <b>Material:</b> Texto de divulgación <a href="../2023/biblio/linares2023-divulgacion.pdf" target="_blank">Cosmología e Inferencia Bayesiana.</a></li>
+                <li>&#x2022; <b>Resumen:</b> En esta charla se describe el proceso de inferencia de parámetros cosmológicos usando el Teorema de Bayes. En primer lugar se introducen las ecuaciones de Einstein para construir el modelo estándar cosmológico <em>LambdaCDM</em>. Para analizar los datos de observaciones de Supernovas, se define el cálculo de la distancia a objetos luminosos conocido como <em>módulo de distancia teórico</em>. En segundo lugar se presenta la información obtenida de las supernovas y el procedimiento para parametrizar el módulo de distancia observable por medio de propiedades intrínsecas de las mismas. En tercer lugar, por medio del Teorema de Bayes, se establece la comparación estadística entre la predicción del modelo LambdaCDM y el módulo de distancia de las supernovas. Específicamente, se impondrán restricciones al parámetro de materia total del universo, y se plantea la pregunta ¿cuál es el valor más probable de la cantidad de materia en el universo, dados los datos de supernovas?. Finalmente, se mencionará el uso de la estadística Bayesiana en otros contextos cosmológicos.
+                </li>
+                <li>&#x2022; <b>Bio:</b> Licenciado en Física por la Universidad Simón Bolívar (USB), Venezuela. Doctor en Física de la Universidad de Guanajuato, México. Ha realizado estancias de investigación en varias universidad mexicanas (ICF-UNAM, IFM-UMSNH y DI-UG). Actualmente es investigador postdoctoral en el Instituto de Física y Matemáticas de la Universidad Michoacana de San Nicolás de Hidalgo (IFM-UMSNH), y miembro de la colaboración Legacy Survey of Space and Time (LSST-México) del Observatorio Vera Rubin. Francisco analiza la dinámica del cosmos a través del enfoque bayesiana de la probabilidad. </li>
+                </ul>
+              </p>
+
+              <br>
+
+              <h6><b>Seminario 2.</b></h6>
+
+              <p>
+
+              <em>Impacto de la vacuna Abdala contra el SARS-CoV-2 en la incidencia, la gravedad y la mortalidad por COVID-19 en La Habana, Cuba</em>
+
+              <ul>
+                <li>&#x2022; <b>Kenia Almenares</b>. Escuela Nacional de Salud Pública de Cuba</li>
+                <li>&#x2022; <b> Cuándo:</b> Jueves 11 de Mayo 2023 a las 16h (hora argentina GMT-3)</li>
+                <!--<li>&#x2022; <b> Dónde:</b> En vivo por <a href="https://www.youtube.com/@bayesdelsur" target="_blank">https://www.youtube.com/@bayesdelsur</a></li>-->
+                <li>&#x2022; <b>Co-autores:</b> Pedro Más Bermejo DrCs., Lizet Sánchez Valdés DrC., María J. Vidal Ledo DrC.</li>
+                <li>&#x2022; <b>Material:</b> Artículo <a href="../2023/biblio/almenares2022-covidAbdala.pdf" target="_blank">Impacto y efectividad de la vacuna Abdala en la provincia Matanzas ante la enfermedad sintomática y la muerte por COVID-19</a></li>
+                <li>&#x2022; <b>Resumen:</b> La vacuna cubana Abdala fue diseñada por el Centro de Ingeniería Genética y Biotecnología de Cuba, para controlar la epidemia por COVID-19. Se implementó en campaña de vacunación en personas ≥ 19 años, en La Habana, durante mayo-julio de 2021. Objetivo: Evaluar el impacto de la vacunación en la incidencia, la gravedad y la mortalidad por COVID-19, en La Habana, Cuba, desde julio a octubre de 2021. Método: Se realizó un estudio longitudinal de impacto causal, en la Habana, Cuba. Se incluyó a la totalidad de la población habanera, 2 137 936 habitantes, y se aplicó el modelo Estructural Bayesiano de Series de Tiempo (por sus siglas en inglés BSTS), para obtener el impacto de la vacunación con la vacuna Abdala a corto plazo, con el cálculo de la diferencia (contrafactual), entre las series de tiempo observadas de incidencia, gravedad y mortalidad, y lo que habría sucedido si no se hubiera intervenido con la vacunación. Se utilizaron como series de control, las series de tiempo de incidencia, gravedad y mortalidad de las provincias Camagüey y Holguín en igual período de tiempo, se usaron intervalos probabilísticos de 95,0 %. Resultados: En ausencia de la intervención, se esperaba un valor promedio de la incidencia semanal, de 151 casos, en cambio, se observaron 22, con una reducción relativa de 54,0%, el 95,0% del intervalo contrafactual fue (-70;-38). La gravedad no mostró cambios significativos a corto plazo. Sin embargo, la mortalidad, mostró un valor esperado de alrededor de 3 fallecidos semanales como promedio, el valor observado fue 2, con una reducción a partir del momento de la intervención de un 36,0%, intervalo (-56;-14). Conclusiones: El impacto de la vacunación evidenció una reducción en los indicadores de incidencia, gravedad y muerte por COVID-19 en La Habana, Cuba.</li>
+                </ul>
+              </p>
+
+
+              <br>
+
+              <h6><b>Seminario 1.</b></h6>
+
+              <p>
+
+             <em>Modelado de la dinámica de la corteza visual primaria mediante redes neuronales entrenadas para inferencia probabilística por muestreo</em>
+
+              <ul>
+                <li>&#x2022; <b>Rodrigo Echeveste</b>. Investigador del CONICET, Instituto sinc(i), Santa Fe, Argentina.</li>
+                <li>&#x2022; <b> Cuándo:</b> Jueves 4 de Mayo 2023 a las 16h (hora argentina GMT-3)</li>
+                <!--<li>&#x2022; <b> Dónde:</b> En vivo por <a href="https://www.youtube.com/@bayesdelsur" target="_blank">https://www.youtube.com/@bayesdelsur</a></li>-->
+                <li>&#x2022; <b>Material:</b> Artículo <a href="https://www.nature.com/articles/s41593-020-0671-1.pdf
+                " target="_blank">Cortical-like dynamics in recurrent circuits optimized for sampling-based probabilistic inference</a></li>
+                <li>&#x2022; <b>Resumen:</b> En los últimos años ha comenzado a ganar fuerza el uso de Deep Learning para explicar el comportamiento de los sistemas neuronales naturales. Sin embargo, estos modelos carecen de dinámica y no suelen representar correctamente la incerteza de sus predicciones. Nuestra corteza cerebral, en cambio, presenta una rica dinámica y nos permite manejarnos en un mundo en el cual la información que recibimos de nuestros sentidos es siempre parcial e incompleta. En esta charla les estaré contando sobre cómo entrenar redes neuronales recurrentes bajo restricciones biológicas, para aproximar a un observador ideal bayesiano. Soprendentemente emergen, a partir de este objetivo puramente computacional, características dinámicas típicas de la corteza visual, como son las oscilaciones gamma y las respuestas transitorias con sobrepaso. Este tipo de modelos nos permiten avanzar en la comprensión de los vínculos entre fisiología y percepción sensorial.</li>
+                <li>&#x2022; <b>Bio:</b> Físico del Instituto Balseiro, doctor en Ciencias Naturales (Universidad Goethe, Alemania), colaborador del grupo de Aprendizaje Computacional y Biológico (CBL) de la Universidad de Cambridge (Reino Unido), investigador del CONICET en uno de los mejores institutos de inteligencia artificial de Latinoamérica, el sinc(i) Santa Fe, Argentina (https://sinc.unl.edu.ar/ ). Es docente en la universidad pública UNL y coordinador de la Comisión de Federalización de la Sociedad Argentina de Investigación en Neurociencias.</li>
+
+              </ul>
+              </p>
+
+
+
+
+              <!--<h5>Actividades previas:</h5>
+              <hr></hr>
+              <h6>Curso <a href="https://github.com/Grupo-de-modelado-probabilista/Modelado_Bayesiano" target="_blank">Modelado Bayesiano</a><a id="Modelado_Bayesiano">.</a> Del 28/11/2022 al 02/12/2022</h6>
+              <p>Este es un curso introductorio para personas sin conocimiento previo de estadística o ciencia de datos. Se asume familiaridad con Python y librerías de Python usadas en análisis de datos como Numpy, matplotlib, Pandas, etc.
+              </p>
+              <p>
+              Quienes no sepan Python, pero tengan familiaridad con otros lenguajes de programación también podrán aprovechar el curso, aunque puede que experimente un poco más de fricción.
+              </p>
+              <p>
+              Por último quienes no tengan interés en aprender a usar código para analisis de datos pueden aún aprovechar parte del material para obtener una visión a vuelo de pájaro de los métodos Bayesianos.
+              </p>
+              <hr></hr>
+              <h6>Seminario <a href="https://www.conicet.gov.ar/oportunidades-y-becas/publicacion/344/congresosseminarios/" target="_blank">Modelos causales y equidad en el aprendizaje automático</a><a id="#fairness">.</a>  Inicio el 19/10/2022</h6>
+              <p>El Departamento de Computación de la Facultad de Ingeniería (UBA) invita a participar de este ciclo de seminarios.</p>
+              <p>
+              La aplicación de modelos de aprendizaje automático para la toma de decisiones que afectan a las personas puede ayudar a acabar con episodios discriminatorios a cargo de ciertos agentes gracias a la automatización de los procesos de decisión. Sin embargo, también plantea aspectos éticos debido a la posibilidad de que el sesgo algorítmico termine reforzando ciertas desigualdades históricas.
+              </p>
+              <p>
+              El estudio de las implicancias del uso de tecnologías de aprendizaje automático en contextos sociales ha dado lugar a un área de estudio conocida como Fairness, Accountability and Transparency (FAT). A través de estos seminarios buscamos promover un espacio de discusión y debate sobre este tema de relevancia social, y estimular posibles aplicaciones y estudios vinculados con el mismo.</p>
+              -->
+              </div>
+
+            </div>
+
+            <p class="bottom-blank"><!--Vertical spacer--></p>
+    
+        <!-- BEGIN LOGOS -->
+      <br>
+      <div class="container">
+
+        <!--
+        <h4 class="header col s12 light">
+            Sponsors
+        </h4>-->
+
+        <div class="figcontainer" style="align-items: center;">
+
+
+            <div class="figure" style="flex: 0.5; margin-right: 4%;margin-left: 4%; margin-bottom: 4%;">
+            <img class="responsive-img" src="../../logos/externado.jpg" alt="Externado"></a>
+            </div>
+        </div>
+
+
+        <div class="figcontainer" style="align-items: center;">
+            <!--<div class="figure" style="flex: 0.15; margin-right: -8%;margin-left: 8%">
+            <img class="responsive-img" src="../../logos/pythonNorte.jpg" alt="PythonNorte"></a>
+            </div>-->
+
+            <div class="figure" style="flex: 0.41; margin-right: 0%;margin-left: 5%">
+            <img class="responsive-img" src="../../logos/khipuX2.jpg" alt="khipu"></a>
+            </div>
+            <div class="figure" style="flex: 0.25; margin-right: 0%;margin-left: 1%">
+            <a href="https://khipu.ai/" target="_blank"><img class="responsive-img" src="../../logos/quipu.png" alt="khipu"></a>
+            </div>
+        </div>
+
+
+        <div class="figcontainer" style="align-items: center;">
+
+            <div class="figure" style="flex: 0.35; margin-top: 6%;margin-left: 2%">
+            <img class="responsive-img" src="../../logos/Metodos2.png" alt="Metodos">
+            </div>
+        </div>
+        </div>
+        <!-- END LOGOS -->
+
+        <!-- BEGIN FOOTER -->
+        <nav class="blue-grey" role="navigation" style="background-color:#1a1a1a; height:10%">
+          <div class="nav-wrapper container">
+              <ul class="social-links">
+                  <div class="footer" >
+                    <li><a href="mailto:bayesplurinacional@gmail.com"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="https://twitter.com/BayesPlural" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <!--<li><a href="https://bayes.club/@BayesDelSur" target="_blank"><i class="fab fa-mastodon"></i></a></li>-->
+                    <!--<li><a href="https://facebook.com/bayesdelsur" target="_blank"><i class="fab fa-facebook"></i></a>-->
+                    <li><a href="https://instagram.com/bayesplurinacional" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <li><a href="https://www.linkedin.com/company/bayes-plurinacional/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <!--<li><a href="https://www.youtube.com/@bayesdelsur" target="_blank"><i class="fab fa-youtube"></i></a></li>-->
+                  </div>
+              </ul>
+          </div>
+      </nav>
+      <!--JavaScript at end of body for optimized loading-->
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="../../js/materialize.js"></script>
+      <script src="../../js/init.js"></script>
+      <script>
+          $('.dropdown-button').dropdown({
+              inDuration: 300,
+              outDuration: 225,
+              constrain_width: false, // Does not change width of dropdown to that of the activator
+              gutter: 0, // Spacing from edge
+              alignment: 'left' // Displays dropdown with edge aligned to the left of button
+              }
+          );
+      </script>
+      <!-- END FOOTER -->
+    </body>
+  </html>

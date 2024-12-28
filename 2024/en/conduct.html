@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+  <html lang="en">
+<!-- BEGIN HEADER -->
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../../css/materialize.min.css"  media="screen,projection"/>
+    <title>Bayes</title>
+    <!--Let browser know website is optimized for mobile-->
+    <!--<link rel="stylesheet" href="../../css/cronograma.css">-->
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/others.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8">
+    <!--Latex Mode-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <!--One way to display figures side by side-->
+    <style>
+    .figcontainer {
+    display: flex;
+    justify-content: center;
+    }
+
+    .figure {
+    margin: 10px;
+    }
+    </style>
+</head>
+<body>
+    <ul id="dropdown0" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../es/index.html">Castellano</a></li>
+        <li><a href="../en/index.html">English</a></li>
+    </ul>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../es/index.html">Castellano</a></li>
+        <li><a href="../en/index.html">English</a></li>
+    </ul>
+    <ul id="dropdown_versiones" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../../2025/en/index.html">2025</a></li>
+        <li><a href="../../2024/en/index.html"><b>2024</b></a></li>
+        <li><a href="../../2023/index_en.html">2023</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../en/plural.html">Plural</a></li>
+        <li><a href="../en/organize.html">Organizers</a></li>
+        <li><a href="../en/community.html">Community</a></li>
+    </ul>
+
+    <ul id="dropdown3" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../en/schedule.html">Schedule</a></li>
+        <li><a href="../en/speakers.html">Speakers</a></li>
+        <li><a href="../en/city.html">Your trip</a></li>
+        <li><a href="../en/2024.html">Event 2024</a></li>
+        <li><a href="../en/2023.html">Event 2023</a></li>
+        <!--<li><a href="../en/schedule.html">Schedule</a></li>
+        <li><a href="../en/talks.html">Talks</a></li>
+        <li><a href="../en/poster_en.html">Posters</a></li>
+        <li><a href="../en/workshop.html">Workshop</a></li>
+        <li><a href="../en/scholarship.html">Scholarship</a></li>-->
+    </ul>
+
+    <ul id="dropdown4" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../en/seminar.html">Seminar</a></li>
+        <!--<li><a href="../en/hackathon.html">Hackathon</a></li>-->
+    </ul>
+
+    <ul id="dropdown5" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../en/sponsors.html">Sponsors</a></li>
+        <li><a href="../en/network.html">Social</a></li>
+        <li><a href="../en/conduct.html">Conduct</a></li>
+        <!--<li><a href="../en/faq.html">FAQ</a></li>-->
+    </ul>
+
+    <nav class="blue-grey" role="navigation" style="position:fixed">
+        <div class="nav-wrapper container"><a id="logo-container" href="../en/index.html" class="brand-logo"><em>Bayes</em></a>
+            <ul class="right hide-on-med-and-down">
+            <li><a class="dropdown-button" href="#!" data-target="dropdown_versiones"><b>2024</b><i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="#!" data-target="dropdown2">We are<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="#!" data-target="dropdown3">Congress<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="#!" data-target="dropdown4">Virtual<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="#!" data-target="dropdown5">Contact<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="../en/music.html">Music</a></li>
+            <li><a class="dropdown-button" href="#!" data-target="dropdown0"><i class="fa fa-language"></i></a></li>
+        </ul>
+    </nav>
+
+    <nav class="blue-grey" role="navigation">
+        <ul id="nav-mobile" class="sidenav">
+        <li><a class="dropdown-button" href="#!" data-target="dropdown1"><i class="fa fa-language"></i></a>
+        <li><a href="../en/index.html">Plurinational Bayes</a></li>
+        <li><a href="">WE ARE:</a></li>
+        <li><a href="../en/plural.html">&#x2022; Plural</a></li>
+        <li><a href="../en/organize.html">&#x2022; Organizers</a></li>
+        <li><a href="../en/community.html">&#x2022; Community</a></li>
+        <li><a href="../en/music.html">&#x2022; Music</a></li>
+        <li><a href="">Congress:</a></li>
+        <li><a href="../en/schedule.html">&#x2022; Schedule</a></li>
+        <li><a href="../en/speakers.html">&#x2022; Speakers</a></li>
+        <li><a href="../en/city.html">&#x2022; Your trip</a></li>
+        <li><a href="../en/2024.html">&#x2022; Event 2024</a></li>
+        <li><a href="../en/2023.html">&#x2022; Event 2023</a></li>
+        <!--<li><a href="../en/schedule.html">&#x2022; Schedule</a></li>
+        <li><a href="../en/talks.html">&#x2022; Talks</a></li>
+        <li><a href="../en/poster.html">&#x2022; Posters</a></li>
+        <li><a href="../en/workshop.html">&#x2022; Workshop</a></li>
+        <li><a href="../en/scholarship.html">&#x2022; Scholarship</a></li>-->
+        <li><a href="">VIRTUAL:</a></li>
+        <li><a href="../en/seminar.html">&#x2022; Seminar</a></li>
+        <!--<li><a href="../en/hackathon.html">&#x2022; Hackathon</a></li>-->
+        <li><a href="">CONTACT:</a></li>
+        <li><a href="../en/sponsors.html">&#x2022; Sponsors</a></li>
+        <li><a href="../en/network.html">&#x2022; Social</a></li>
+        <li><a href="../en/conduct.html">&#x2022; Conduct</a></li>
+        <!--<li><a href="../en/faq.html">&#x2022; FAQ</a></li>-->
+        <li><a href="">AÑO:</a></li>
+        <li><a href="../../2025/en/index.html">&#x2022; 2025</a></li>
+        <li><a href="../../2024/en/index.html">&#x2022; <b>2024</b></a></li>
+        <li><a href="../../2023/index_en.html">&#x2022;    2023</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+    <!-- END HEADER -->
+
+
+
+
+
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="section" style="text-align: justify;">
+            <h4>Code of Conduct</h4>
+            <h5>The first right is to be part of a community.</h5>
+              <hr></hr>
+              <p>Codes of conduct in general are similar to Article 12 of the Colombian Constitution: "No one shall be subjected to enforced disappearance or to cruel, inhuman and humiliating treatment". When the original Wayúu people, who lived through 500 years of colonialism in Colombia, translated this article they wrote: <em>No one will be able to take anyone above their heart or harm another person even if they think and speak differently</em>.</p>
+              <p>The experience accumulated by the most diverse communities in the world has led, independently, to a universal obligation to give and receive, and to the development of technologies of reciprocity that reactivate community bonds through (festive or coercive) exchange rites.</p>
+              <p>The Bayes Plurinational event itself is a festive rite aimed at creating and recreating our bonds. That's why we do it. In community systems, conflicts are resolved by activating the three possible types of relationships: (->) the gestures, acts, or gifts that the causing party offers to the affected party; (<->) and the mutual exchange between the parties, which renews the cycle of exchanges; (<-) the help that the affected party offers to the causing party to modify the behaviors that gave rise to the conflict. Only as a last resort may the causing party be expelled, because the first right is to be part of a community.</p>
+              <p>As the last principle of Buen Vivir (in Aymara) says: <em>Suma Churaña, Suma Katukañaz</em>. We must know how to give and receive with joy and gratitude because life is the union of many beings and forces. See you at the next party to nourish our bonds.</p>
+              <h5>Principles of Buen Vivir (Aymara version)</h5>
+              <hr></hr>
+              <p>
+              <ul>
+                <li>1. <em>Suma Manq'aña</em>: (Knowing how to eat). Eating is an exchange of life. We are what we eat.</li>
+                <li>2. <em>Suma Umaña</em>: (Knowing how to drink). Water is the source of all forms of life.</li>
+                <li>3. <em>Suma Thokoña</em>: (Know how to dance). Always act with a spiritual dimension.</li>
+                <li>4. <em>Suma Ikiña</em>: (Know how to sleep). Sleep before midnight, to have the energy of two days.</li>
+                <li>5. <em>Suma Irnakaña</em>: (Knowing how to work). Community work is joy.</li>
+                <li>6. <em>Suma Lupiña</em>:  (Knowing how to meditate). Personal silence (<em>Amiki</em>) restores the silence of the environment (<em>Ch'uju</em>).</li>
+                <li>7. <em>Suma Amuyaña</em>: (Know how to think). Without losing reason, let us walk the path of the heart.</li>
+                <li>8. <em>Suma Munaña Munayasiña</em> (Know how to love and be loved): The process of complementarity and respect for all beings.</li>
+                <li>9. <em>Suma Ist'aña</em>: (Knowing how to listen). To perceive, to feel, to listen with the whole body.</li>
+                <li>10. <em>Suma Aruskipaña</em>: (Knowing how to speak). What is spoken is written in the hearts of those who listen.</li>
+                <li>11. <em>Suma Samkasiña</em>: (Knowing how to dream). Everything starts from dreams. Therefore, dreams are the beginning of reality.</li>
+                <li>12. <em>Suma Sarnaqaña</em>: (Knowing how to walk). There is no tiredness for those who know how to walk. We never walk alone, we walk alongside Pachamama.</li>
+                <li>13. <em>Suma Churaña, suma Katukaña</em>: (Knowing how to give and receive). We must know how to give and receive with joy and gratitude because life is the union of many beings and forces.</li>
+              </ul>
+              </p>
+              <h5>Contact</h5>
+              <hr></hr>
+              <p><a href="mailto:bayesplurinacional@gmail.com">bayesplurinacional@gmail.com</a></p>
+              <h5>License</h5>
+              <hr></hr>
+              <p>This Code of Conduct has been adapted from the indigenous cosmovisions of Abya Yala and is distributed under a Creative Commons Zero license.</p>
+                    </div>
+            </div>
+
+            <p class="bottom-blank"><!--Vertical spacer--></p>
+
+        <!-- BEGIN LOGOS -->
+      <br>
+
+        <div class="figcontainer" style="align-items: center;">
+            <div class="figure" style="flex: 0.18; margin-right: -3%;margin-left: 14%">
+            <img class="responsive-img" src="../../logos/UNSa-extension.jpg" alt="extension">
+            </div>
+
+
+            <div class="figure" style="flex: 0.3; margin-right: 4%;margin-left: 4%; margin-bottom: 4%;">
+            <img class="responsive-img" src="../../logos/UNSa.png" alt="UNSa"></a>
+            </div>
+
+            <div class="figure" style="flex: 0.3; margin-right: 6%;margin-left: -5%">
+            <img class="responsive-img" src="../../logos/UNSa-FCN.png" alt="FCN">
+            </div>
+        </div>
+
+
+        <div class="figcontainer" style="align-items: center;">
+            <div class="figure" style="flex: 0.15; margin-right: -8%;margin-left: 8%">
+            <img class="responsive-img" src="../../logos/pythonNorte.jpg" alt="PythonNorte"></a>
+            </div>
+
+            <div class="figure" style="flex: 0.45; margin-right: 0%;margin-left: 10%">
+            <img class="responsive-img" src="../../logos/khipuX2.jpg" alt="khipu"></a>
+            </div>
+            <div class="figure" style="flex: 0.25; margin-right: 0%;margin-left: 1%">
+            <a href="https://khipu.ai/" target="_blank"><img class="responsive-img" src="../../logos/quipu.png" alt="khipu"></a>
+            </div>
+        </div>
+
+
+        <div class="figcontainer" style="align-items: center;">
+
+            <div class="figure" style="flex: 0.35; margin-top: 6%;margin-left: 2%">
+            <img class="responsive-img" src="../../logos/Metodos2.png" alt="Metodos">
+            </div>
+        </div>
+        <!-- END LOGOS -->
+
+        <!-- BEGIN FOOTER -->
+        <nav class="blue-grey" role="navigation" style="background-color:#1a1a1a; height:10%">
+          <div class="nav-wrapper container">
+              <ul class="social-links">
+                  <div class="footer" >
+                    <li><a href="mailto:bayesplurinacional@gmail.com"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="https://twitter.com/BayesPlural" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <!--<li><a href="https://bayes.club/@BayesDelSur" target="_blank"><i class="fab fa-mastodon"></i></a></li>-->
+                    <!--<li><a href="https://facebook.com/bayesdelsur" target="_blank"><i class="fab fa-facebook"></i></a>-->
+                    <li><a href="https://instagram.com/bayesplurinacional" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <li><a href="https://www.linkedin.com/company/bayes-plurinacional/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <!--<li><a href="https://www.youtube.com/@bayesdelsur" target="_blank"><i class="fab fa-youtube"></i></a></li>-->
+                  </div>
+              </ul>
+          </div>
+      </nav>
+      <!--JavaScript at end of body for optimized loading-->
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="../../js/materialize.js"></script>
+      <script src="../../js/init.js"></script>
+      <script>
+          $('.dropdown-button').dropdown({
+              inDuration: 300,
+              outDuration: 225,
+              constrain_width: false, // Does not change width of dropdown to that of the activator
+              gutter: 0, // Spacing from edge
+              alignment: 'left' // Displays dropdown with edge aligned to the left of button
+              }
+          );
+      </script>
+      <!-- END FOOTER -->
+    </body>
+  </html>

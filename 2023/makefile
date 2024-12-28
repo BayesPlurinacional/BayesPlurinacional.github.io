@@ -1,5 +1,5 @@
 all:
-	cp *.html *.yml CNAME backup/
+	cp *.html *.yml backup/
 	echo "README"
 
 es:

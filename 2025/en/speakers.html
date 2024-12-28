@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+  <html>
+<!-- BEGIN HEADER -->
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../../css/materialize.min.css"  media="screen,projection"/>
+    <title>Bayes</title>
+    <!--Let browser know website is optimized for mobile-->
+    <!--<link rel="stylesheet" href="../../css/cronograma.css">-->
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/others.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8">
+    <!--Latex Mode-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <!--One way to display figures side by side-->
+    <style>
+    .figcontainer {
+    display: flex;
+    justify-content: center;
+    }
+
+    .figure {
+    margin: 10px;
+    }
+    </style>
+</head>
+<body>
+    <ul id="dropdown0" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../es/index.html">Castellano</a></li>
+        <li><a href="../en/index.html">English</a></li>
+    </ul>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../es/index.html">Castellano</a></li>
+        <li><a href="../en/index.html">English</a></li>
+    </ul>
+    <ul id="dropdown_versiones" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../../2025/en/index.html"><b>2025</b></a></li>
+        <li><a href="../../2024/en/index.html">2024</a></li>
+        <li><a href="../../2023/index_en.html">2023</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../en/plural.html">Plural</a></li>
+        <li><a href="../en/organize.html">Organizers</a></li>
+        <li><a href="../en/community.html">Community</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../en/plural.html">Plural</a></li>
+        <li><a href="../en/organize.html">Organizers</a></li>
+        <li><a href="../en/community.html">Community</a></li>
+    </ul>
+
+    <ul id="dropdown3" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../en/city.html">City</a></li>
+        <li><a href="../en/schedule.html">Schedule</a></li>
+        <!--<li><a href="../en/speakers.html">Speakers</a></li>-->
+    </ul>
+
+    <!--<ul id="dropdown4" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../en/seminar.html">Seminar</a></li>
+        <li><a href="../en/hackathon.html">Hackathon</a></li>
+    </ul>-->
+
+    <ul id="dropdown5" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../en/sponsors.html">Sponsors</a></li>
+        <li><a href="../en/network.html">Social</a></li>
+        <li><a href="../en/conduct.html">Conduct</a></li>
+    </ul>
+
+    <nav class="blue-grey" role="navigation" style="position:fixed">
+        <div class="nav-wrapper container"><a id="logo-container" href="../en/index.html" class="brand-logo"><em>Bayes</em></a>
+            <ul class="right hide-on-med-and-down">
+            <li><a class="dropdown-button" href="#!" data-target="dropdown_versiones"><b>2025</b><i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="#!" data-target="dropdown2">We are<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="#!" data-target="dropdown3">Congress<i class="material-icons right">arrow_drop_down</i></a></li>
+            <!--<li><a class="dropdown-button" href="#!" data-target="dropdown4">Virtual<i class="material-icons right">arrow_drop_down</i></a></li>-->
+            <li><a class="dropdown-button" href="#!" data-target="dropdown5">Contact<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="../en/music.html">Music</a></li>
+            <li><a class="dropdown-button" href="#!" data-target="dropdown0"><i class="fa fa-language"></i></a></li>
+        </ul>
+    </nav>
+
+    <nav class="blue-grey" role="navigation">
+        <ul id="nav-mobile" class="sidenav">
+        <li><a class="dropdown-button" href="#!" data-target="dropdown1"><i class="fa fa-language"></i></a>
+        <li><a href="../en/index.html">Plurinational Bayes</a></li>
+        <li><a href="">WE ARE:</a></li>
+        <li><a href="../en/plural.html">&#x2022; Plural</a></li>
+        <li><a href="../en/organize.html">&#x2022; Organizers</a></li>
+        <li><a href="../en/community.html">&#x2022; Community</a></li>
+        <li><a href="../en/music.html">&#x2022; Music</a></li>
+        <li><a href="">EVENT 2025:</a></li>
+        <li><a href="../en/city.html">&#x2022; City</a></li>
+        <li><a href="../en/schedule.html">&#x2022; Schedule</a></li>
+        <li><a href="../en/speakers.html">&#x2022; Speakers</a></li>
+        <!--<li><a href="">VIRTUAL:</a></li>
+        <li><a href="../en/seminar.html">&#x2022; Seminar</a></li>-->
+        <!--<li><a href="../en/hackathon.html">&#x2022; Hackathon</a></li>-->
+        <li><a href="">CONTACT:</a></li>
+        <li><a href="../en/sponsors.html">&#x2022; Sponsors</a></li>
+        <li><a href="../en/network.html">&#x2022; Social</a></li>
+        <li><a href="../en/conduct.html">&#x2022; Conduct</a></li>
+        <li><a href="">YEAR:</a></li>
+        <li><a href="../../2025/en/index.html">&#x2022; <b>2025</b></a></li>
+        <li><a href="../../2024/en/index.html">&#x2022;    2024</a></li>
+        <li><a href="../../2023/index_en.html">&#x2022;    2023</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+    <!-- END HEADER -->
+    <link rel="stylesheet" href="../../css/cronograma.css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+            </div>
+        </div>
+
+      <p class="bottom-blank"><!--Vertical spacer--></p>
+
+
+        <div class="row">
+
+               <div class="column">
+               <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left: 20%;margin-bottom: -3%;">
+		                <p><img src="../../archivos/2024/expositores/TomasCapretto-foto.png" alt="Capretto" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+		                <h5 style="margin-bottom: -3%;"><p>Tomas Capretto</p></h5>
+		                <!--<h6><p>Coordinator</p></h6>-->
+		                <p class="title">Statistician from the National University of Rosario, Argentina, works at PyMC Labs, where he uses Bayesian models to solve applied problems in various sectors. Tomas is also a professor in the Statistics Degree at the National University of Rosario and collaborates on open-source projects such as PyMC, ArviZ, and Bambi.
+            </p>
+                </div>
+		        </div>
+
+                <div class="column">
+                <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left: 20%;margin-bottom: -3%;">
+                    <p><img src="../../archivos/2024/expositores/CamilaNeder-crop.jpg" alt="Neder" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3;margin-top: 4%; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+                    <h5 style="margin-bottom: -3%;"><p>Camila Neder</p></h5>
+                    <!--<h6><p>Host</p></h6>-->
+                    <p>PhD in Biological Sciences specializing in Marine Ecology from the National University of Córdoba. She researches Antarctic benthos and its response to climate change (CONICET-IDEA), with multiple publications and international scholarships. She has participated in Antarctic expeditions and is skilled in spatial analysis and scientific communication in various languages.
+                    </p>
+                </div>
+                </div>
+          </div>
+
+
+        <div class="row">
+
+                <div class="column">
+                <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left: 20%;margin-bottom: -3%;">
+                    <p><img src="../../archivos/2024/expositores/LeilaSofiaAsplanato-foto.jpeg" alt="Leila" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3;margin-top: 4%; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+                    <h5 style="margin-bottom: -3%;"><p>Leila Asplanato</p></h5>
+                    <p>
+                    Physics graduate from the University of Buenos Aires, she conducted a thesis on "Causal inference in observational studies using Bayesian models (applied to student dropout)". She is currently pursuing a Ph.D. at the National University of San Martín on "Machine learning models and causal inference in support of education and lifelong learning".
+                    </p>
+                </div>
+                </div>
+
+
+               <div class="column">
+               <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left: 20%;margin-bottom: -3%;">
+		                <p><img src="../../archivos/2024/expositores/EnriqueterHorst-crop.jpg" alt="terHorst" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+		                <h5 style="margin-bottom: -3%;"><p>Enrique ter Horst</p></h5>
+		                <!--<h6><p>Coordinator</p></h6>-->
+		                <p class="title">Ph.D. in Statistics and Decision Sciences from Duke University, Enrique has worked at Morgan Stanley, Credit Suisse, and management institutes in various countries. He is currently a Professor at the University of the Andes, Colombia, specializing in business statistics and risk management with a focus on Bayesian methods applied to finance.</p>
+                </div>
+		        </div>
+          </div>
+
+        <div class="row">
+
+                <div class="column">
+               <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left: 20%;margin-bottom: -3%;">
+		                <p><img src="../../archivos/2024/expositores/JuanBekios.jpeg" alt="Bekios" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+		                <h5 style="margin-bottom: -3%;"><p>Juan Bekios Calfa</p></h5>
+		                <!--<h6><p>Coordinator</p></h6>-->
+		                <p class="title">Ph.D. in Artificial Intelligence from the Polytechnic University of Madrid and Licenciate in Civil Engineering in Computing and Informatics from the Catholic University of the North. He is an assistant professor at the Catholic University of the North since 1997 and has received awards such as the Shell Chile Scholarship and the Academic Excellence Award.</p>
+                </div>
+                </div>
+
+                <div class="column">
+                <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left: 20%;margin-bottom: -3%;">
+                    <p><img src="../../archivos/2024/expositores/GabrielAlzamendi2-crop.jpg" alt="Gabriel" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3;margin-top: 4%; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+                    <h5 style="margin-bottom: -3%;"><p>Gabriel Alzamendi</p></h5>
+                    <p>
+                    Ph.D. in Engineering and Bioengineer, he is an assistant researcher at the Institute of Bioengineering and Bioinformatics Research (CONICET-UNER) and a lecturer at the Faculty of Engineering of the National University of Entre Ríos. His work focuses on modeling biomedical signals from phonation, with multiple scientific publications.
+                    </p>
+                </div>
+                </div>
+          </div>
+
+
+
+
+
+            <div class="row">
+
+               <div class="column">
+               <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left: 20%;margin-bottom: -3%;">
+		                <p><img src="../../archivos/2024/expositores/MacarenaPiaggio-crop.jpeg" alt="Piaggio" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+		                <h5 style="margin-bottom: -3%;"><p>Macarena Piaggio</p></h5>
+		                <!--<h6><p>Coordinator</p></h6>-->
+		                <p class="title">Licenciate's degree in Computer Science with a thesis on "Approximation of inference in SVD recommendation systems using Variational Message Passing". Head of Practical Works at the University of Buenos Aires. Former fellow at the Institute of Computer Science and the National Institute of Informatics in Japan.</p>
+                </div>
+		        </div>
+
+                <div class="column">
+                <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left: 20%;margin-bottom: -3%;">
+                    <p><img src="../../archivos/2024/expositores/DanielFortuna2.jpeg" alt="Daniel" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3;margin-top: 4%; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+                    <h5 style="margin-bottom: -3%;"><p>Daniel Fortuna</p></h5>
+                    <p>
+                    Licenciate's degree in Economics from the University of Buenos Aires (UBA) and MBA from the Kuepa University (UK) in Mexico. Director of Studies at the Private Institute of the Argentine Chamber of Commerce. Professor of Statistics for Administrators at the Faculty of Economic Sciences of UBA, content creator and teacher in the finance area at UK.
+                    </p>
+                </div>
+                </div>
+          </div>
+
+          <div class="row">
+                <div class="column">
+                <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left: 20%;margin-bottom: -3%;">
+                    <p><img src="../../archivos/2024/expositores/FranciscoHernanOrtegaCulaciati-crop.jpg" alt="Davis" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3;margin-top: 4%; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+                    <h5 style="margin-bottom: -3%;"><p>Francisco Ortega Culaciati</p></h5>
+                    <p>
+                    Civil Engineer and Ph.D. in Geophysics, currently a professor at the University of Chile, specializing in active tectonics, geodesy, and earthquake modeling. He has led various research projects and published numerous scientific contributions in the field of seismic deformation and fault slip estimation.
+                    </p>
+                </div>
+                </div>
+
+               <div class="column">
+               <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left:
+               20%;margin-bottom: -3%;">
+		                <p><img src="../../archivos/2024/expositores/OxanaKrymina-crop.jpg" alt="terHorst" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+		                <h5 style="margin-bottom: -3%;"><p>Oxana Krymina </p></h5>
+                    <!--<h6><p>Coordinator</p></h6>-->
+		                <p class="title">Head of Actuarial Data Science at VSK insurance company, Oxana uses Bayesian statistics for loss reserves. She has held positions as a data scientist at the Financial Consulting Laboratory of MIPT. Oxana earned her master's degree in mathematics from Moscow State University in 1997 and currently resides in Uruguay.</p>
+                </div>
+		        </div>
+
+          </div>
+
+
+            <div class="row">
+
+               <div class="column">
+                <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left: 20%;margin-bottom: -3%;">
+                    <p><img src="../../archivos/2024/expositores/JosefinaLacasa.png" alt="Davis" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3;margin-top: 4%; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+                    <h5 style="margin-bottom: -3%;"><p>
+                    Josefina Lacasa</p>                           </h5>
+                    <p>
+                    Assistant Professor in the Department of Statistics at Kansas State University and Ph.D. in Agronomy and Master of Statistics from the same institution. Her research focuses on crop nutrition diagnostic models, and she received the Nelson Yield-Limiting Factors Award from the American Society of Agronomy in 2023.
+                    </p>
+                </div>
+                </div>
+
+
+                <div class="column">
+                <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left: 20%;margin-bottom: -3%;">
+                    <p><img src="../../archivos/2024/expositores/SergioDavis-crop.jpg" alt="Davis" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3;margin-top: 4%; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+                    <h5 style="margin-bottom: -3%;"><p>Sergio Davis</p></h5>
+                    <p>
+                    Physicist from the University of Santiago and Ph.D. in Physics from the Royal Institute of Technology in Sweden, worked at the University of Chile. He is currently a Researcher at the Chilean Nuclear Energy Commission and a Professor at Andrés Bello University publishing nearly 100 scientific articles on Statistical Physics, Information Theory, among others.
+                    </p>
+                </div>
+                </div>
+
+
+
+
+          </div>
+
+          <div class="row">
+
+                <div class="column">
+                <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left: 20%;margin-bottom: -3%;">
+                    <p><img src="../../archivos/2024/expositores/RafaelTovar-crop.jpg" alt="Tovar" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3;margin-top: 4%; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+                    <h5 style="margin-bottom: -3%;"><p>Rafael Tovar</p></h5>
+                    <p>
+                    Statistician Universidad del Valle, Colombia, Master in Statistics Pontificia Universidad Católica de Chile, PhD in Statistics Universidad Estatal de Campinas Brazil and postdoc Universidad de Sao Paulo, Brazil. Bayesian Inference and Applied Statistics. Professor at the School of Statistics, Universidad del Valle, Cali, Colombia.
+                    </p>
+                </div>
+                </div>
+
+
+               <div class="column">
+               <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left:
+               20%;margin-bottom: -3%;">
+		                <p><img src="../../archivos/2024/expositores/YasminNavareteDiaz-foto.jpg" alt="TorresOme" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+		                <h5 style="margin-bottom: -3%;"><p>Yasmín Navarrete</p></h5>
+		                <p class="title">
+                         Licenciate's and Master's degrees in Physical Sciences from the University of Chile, currently working at the Institute of Philosophy and Complexity Sciences of the Chilean Atomic Energy Commission. With 10 years of teaching and research experience in physics applied to neuroscience and quantum mechanics, Yasmín is dedicated to scientific outreach.
+		                </p>
+                </div>
+                </div>
+        </div>
+        <div class="row">
+		        <div class="column">
+               <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left:
+               20%;margin-bottom: -3%;">
+		                <p><img src="../../archivos/2024/expositores/AndreaGoijman.jpg" alt="Goijman" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+		                <h5 style="margin-bottom: -3%;"><p>Andrea Goijman</p></h5>
+		                <p class="title">
+                         PhD in Wildlife Ecology and Management, University of Georgia, USA, licentiate in Biological Sciences, University of Buenos Aires. She works at the Instituto Nacional de Tecnología Agropecuaria, Argentina, evaluating socio-ecological systems with Bayesian and frequentist tools for biodiversity conservation.
+		                </p>
+                </div>
+		        </div>
+
+
+             <div class="column">
+               <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left:
+               20%;margin-bottom: -3%;">
+		                <p><img src="../../archivos/2024/expositores/LlerzyTorresOme.jpeg" alt="TorresOme" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+		                <h5 style="margin-bottom: -3%;"><p>Llerzy Torres Ome</p></h5>
+		                <p class="title">
+		                Graduate in Applied Mathematics from Surcolombiana University, Master in Statistics, currently pursuing a Ph.D. in Mathematical Sciences at the University of Valle. University professor in mathematics and statistics, his work focuses on prior probability distributions and copula functions. <!--He has been a university professor at the Catholic Lumens Gentium University Foundation and the University of Valle, -->
+		                </p>
+                </div>
+		        </div>
+
+
+
+          </div>
+
+
+          <div class="row">
+                <div class="column">
+                <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left: 20%;margin-bottom: -3%;">
+                    <p><img src="../../archivos/2024/expositores/FernandoRobertoMomo.JPG" alt="Tovar" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3;margin-top: 4%; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+                    <h5 style="margin-bottom: -3%;"><p>Fernando Momo</p></h5>
+                    <p>
+                    Licenciate's and Ph.D. in Biological Sciences from the University of Buenos Aires, specialized in Mathematical Ecology and Theoretical Ecology, has published over 80 scientific papers and books on ecology and complex systems. He chaired the Argentine Association of Ecology and the Latin American Society of Biomathematics. He is currently Professor Emeritus at the National University of Luján.
+                    </p>
+                </div>
+                </div>
+
+               <div class="column">
+               <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left:
+               20%;margin-bottom: -3%;">
+		                <p><img src="../../archivos/2024/expositores/GustavoLandfried.jpg" alt="Landfried" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+		                <h5 style="margin-bottom: -3%;"><p>Gustavo Landfried</p></h5>
+		                <p class="title">
+		                Licenciate's in Social Anthropology and Ph.D. in Computer Science from the University of Buenos Aires, Gustavo is currently a researcher and graduate teaching assistant in the Department of Computer Science.
+		                His work focuses on the application of Bayesian methods in fields such as health, sports, and education. Co-founder of Bayes Plurinational.
+		                </p>
+                </div>
+		        </div>
+
+		        <!--<div class="column">
+               <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left:
+               20%;margin-bottom: -3%;">
+		                <p><img src="../../archivos/2024/expositores/LuisUsca-crop.jpg" alt="Usca" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+		                <h5 style="margin-bottom: -3%;"><p>Luis Usca</p></h5>
+                        <p class="title">
+		                Marine biologist specializing in commercial fisheries and research on age and growth of fishery resources, with skills in data analysis and programming. Currently works as an analyst at the Marine Institute of Peru, with previous experience in monitoring artisanal fisheries and processing of biological-fishery data.
+		                </p>
+                </div>
+		        </div>-->
+
+          </div>
+
+            <!--<div class="row">-->
+
+
+            </div>
+
+        <p class="bottom-blank"><!--Vertical spacer--></p>
+
+        <!-- BEGIN FOOTER -->
+        <nav class="blue-grey" role="navigation" style="background-color:#1a1a1a; height:10%">
+          <div class="nav-wrapper container">
+              <ul class="social-links">
+                  <div class="footer" >
+                    <li><a href="mailto:bayesplurinacional@gmail.com"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="https://twitter.com/BayesPlural" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <!--<li><a href="https://bayes.club/@BayesDelSur" target="_blank"><i class="fab fa-mastodon"></i></a></li>-->
+                    <!--<li><a href="https://facebook.com/bayesdelsur" target="_blank"><i class="fab fa-facebook"></i></a>-->
+                    <li><a href="https://instagram.com/bayesplurinacional" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <li><a href="https://www.linkedin.com/company/bayes-plurinacional/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <!--<li><a href="https://www.youtube.com/@bayesdelsur" target="_blank"><i class="fab fa-youtube"></i></a></li>-->
+                  </div>
+              </ul>
+          </div>
+      </nav>
+      <!--JavaScript at end of body for optimized loading-->
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="../../js/materialize.js"></script>
+      <script src="../../js/init.js"></script>
+      <script>
+          $('.dropdown-button').dropdown({
+              inDuration: 300,
+              outDuration: 225,
+              constrain_width: false, // Does not change width of dropdown to that of the activator
+              gutter: 0, // Spacing from edge
+              alignment: 'left' // Displays dropdown with edge aligned to the left of button
+              }
+          );
+      </script>
+      <!-- END FOOTER -->
+    </body>
+  </html>

@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+  <html>
+<!-- BEGIN HEADER -->
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../../css/materialize.min.css"  media="screen,projection"/>
+    <title>Bayes 2024</title>
+    <!--Let browser know website is optimized for mobile-->
+    <!--<link rel="stylesheet" href="../../css/cronograma.css">-->
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/others.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8">
+    <!--Latex Mode-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <!--One way to display figures side by side-->
+    <style>
+    .figcontainer {
+    display: flex;
+    justify-content: center;
+    }
+
+    .figure {
+    margin: 10px;
+    }
+    </style>
+</head>
+    <body>
+    <ul id="dropdown0" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../es/index.html">Castellano</a></li>
+        <li><a href="../en/index.html">English</a></li>
+    </ul>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../es/index.html">Castellano</a></li>
+        <li><a href="../en/index.html">English</a></li>
+    </ul>
+    <ul id="dropdown_versiones" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../../2025/es/index.html">2025</a></li>
+        <li><a href="../../2024/es/index.html"><b>2024</b></a></li>
+        <li><a href="../../2023/index.html">2023</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../es/plural.html">Plural</a></li>
+        <li><a href="../es/organiza.html">Organización</a></li>
+        <li><a href="../es/comunidad.html">Comunidad</a></li>
+    </ul>
+
+    <ul id="dropdown3" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../es/cronograma.html">Cronograma</a></li>
+        <li><a href="../es/disertantes.html">Disertantes</a></li>
+        <li><a href="../es/ciudad.html">Tu viaje</a></li>
+        <li><a href="../es/2024.html">Evento 2024</a></li>
+        <li><a href="../es/2023.html">Evento 2023</a></li>
+        <!--<li><a href="../es/cronograma.html">Cronograma</a></li>
+        <li><a href="../es/charlas.html">Charlas</a></li>
+        <li><a href="../es/poster.html">Posters</a></li>
+        <li><a href="../es/taller.html">Taller</a></li>
+        <li><a href="../es/becas.html">Becas</a></li>-->
+    </ul>
+
+    <ul id="dropdown4" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../es/seminario.html">Seminario</a></li>
+        <!--<li><a href="../es/hackaton.html">Hackatón</a></li>-->
+    </ul>
+
+    <ul id="dropdown5" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../es/auspiciantes.html">Auspiciantes</a></li>
+        <li><a href="../es/redes.html">Redes</a></li>
+        <li><a href="../es/conducta.html">Conducta</a></li>
+        <!--<li><a href="../es/faq.html">FAQ</a></li>-->
+    </ul>
+
+    <nav class="blue-grey" role="navigation" style="position:fixed">
+        <div class="nav-wrapper container"><a id="logo-container" href="../es/index.html" class="brand-logo"><em>Bayes</em></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a class="dropdown-button" href="#!" data-target="dropdown_versiones"><b>2024</b><i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="#!" data-target="dropdown2">Somos<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="#!" data-target="dropdown3">Congreso<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="#!" data-target="dropdown4">Virtual<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="#!" data-target="dropdown5">Contacto<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="musica.html">Música</a></li>
+            <li><a class="dropdown-button" href="#!" data-target="dropdown0"><i class="fa fa-language"></i></a></li>
+        </ul>
+    </nav>
+
+    <nav class="blue-grey" role="navigation">
+        <ul id="nav-mobile" class="sidenav">
+            <li><a class="dropdown-button" href="#!" data-target="dropdown1"><i class="fa fa-language"></i></a></li>
+            <li><a href="../es/index.html">Bayes Plurinacional</a></li>
+            <li><a href="">SOMOS:</a></li>
+            <li><a href="../es/plural.html">&#x2022; Plural</a></li>
+            <li><a href="organiza.html">&#x2022; Organización</a></li>
+            <li><a href="../es/comunidad.html">&#x2022; Comunidad</a></li>
+            <li><a href="../es/musica.html">&#x2022; Música</a></li>
+            <li><a href="">Congreso:</a></li>
+            <li><a href="../es/cronograma.html">&#x2022; Cronograma</a></li>
+            <li><a href="../es/disertantes.html">&#x2022; Disertantes</a></li>
+            <li><a href="../es/ciudad.html">&#x2022; Tu viaje</a></li>
+            <li><a href="../es/2024.html">&#x2022; Evento 2024</a></li>
+            <li><a href="../es/2023.html">&#x2022; Evento 2023</a></li>
+            <!--<li><a href="../es/cronograma.html">&#x2022; Cronograma</a></li>
+            <li><a href="../es/charlas.html">&#x2022; Charlas</a></li>
+            <li><a href="../es/poster.html">&#x2022; Posters</a></li>
+            <li><a href="../es/taller.html">&#x2022; Taller</a></li>
+            <li><a href="../es/becas.html">&#x2022; Becas</a></li>-->
+            <li><a href="">VIRTUAL:</a></li>
+            <li><a href="../es/seminario.html">&#x2022; Seminario</a></li>
+            <!--<li><a href="../es/hackaton.html">&#x2022; Hackatón</a></li>-->
+            <li><a href="">CONTACTO:</a></li>
+            <li><a href="../es/auspiciantes.html">&#x2022; Auspiciantes</a></li>
+            <li><a href="../es/redes.html">&#x2022; Redes</a></li>
+            <li><a href="../es/conducta.html">&#x2022; Conducta</a></li>
+            <!--<li><a href="../es/faq.html">&#x2022; FAQ</a></li>-->
+            <li><a href="">AÑO:</a></li>
+            <li><a href="../../2025/es/index.html">&#x2022; 2025</a></li>
+            <li><a href="../../2024/es/index.html">&#x2022;  <b>2024</b></a></li>
+            <li><a href="../../2023/index.html">&#x2022;    2023</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+    <!-- END HEADER -->
+
+
+
+
+
+
+
+
+
+
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="section" style="text-align: justify;">
+
+                <h4 class="header col s12 light">
+                Cronograma Bayes Plurinacional 2024
+                <h4>
+
+                <h6 class="header col s12 light">
+                Durante el Congreso Bayes Plurinacional 2023 se propuso como objetivo fortalecer la oferta de formación en investigación y/o aplicación de la inferencia bayesiana, mediante el desarrollo de talleres dictados por especialistas de nuestra región, dando origen a la creación de la Escuela-Congreso Bayes Plurinacional 2024.
+                La Escuela-Congreso Bayes Plurinacional 2024, se realizará en la Universidad Nacional de Salta, Argentina.
+                Durante 3 días (martes 6 al jueves 8) compartiremos diversas actividades, entre las que se incluyen varios talleres prácticos de todos los niveles, exposiciones, mesa de debate, sesiones de pósters, entre otras.
+                El viernes por la mañana realizaremos actividades de co-working y por la tarde actividades sociales en la ciudad de Salta.
+                <!--Registra t propuesta para la Escuela-Congreso Bayes Plurinacional 2024 <a href="https://bayesplurinacional.org/link/InscripcionSalta2024.html"><b>aquí</b></a>.
+                Tenés tiempo hasta el 30 de abril.
+                Para proponer eventos virtuales, acceda de forma permanente al siguiente <a href="https://bayesplurinacional.org/link/InscripcionEventosVirtuales.html">formulario</a>.-->
+                </h6>
+
+        <!--<div class="figcontainer" style="align-items: center;">
+            <div class="figure" style="flex: 1; margin-top: 0%;margin-left: 0%;margin-right: 0%">
+            <img class="responsive-img" src="../../archivos/2024/cronograma/Manana.png" alt="Manana">
+            </div>
+        </div>
+        <div class="figcontainer" style="align-items: center;">
+            <div class="figure" style="flex: 1; margin-top: 0%;margin-left: 0%;margin-right: 0%">
+            <img class="responsive-img" src="../../archivos/2024/cronograma/Tarde.png" alt="Tarde">
+            </div>
+        </div>-->
+
+        <br>
+
+        <h5 class="header col s12 light">
+        Los materiales se encontrarán disponibles en el <a href="https://drive.google.com/drive/folders/1mp5p2v8z51FDxrg4n8VxtoKf98WZSJpZ?usp=drive_link" target="_blank">DRIVE</a>.
+        <h5>
+
+
+        <div class="figcontainer" style="align-items: center;">
+            <div class="figure" style="flex: 1; margin-top: 0%;margin-left: 0%;margin-right: 0% align-items: center;">
+            <a href="../../img/2024/cronograma/cronograma.pdf" target="_blank"><img class="responsive-img" src="../../img/2024/cronograma/cronograma-0.png" alt="Manana"></a>
+            </div>
+        </div>
+
+        <div class="figcontainer" style="align-items: center;">
+            <div class="figure" style="flex: 1; margin-top: 0%;margin-left: 0%;margin-right: 0% align-items: center;">
+            <a href="../../img/2024/cronograma/cronograma.pdf" target="_blank"><img class="responsive-img" src="../../img/2024/cronograma/cronograma-1.png" alt="Manana"></a>
+            </div>
+        </div>
+
+
+        <div class="figcontainer" style="align-items: center;">
+            <div class="figure" style="flex: 1; margin-top: 0%;margin-left: 0%;margin-right: 0% align-items: center;">
+            <a href="../../img/2024/cronograma/cronograma.pdf" target="_blank"><img class="responsive-img" src="../../img/2024/cronograma/cronograma-2.png" alt="Manana"></a>
+            </div>
+        </div>
+
+        <div class="figcontainer" style="align-items: center;">
+            <div class="figure" style="flex: 1; margin-top: 0%;margin-left: 0%;margin-right: 0% align-items: center;">
+            <a href="../../img/2024/cronograma/cronograma.pdf" target="_blank"><img class="responsive-img" src="../../img/2024/cronograma/cronograma-3.png" alt="Manana"></a>
+            </div>
+        </div>
+
+        <div class="figcontainer" style="align-items: center;">
+            <div class="figure" style="flex: 1; margin-top: 0%;margin-left: 0%;margin-right: 0% align-items: center;">
+            <a href="../../img/2024/cronograma/cronograma.pdf" target="_blank"><img class="responsive-img" src="../../img/2024/cronograma/cronograma-4.png" alt="Manana"></a>
+            </div>
+        </div>
+
+        <div class="figcontainer" style="align-items: center;">
+            <div class="figure" style="flex: 1; margin-top: 0%;margin-left: 0%;margin-right: 0% align-items: center;">
+            <a href="../../img/2024/cronograma/cronograma.pdf" target="_blank"><img class="responsive-img" src="../../img/2024/cronograma/cronograma-5.png" alt="Manana"></a>
+            </div>
+        </div>
+
+        <div class="figcontainer" style="align-items: center;">
+            <div class="figure" style="flex: 1; margin-top: 0%;margin-left: 0%;margin-right: 0% align-items: center;">
+            <a href="../../img/2024/cronograma/cronograma.pdf" target="_blank"><img class="responsive-img" src="../../img/2024/cronograma/cronograma-6.png" alt="Manana"></a>
+            </div>
+        </div>
+
+                <br>
+
+            <!--<table align="center">
+              <tr>
+                  <th style="text-align: center;" class="vertical">Actividad</th>
+                  <th style="text-align: center;" class="vertical">Martes 6</th>
+                  <th style="text-align: center;" class="vertical">Miércoles 7</th>
+                  <th style="text-align: center;" class="vertical">Jueves 8</th>
+                  <th style="text-align: center;" class="vertical">Nombre</th>
+                  <th style="text-align: center;" class="vertical">Responsable</th>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">Acreditación</td>
+                  <td style="text-align: center;">8:30 - 9:00</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">Acreditación y bienvenida.</td>
+                  <td style="text-align: center;">Bayes Plurinacional</td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">Grupos 1</td>
+                  <td style="text-align: center;">9:00 - 9:30</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">Conversación: "Historia, motivaciones y proyectos"</td>
+                  <td style="text-align: center;">Grupos de 6 al "azar"</td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">Taller 1</td>
+                  <td style="text-align: center;">9:30 - 11:00</td>
+                  <td style="text-align: center;">11:30 - 13:00</td>
+                  <td style="text-align: center;">14:30 - 16:00</td>
+                  <td style="text-align: center;">Inferencia causal, series temporales y toma de decisiones.</td>
+                  <td style="text-align: center;">Gustavo Landfried</td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">Taller 2</td>
+                  <td style="text-align: center;">15:30 (break) 17:15</td>
+                  <td style="text-align: center;">15:30 (break) 17:15</td>
+                  <td style="text-align: center;">09:00 - 10:30</td>
+                  <td style="text-align: center;">Estadística bayesiana con PyMC</td>
+                  <td style="text-align: center;">Tomás Capretto</td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">Taller Corto 1</td>
+                  <td style="text-align: center;">11:45 - 13:00</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">Modelos de Distribución de especies</td>
+                  <td style="text-align: center;">Camila Neder</td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">Taller Corto 2</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">10:15 - 11:30</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">Inferencia causal en modelos bayesianos: Exploración y aplicación del deconfounder en análisis de datos observacionales</td>
+                  <td style="text-align: center;">Leila Sofía Asplanato</td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">Taller Corto 3</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">11:45 - 13:00</td>
+                  <td style="text-align: center;">A Bayesian clustering dynamic nonparametric analysis of cryptocurrencies:</td>
+                  <td style="text-align: center;">Enrique ter Horst</td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">Charla con código</td>
+                  <td style="text-align: center;">11:00 - 11:45</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">Filtrado inverso de la voz</td>
+                  <td style="text-align: center;">Gabriel Alzamendi</td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">Charla con código</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">9:00 - 9:45</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">Redes Bayesianas con PyAgrum</td>
+                  <td style="text-align: center;">Juan Bekios Calfa</td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">Charla con código</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">10:30 - 11:15</td>
+                  <td style="text-align: center;">Toma de decisiones empresariales</td>
+                  <td style="text-align: center;">Daniel Fortuna</td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">Charla 1</td>
+                  <td style="text-align: center;">14:30 - 14:50</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">Visión computacional bayesiana</td>
+                  <td style="text-align: center;">Sergio Hernández</td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">Charla 2</td>
+                  <td style="text-align: center;">14:50 - 15:10</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">A Bayesian approach for estimating and checking block designs in agricultural experiments</td>
+                  <td style="text-align: center;">Josefina Lacasa</td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">Charla 3</td>
+                  <td style="text-align: center;">15:10 - 15:30</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">Transiciones de fase de primer orden desde el punto de vista de inferencia de Máxima Entropía.</td>
+                  <td style="text-align: center;">Yasmín Navarrete</td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">Charla 4</td>
+                  <td style="text-align: center;">17:15 - 17:35</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">Nueva distribución beta que permitan incorporar conocimiento externo a la muestra</td>
+                  <td style="text-align: center;">Llerzy Torres Ome</td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">Charla 5</td>
+                  <td style="text-align: center;">17:35 - 17:55</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">Rediseño de paisajes agrícolas multifuncionales basado en redes bayesianas para la provisión de servicios ecosistémticos</td>
+                  <td style="text-align: center;">Andrea Goijman</td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">Charla 6</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">14:30 - 14:50</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">Una visión Bayesiana de la probabilidad en mecánica estadística y fundamentos de la termodinámica</td>
+                  <td style="text-align: center;">Sergio Davis</td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">Charla 7</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">14:50 - 15:10</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">Clinical classifiers using signs and symptoms reported by the patient</td>
+                  <td style="text-align: center;">Rafael Tovar Cuevas</td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">Charla 8</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">15:10 - 15:30</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">Why to use Bayesian approach in Actuarial modelling</td>
+                  <td style="text-align: center;">Oxana Krimina</td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">Charla 9</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">17:15 - 17:35</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">Aplicación de Métodos de muestreo Bayesianos para el entendimiento del ciclo sísmico y de la fuente de terremotos.</td>
+                  <td style="text-align: center;">Francisco Ortega-Culaciati</td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">Charla 10</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">17:35 - 17:55</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">Sistema de recomendación SVD Bayesiano</td>
+                  <td style="text-align: center;">Macarena Piaggio</td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">Charlas de póster</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">11:15 - 11:45</td>
+                  <td style="text-align: center;">Charlas rápidas de pósters</td>
+                  <td style="text-align: center;">Varias personas</td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">Almuerzo</td>
+                  <td style="text-align: center;">13:00 - 13:45</td>
+                  <td style="text-align: center;">13:00 - 13:45</td>
+                  <td style="text-align: center;">13:00 - 13:45</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">-</td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">Póster</td>
+                  <td style="text-align: center;">16:00 - 16:15</td>
+                  <td style="text-align: center;">16:00 - 16:15</td>
+                  <td style="text-align: center;">16:00 - 16:15</td>
+                  <td style="text-align: center;">Sesión de pósters</td>
+                  <td style="text-align: center;">Varias personas</td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">Mesa Debate</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">16:15 - 17:45</td>
+                  <td style="text-align: center;">Ecología, Salud y Forense: Epistemología y Ética</td>
+                  <td style="text-align: center;">Fernando Roberto Momo</td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">Grupos 2</td>
+                  <td style="text-align: center;">13:45 - 14:30</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">Ideas: "Por qué construir la comunidad Bayes Plurinacional"</td>
+                  <td style="text-align: center;">Grupos de 6 al "azar"</td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">Grupos 3</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">9:45 - 10:15</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">Ideas: "Para qué construir la comunidad Bayes Plurinacional"</td>
+                  <td style="text-align: center;">Grupos de 6 al "azar"</td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">Grupos 4</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">13:45 - 14:30</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">Ideas: "Cómo construir la comunidad Bayes Plurinacional"</td>
+                  <td style="text-align: center;">Grupos de 6 al "azar"</td>
+              </tr>
+              <tr>
+                  <td style="text-align: center;" class="vertical">ASAMBLEA</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">-</td>
+                  <td style="text-align: center;">13:45 - 14:30</td>
+                  <td style="text-align: center;">Conclusiones: “Acciones a futuro”</td>
+                  <td style="text-align: center;">Asamblea General</td>
+              </tr>
+          </table>-->
+
+                <br>
+
+
+                <h6 class="header col s12 light">
+                El cronograma está sujeto a posibles modificaciones, que serán comunicadas a través de esta página web y nuestras redes sociales.
+
+                <br><br>
+
+                <!--<b>¿Te interesa dar un taller o una charla, organizar una mesa debate o presentar un póster?</b> Completá el siguiente <a href="https://bayesplurinacional.org/link/InscripcionSalta2024.html">formulario</a>.
+                Se aceptarán propuestas hasta el 30 de abril 2024. Por consultas, dirigirse al e-mail bayesplurinacional@gmail.com-->
+
+                <!--<ul>
+                    <li> <b>Taller "Inferencia Causal, Series Temporales y Toma de Decisiones"</b>
+                    </li>
+
+                    <br>
+
+                    <li> <b>Talleres de nivel intermedio "Creencias óptimas"(13 a 16 hs):</b>
+
+                    Talleres de 2 a 3 horas de duración sobre aplicaciones concretas utilizadas en la actualidad en el sector público, privado o en la academia. Serán dictados por personas que emplean actualmente métodos bayesianos en sus trabajos, y se espera que enseñen a replicar parte del proceso de inferencia que habitualmente se usan para la resolución de problemas reales.
+                    </li>
+
+                    <br>
+
+
+                    <li> <b>Exposiciones y debates "Acuerdos intersubjetivos" (17 a 19 hs):</b>
+
+                    Estará organizado en mesas con exposiciones de 15 minutos aproximadamente, a cargo de referentes de diversas disciplinas que trabajan con métodos bayesianos. Habrá también exposición de trabajos en formato póster. Se llevarán a cabo paneles de debate sobre temas de interés socio-ambiental.
+                    </li>
+
+                    <br>
+
+                    <li> <b>Hackatón "Apuestas de vida": </b>
+
+                     Será un problema de inferencia con apuestas e intercambio de recursos que requiere conocimientos de series temporales y toma de decisiones que serán vistos en el taller inicial.
+                    </li>
+                </ul>
+                </h6>
+
+
+                <br>
+
+                <h6>
+                <b>Registrate como Asistente o Expositor</b> completando este <a href="https://bayesplurinacional.org/link/InscripcionSalta2024.html">formulario</a>. Inscripciones de propuestas abiertas hasta el 30 de abril.
+                </h6>-->
+
+
+        </div>
+        </div>
+
+        <p class="bottom-blank"><!--Vertical spacer--></p>
+
+        <!-- BEGIN LOGOS -->
+      <br>
+
+        <div class="figcontainer" style="align-items: center;">
+            <div class="figure" style="flex: 0.18; margin-right: -3%;margin-left: 14%">
+            <img class="responsive-img" src="../../logos/UNSa-extension.jpg" alt="extension">
+            </div>
+
+
+            <div class="figure" style="flex: 0.3; margin-right: 4%;margin-left: 4%; margin-bottom: 4%;">
+            <img class="responsive-img" src="../../logos/UNSa.png" alt="UNSa"></a>
+            </div>
+
+            <div class="figure" style="flex: 0.3; margin-right: 6%;margin-left: -5%">
+            <img class="responsive-img" src="../../logos/UNSa-FCN.png" alt="FCN">
+            </div>
+        </div>
+
+
+        <div class="figcontainer" style="align-items: center;">
+            <div class="figure" style="flex: 0.15; margin-right: -8%;margin-left: 8%">
+            <img class="responsive-img" src="../../logos/pythonNorte.jpg" alt="PythonNorte"></a>
+            </div>
+
+            <div class="figure" style="flex: 0.45; margin-right: 0%;margin-left: 10%">
+            <img class="responsive-img" src="../../logos/khipuX2.jpg" alt="khipu"></a>
+            </div>
+            <div class="figure" style="flex: 0.25; margin-right: 0%;margin-left: 1%">
+            <a href="https://khipu.ai/" target="_blank"><img class="responsive-img" src="../../logos/quipu.png" alt="khipu"></a>
+            </div>
+        </div>
+
+
+        <div class="figcontainer" style="align-items: center;">
+
+            <div class="figure" style="flex: 0.35; margin-top: 6%;margin-left: 2%">
+            <img class="responsive-img" src="../../logos/Metodos2.png" alt="Metodos">
+            </div>
+        </div>
+        <!-- END LOGOS -->
+
+        <!-- BEGIN FOOTER -->
+        <nav class="blue-grey" role="navigation" style="background-color:#1a1a1a; height:10%">
+          <div class="nav-wrapper container">
+              <ul class="social-links">
+                  <div class="footer" >
+                    <li><a href="mailto:bayesplurinacional@gmail.com"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="https://twitter.com/BayesPlural" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <!--<li><a href="https://bayes.club/@BayesDelSur" target="_blank"><i class="fab fa-mastodon"></i></a></li>-->
+                    <!--<li><a href="https://facebook.com/bayesdelsur" target="_blank"><i class="fab fa-facebook"></i></a>-->
+                    <li><a href="https://instagram.com/bayesplurinacional" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <li><a href="https://www.linkedin.com/company/bayes-plurinacional/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <!--<li><a href="https://www.youtube.com/@bayesdelsur" target="_blank"><i class="fab fa-youtube"></i></a></li>-->
+                  </div>
+              </ul>
+          </div>
+      </nav>
+      <!--JavaScript at end of body for optimized loading-->
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="../../js/materialize.js"></script>
+      <script src="../../js/init.js"></script>
+      <script>
+          $('.dropdown-button').dropdown({
+              inDuration: 300,
+              outDuration: 225,
+              constrain_width: false, // Does not change width of dropdown to that of the activator
+              gutter: 0, // Spacing from edge
+              alignment: 'left' // Displays dropdown with edge aligned to the left of button
+              }
+          );
+      </script>
+      <!-- END FOOTER -->
+    </body>
+  </html>
