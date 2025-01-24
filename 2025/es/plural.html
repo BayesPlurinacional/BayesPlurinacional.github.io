@@ -56,8 +56,9 @@
     <ul id="dropdown3" class="dropdown-content">
         <li><a href=""></a></li>
         <li><a href="../es/ciudad.html">Ciudad</a></li>
-        <!--<li><a href="../es/disertantes.html">Disertantes</a></li>-->
+        <li><a href="../es/disertantes.html">Disertantes</a></li>
         <li><a href="../es/cronograma.html">Cronograma</a></li>
+        <li><a href="../es/poster.html">Poster</a></li>
     </ul>
 
     <ul id="dropdown4" class="dropdown-content">
@@ -99,6 +100,7 @@
             <li><a href="../es/ciudad.html">&#x2022; Ciudad</a></li>
             <li><a href="../es/cronograma.html">&#x2022; Cronograma</a></li>
             <li><a href="../es/disertantes.html">&#x2022; Disertantes</a></li>
+            <li><a href="../es/poster.html">&#x2022; Posters</a></li>
             <li><a href="">VIRTUAL:</a></li>
             <li><a href="../es/seminario.html">&#x2022; Seminario</a></li>
             <!--<li><a href="../es/hackaton.html">&#x2022; Hackatón</a></li>-->
@@ -133,145 +135,33 @@
             <div class="section" style="text-align: justify;">
 
                 <h4 class="header col s12 light">
-                La Inteligencia es Plural
+                Asociación Bayes Plurinacional
                 <h4>
 
                 <h6 class="header col s12 light">
 
-                La ciencia tiene pretensión de alcanzar verdades, proposiciones que valgan para todas las personas más allá de sus subjetividades individuales.
-                Las ciencias formales validan estas proposiciones derivando teoremas en sistemas axiomáticos cerrados sin incertidumbre.
-                Por el contrario, las ciencias empíricas (basadas en datos) deben validar sus proposiciones en sistemas naturales abiertos que contienen regiones ocultas a nuestra percepción.
-                ¿Es posible determinar el "valor de verdad" de una proposición de la cual tenemos incertidumbre respecto de su estado real?
-                Al menos sabemos el significado de no mentir(se): no asegurar o afirmar más de lo que se sabe, sin ocultar todo aquello que sí se sabe.
-                En términos matemáticos esto se define como maximizar incertidumbre (o entropía), dada la información disponible (o restricciones), lo que se conoce como MaxEnt [1].
+
+                <b>El objetivo de la Asociación <em>Bayes Plurinacional</em> es promover los Métodos Bayesianos en la América Plurinacional y los pueblos del Sur Global en todas las ciencias empíricas (basada en datos), desde la física y las ciencias sociales, hasta la inteligencia artificial y las ciencias de la salud</b>.
 
                 <br><br>
 
-                Las distribuciones que cumplen con el principio de no mentir tienen la propiedad de alinear intuitivamente nuestras subjetividades individuales.
-                Por ejemplo, si sabemos que hay un regalo oculto detrás de una de tres cajas idénticas, naturalmente evitaremos asignar toda nuestra creencia en una sola de ellas (pues no tenemos certeza absoluta de la posición del regalo) y evitaremos también asignar mayor creencia a una caja que al resto (pues tampoco tenemos información para preferir una respecto de otra).
-                Intuitivamente todas las personas, cualquiera sea su cultura y su ideología, admite finalmente que la única distribución de creencias posible dada la información disponible es la que divide la creencia en partes iguales entre las tres cajas (maximizando incertidumbre) sin asignar creencia por fuera de ellas (dada la información disponible).
-
-                <br><br>
-
-                El principio de no mentir, presente en todas las culturas alrededor del mundo, precede a la ciencia moderna y constituye la base sobre la cual las ciencias empíricas alcanzan verdades (acuerdos intersubjetivos) en contextos de incertidumbre.
-                Las <em>reglas de la probabilidad</em> propuestas a finales del siglo 18 y adoptadas desde entonces como sistema de razonamiento en todas las ciencias con datos, codifican este principio.
-                Ellas son conceptualmente intuitivas.
-                La regla del producto (o probabilidad condicional) actualiza las distribuciones de creencias preservando la creencia previa (información a priori) que sigue siendo compatible con la nueva información (dato), lo que maximiza la incertidumbre dada la información disponible.
-                Y la regla de la suma (o probabilidad marginal) predice eventos aún no observados con la contribución de todas las hipótesis alternativas (mutuamente excluyentes), integrando todas las predicciones individuales.
-
-                <br><br>
-
-                Nuestros argumentos causales cotidianos, al igual que las teorías o los modelos científicos, pueden ser vistos como hipótesis de nivel superior dado que constituyen sistemas de hipótesis individuales mutuamente excluyentes (las variables) que interactúan entre sí mediante relaciones entre causas y efectos (las probabilidades condicionales).
-                Las teorías causales correctas, aquellas que predicen los datos con la misma probabilidad con que son generados por la realidad causal subyacente, son las hipótesis de nivel superior (agregaciones de hipótesis individuales) que producen la menor cantidad de sorpresa.
-                No existe modelo de inteligencia artificial, por más complejo que sea, que pueda mejorar su desempeño.
-                Hasta ahora, no ha surgido un nuevo sistema de razonamiento.
+                Las <em>reglas de la probabilidad</em>, propuestas a finales del siglo 18 y adoptadas desde entonces como sistema de razonamiento en todas las ciencias con datos, permiten alcanzar verdades (maximizar incertidumbre dada la información disponible) a medida que se adquieren nuevos datos.
+                Las reglas de razonamiento son conceptualmente intuitivas.
+                La regla del producto (o probabilidad condicional) actualiza las distribuciones de creencias preservando la creencia previa (información a priori) que sigue siendo compatible con la nueva información (dato).
+                Y la regla de la suma (o probabilidad marginal) predice eventos aún no observados con la contribución de todas las hipótesis alternativas (mutuamente excluyentes).
 
                 <br><br>
 
                 Si bien en todo este tiempo no se ha propuesto un sistema de razonamiento para contextos de incertidumbre mejor en términos prácticos, la aplicación estricta de las reglas de la probabilidad (o enfoque bayesiano) se ha visto limitada históricamente debido al costo computacional que se requiere para la evaluación de todo el espacio de hipótesis.
-                Si bien hasta finales del siglo 19 se resolvieron una gran cantidad de modelos de forma completa, especialmente en física estadística, durante el siglo 20 comienzan a proponerse criterios que, para evitar el costo computacional, seleccionan arbitrariamente una única hipótesis del espacio.
-                <!--Para cumplir con el principio de no mentir, sin embargo, nos vemos en la necesidad de creer al mismo tiempo en hipótesis mutuamente contradictorias (A y no A).-->
-                Hubo que esperar hasta las vísperas del siglo 21 para que comenzara a ser posible, de forma general, computar las distribuciones de creencias óptimas dada la información disponible en todos los campos de las ciencia.
+                Por este motivo, durante el siglo 20 se propusieron una gran cantidad de criterios que evitan el costo computacional seleccionando una única hipótesis del espacio.
+                Hubo que esperar hasta las vísperas del siglo 21 para que comenzara a ser posible, de forma general, aproximar las distribuciones de creencias óptimas dada la información disponible en todos los campos de las ciencias.
 
                 <br><br>
 
-                La naturaleza multiplicativa de los procesos de evaluación de hipótesis y de selección de formas de vida es la responsable del aprendizaje tanto en probabilidad como en evolución.
-                Este punto ya fue señalado por John L Kelly en su artículo "A new interpretation of information rate" [2] aprobado por su colega Claude Shannon.
-                "<em>The cost function approach [..] can actually be used to analyze nearly any branch of human endeavor. [..] The point here is that an arbitrary combination of a statistical transducer (i.e., a channel) and a cost function does not necessarily constitute a communication system. What can be done, however, is to take some real-life situation which seems to possess the essential features of a communication problem, and to analyze it without the introduction of an arbitrary cost function. The situation which will be chosen here is one in which a gambler uses knowledge of the received symbols of a communication channel in order to make profitable bets on the transmitted symbols.</em>"
-
-                <br><br>
-
-                Los procesos de evaluación de hipótesis alternativas bajo la aplicación estricta de las reglas de la probabilidad sigue un proceso multiplicativo, una secuencia de predicciones.
-                La creencia previa va siendo filtrada mediante la sorpresa, única fuente de información.
-                Si la predicción que hizo una hipótesis del dato observado es 1 (sorpresa nula), entonces preservamos toda la creencia previa en esa hipótesis.
-                Si la predicción del dato observado es 0 (sorpresa total), entonces la hipótesis se hace falsa para siempre.
-                Del mismo modo, los procesos evolutivos de selección de las formas de vida son también de naturaleza multiplicativa, como secuencias de tasas de supervivencia y reproducción.
-                De hecho, el modelo estándar de evolución (<em>replicator dynamic</em> [3]) es estructuralmente equivalente al teorema de Bayes [4].
-                Con que haya un único cero en la secuencia, la forma de vida se extingue para siempre.
-
-                <br><br>
-
-                Debido a que bajo los procesos multiplicativos los impactos de las pérdidas son más fuertes que los de las ganancias, las variantes que florecen son hipótesis o formas de vida que reducen las fluctuaciones por diversificación individual, cooperación y especialización.
-                <!--(distribuir creencias en la misma proporción que la frecuencia)
-                (predecir con la contribución de todas las hipótesis)-->
-                Esto se evidencia en la evolución de nuestra propia vida, que depende de al menos 4 niveles de cooperación con especialización sin los cuales no podríamos sobrevivir: la célula con la mitocondria, el organismo multicelular, la sociedad y el ecosistema [5].
-                En probabilidad las hipótesis elementales se agrupan para formar variables, las variables se relacionan entre sí para formar modelos causales, y los sistemas de modelos forman teorías [6].
-                En la historia del ser humano, la transición cultural tuvo efectos profundamente positivos: antes de la trasmisión del conocimiento entre individuos estuvimos en grave peligro de extinción; luego fuimos capaces de ocupar todos los nichos ecológicos de la tierra [7, 8].
-
-                <br><br>
-
-                La ventaja de la pluralidad no es teórica sino práctica.
-                Cuando en estos sistemas se produce una ruptura de la pluralidad se aparecen efectos negativos evidentes.
-                En probabilidad, seleccionar arbitrariamente una única hipótesis del espacio produce como consecuencia lo que se conoce como <em>overfitting</em> [9].
-                En evolución, la diversidad genética es uno de los fundamentos para la adaptación de las especies y su pérdida tiene consecuencias negativas conocidas como <em>inbreeding depression</em>.
-                En la historia del ser humano, la masiva pérdida de la diversidad cultural provocada por la imposición de un único tipo de sociedad durante la colonial-modernidad ha producido consecuencias ambientales cada vez más evidentes [10,11].
-
-                <br><br>
-
-                A pesar de que las redes neuronales profundas son entrenadas sin aplicar estrictamente las reglas de la probabilidad, seleccionando un único parámetro del espacio de parámetros posibles, en los últimas años se han logrado desarrollar algoritmos con capacidades que, por primera vez, pueden ser consideradas de inteligencia artificial.
-                Esto ha sido logrado solo cuando se crearon redes neuronales realmente grandes, del orden de los miles de millones de parámetros, entrenadas sobre enormes conjuntos de datos.
-                Las consecuencias negativas de seleccionar una única hipótesis (overfitting) pudieron ser compensadas a través de un tipo de pluralidad similar a la empleada por la vida en la evolución, basada en la coexistencia de una enorme cantidad de unidades individuales (neuronas), produciendo la emergencia de la inteligencia (<em>double descent</em>) [12].
-
-                <br><br>
-
-                A pesar de todos los avances, la ciencia metropolitana sigue siendo incapaz de compensar la pérdida de los conocimientos milenarios producidos durante la colonial-modernidad, y la crisis ecológica actual no deja de profundizarse.
-                Sin embargo, la experiencia acumulada por las comunidades más diversas del mundo ha llevado, de manera independiente, a una obligación universal de dar y recibir, y al desarrollo de tecnologías de reciprocidad que reactivan los vínculos comunitarios a través de ritos de intercambio (festivos o coercitivos).
-                De forma similar, las instituciones que han mostrado capacidad para administrar los bienes comunes son instituciones comunitarias locales que regulan de forma directa los ciclos de intercambio con los sistemas ecológicos [13].
-                El reemplazo repentino de estos sistemas culturales por instituciones externas, estatales o de mercado, ha producido devastadoras consecuencias ecológicas [14].
-
-                <br><br>
-
-                La palabra <b>Plurinacional</b> representa en América la coexistencia de nuestras diversidades culturales locales.
-                La palabra <b>Bayes</b> representa el sistema de razonamiento que permite alcanzar acuerdos intersubjetivos en contextos de incertidumbre mediante el cumplimiento del principio de no mentir, que nos obliga a creer en hipótesis mutuamente contradictorias rechazando verdades absolutas que no estén justificadas.
-                La <b>Inteligencia</b> no es más que la capacidad de las formas de vida para sobrevivir y reproducirse a lo largo de la evolución y continuar habitando todavía hoy en la tierra.
-                Destruir la vida en nombre de verdades que se pretenden absolutas o de inteligencias que se pretenden superiores es la forma más alta de ignorancia.
-                Así como toda inteligencia emerge de la pluralidad, las sociedades se adaptan a la vida mediante la coexistencia sus diversidades locales.
-
-                <br><br>
-
-                <b>El objetivo de Bayes Plurinacional es promover la Inteligencia Bayesiana en la América Plurinacional y los pueblos del Sur Global.</b>
-
-
+                <b>Para cumplir con su objetivo <em>Bayes Plurinacional</em> organiza anualmente eventos interdisciplinarios, presenciales y/o virtuales, enfocados en los aspectos metodológicos requeridos para evaluar correctamente las hipótesis alternativas.</b>
 
 
              </h6>
-
-
-
-                <h5 class="header col s12 light">
-                Referencias:
-                </h5>
-                [1] Jaynes ET. Information theory and statistical mechanics. Physical review. 1957;106(4):620.
-                <br>
-                [2] Kelly, JL. A new interpretation of information rate. The Bell System Technical Journal. 1956.
-                <br>
-                <!--[2] Laplace, PS. Théorie analytique des probabilités. Courcier. 1812.
-                <br>-->
-                [3] Taylor PD, Jonker LB. Evolutionary stable strategies and game dynamics. Mathematical biosciences. 1978;40(1-2):145–156.
-                <br>
-                [4] Czégel D, Giaffar H, Tenenbaum JB, Szathmáry E. Bayes and Darwin: How replicator populations implement Bayesian computations. BioEssays. 2022; p. 2100255.
-                <br>
-                [5] Maynard Smith J, Szathmary E. The Major Transitions in Evolution. New York: Oxford University Press; 1995.
-                <br>
-                [6] Winn J. Causality with gates. In: Artificial Intelligence and Statistics. Proceedings of Machine Learning Research; 2012. p. 1314–1322.
-                <br>
-                [7] Hrdy SB, Burkart JM. The emergence of emotionally modern humans: implications for language and learning. Philosophical Transactions of the Royal Society B. 2020;375(1803):20190499.
-                <br>
-                [8] Boyd R, Richerson PJ, Henrich J. The cultural niche: Why social learning is essential for human adaptation. 2011;108(2):10918–10925.
-                <br>
-                [9] Bishop CM. Pattern recognition and machine learning. Springer. 2006.
-                <br>
-                [10] Dussel E. Sistema mundo y transmodernidad. In: Modernidades coloniales. El Colegio de México México DF; 2004. p. 201–226.
-                <br>
-                [11] Segato, RL. La crítica de la colonialidad en ocho ensayos y una antropología por demanda. Prometeo (2013).
-                <br>
-                [12] Bishop, CM and Bishop, H. Deep learning: Foundations and concepts. Springer Nature. 2023.
-                <br>
-                [13] Ostrom E. Governing the commons: The evolution of institutions for collective action. Cambridge university press. 1990.
-                <br>
-                [14] Ostrom E. Beyond markets and states: polycentric governance of complex economic systems. American economic review. 2010.
-
-
                 </div>
         </div>
 
