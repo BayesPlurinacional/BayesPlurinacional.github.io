@@ -3,6 +3,7 @@
 /* ------------------------------ */
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&family=Manrope:wght@400;600&display=swap');
 
+
 :root {
     /* 🎨 PALETA DE COLORES */
     --fondo-claro: #F8F9FA;
@@ -46,24 +47,43 @@ h1, h2, h3, h4, h5, h6 {
 /* ------------------------------ */
 /* 📌 NAVBAR */
 /* ------------------------------ */
+
+/* Estilos Generales */
 .navbar {
-    background-color: var(--fondo-claro);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--fondo-oscuro);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.navbar-brand img {
-    max-height: 50px;
+.navbar .nav-link {
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
 }
 
-.navbar-nav .nav-link {
-    font-weight: 600;
-    color: var(--titulo-encabezado);
-    transition: color 0.3s;
+.navbar .nav-link:hover, .navbar .nav-link:focus {
+  color: var(--elementos-interactivos);
 }
 
-.navbar-nav .nav-link:hover {
-    color: var(--elementos-interactivos);
+.navbar-toggler {
+  border: none;
 }
+
+.dropdown-menu {
+  background-color: var(--fondo-claro);
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu .dropdown-item {
+  color: var(--titulo-encabezado);
+  font-weight: 500;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: var(--elementos-interactivos);
+  color: white;
+}
+
 
 /* ------------------------------ */
 /* 📌 BOTONES */
@@ -135,20 +155,3 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
 }
 
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 10px;
-}
-
-.social-icons a {
-  font-size: 24px;
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-}
-
-.social-icons a:hover {
-  color: var(--boton-secundario);
-}
