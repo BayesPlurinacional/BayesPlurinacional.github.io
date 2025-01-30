@@ -5,7 +5,7 @@
 
 :root {
     /* 🎨 PALETA DE COLORES */
-    --fondo-claro: #E0E0E0;
+    --fondo-claro: #F8F9FA;
     --titulo-encabezado: #2A2D6F;
     --elementos-interactivos: #0096D6;
     --resaltado-secundario: #702963;
@@ -93,24 +93,4 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-secundario:hover {
     background: var(--degradado-ciencia);
-}
-
-/* ------------------------------ */
-/* 📌 FOOTER */
-/* ------------------------------ */
-footer {
-    background-color: var(--titulo-encabezado);
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-footer a:hover {
-    color: var(--boton-secundario);
 }
