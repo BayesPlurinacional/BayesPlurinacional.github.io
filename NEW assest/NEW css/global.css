@@ -1,0 +1,45 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #0056b3;
+  --background-color: #f8f9fa;
+  --text-color: #343a40;
+  --white: #ffffff;
+}
+
+/* General */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+nav {
+  background-color: var(--primary-color);
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--white);
+  padding: 10px 15px;
+}
+
+nav ul li a:hover {
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+}
