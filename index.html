@@ -1,1 +1,66 @@
-<meta http-equiv="refresh" content="0; url=https://bayesplurinacional.github.io/2025/es/index.html">
+<!-- <meta http-equiv="refresh" content="0; url=https://bayesplurinacional.github.io/2025/es/index.html">
+ -->
+ <!DOCTYPE html>
+ <html lang="es">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Bayes Plurinacional</title>
+     <style>
+         body {
+             font-family: Arial, sans-serif;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+             height: 100vh;
+             text-align: center;
+         }
+         .btn-container {
+             margin-top: 20px;
+         }
+         .btn {
+             padding: 10px 20px;
+             margin: 5px;
+             border: none;
+             border-radius: 5px;
+             background-color: #007bff;
+             color: white;
+             cursor: pointer;
+             font-size: 16px;
+         }
+         .btn:hover {
+             background-color: #0056b3;
+         }
+     </style>
+     <script>
+         (function() {
+             let lang = navigator.language || navigator.userLanguage; // Obtiene el idioma del navegador
+             if (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1") {
+                 if (lang.startsWith("es")) {
+                     window.location.href = "https://bayesplurinacional.github.io/2025/es/index.html";
+                 } else {
+                     window.location.href = "https://bayesplurinacional.github.io/2025/en/index.html";
+                 }
+             }
+         })();
+ 
+         function redirectTo(lang) {
+             if (lang === "es") {
+                 window.location.href = "https://bayesplurinacional.github.io/2025/es/index.html";
+             } else {
+                 window.location.href = "https://bayesplurinacional.github.io/2025/en/index.html";
+             }
+         }
+     </script>
+ </head>
+ <body>
+     <h1>Bienvenido a Bayes Plurinacional</h1>
+     <p>Selecciona tu idioma:</p>
+     <div class="btn-container">
+         <button class="btn" onclick="redirectTo('es')">🌎 Español</button>
+         <button class="btn" onclick="redirectTo('en')">🌍 English</button>
+     </div>
+ </body>
+ </html>
+ 
