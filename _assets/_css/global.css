@@ -94,3 +94,61 @@ h1, h2, h3, h4, h5, h6 {
 .btn-secundario:hover {
     background: var(--degradado-ciencia);
 }
+
+/* ------------------------------ */
+.footer {
+  background-color: var(--fondo-oscuro);
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer h5 {
+  font-family: 'Jost', sans-serif;
+  color: var(--fondo-claro);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 5px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  color: var(--boton-secundario);
+}
+
+.footer-bottom {
+  background-color: var(--fondo-oscuro);
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: var(--boton-secundario);
+}
