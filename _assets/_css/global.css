@@ -1,0 +1,116 @@
+/* ------------------------------ */
+/* 📌 FUENTES - Jost y Manrope */
+/* ------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&family=Manrope:wght@400;600&display=swap');
+
+:root {
+    /* 🎨 PALETA DE COLORES */
+    --fondo-claro: #E0E0E0;
+    --titulo-encabezado: #2A2D6F;
+    --elementos-interactivos: #0096D6;
+    --resaltado-secundario: #702963;
+    --boton-secundario: #E67E22;
+    --boton-principal: #D13438;
+
+    /* 🔥 DEGRADADOS */
+    --degradado-innovacion: linear-gradient(90deg, #0096D6, #2A2D6F);
+    --degradado-ciencia: linear-gradient(90deg, #702963, #E67E22);
+    --degradado-accion: linear-gradient(90deg, #D13438, #E67E22);
+
+    /* 🌙 MODO OSCURO (opcional, se puede activar con clases) */
+    --fondo-oscuro: #1A1A1A;
+    --texto-oscuro: #E0E0E0;
+}
+
+/* ------------------------------ */
+/* 📌 RESETEO Y BASE GENERAL */
+/* ------------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--fondo-claro);
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Jost', sans-serif;
+    color: var(--titulo-encabezado);
+}
+
+/* ------------------------------ */
+/* 📌 NAVBAR */
+/* ------------------------------ */
+.navbar {
+    background-color: var(--fondo-claro);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    max-height: 50px;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 600;
+    color: var(--titulo-encabezado);
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--elementos-interactivos);
+}
+
+/* ------------------------------ */
+/* 📌 BOTONES */
+/* ------------------------------ */
+.btn-principal {
+    background: var(--boton-principal);
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.btn-principal:hover {
+    background: var(--degradado-accion);
+}
+
+.btn-secundario {
+    background: var(--boton-secundario);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.btn-secundario:hover {
+    background: var(--degradado-ciencia);
+}
+
+/* ------------------------------ */
+/* 📌 FOOTER */
+/* ------------------------------ */
+footer {
+    background-color: var(--titulo-encabezado);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: var(--boton-secundario);
+}

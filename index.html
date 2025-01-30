@@ -1,66 +1,56 @@
-<!-- <meta http-equiv="refresh" content="0; url=https://bayesplurinacional.github.io/2025/es/index.html">
- -->
- <!DOCTYPE html>
- <html lang="es">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Bayes Plurinacional</title>
-     <style>
-         body {
-             font-family: Arial, sans-serif;
-             display: flex;
-             flex-direction: column;
-             justify-content: center;
-             align-items: center;
-             height: 100vh;
-             text-align: center;
-         }
-         .btn-container {
-             margin-top: 20px;
-         }
-         .btn {
-             padding: 10px 20px;
-             margin: 5px;
-             border: none;
-             border-radius: 5px;
-             background-color: #007bff;
-             color: white;
-             cursor: pointer;
-             font-size: 16px;
-         }
-         .btn:hover {
-             background-color: #0056b3;
-         }
-     </style>
-     <script>
-         (function() {
-             let lang = navigator.language || navigator.userLanguage; // Obtiene el idioma del navegador
-             if (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1") {
-                 if (lang.startsWith("es")) {
-                     window.location.href = "https://bayesplurinacional.github.io/2025/es/index.html";
-                 } else {
-                     window.location.href = "https://bayesplurinacional.github.io/2025/en/index.html";
-                 }
-             }
-         })();
- 
-         function redirectTo(lang) {
-             if (lang === "es") {
-                 window.location.href = "https://bayesplurinacional.github.io/2025/es/index.html";
-             } else {
-                 window.location.href = "https://bayesplurinacional.github.io/2025/en/index.html";
-             }
-         }
-     </script>
- </head>
- <body>
-     <h1>Bienvenido a Bayes Plurinacional</h1>
-     <p>Selecciona tu idioma:</p>
-     <div class="btn-container">
-         <button class="btn" onclick="redirectTo('es')">🌎 Español</button>
-         <button class="btn" onclick="redirectTo('en')">🌍 English</button>
-     </div>
- </body>
- </html>
- 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bayes Plurinacional - Un espacio de aprendizaje y comunidad sobre estadística bayesiana.">
+    <meta name="author" content="Bayes Plurinacional">
+    <meta name="keywords" content="Bayes, Estadística, Machine Learning, Ciencia de Datos, Inteligencia Artificial">
+    <meta property="og:title" content="Bayes Plurinacional">
+    <meta property="og:description" content="Explora la estadística bayesiana en un entorno colaborativo y multidisciplinario.">
+    <meta property="og:image" content="/_assets/logos/BayesPlurinacional.png">
+    <meta property="og:url" content="https://bayesplurinacional.github.io">
+    <meta property="og:type" content="website">
+
+    <title>Bayes Plurinacional</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Estilos Globales -->
+    <link rel="stylesheet" href="/_assets/css/global.css">
+
+    <script>
+        (function() {
+            let lang = navigator.language || navigator.userLanguage;
+            if (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1") {
+                if (lang.startsWith("es")) {
+                    window.location.href = "/_pages/es/2025/index.html";
+                } else {
+                    window.location.href = "/_pages/en/2025/index.html";
+                }
+            }
+        })();
+
+        function redirectTo(lang) {
+            window.location.href = `/_pages/${lang}/2025/index.html`;
+        }
+    </script>
+</head>
+<body class="d-flex align-items-center justify-content-center vh-100">
+    <div class="text-center">
+        <h1 class="mb-4">Bienvenido a Bayes Plurinacional</h1>
+        <p>Selecciona tu idioma:</p>
+        <div class="btn-container mt-3">
+            <button class="btn btn-primary btn-lg me-3" onclick="redirectTo('es')">🌎 Español</button>
+            <button class="btn btn-danger btn-lg" onclick="redirectTo('en')">🌍 English</button>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
