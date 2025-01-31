@@ -15,14 +15,97 @@
             "nombre": "Secretaría de Ciencia y Tecnología",
             "url": "http://turnos.sde.gob.ar/secitec/",
             "imagen": "/logos/secretariaSE.png"
+          },
+          {
+            "nombre": "UNR",
+            "url": "https://www.fcecon.unr.edu.ar/seccion/facultad/escuela-de-estadistica",
+            "imagen": "/logos/logo-UNR.jpg"
+          },
+          {
+            "nombre": "CRC",
+            "url": "https://www.routledge.com/",
+            "imagen": "/logos/CRC.jpg"
+          },
+          {
+            "nombre": "Python Norte",
+            "url": "https://github.com/PythonNorte",
+            "imagen": "logos/pythonNorte.jpg"
+          },
+          {
+            "nombre": "Red Latinoamericana para la invesstigación y el desarrollo de políticas públicas",
+            "imagen": "/logos/redPublicas.jpg"
+          },
+          {
+            "nombre": "Universidad Nacional de Luján",
+            "imagen": "/logos/lujan.jpg"
+          },
+          {
+            "nombre": "SAE",
+            "url": "https://www.s-a-e.org.ar/",
+            "imagen": "logos/sae.jpeg"
+          },
+          {
+            "nombre": "LMB",
+            "url": "https://metodosbayesianos.github.io/",
+            "imagen": "https://raw.githubusercontent.com/MetodosBayesianos/static/3f0ec047b6425164c18ba2f35333a15574de5975/logos/LMB.svg"
+          },
+          {
+            "nombre":"Fundación Sadosky",
+            "url": "https://www.routledge.com/",
+            "imagen": "/logos/sadosky.jpg"
           }
         ],
         "Musica": [
-          {
+            {
             "nombre": "El Charco",
             "url": "https://stream-21.zeno.fm/u1nngtkfp9duv",
             "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/charco.jpg"
-          }
+            },
+            {
+            "nombre": "Tame", 
+            "url": "http://192.99.203.81:8704/stream",
+            "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/tame.jpg"
+            },
+            {
+            "nombre": "Santo Domingo",
+            "url": "https://play.streamingcast.live/web/bssradio",
+            "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/santoDomingo.jpg"
+            },
+            {
+            "nombre": "Llamellín",
+            "url": "https://stream-37.zeno.fm/unde9yxcyzzuv",
+            "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/llamellin.jpg"
+            },
+            {
+            "nombre": "Hillsborough",
+            "url": "http://74.122.88.5:3333/;",
+            "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/hillsborough.jpg"
+            },
+            {
+            "nombre": "Uyuni",
+            "url": "https://emiteradio.com/proxy/uyuni?mp=/stream",
+            "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/uyuni.jpg"
+            },
+            {
+            "nombre": "Córdoba",
+            "url": "http://radio02.ferozo.com:9000/stream/;",
+            "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/cordoba.jpg"
+            },
+            {
+            "nombre": "El Alto",
+            "url": "https://emiteradio.com/proxy/atipiriradio?mp=/stream",
+            "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/elAlto.jpg"
+            },
+            {
+            "nombre": "Corrientes",
+            "url": "http://streamingraddios.online:10354/;",
+            "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/corrientes.jpg"
+            },
+            {
+            "nombre": "Valledupar",
+            "url": "https://s1-ssl.vpsradio.com/radio/8036/radio.acc",
+            "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/valledupar.jpg"
+            }
         ],
         "Sobre el evento": {
           "Descripcion": "/_pages/es/evento/descripcion_2023.html",
@@ -130,5 +213,13 @@
         }
       }
     }
+  },
+  "Redes": {
+    "Correo Electrónico": "bayesplurinacional@gmail.com",
+    "Grupo de mails": "https://groups.google.com/g/bayes-plurinacional",
+    "Discord": "https://discord.gg/2dsAjBBFG3",
+    "WhatsApp": "https://chat.whatsapp.com/B4wjB4W68wBBcKx3Q16Oxc",
+    "Twitter": "https://twitter.com/BayesPlurinacio",
+    "Linkedin": "https://www.linkedin.com/company/bayes-plurinacional/"
   }
 }
