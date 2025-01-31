@@ -1,0 +1,134 @@
+{
+  "Eventos": {
+    "Presencial": {
+      "2023": {
+        "Año": 2023,
+        "Fecha": "10-12 de Octubre",
+        "Lugar": "Buenos Aires, Argentina",
+        "Auspiciantes": [
+          {
+            "nombre": "NODO Tecnológico",
+            "url": "https://nodosde.gob.ar/",
+            "imagen": "/logos/NODOSdE.png"
+          },
+          {
+            "nombre": "Secretaría de Ciencia y Tecnología",
+            "url": "http://turnos.sde.gob.ar/secitec/",
+            "imagen": "/logos/secretariaSE.png"
+          }
+        ],
+        "Musica": [
+          {
+            "nombre": "El Charco",
+            "url": "https://stream-21.zeno.fm/u1nngtkfp9duv",
+            "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/charco.jpg"
+          }
+        ],
+        "Sobre el evento": {
+          "Descripcion": "/_pages/es/evento/descripcion_2023.html",
+          "Ciudad": "/_pages/es/evento/ciudad_2023.html",
+          "Cronograma": "/_pages/es/evento/cronograma_2023.html"
+        }
+      },
+      "2024": {
+        "Año": 2024,
+        "Fecha": "A confirmar",
+        "Lugar": "A confirmar",
+        "Auspiciantes": [
+          {
+            "nombre": "Universidad Nacional de Salta",
+            "imagen": "/logos/UNSa.png"
+          },
+          {
+            "nombre": "Python Norte",
+            "url": "https://github.com/PythonNorte",
+            "imagen": "/logos/pythonNorte.jpg"
+          },
+          {
+            "nombre": "Khipu",
+            "url": "https://khipu.ai/",
+            "imagen": "/logos/quipu.png"
+          },
+          {
+            "nombre": "Comunica Natural",
+            "imagen": "/logos/ComunicaNatural.png"
+          }
+        ],
+        "Musica": [
+          {
+            "nombre": "Radio Izarra",
+            "url": "https://dattavolt.com/8030/stream",
+            "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/acobamba.jpg"
+          },
+          {
+            "nombre": "Rádio Nação Missioneira",
+            "url": "https://servidor27.brlogic.com:7140/live",
+            "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/SantoAngelo.jpg"
+          },
+          {
+            "nombre": "El Charco",
+            "url": "https://stream-21.zeno.fm/u1nngtkfp9duv",
+            "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/charco.jpg"
+          }
+        ],
+        "Organizadores": {
+          "Director General": "Gustavo Landfried",
+          "Coordinadora 2024": "Camila Neder",
+          "Equipos": {
+            "Comunicación": {
+              "Responsables": ["Camila Neder", "Ana Veronica Scotta"],
+              "Colaboradores": ["Victor Notar Francesco", "Noelia Arguelles", "Luiggina Cappellotto", "Yasmín Navarrete"]
+            },
+            "Tesorería e Institucional": {
+              "Responsables": ["Andrea Goijman", "Luciano Moffatt"],
+              "Colaboradores": ["Ariel Salgado", "Gimena Serrano", "Rita Salvatierra"]
+            },
+            "Evento presencial": {
+              "Responsables": ["Ariel Silvio Norberto Ramos", "Gustavo Landfried"],
+              "Colaboradores": ["Andrea Goijman", "Ariel Salgado", "Camila Neder", "Luciano Moffatt", "Ana Verónica Scotta"]
+            },
+            "Eventos virtuales": {
+              "Responsables": ["Ariel Salgado", "Luciano Moffatt"],
+              "Colaboradores": ["Ana Verónica Scotta", "Camila Neder", "Noelia Arguelles", "Matias Leizerovich"]
+            },
+            "Técnica": {
+              "Responsables": ["Macarena Piaggio", "Gustavo Landfried"]
+            }
+          },
+          "Asesores Científicos": [
+            {
+              "nombre": "Sergio Davis",
+              "país": "Chile",
+              "responsabilidad": "Responsable Principal"
+            },
+            {
+              "nombre": "Gabriel Alzamendi",
+              "país": "Argentina",
+              "responsabilidad": "Responsable Suplente"
+            },
+            {
+              "nombre": "Rafael Tovar",
+              "país": "Colombia",
+              "responsabilidad": "Asesor"
+            },
+            {
+              "nombre": "Lucía Morán Figueredo",
+              "país": "Paraguay",
+              "responsabilidad": "Asesor"
+            },
+            {
+              "nombre": "Francisco Linares Cedeño",
+              "país": "México",
+              "responsabilidad": "Asesor"
+            }
+          ]
+        },
+        "Sobre el evento": {
+          "Descripcion": "/_pages/es/evento/descripcion_2024.html",
+          "Ciudad": "/_pages/es/evento/ciudad_2024.html",
+          "Cronograma": "/_pages/es/evento/cronograma_2024.html"
+        }
+      }
+    }
+  }
+}
