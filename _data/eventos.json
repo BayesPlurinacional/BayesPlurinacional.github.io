@@ -4,7 +4,7 @@
       "2023": {
         "Año": 2023,
         "Fecha": "10-12 de Octubre",
-        "Lugar": "Buenos Aires, Argentina",
+        "Lugar": "Nodo Tecnológico ubicado dentro del Parque Industrial La Isla, en la ciudad de La Banda, Santiago del Estero, Argentina",
         "Auspiciantes": [
           {
             "nombre": "NODO Tecnológico",
@@ -110,22 +110,37 @@
         "Sobre el evento": {
           "Descripcion": "/_pages/es/evento/descripcion_2023.html",
           "Ciudad": "/_pages/es/evento/ciudad_2023.html",
-          "Cronograma": "/_pages/es/evento/cronograma_2023.html"
+          "Cronograma": "/_pages/es/evento/cronograma_2023.html",
+          "Charlas": "/_pages/es/evento/charlas_2023.html",
+          "Talleres": "/_pages/es/evento/talleres_2023.html",
+          "Becas": "/_pages/es/evento/becas_2023.html"
         }
       },
       "2024": {
         "Año": 2024,
-        "Fecha": "A confirmar",
-        "Lugar": "A confirmar",
+        "Fecha": "del 6 al 10 de Agosto",
+        "Lugar": "Universidad Nacional de Salta, Argentina",
         "Auspiciantes": [
+          {
+            "nombre": "Universidad Nacional de Salta - Extensión",
+            "imagen": "/logos/UNSa-extension.jpg"
+          },
           {
             "nombre": "Universidad Nacional de Salta",
             "imagen": "/logos/UNSa.png"
           },
           {
+            "nombre": "Universidad Nacional de Salta - FCN",
+            "imagen": "/logos/UNSa-FCN.png"
+          },
+          {
             "nombre": "Python Norte",
             "url": "https://github.com/PythonNorte",
             "imagen": "/logos/pythonNorte.jpg"
+          },
+          {
+            "nombre": "KhipuX2",
+            "imagen": "/logos/khipuX2.jpg"
           },
           {
             "nombre": "Khipu",
@@ -135,6 +150,10 @@
           {
             "nombre": "Comunica Natural",
             "imagen": "/logos/ComunicaNatural.png"
+          },
+          {
+            "nombre": "Metodos",
+            "imagen": "/logos/Metodos2.png"
           }
         ],
         "Musica": [
@@ -149,21 +168,91 @@
             "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/SantoAngelo.jpg"
           },
           {
+            "nombre": "Rincón Gaucho",
+            "url": "https://dj91.hostingnuclear.com/9952/stream",
+            "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/lanus.jpg"
+          },
+          {
             "nombre": "El Charco",
             "url": "https://stream-21.zeno.fm/u1nngtkfp9duv",
             "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/charco.jpg"
+          },
+          {
+            "nombre": "Zilipendwa Channel",
+            "url": "http://173.244.208.77:8000/zilipendwa.mp3",
+            "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/tanzania.jpg"
+          },
+          {
+            "nombre": "Radio Marimba",
+            "url": "https://stream-152.zeno.fm/9zben9vd1k8uv",
+            "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/barillas.jpg"
+          },
+          {
+            "nombre": "Tame",
+            "url": "http://192.99.203.81:8704/stream",
+            "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/tame.jpg"
+          },
+          {
+            "nombre": "Santo Domingo",
+            "url": "https://play.streamingcast.live/web/bssradio",
+            "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/santoDomingo.jpg"
+          },
+          {
+            "nombre": "Llamellín",
+            "url": "https://stream-37.zeno.fm/unde9yxcyzzuv",
+            "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/llamellin.jpg"
+          },
+          {
+            "nombre": "Hillsborough",
+            "url": "http://74.122.88.5:3333/;",
+            "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/hillsborough.jpg"
+          },
+          {
+            "nombre": "Uyuni",
+            "url": "https://emiteradio.com/proxy/uyuni?mp=/stream",
+            "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/uyuni.jpg"
+          },
+          {
+            "nombre": "Córdoba",
+            "url": "http://radio02.ferozo.com:9000/stream/;",
+            "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/cordoba.jpg"
+          },
+          {
+            "nombre": "El Alto",
+            "url": "https://emiteradio.com/proxy/atipiriradio?mp=/stream",
+            "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/elAlto.jpg"
+          },
+          {
+            "nombre": "Corrientes",
+            "url": "http://streamingraddios.online:10354/;",
+            "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/corrientes.jpg"
+          },
+          {
+            "nombre": "Valledupar",
+            "url": "https://s1-ssl.vpsradio.com/radio/8036/radio.acc",
+            "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/valledupar.jpg"
+          },
+          {
+            "nombre": "إذاعة القرآن",
+            "url": "http://tijaniyyah.asuscomm.com:8000/stream/2/",
+            "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/quran.jpg"
+          },
+          {
+            "nombre": "Sadhakashram Radio",
+            "url": "https://stream-160.zeno.fm/80c86wkeb9quv",
+            "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/alandi.jpg"
           }
         ],
         "Organizadores": {
           "Director General": "Gustavo Landfried",
-          "Coordinadora 2024": "Camila Neder",
+          "Coordinadora 2024": "Camila Neder", 
           "Equipos": {
             "Comunicación": {
               "Responsables": ["Camila Neder", "Ana Veronica Scotta"],
               "Colaboradores": ["Victor Notar Francesco", "Noelia Arguelles", "Luiggina Cappellotto", "Yasmín Navarrete"]
             },
             "Tesorería e Institucional": {
-              "Responsables": ["Andrea Goijman", "Luciano Moffatt"],
+              "Responsables": ["Andrea Goijman", "Luciano Moffatt"],  
               "Colaboradores": ["Ariel Salgado", "Gimena Serrano", "Rita Salvatierra"]
             },
             "Evento presencial": {
@@ -172,7 +261,7 @@
             },
             "Eventos virtuales": {
               "Responsables": ["Ariel Salgado", "Luciano Moffatt"],
-              "Colaboradores": ["Ana Verónica Scotta", "Camila Neder", "Noelia Arguelles", "Matias Leizerovich"]
+              "Colaboradores": ["Ana Verónica Scotta", "Camila Neder", "Noelia Arguelles", "Matias Leizerovich"]  
             },
             "Técnica": {
               "Responsables": ["Macarena Piaggio", "Gustavo Landfried"]
@@ -181,13 +270,13 @@
           "Asesores Científicos": [
             {
               "nombre": "Sergio Davis",
-              "país": "Chile",
+              "país": "Chile", 
               "responsabilidad": "Responsable Principal"
             },
             {
               "nombre": "Gabriel Alzamendi",
               "país": "Argentina",
-              "responsabilidad": "Responsable Suplente"
+              "responsabilidad": "Responsable Suplente"  
             },
             {
               "nombre": "Rafael Tovar",
@@ -196,7 +285,7 @@
             },
             {
               "nombre": "Lucía Morán Figueredo",
-              "país": "Paraguay",
+              "país": "Paraguay", 
               "responsabilidad": "Asesor"
             },
             {
@@ -204,12 +293,73 @@
               "país": "México",
               "responsabilidad": "Asesor"
             }
+          ],
+          "Apoyos": [
+            "Sergio M. Davis Irrazabal",
+            "Gustavo A. Landfried",
+            "Andrea P. Goijman", 
+            "Albert R. Ortiz",
+            "Gabriel A. Alzamendi",
+            "Yasmín Navarrete", 
+            "Francisco Xavier Linares Cedeño",
+            "Lucia Concepcion Moran Figueredo",
+            "Luciano Moffatt",
+            "Ana Verónica Scotta",
+            "Mario González Olmedo",
+            "Carlos Iguaran",
+            "Ariel Salgado",
+            "Luiggina Cappellotto",
+            "Néstor Fabián Rañil",
+            "Francisco Franco",
+            "Rocco Di Tella", 
+            "Javier E. Arellana",
+            "Victoria Nogués",
+            "Natalia Sández Pernas",
+            "Bernardo Lagos Álvarez",
+            "Noelia Argüelles",
+            "Matías Leizerovic",
+            "Hossein T. Dinani",
+            "Enrique E. Alvarez",
+            "Maximiliano L. Riddick",
+            "Rolando Gonzales Martinez",
+            "Diego A. Caraballo",
+            "Luis Arturo Ureña López",
+            "Martín Amigo",
+            "Luis Felipe Guerrero",
+            "Marcos Feole",
+            "Fernando A. Otero",
+            "Matías Alejandro Vera",
+            "Manuel Sáenz",
+            "Rita Gabriela Salvatierra",
+            "Martín Onetto",
+            "Verónica Gil-Costa",
+            "Leandro Luna",
+            "Martha Lorena Avendaño Garrido",
+            "Luis Palazzesi",
+            "Ariel Silvio Norberto Ramos", 
+            "Silvana Flores Larsen",
+            "Andrea Monaldi",
+            "Gonzalo Veizaga",
+            "Dionicio Corrillo",
+            "Verónica Javi",
+            "Sergio Quintana",
+            "Alvaro Retamoso",
+            "Gustavo Gil",
+            "Walter Garzon", 
+            "Hermosinda Eguez",
+            "Lucas Ramos",
+            "Sofia Martin",
+            "Camila Neder",
+            "Daniel Cantón Enríquez",
+            "Luis Felipe Martínez Soto",
+            "Gonzalo Rios"
           ]
         },
         "Sobre el evento": {
-          "Descripcion": "/_pages/es/evento/descripcion_2024.html",
-          "Ciudad": "/_pages/es/evento/ciudad_2024.html",
-          "Cronograma": "/_pages/es/evento/cronograma_2024.html"
+          "Cronograma": "/_pages/es/evento/cronograma_2024.html",
+          "Disertantes": "/_pages/es/evento/disertantes_2024.html",
+          "Tu viaje": "/_pages/es/evento/tu_viaje_2024.html",
+          "Evento 2024": "/_pages/es/evento/evento_2024.html"
         }
       }
     }
