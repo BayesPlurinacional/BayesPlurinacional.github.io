@@ -214,6 +214,11 @@
       }
     }
   },
+  "Sobre Bayes Plurinacional": {
+    "Quienes somos": "/_pages/es/quienes_somos.html",
+    "Comunidad": "/_pages/es/Comunidad.html"
+  },
+  "Conducta": "/_pages/es/conducta.html",
   "Redes": {
     "Correo Electrónico": "bayesplurinacional@gmail.com",
     "Grupo de mails": "https://groups.google.com/g/bayes-plurinacional",
