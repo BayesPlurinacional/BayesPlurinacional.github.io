@@ -4,7 +4,19 @@ class CustomNavbar extends HTMLElement {
     this.attachShadow({ mode: "open" });
   }
 
-  connectedCallback() {
+  async connectedCallback() {
+    const response = await fetch('/_data/eventos.json'); // Ruta al JSON de eventos
+    const data = await response.json();
+
+    // Extraer los eventos por año
+    const eventos = data.Eventos.Presencial;
+    let eventosDropdown = "";
+    Object.keys(eventos).forEach((año) => {
+      eventosDropdown += `
+        <li><a class="dropdown-item" href="${eventos[año]["Sobre el evento"]["Evento " + año]}">${año}</a></li>
+      `;
+    });
+
     this.shadowRoot.innerHTML = `
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
       <link rel="stylesheet" href="/_assets/_css/global.css">
@@ -23,17 +35,14 @@ class CustomNavbar extends HTMLElement {
                       <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" id="somosDropdown">Somos</a>
                           <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="/_pages/es/somos.html">Quiénes Somos</a></li>
-                              <li><a class="dropdown-item" href="/_pages/es/plural.html">Plural</a></li>
-                              <li><a class="dropdown-item" href="/_pages/es/organizacion.html">Organización</a></li>
+                              <li><a class="dropdown-item" href="/_pages/es/quienes_somos.html">Quiénes Somos</a></li>
+                              <li><a class="dropdown-item" href="/_pages/es/Comunidad.html">Comunidad</a></li>
                           </ul>
                       </li>
                       <li class="nav-item dropdown">
                           <a class="nav-link dropdown-toggle" href="#" id="congresoDropdown">Congreso</a>
                           <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="/_pages/es/cronograma.html">Cronograma</a></li>
-                              <li><a class="dropdown-item" href="/_pages/es/disertantes.html">Disertantes</a></li>
-                              <li><a class="dropdown-item" href="/_pages/es/seminarios.html">Seminarios Virtuales</a></li>
+                              ${eventosDropdown}
                           </ul>
                       </li>
                       <li class="nav-item"><a class="nav-link" href="/_pages/es/contacto.html">Contacto</a></li>
@@ -98,7 +107,6 @@ class CustomNavbar extends HTMLElement {
       });
     });
 
-    // Evento para el botón responsive
     const toggleButton = this.shadowRoot.querySelector("#toggle-button");
     const navbarCollapse = this.shadowRoot.querySelector("#navbarNav");
     if (toggleButton && navbarCollapse) {
