@@ -1,0 +1,30 @@
+{
+  "config": {
+    "idioma": {
+      "default": "es",
+      "opciones": {
+        "es": "Español",
+        "en": "English"
+      }
+    }
+  },
+  "navbar": {
+    "global": {
+      "Eventos": {
+        "Presencial": {
+          "Evento 2023": "",
+          "Evento 2024": "",
+          "Evento 2025": ""
+        },
+        "Virtual": {
+          "Evento Virtual": ""
+        }
+      },
+      "Comunidad": "/_pages/{idioma}/comunidad.html",
+      "Contacto": {
+        "Redes Sociales": "/_pages/{idioma}/Redes.html",
+        "Conducta": "/_pages/{idioma}/Conducta.html"
+      }
+    }
+  }
+}

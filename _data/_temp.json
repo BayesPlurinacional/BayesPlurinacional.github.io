@@ -1,0 +1,510 @@
+{
+  "config": {
+    "idioma": {
+      "default": "es",
+      "opciones": {
+        "es": "Español",
+        "en": "English"
+      }
+    }
+  },
+  "navbar": {
+    "global": {
+      "Sobre Bayes Plurinacional": {
+        "Quienes somos": "/_pages/{idioma}/quienes_somos.html",
+        "Comunidad": "/_pages/{idioma}/comunidad.html"
+      },
+      "Conducta": "/_pages/{idioma}/conducta.html",
+      "Redes": {
+        "Correo Electrónico": "bayesplurinacional@gmail.com",
+        "Grupo de mails": "https://groups.google.com/g/bayes-plurinacional",
+        "Discord": "https://discord.gg/2dsAjBBFG3",
+        "WhatsApp": "https://chat.whatsapp.com/B4wjB4W68wBBcKx3Q16Oxc",
+        "Twitter": "https://twitter.com/BayesPlurinacio",
+        "Linkedin": "https://www.linkedin.com/company/bayes-plurinacional/"
+      },
+      "Selector de idioma": true
+    },
+    "eventos": {
+      "Presencial": {
+        "2023": {
+          "Año": 2023,
+          "Fecha": "10-12 de Octubre",
+          "Lugar": "Nodo Tecnológico ubicado dentro del Parque Industrial La Isla, en la ciudad de La Banda, Santiago del Estero, Argentina",
+          "Auspiciantes": [
+            {
+              "nombre": "NODO Tecnológico",
+              "url": "https://nodosde.gob.ar/",
+              "imagen": "/logos/NODOSdE.png"
+            },
+            {
+              "nombre": "Secretaría de Ciencia y Tecnología",
+              "url": "http://turnos.sde.gob.ar/secitec/",
+              "imagen": "/logos/secretariaSE.png"
+            },
+            {
+              "nombre": "UNR",
+              "url": "https://www.fcecon.unr.edu.ar/seccion/facultad/escuela-de-estadistica",
+              "imagen": "/logos/logo-UNR.jpg"
+            },
+            {
+              "nombre": "CRC",
+              "url": "https://www.routledge.com/",
+              "imagen": "/logos/CRC.jpg"
+            },
+            {
+              "nombre": "Python Norte",
+              "url": "https://github.com/PythonNorte",
+              "imagen": "/logos/pythonNorte.jpg"
+            },
+            {
+              "nombre": "Red Latinoamericana para la invesstigación y el desarrollo de políticas públicas",
+              "imagen": "/logos/redPublicas.jpg"
+            },
+            {
+              "nombre": "Universidad Nacional de Luján",
+              "imagen": "/logos/lujan.jpg"
+            },
+            {
+              "nombre": "SAE",
+              "url": "https://www.s-a-e.org.ar/",
+              "imagen": "/logos/sae.jpeg"
+            },
+            {
+              "nombre": "LMB",
+              "url": "https://metodosbayesianos.github.io/",
+              "imagen": "https://raw.githubusercontent.com/MetodosBayesianos/static/3f0ec047b6425164c18ba2f35333a15574de5975/logos/LMB.svg"
+            },
+            {
+              "nombre": "Fundación Sadosky",
+              "url": "https://www.routledge.com/",
+              "imagen": "/logos/sadosky.jpg"
+            }
+          ],
+          "Musica": [
+            {
+              "nombre": "El Charco",
+              "url": "https://stream-21.zeno.fm/u1nngtkfp9duv",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/charco.jpg"
+            },
+            {
+              "nombre": "Tame",
+              "url": "http://192.99.203.81:8704/stream",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/tame.jpg"
+            },
+            {
+              "nombre": "Santo Domingo",
+              "url": "https://play.streamingcast.live/web/bssradio",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/santoDomingo.jpg"
+            },
+            {
+              "nombre": "Llamellín",
+              "url": "https://stream-37.zeno.fm/unde9yxcyzzuv",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/llamellin.jpg"
+            },
+            {
+              "nombre": "Hillsborough",
+              "url": "http://74.122.88.5:3333/;",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/hillsborough.jpg"
+            },
+            {
+              "nombre": "Uyuni",
+              "url": "https://emiteradio.com/proxy/uyuni?mp=/stream",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/uyuni.jpg"
+            },
+            {
+              "nombre": "Córdoba",
+              "url": "http://radio02.ferozo.com:9000/stream/;",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/cordoba.jpg"
+            },
+            {
+              "nombre": "El Alto",
+              "url": "https://emiteradio.com/proxy/atipiriradio?mp=/stream",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/elAlto.jpg"
+            },
+            {
+              "nombre": "Corrientes",
+              "url": "http://streamingraddios.online:10354/;",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/corrientes.jpg"
+            },
+            {
+              "nombre": "Valledupar",
+              "url": "https://s1-ssl.vpsradio.com/radio/8036/radio.acc",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/valledupar.jpg"
+            }
+          ],
+          "Sobre el evento": {
+            "Descripcion": "/_pages/es/evento/descripcion_2023.html",
+            "Ciudad": "/_pages/es/evento/ciudad_2023.html",
+            "Cronograma": "/_pages/es/evento/cronograma_2023.html",
+            "Charlas": "/_pages/es/evento/charlas_2023.html",
+            "Talleres": "/_pages/es/evento/talleres_2023.html",
+            "Becas": "/_pages/es/evento/becas_2023.html"
+          }
+        },
+        "2024": {
+          "Año": 2024,
+          "Fecha": "del 6 al 10 de Agosto",
+          "Lugar": "Universidad Nacional de Salta, Argentina",
+          "Auspiciantes": [
+            {
+              "nombre": "Universidad Nacional de Salta - Extensión",
+              "imagen": "/logos/UNSa-extension.jpg"
+            },
+            {
+              "nombre": "Universidad Nacional de Salta",
+              "imagen": "/logos/UNSa.png"
+            },
+            {
+              "nombre": "Universidad Nacional de Salta - FCN",
+              "imagen": "/logos/UNSa-FCN.png"
+            },
+            {
+              "nombre": "Python Norte",
+              "url": "https://github.com/PythonNorte",
+              "imagen": "/logos/pythonNorte.jpg"
+            },
+            {
+              "nombre": "KhipuX2",
+              "imagen": "/logos/khipuX2.jpg"
+            },
+            {
+              "nombre": "Khipu",
+              "url": "https://khipu.ai/",
+              "imagen": "/logos/quipu.png"
+            },
+            {
+              "nombre": "Comunica Natural",
+              "imagen": "/logos/ComunicaNatural.png"
+            },
+            {
+              "nombre": "Metodos",
+              "imagen": "/logos/Metodos2.png"
+            }
+          ],
+          "Musica": [
+            {
+              "nombre": "Radio Izarra",
+              "url": "https://dattavolt.com/8030/stream",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/acobamba.jpg"
+            },
+            {
+              "nombre": "Rádio Nação Missioneira",
+              "url": "https://servidor27.brlogic.com:7140/live",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/SantoAngelo.jpg"
+            },
+            {
+              "nombre": "Rincón Gaucho",
+              "url": "https://dj91.hostingnuclear.com/9952/stream",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/lanus.jpg"
+            },
+            {
+              "nombre": "El Charco",
+              "url": "https://stream-21.zeno.fm/u1nngtkfp9duv",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/charco.jpg"
+            },
+            {
+              "nombre": "Zilipendwa Channel",
+              "url": "http://173.244.208.77:8000/zilipendwa.mp3",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/tanzania.jpg"
+            },
+            {
+              "nombre": "Radio Marimba",
+              "url": "https://stream-152.zeno.fm/9zben9vd1k8uv",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/barillas.jpg"
+            },
+            {
+              "nombre": "Tame",
+              "url": "http://192.99.203.81:8704/stream",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/tame.jpg"
+            },
+            {
+              "nombre": "Santo Domingo",
+              "url": "https://play.streamingcast.live/web/bssradio",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/santoDomingo.jpg"
+            },
+            {
+              "nombre": "Llamellín",
+              "url": "https://stream-37.zeno.fm/unde9yxcyzzuv",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/llamellin.jpg"
+            },
+            {
+              "nombre": "Hillsborough",
+              "url": "http://74.122.88.5:3333/;",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/hillsborough.jpg"
+            },
+            {
+              "nombre": "Uyuni",
+              "url": "https://emiteradio.com/proxy/uyuni?mp=/stream",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/uyuni.jpg"
+            },
+            {
+              "nombre": "Córdoba",
+              "url": "http://radio02.ferozo.com:9000/stream/;",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/cordoba.jpg"
+            },
+            {
+              "nombre": "El Alto",
+              "url": "https://emiteradio.com/proxy/atipiriradio?mp=/stream",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/elAlto.jpg"
+            },
+            {
+              "nombre": "Corrientes",
+              "url": "http://streamingraddios.online:10354/;",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/corrientes.jpg"
+            },
+            {
+              "nombre": "Valledupar",
+              "url": "https://s1-ssl.vpsradio.com/radio/8036/radio.acc",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/valledupar.jpg"
+            },
+            {
+              "nombre": "إذاعة القرآن",
+              "url": "http://tijaniyyah.asuscomm.com:8000/stream/2/",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/quran.jpg"
+            },
+            {
+              "nombre": "Sadhakashram Radio",
+              "url": "https://stream-160.zeno.fm/80c86wkeb9quv",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/alandi.jpg"
+            }
+          ],
+          "Organizadores": {
+            "Director General": "Gustavo Landfried",
+            "Coordinadora 2024": "Camila Neder",
+            "Equipos": {
+              "Comunicación": {
+                "Responsables": [
+                  "Camila Neder",
+                  "Ana Veronica Scotta"
+                ],
+                "Colaboradores": [
+                  "Victor Notar Francesco",
+                  "Noelia Arguelles",
+                  "Luiggina Cappellotto",
+                  "Yasmín Navarrete"
+                ]
+              },
+              "Tesorería e Institucional": {
+                "Responsables": [
+                  "Andrea Goijman",
+                  "Luciano Moffatt"
+                ],
+                "Colaboradores": [
+                  "Ariel Salgado",
+                  "Gimena Serrano",
+                  "Rita Salvatierra"
+                ]
+              },
+              "Evento presencial": {
+                "Responsables": [
+                  "Ariel Silvio Norberto Ramos",
+                  "Gustavo Landfried"
+                ],
+                "Colaboradores": [
+                  "Andrea Goijman",
+                  "Ariel Salgado",
+                  "Camila Neder",
+                  "Luciano Moffatt",
+                  "Ana Verónica Scotta"
+                ]
+              },
+              "Eventos virtuales": {
+                "Responsables": [
+                  "Ariel Salgado",
+                  "Luciano Moffatt"
+                ],
+                "Colaboradores": [
+                  "Ana Verónica Scotta",
+                  "Camila Neder",
+                  "Noelia Arguelles",
+                  "Matias Leizerovich"
+                ]
+              },
+              "Técnica": {
+                "Responsables": [
+                  "Macarena Piaggio",
+                  "Gustavo Landfried"
+                ]
+              }
+            },
+            "Asesores Científicos": [
+              {
+                "nombre": "Sergio Davis",
+                "país": "Chile",
+                "responsabilidad": "Responsable Principal"
+              },
+              {
+                "nombre": "Gabriel Alzamendi",
+                "país": "Argentina",
+                "responsabilidad": "Responsable Suplente"
+              },
+              {
+                "nombre": "Rafael Tovar",
+                "país": "Colombia",
+                "responsabilidad": "Asesor"
+              },
+              {
+                "nombre": "Lucía Morán Figueredo",
+                "país": "Paraguay",
+                "responsabilidad": "Asesor"
+              },
+              {
+                "nombre": "Francisco Linares Cedeño",
+                "país": "México",
+                "responsabilidad": "Asesor"
+              }
+            ],
+            "Apoyos": [
+              "Sergio M. Davis Irrazabal",
+              "Gustavo A. Landfried",
+              "Andrea P. Goijman",
+              "Albert R. Ortiz",
+              "Gabriel A. Alzamendi",
+              "Yasmín Navarrete",
+              "Francisco Xavier Linares Cedeño",
+              "Lucia Concepcion Moran Figueredo",
+              "Luciano Moffatt",
+              "Ana Verónica Scotta",
+              "Mario González Olmedo",
+              "Carlos Iguaran",
+              "Ariel Salgado",
+              "Luiggina Cappellotto",
+              "Néstor Fabián Rañil",
+              "Francisco Franco",
+              "Rocco Di Tella",
+              "Javier E. Arellana",
+              "Victoria Nogués",
+              "Natalia Sández Pernas",
+              "Bernardo Lagos Álvarez",
+              "Noelia Argüelles",
+              "Matías Leizerovic",
+              "Hossein T. Dinani",
+              "Enrique E. Alvarez",
+              "Maximiliano L. Riddick",
+              "Rolando Gonzales Martinez",
+              "Diego A. Caraballo",
+              "Luis Arturo Ureña López",
+              "Martín Amigo",
+              "Luis Felipe Guerrero",
+              "Marcos Feole",
+              "Fernando A. Otero",
+              "Matías Alejandro Vera",
+              "Manuel Sáenz",
+              "Rita Gabriela Salvatierra",
+              "Martín Onetto",
+              "Verónica Gil-Costa",
+              "Leandro Luna"
+            ]
+          },
+          "Sobre el evento": {
+            "Cronograma": "/_pages/es/evento/cronograma_2024.html",
+            "Disertantes": "/_pages/es/evento/disertantes_2024.html",
+            "Tu viaje": "/_pages/es/evento/tu_viaje_2024.html",
+            "Evento 2024": "/_pages/es/evento/evento_2024.html"
+          }
+        },
+        "2025": {
+          "Año": 2025,
+          "Fecha": "10-12 de Octubre",
+          "Lugar": "Universidad Externado de Colombia",
+          "Auspiciantes": [
+            {
+              "nombre": "Universidad Externado de Colombia",
+              "imagen": "/logos/externado.jpg"
+            },
+            {
+              "nombre": "Khipu",
+              "url": "https://khipu.ai/",
+              "imagen": "/logos/quipu.png"
+            },
+            {
+              "nombre": "Comunica Natural",
+              "imagen": "/logos/ComunicaNatural.png"
+            },
+            {
+              "nombre": "Metodos",
+              "imagen": "/logos/Metodos2.png"
+            }
+          ],
+          "Musica": [
+            {
+              "nombre": "Radio Izarra",
+              "url": "https://dattavolt.com/8030/stream",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/acobamba.jpg"
+            },
+            {
+              "nombre": "El Charco",
+              "url": "https://stream-21.zeno.fm/u1nngtkfp9duv",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/charco.jpg"
+            },
+            {
+              "nombre": "Rádio Nação Missioneira",
+              "url": "https://servidor27.brlogic.com:7140/live",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/SantoAngelo.jpg"
+            },
+            {
+              "nombre": "Tame",
+              "url": "http://192.99.203.81:8704/stream",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/tame.jpg"
+            },
+            {
+              "nombre": "Santo Domingo",
+              "url": "https://centova.streamingcastrd.net/proxy/bastosalsa/stream",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/santoDomingo.jpg"
+            },
+            {
+              "nombre": "Uyuni",
+              "url": "https://emiteradio.com/proxy/uyuni?mp=/stream",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/uyuni.jpg"
+            },
+            {
+              "nombre": "Córdoba",
+              "url": "http://radio02.ferozo.com:9000/stream/;",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/cordoba.jpg"
+            },
+            {
+              "nombre": "El Alto",
+              "url": "https://emiteradio.com/proxy/atipiriradio?mp=/stream",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/elAlto.jpg"
+            },
+            {
+              "nombre": "Valledupar",
+              "url": "https://s1-ssl.vpsradio.com/radio/8036/radio.acc",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/valledupar.jpg"
+            },
+            {
+              "nombre": "Radio Marimba",
+              "url": "https://stream-152.zeno.fm/9zben9vd1k8uv",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/barillas.jpg"
+            },
+            {
+              "nombre": "Corrientes",
+              "url": "http://streamingraddios.online:10354/;",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/corrientes.jpg"
+            },
+            {
+              "nombre": "Zilipendwa Channel",
+              "url": "http://173.244.208.77:8000/zilipendwa.mp3",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/tanzania.jpg"
+            },
+            {
+              "nombre": "Sadhakashram Radio",
+              "url": "https://stream-160.zeno.fm/80c86wkeb9quv",
+              "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/alandi.jpg"
+            }
+          ],
+          "Sobre el evento": {
+            "Cronograma": "/_pages/es/evento/cronograma_2025.html",
+            "Disertantes": "/_pages/es/evento/disertantes_2025.html",
+            "Tu viaje": "/_pages/es/evento/tu_viaje_2025.html",
+            "Evento 2025": "/_pages/es/evento/evento_2025.html"
+          }
+        }
+      },
+      "Virtual": {
+        "placeholder": "Estructura a definir según las necesidades de los eventos virtuales"
+      }
+    }
+  }
+}
