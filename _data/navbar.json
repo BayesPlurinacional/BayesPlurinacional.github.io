@@ -20,7 +20,7 @@
           "Evento Virtual": ""
         }
       },
-      "Comunidad": "/_pages/{idioma}/comunidad.html",
+      "Comunidad": "/_pages/{idioma}/Comunidad.html",
       "Contacto": {
         "Redes Sociales": "/_pages/{idioma}/Redes.html",
         "Conducta": "/_pages/{idioma}/Conducta.html"
