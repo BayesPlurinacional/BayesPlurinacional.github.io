@@ -1,30 +1,6 @@
 {
   "Evento": {
     "Presencial": {
-      "Evento 2023": {
-        "Sobre nosotros": {
-          "Somos Plural": "blablabla/{idioma}/somos.html",
-          "Organización del evento": "blablabla/{idioma}/organizacion.html"
-        },
-        "Auspiciantes": "blablabla/{idioma}/auspiciantes.html",
-        "Música": "blablabla/{idioma}/musica.html",
-        "Sobre el evento": {
-          "Opción 1": "blablabla/{idioma}/opcion1.html",
-          "Opción 2": "blablabla/{idioma}/opcion2.html"
-        }
-      },
-      "Evento 2024": {
-        "Sobre nosotros": {
-          "Somos Plural": "blablabla/{idioma}/somos.html",
-          "Organización del evento": "blablabla/{idioma}/organizacion.html"
-        },
-        "Auspiciantes": "blablabla/{idioma}/auspiciantes.html",
-        "Música": "blablabla/{idioma}/musica.html",
-        "Sobre el evento": {
-          "Opción 1": "blablabla/{idioma}/opcion1.html",
-          "Opción 2": "blablabla/{idioma}/opcion2.html"
-        }
-      },
       "Evento 2025": {
         "Sobre nosotros": {
           "Somos Plural": "blablabla/{idioma}/somos.html",

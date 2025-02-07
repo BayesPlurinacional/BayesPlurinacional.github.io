@@ -4,13 +4,19 @@ import './footer.js';
 class CustomHeader extends HTMLElement {
   constructor() {
     super();
-    this.attachShadow({ mode: 'open' }); // Usamos shadow DOM para aislar estilos
+    this.attachShadow({ mode: 'open' });
   }
 
   connectedCallback() {
+    // Lee los atributos que tiene el custom-header
+    const eventType = this.getAttribute('data-event-type') || "";
+    const eventKey = this.getAttribute('data-event-key') || "";
+    const lang = this.getAttribute('data-lang') || "";
+    
+    // Pasa esos atributos a custom-navbar
     this.shadowRoot.innerHTML = `
-      <custom-navbar></custom-navbar>
-      <slot></slot> <!-- Aquí se cargará el contenido de cada página -->
+      <custom-navbar data-event-type="${eventType}" data-event-key="${eventKey}" data-lang="${lang}"></custom-navbar>
+      <slot></slot>
       <custom-footer></custom-footer>
       <style>
         :host {
@@ -21,7 +27,6 @@ class CustomHeader extends HTMLElement {
   }
 }
 
-// Definir el componente solo si no está definido
 if (!customElements.get('custom-header')) {
   customElements.define('custom-header', CustomHeader);
 }

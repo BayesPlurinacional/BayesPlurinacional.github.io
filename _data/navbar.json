@@ -12,9 +12,9 @@
     "global": {
       "Eventos": {
         "Presencial": {
-          "Evento 2023": "",
-          "Evento 2024": "",
-          "Evento 2025": ""
+          "Evento 2023": "/_pages/{idioma}/2023/index.html",
+          "Evento 2024": "/_pages/{idioma}/2024/index.html",
+          "Evento 2025": "/_pages/{idioma}/2025/index.html"
         },
         "Virtual": {
           "Evento Virtual": ""
@@ -24,6 +24,10 @@
       "Contacto": {
         "Redes Sociales": "/_pages/{idioma}/Redes.html",
         "Conducta": "/_pages/{idioma}/Conducta.html"
+      }, 
+      "Idioma" : {
+        "es": "/_pages/es/Home.html",
+        "en": "/_pages/en/Home.html"
       }
     }
   }

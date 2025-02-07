@@ -18,15 +18,9 @@ Este proyecto está construido utilizando **HTML, CSS, Bootstrap y Web Component
  │
 📂 _pages
  ├── 📂 es
- │   ├── index.html
- │   ├── somos.html
- │   ├── contacto.html
- │   ├── galeria.html
- │   ├── 📂 congresos
- │   │   ├── 2025.html
- │   │   ├── 2024.html
- │   │   ├── 2023.html
- │
+    ├── ...
+ ├── 📂 en
+    ├── ...
 📂 _static
  ├── 📂 img
  ├── 📂 logos
