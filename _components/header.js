@@ -8,20 +8,16 @@ class CustomHeader extends HTMLElement {
   }
 
   connectedCallback() {
-    // Lee los atributos que tiene el custom-header
     const eventType = this.getAttribute('data-event-type') || "";
     const eventKey = this.getAttribute('data-event-key') || "";
     const lang = this.getAttribute('data-lang') || "";
     
-    // Pasa esos atributos a custom-navbar
     this.shadowRoot.innerHTML = `
       <custom-navbar data-event-type="${eventType}" data-event-key="${eventKey}" data-lang="${lang}"></custom-navbar>
       <slot></slot>
-      <custom-footer></custom-footer>
+      <custom-footer data-lang="${lang}"></custom-footer>
       <style>
-        :host {
-          display: block;
-        }
+        :host { display: block; }
       </style>
     `;
   }

@@ -1,0 +1,82 @@
+{
+  "footer": {
+    "Sobre Nosotros": {
+      "es": {
+        "Título": "Sobre Nosotros",
+        "Enlaces": {
+          "Quiénes Somos": "/_pages/es/quienes_somos.html",
+          "Comunidad": "/_pages/es/comunidad.html",
+          "Conducta": "/_pages/es/conducta.html"
+        }
+      },
+      "en": {
+        "Título": "About Us",
+        "Enlaces": {
+          "Who We Are": "/_pages/en/quienes_somos.html",
+          "Community": "/_pages/en/comunidad.html",
+          "Conduct": "/_pages/en/conducta.html"
+        }
+      }
+    },
+    "Congreso": {
+      "es": {
+        "Título": "Congreso",
+        "Enlaces": {
+          "Congreso 2025": "/_pages/es/2025/congreso2025.html",
+          "Congreso 2024": "/_pages/es/2024/congreso2024.html",
+          "Congreso 2023": "/_pages/es/2023/congreso2023.html"
+        }
+      },
+      "en": {
+        "Título": "Conference",
+        "Enlaces": {
+          "Conference 2025": "/_pages/en/2025/congreso2025.html",
+          "Conference 2024": "/_pages/en/2024/congreso2024.html",
+          "Conference 2023": "/_pages/en/2023/congreso2023.html"
+        }
+      }
+    },
+    "Galería": {
+      "es": {
+        "Título": "Galería",
+        "Enlaces": {
+          "Fotos 2025": "/_pages/es/2025/fotos2025.html",
+          "Fotos 2024": "/_pages/es/2024/fotos2024.html",
+          "Fotos 2023": "/_pages/es/2023/fotos2023.html"
+        }
+      },
+      "en": {
+        "Título": "Gallery",
+        "Enlaces": {
+          "Photos 2025": "/_pages/en/2025/fotos2025.html",
+          "Photos 2024": "/_pages/en/2024/fotos2024.html",
+          "Photos 2023": "/_pages/en/2023/fotos2023.html"
+        }
+      }
+    },
+    "Redes Sociales": {
+      "es": {
+        "Título": "Síguenos",
+        "Enlaces": {
+          "Twitter": "https://twitter.com/BayesPlurinacio",
+          "Instagram": "https://instagram.com/",
+          "LinkedIn": "https://www.linkedin.com/company/bayes-plurinacional/",
+          "Email": "mailto:bayesplurinacional@gmail.com"
+        }
+      },
+      "en": {
+        "Título": "Follow Us",
+        "Enlaces": {
+          "Twitter": "https://twitter.com/BayesPlurinacio",
+          "Instagram": "https://instagram.com/",
+          "LinkedIn": "https://www.linkedin.com/company/bayes-plurinacional/",
+          "Email": "mailto:bayesplurinacional@gmail.com"
+        }
+      }
+    },
+    "Copy": {
+      "es": "© 2025 Bayes Plurinacional. Todos los derechos reservados.",
+      "en": "© 2025 Bayes Plurinacional. All rights reserved."
+    }
+  }
+}
