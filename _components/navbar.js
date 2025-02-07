@@ -83,8 +83,19 @@ class CustomNavbar extends HTMLElement {
       
       // Selector de idioma: botón que redirige a la misma página en el otro idioma.
       const idiomaLink = this.getAlternateLanguageLink(lang);
-      const idiomaHTML = `<li class="nav-item">
-        <a class="nav-link btn btn-outline-light" href="${idiomaLink}">${t("Idioma")}</a>
+      const idiomaHTML = `
+      <li class="nav-item">
+        <div class="language-selector">
+          <div class="language-switch ${lang === 'es' ? 'es-active' : 'en-active'}">
+        <a href="${this.getAlternateLanguageLink('en')}" class="lang-btn">
+          <span>ES</span>
+        </a>
+        <span class="divider">|</span>
+        <a href="${this.getAlternateLanguageLink('es')}" class="lang-btn">
+          <span>EN</span>
+        </a>
+          </div>
+        </div>
       </li>`;
       
       const globalNavbarHTML = `
@@ -164,42 +175,108 @@ class CustomNavbar extends HTMLElement {
         ${secondaryNavbarHTML}
         
         <style>
-          .navbar {
-            background-color: var(--fondo-oscuro);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-          }
-          .navbar .nav-link {
-            color: white;
-            font-weight: 600;
-            transition: color 0.3s ease;
-          }
-          .navbar .nav-link:hover {
-            color: var(--elementos-interactivos);
-          }
-          .dropdown-menu {
-            background-color: var(--fondo-claro);
-            border: none;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-          }
-          .dropdown-menu .dropdown-item {
-            color: var(--titulo-encabezado);
-            font-weight: 500;
-          }
-          .dropdown-menu .dropdown-item:hover {
-            background-color: var(--elementos-interactivos);
-            color: white;
-          }
-          .global-navbar {
-            z-index: 1050;
-          }
-          .secondary-navbar {
-            top: 70px;
-            z-index: 1040;
-            background-color: rgba(255, 0, 0, 0.5) !important;
-          }
-          :host-context(body) {
-            padding-top: 140px;
-          }
+          /* === Navbar Global === */
+    .global-navbar {
+        background-color: var(--fondo-oscuro);
+        height: 85px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .global-navbar .navbar-brand img {
+        width: 150px;
+        height: auto;
+    }
+
+    .center-nav {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .center-nav .navbar-nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* === Estilo del Selector de Idioma === */
+    .language-switch {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: white;
+        padding: 5px 10px;
+        border-radius: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .language-switch .lang-btn {
+        text-decoration: none;
+        color: black;
+        opacity: 0.5;
+    }
+
+    .es-active .lang-btn:first-child,
+    .en-active .lang-btn:last-child {
+        opacity: 1;
+        font-weight: bold;
+    }
+
+    .language-switch .divider {
+        color: black;
+    }
+
+    /* === Navbar Secundario === */
+    .secondary-navbar {
+        background-color: var(--fondo-oscuro);
+        text-align: center;
+        margin-top: 0;
+        padding: 10px 0;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1000;
+    }
+
+    .event-year {
+        font-size: 1.2em;
+        font-weight: bold;
+        color: white;
+        margin-right: 15px;
+    }
+
+    .navbar-nav .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu {
+        transition: all 0.3s ease-in-out;
+        display: none;
+        background-color: var(--fondo-claro);
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .dropdown-menu .dropdown-item {
+        color: var(--titulo-encabezado);
+        font-weight: 500;
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+        background-color: var(--elementos-interactivos);
+        color: white;
+    }
+
+    .dropdown:hover > .dropdown-menu {
+        display: block;
+    }
+
         </style>
       `;
       
