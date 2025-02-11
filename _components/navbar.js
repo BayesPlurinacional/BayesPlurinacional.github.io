@@ -99,7 +99,7 @@ class CustomNavbar extends HTMLElement {
       </li>`;
       
       const globalNavbarHTML = `
-        <nav class="navbar navbar-expand-lg fixed-top global-navbar">
+        <nav class="navbar navbar-expand-lg global-navbar" style="margin-top: 70px;">
           <div class="container">
             <a class="navbar-brand" href="/">
               <img src="/_assets/_img/logos/PB.svg" alt="Logo" width="120">
@@ -151,7 +151,7 @@ class CustomNavbar extends HTMLElement {
             }
           }
           secondaryNavbarHTML = `
-            <nav class="navbar navbar-expand-lg fixed-top secondary-navbar" style="margin-top: 70px;">
+            <nav class="navbar navbar-expand-lg  secondary-navbar" style="margin-top: 70px;">
               <div class="container">
                 <button class="navbar-toggler" type="button" id="secondary-toggle-button">
                   <span class="navbar-toggler-icon"></span>

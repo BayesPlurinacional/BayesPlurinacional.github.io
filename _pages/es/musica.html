@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Música Plurinacional</title>
+    <script type="module" src="/_components/header.js"></script>
+    <script>
+      async function cargarRadios() {
+        try {
+          const response = await fetch("/_data/musica.json");
+          const data = await response.json();
+          const radios = data.Musica.filter((radio) => radio.Activo);
+
+          const contenedor = document.getElementById("radios-container");
+          radios.forEach((radio) => {
+            const radioElement = document.createElement("div");
+            radioElement.classList.add("col-md-6", "mb-4");
+
+            radioElement.innerHTML = `
+                        <div class="card shadow-sm">
+                            <a href="${radio.url}" target="_blank">
+                                <img class="card-img-top" src="${radio.imagen}" alt="${radio.nombre}">
+                            </a>
+                            <div class="card-body text-center">
+                                <h5 class="card-title">
+                                    <a href="${radio.url}" target="_blank"><em>${radio.nombre}</em></a>
+                                </h5>
+                            </div>
+                        </div>
+                    `;
+            contenedor.appendChild(radioElement);
+          });
+        } catch (error) {
+          console.error("Error cargando las radios:", error);
+        }
+      }
+      document.addEventListener("DOMContentLoaded", cargarRadios);
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/_assets/_css/global.css" />
+  </head>
+  <body>
+    <custom-header data-lang="es">
+      <div class="container musica-container">
+        <div class="section text-center">
+            <h2>Música Plurinacional</h2>
+            <p class="text-muted">(Pueden aparecer publicidades extranjeras solo en los primeros segundos)</p>
+        </div>
+        <div class="row" id="radios-container"></div>
+    </div>
+    
+    </custom-header>
+  </body>
+</html>
