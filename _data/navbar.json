@@ -16,15 +16,21 @@
           "Evento 2024": "/_pages/{idioma}/2024/index.html",
           "Evento 2025": "/_pages/{idioma}/2025/index.html"
         },
-        "Virtual": {
-          "Evento Virtual": ""
-        }
+        "Galeria": {
+        "Evento 2023":  "/_pages/{idioma}/2023/galeria.html",
+        "Evento 2024": "/_pages/{idioma}/2024/galeria.html",
+        "Evento 2025": "/_pages/{idioma}/2025/galeria.html"
+      }
       },
       "Comunidad": "/_pages/{idioma}/Comunidad.html",
       "Contacto": {
         "Redes Sociales": "/_pages/{idioma}/Redes.html",
         "Conducta": "/_pages/{idioma}/Conducta.html"
-      }, 
+      },
+      "Musica": "/_pages/{idioma}/musica.html",
+      "Seminarios Virtuales": "/_pages/{idioma}/Seminarios.html",
+      "Auspiciantes": "/_pages/{idioma}/Auspiciantes.html",
+      
       "Idioma" : {
         "es": "/_pages/es/Home.html",
         "en": "/_pages/en/Home.html"
