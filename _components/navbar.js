@@ -23,9 +23,12 @@ class CustomNavbar extends HTMLElement {
       const translations = {
         es: {
           "Eventos": "Eventos",
+          "Seminarios Virtuales" : "Virtual Seminars",
           "Presencial": "Presencial",
           "Virtual": "Virtual",
+          "Musica": "Musica",
           "Comunidad": "Comunidad",
+          "Auspiciantes": "Sponsors",
           "Contacto": "Contacto",
           "Redes Sociales": "Redes Sociales",
           "Conducta": "Conducta",
@@ -33,9 +36,12 @@ class CustomNavbar extends HTMLElement {
         },
         en: {
           "Eventos": "Events",
+          "Virtual Seminars": "Seminarios Virtuales",
           "Presencial": "In Person",
           "Virtual": "Virtual",
+          "Musica": "Music",
           "Comunidad": "Community",
+          "Sponsors": "Auspiciantes",
           "Contacto": "Contact",
           "Redes Sociales": "Social Networks",
           "Conducta": "Code of Conduct",
