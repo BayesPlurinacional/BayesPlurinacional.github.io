@@ -1,0 +1,82 @@
+{
+  "Musica": [
+    {
+      "nombre": "Radio Izarra",
+      "url": "https://dattavolt.com/8030/stream",
+      "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/acobamba.jpg",
+      "Activo": true
+    },
+    {
+      "nombre": "El Charco",
+      "url": "https://stream-21.zeno.fm/u1nngtkfp9duv?zs=pjrIHCHKTkG6elMKwOW69w&listening-from-radio-garden=1665234330",
+      "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/charco.jpg",
+      "Activo": true
+    },
+    {
+      "nombre": "Rádio Nacao Missioneira",
+      "url": "https://servidor27.brlogic.com:7140/live",
+      "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/SantoAngelo.jpg",
+      "Activo": true
+    },
+    {
+      "nombre": "Tame",
+      "url": "http://192.99.203.81:8704/stream?listening-from-radio-garden=1665304744",
+      "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/tame.jpg",
+      "Activo": true
+    },
+    {
+      "nombre": "Santo Domingo",
+      "url": "https://centova.streamingcastrd.net/proxy/bastosalsa/stream",
+      "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/santoDomingo.jpg",
+      "Activo": true
+    },
+    {
+      "nombre": "Uyuni",
+      "url": "https://emiteradio.com/proxy/uyuni?mp=/stream&listening-from-radio-garden=1666517190",
+      "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/uyuni.jpg",
+      "Activo": true
+    },
+    {
+      "nombre": "Córdoba",
+      "url": "http://radio02.ferozo.com:9000/stream/;?listening-from-radio-garden=1665306103",
+      "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/cordoba.jpg",
+      "Activo": true
+    },
+    {
+      "nombre": "El Alto",
+      "url": "https://emiteradio.com/proxy/atipiriradio?mp=/stream&listening-from-radio-garden=1665307037",
+      "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/elAlto.jpg",
+      "Activo": true
+    },
+    {
+      "nombre": "Valledupar",
+      "url": "https://s1-ssl.vpsradio.com/radio/8036/radio.acc?listening-from-radio-garden=1665306429",
+      "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/valledupar.jpg",
+      "Activo": true
+    },
+    {
+      "nombre": "Radio Marimba",
+      "url": "https://stream-152.zeno.fm/9zben9vd1k8uv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiI5emJlbjl2ZDFrOHV2IiwiaG9zdCI6InN0cmVhbS0xNTIuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6IndDR3VKTXYyUTNtT3l1VHRZcy1ld2ciLCJpYXQiOjE3MTY3NTU2NzAsImV4cCI6MTcxNjc1NTczMH0.d5bQdcI1YTGd_BQ-F_6I7fhZtad5sXhSIN1ftRz_vlU",
+      "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/barillas.jpg",
+      "Activo": true
+    },
+    {
+      "nombre": "Corrientes",
+      "url": "http://streamingraddios.online:10354/;?listening-from-radio-garden=1666516300",
+      "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/corrientes.jpg",
+      "Activo": true
+    },
+    {
+      "nombre": "Zilipendwa Channel",
+      "url": "http://173.244.208.77:8000/zilipendwa.mp3",
+      "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/tanzania.jpg",
+      "Activo": true
+    },
+    {
+      "nombre": "Sadhakashram Radio",
+      "url": "https://stream-160.zeno.fm/80c86wkeb9quv?zt=eyJhbGciOiJIUzI1NiJ9.eyJzdHJlYW0iOiI4MGM4NndrZWI5cXV2IiwiaG9zdCI6InN0cmVhbS0xNjAuemVuby5mbSIsInJ0dGwiOjUsImp0aSI6ImNoWi1IdnlFVC1XWWVmNlpwVVc4ZHciLCJpYXQiOjE3MTY3NTcxNjUsImV4cCI6MTcxNjc1NzIyNX0.RrDXUhlDNlEH8OWc06S2hjSRK-w1PJUWpr4msBiyGdc",
+      "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/alandi.jpg",
+      "Activo": true
+    }
+  ]
+}
