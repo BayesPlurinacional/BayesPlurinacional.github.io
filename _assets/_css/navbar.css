@@ -1,4 +1,4 @@
-/* === Fijar navbar arriba sin desplazamiento === */
+/* === Estilos Generales del Navbar === */
 .global-navbar {
   background-color: var(--fondo-oscuro);
   height: 85px;
@@ -12,7 +12,42 @@
   z-index: 1100;
 }
 
-/* Mejorar visibilidad de los textos */
+/* Estilos del menú en pantallas grandes */
+.navbar-collapse {
+  display: flex !important;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+/* === BOTÓN HAMBURGUESA === */
+.navbar-toggler {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+  display: none; /* Ocultamos el botón hamburguesa en pantallas grandes */
+}
+
+.navbar-toggler:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* === ESTILOS DEL MENÚ EN PANTALLAS GRANDES === */
+.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
 .navbar-nav .nav-link {
   color: white;
   font-weight: 600;
@@ -24,19 +59,23 @@
   color: var(--elementos-interactivos);
 }
 
-/* Mejorar dropdowns */
+/* === ESTILOS DEL DROPDOWN EN PANTALLAS GRANDES === */
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
 .dropdown-menu {
   background-color: var(--fondo-claro);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  display: none; /* Aseguramos que no aparezca automáticamente en móviles */
 }
 
 .dropdown-menu .dropdown-item {
-  transition: background-color 0.3s ease;
+  padding: 10px 15px;
+  font-size: 0.95rem;
 }
 
 .dropdown-menu .dropdown-item:hover {
@@ -44,8 +83,84 @@
   color: white;
 }
 
+@media (max-width: 992px) {
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-collapse {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background-color: var(--fondo-oscuro);
+    position: absolute;
+    top: 85px;
+    left: 0;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  .navbar-collapse.show {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-link {
+    padding: 12px;
+    text-align: left;
+  }
+
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    display: none;
+  }
+
+  .dropdown-menu.show {
+    display: block;
+  }
+
+  .language-switch {
+    width: 80px;
+    margin: 10px auto; /* Centrado */
+    padding: 4px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+  }
+
+  .language-switch .lang-btn {
+    font-size: 0.8rem;
+    padding: 3px 6px;
+  }
+
+  .language-switch .lang-separator {
+    font-size: 0.8rem;
+    margin: 0 5px;
+  }
+}
+
+
+
+
 /* Espaciado en selector de idioma */
-/* Contenedor del selector de idioma */
 .language-switch {
   margin-left: 30px;
   padding: 6px 12px;
@@ -71,7 +186,6 @@
 }
 
 /* Idioma ACTIVO - ahora es más visible */
-/* Desactivar el botón del idioma actual */
 .es-active .lang-btn[data-lang="es"],
 .en-active .lang-btn[data-lang="en"] {
   color: black;
@@ -103,46 +217,4 @@
   margin: 0 8px;
   font-size: 1rem;
   opacity: 0.8;
-}
-
-
-
-/* === Estilos del Footer === */
-.footer {
-  background-color: var(--fondo-oscuro);
-  color: white;
-  padding: 40px 0;
-  text-align: center;
-}
-
-.footer h5 {
-  font-family: 'Jost', sans-serif;
-  color: var(--fondo-claro);
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.footer ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer ul li {
-  margin-bottom: 5px;
-}
-
-.footer a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.footer a:hover {
-  color: var(--boton-secundario);
-}
-
-.footer-bottom {
-  background-color: var(--fondo-oscuro);
-  padding: 10px 0;
-  font-size: 14px;
 }

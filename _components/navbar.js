@@ -98,17 +98,48 @@ class CustomNavbar extends HTMLElement {
   generateNavItems(navItems, lang, translations) {
     let html = "";
     for (const key in navItems) {
-      if (key === "Idioma") continue; // No generamos esto aquí, ya hay un selector de idioma
-      const value = navItems[key];
+        if (key === "Idioma") continue; // Ya manejamos el selector de idioma aparte
+        const value = navItems[key];
 
-      if (typeof value === "string") {
-        html += `<li class="nav-item"><a class="nav-link" href="${this.replaceIdioma(value, lang)}">${translations[key] || key}</a></li>`;
-      } else if (typeof value === "object") {
-        html += this.buildDropdown(key, value, lang, translations);
-      }
+        if (typeof value === "string") {
+            html += `<li class="nav-item"><a class="nav-link" href="${this.replaceIdioma(value, lang)}">${translations[key] || key}</a></li>`;
+        } else if (typeof value === "object") {
+            // Caso especial para "Eventos" que debe agrupar "Presencial" y "Galería"
+            if (key === "Eventos") {
+                html += this.buildEventsDropdown(key, value, lang, translations);
+            } else {
+                html += this.buildDropdown(key, value, lang, translations);
+            }
+        }
     }
     return html;
+}
+
+buildEventsDropdown(title, items, lang, translations) {
+  let html = `<li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="${title.replace(/\s/g, '')}Dropdown" role="button" data-bs-toggle="dropdown">
+                  ${translations[title] || title}
+                </a>
+                <ul class="dropdown-menu">`;
+
+  // Separamos los eventos por categorías (Presencial y Galería)
+  for (const category in items) {
+      html += `<li class="dropdown-subtitle">${translations[category] || category}</li>`; // Agregar subtítulo
+
+      const subItems = items[category];
+      for (const eventName in subItems) {
+          const link = this.replaceIdioma(subItems[eventName], lang);
+          html += `<li><a class="dropdown-item" href="${link}">${eventName}</a></li>`;
+      }
+
+      html += `<li><hr class="dropdown-divider"></li>`; // Separador entre categorías
   }
+
+  html += `</ul></li>`;
+  return html;
+}
+
+
 
   buildDropdown(title, items, lang, translations) {
     let html = `<li class="nav-item dropdown">
@@ -141,13 +172,14 @@ class CustomNavbar extends HTMLElement {
 
   replaceIdioma(url, lang) {
     if (typeof url !== "string") {
-      console.warn(`⚠️ replaceIdioma recibió un objeto en lugar de una URL string. Verifica navbar.json`, url);
-      return "#";
+        console.warn(`⚠️ replaceIdioma recibió un objeto en lugar de una URL string. Verifica navbar.json`, url);
+        return "#";
     }
 
-    // Si la URL ya tiene "/es/" o "/en/" en el medio, la cambia sin tocar el inicio
-    return url.replace(/\/(es|en)\//, `/${lang}/`);
-  }
+    // Reemplazar {idioma} en las URLs por el valor real de lang
+    return url.replace("{idioma}", lang);
+}
+
 
   getAlternateLanguageLink(targetLang) {
     let currentPath = window.location.pathname.split('/');
@@ -174,25 +206,53 @@ class CustomNavbar extends HTMLElement {
   }
 
   initDropdowns() {
-    const dropdowns = this.shadowRoot.querySelectorAll('.dropdown-toggle');
-    dropdowns.forEach(dropdown => {
-      dropdown.addEventListener('click', e => {
-        e.preventDefault();
-        const menu = dropdown.nextElementSibling;
-        if (menu) {
-          menu.classList.toggle("show");
-        }
+    const globalNav = this.shadowRoot.querySelector("#globalNavbarNav");
+    const globalToggle = this.shadowRoot.querySelector("#global-toggle-button");
+  
+    if (!globalToggle || !globalNav) return; // 🚨 Evitar errores si no existen los elementos
+  
+    // 1️⃣ FORZAMOS evento de click en el botón hamburguesa
+    globalToggle.addEventListener("click", (event) => {
+      event.preventDefault();
+      
+      // ⬇️ Abrir o cerrar el menú
+      const isExpanded = globalNav.classList.contains("show");
+      if (isExpanded) {
+        globalNav.classList.remove("show");
+        globalNav.style.display = "none"; // 🔥 FORZAMOS QUE SE OCULTE
+      } else {
+        globalNav.classList.add("show");
+        globalNav.style.display = "flex"; // 🔥 FORZAMOS QUE SE MUESTRE
+      }
+  
+      // ⬇️ Actualizar el estado del botón
+      globalToggle.setAttribute("aria-expanded", isExpanded ? "false" : "true");
+    });
+  
+    // 2️⃣ Cerrar el menú cuando se haga click en un enlace
+    const navLinks = this.shadowRoot.querySelectorAll(".navbar-nav .nav-link");
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        globalNav.classList.remove("show");
+        globalNav.style.display = "none"; // 🔥 OCULTAR EL MENÚ
+        globalToggle.setAttribute("aria-expanded", "false");
       });
     });
-
-    const globalToggle = this.shadowRoot.querySelector("#global-toggle-button");
-    const globalNav = this.shadowRoot.querySelector("#globalNavbarNav");
-    if (globalToggle && globalNav) {
-      globalToggle.addEventListener("click", () => {
-        globalNav.classList.toggle("show");
-      });
-    }
+  
+    document.addEventListener("click", (event) => {
+      // Obtenemos el recorrido completo del evento
+      const path = event.composedPath();
+      // Verificamos si el host (this) está en el recorrido
+      if (!path.includes(this) && globalNav.classList.contains("show")) {
+        globalNav.classList.remove("show");
+        globalNav.style.display = "none"; // 🔥 OCULTAR EL MENÚ
+        globalToggle.setAttribute("aria-expanded", "false");
+      }
+    });
+    
   }
+  
+
 }
 
 customElements.define("custom-navbar", CustomNavbar);
