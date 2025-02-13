@@ -35,6 +35,15 @@
   margin-top: 0;
 }
 
+.dropdown-menu .dropdown-item {
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: var(--elementos-interactivos);
+  color: white;
+}
+
 /* Espaciado en selector de idioma */
 .language-switch {
   margin-left: 30px;
