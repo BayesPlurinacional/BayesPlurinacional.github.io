@@ -45,40 +45,62 @@
 }
 
 /* Espaciado en selector de idioma */
+/* Contenedor del selector de idioma */
 .language-switch {
   margin-left: 30px;
-  padding: 8px 15px;
-  border-radius: 20px;
+  padding: 6px 12px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: background 0.3s, border 0.3s;
 }
 
+/* Botón de idioma */
 .language-switch .lang-btn {
-  color: black;
-  opacity: 0.6;
-}
-
-.es-active .lang-btn:first-child,
-.en-active .lang-btn:last-child {
-  opacity: 1;
+  font-size: 0.9rem;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border-radius: 20px;
   font-weight: bold;
 }
 
-.language-switch .lang-btn {
-  background: white;
-  border: none;
-  cursor: pointer;
-  font-size: 0.9rem;
-  padding: 5px 8px;
-  transition: transform 0.2s;
-}
-
-.language-switch .lang-btn:hover {
-  transform: scale(1.1);
-}
-
-.language-switch .lang-separator {
+/* Idioma ACTIVO - ahora es más visible */
+.es-active .lang-btn[data-lang="es"],
+.en-active .lang-btn[data-lang="en"] {
   color: white;
-  margin: 0 5px;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 1;
 }
+
+/* Idioma INACTIVO - ahora es opaco */
+.es-active .lang-btn[data-lang="en"],
+.en-active .lang-btn[data-lang="es"] {
+  color: black;
+  background: rgba(255, 255, 255, 0.7);
+  opacity: 0.6;
+}
+
+/* Efecto hover */
+.language-switch .lang-btn:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+/* Separador */
+.language-switch .lang-separator {
+  color: black;
+  font-weight: bold;
+  margin: 0 8px;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
 
 
 /* === Estilos del Footer === */
