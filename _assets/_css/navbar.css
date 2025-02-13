@@ -61,7 +61,7 @@
 /* Botón de idioma */
 .language-switch .lang-btn {
   font-size: 0.9rem;
-  padding: 6px 10px;
+  padding: 2px 5px;
   border: none;
   cursor: pointer;
   text-transform: uppercase;
@@ -71,11 +71,15 @@
 }
 
 /* Idioma ACTIVO - ahora es más visible */
+/* Desactivar el botón del idioma actual */
 .es-active .lang-btn[data-lang="es"],
 .en-active .lang-btn[data-lang="en"] {
-  color: white;
-  background: rgba(0, 0, 0, 0.8);
+  color: black;
+  background: white;
   opacity: 1;
+  cursor: default;
+  pointer-events: none;
+  text-decoration: none;
 }
 
 /* Idioma INACTIVO - ahora es opaco */
@@ -83,12 +87,12 @@
 .en-active .lang-btn[data-lang="es"] {
   color: black;
   background: rgba(255, 255, 255, 0.7);
-  opacity: 0.6;
+  opacity: 0.3;
+  text-decoration: none;
 }
 
 /* Efecto hover */
 .language-switch .lang-btn:hover {
-  transform: scale(1.05);
   opacity: 1;
 }
 
