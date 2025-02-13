@@ -37,7 +37,6 @@ body {
     background-color: var(--fondo-claro);
     color: #333;
     line-height: 1.6;
-    padding-top: 90px;
 }
 
 .musica-container {
@@ -50,9 +49,6 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--titulo-encabezado);
 }
 
-/* ------------------------------ */
-/* 📌 NAVBAR */
-/* ------------------------------ */
 
 /* Estilos Generales */
 .navbar {
@@ -89,6 +85,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--elementos-interactivos);
   color: white;
 }
+
 
 
 /* ------------------------------ */

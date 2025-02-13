@@ -7,6 +7,7 @@
           "Cronograma": "blablabla/{idioma}/opcion1.html",
           "Disertantes": "blablabla/{idioma}/opcion2.html",
           "Materiales (Biiblliografia)": "blablabla/{idioma}/opcion3.html",
+          "workshops": "blablabla/{idioma}/opcion4.html",
         "Galeria": "blablabla/{idioma}/galeria.html"
       }
     },

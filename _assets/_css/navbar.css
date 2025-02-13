@@ -1,0 +1,113 @@
+/* === Fijar navbar arriba sin desplazamiento === */
+.global-navbar {
+  background-color: var(--fondo-oscuro);
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  top: 0;
+  z-index: 1100;
+}
+
+/* Mejorar visibilidad de los textos */
+.navbar-nav .nav-link {
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: var(--elementos-interactivos);
+}
+
+/* Mejorar dropdowns */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  background-color: var(--fondo-claro);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 0;
+}
+
+/* Espaciado en selector de idioma */
+.language-switch {
+  margin-left: 30px;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+.language-switch .lang-btn {
+  color: black;
+  opacity: 0.6;
+}
+
+.es-active .lang-btn:first-child,
+.en-active .lang-btn:last-child {
+  opacity: 1;
+  font-weight: bold;
+}
+
+.language-switch .lang-btn {
+  background: white;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 5px 8px;
+  transition: transform 0.2s;
+}
+
+.language-switch .lang-btn:hover {
+  transform: scale(1.1);
+}
+
+.language-switch .lang-separator {
+  color: white;
+  margin: 0 5px;
+}
+
+
+/* === Estilos del Footer === */
+.footer {
+  background-color: var(--fondo-oscuro);
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer h5 {
+  font-family: 'Jost', sans-serif;
+  color: var(--fondo-claro);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 5px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  color: var(--boton-secundario);
+}
+
+.footer-bottom {
+  background-color: var(--fondo-oscuro);
+  padding: 10px 0;
+  font-size: 14px;
+}
