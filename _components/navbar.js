@@ -6,23 +6,22 @@ class CustomNavbar extends HTMLElement {
 
   async connectedCallback() {
     try {
-      // Cargar el JSON del navbar global
       const globalResponse = await fetch('/_data/navbar.json');
       const globalData = await globalResponse.json();
 
-      // Determinar el idioma desde la URL o el atributo
-      let lang = this.getAttribute('data-lang') || this.detectLanguage(globalData);
+      // Detectar idioma según la ruta
+      let lang = this.getAttribute('data-lang') || this.detectLanguage();
 
-      // Traducciones
+      // Obtener las traducciones correctas
       const translations = this.getTranslations(lang);
 
-      // Generar HTML del navbar
+      // Generar el HTML del navbar con los enlaces correctos
       const navItemsHTML = this.generateNavItems(globalData.navbar.global, lang, translations);
       const idiomaHTML = this.generateLanguageSelector(lang);
 
-      // Estructura del navbar principal
+      // Estructura HTML del navbar
       const globalNavbarHTML = `
-        <nav class="navbar navbar-expand-lg global-navbar">
+        <nav class="navbar navbar-expand-lg global-navbar fixed-top">
           <div class="container">
             <a class="navbar-brand" href="/">
               <img src="/_assets/_img/logos/PB.svg" alt="Logo" width="120">
@@ -40,60 +39,58 @@ class CustomNavbar extends HTMLElement {
         </nav>
       `;
 
-      // Estructura del navbar secundario (opcional)
-      let secondaryNavbarHTML = this.generateSecondaryNavbar();
-
-      // Insertar en el shadow DOM
+      // Insertar en el Shadow DOM
       this.shadowRoot.innerHTML = `
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="/_assets/_css/navbar.css">
-        
         ${globalNavbarHTML}
-        ${secondaryNavbarHTML}
       `;
 
-      // Inicializar interacciones
+      // Inicializar eventos
       this.initDropdowns();
+      this.initLanguageSwitch();
     } catch (error) {
-      console.error("Error en CustomNavbar connectedCallback:", error);
+      console.error("❌ Error en CustomNavbar:", error);
     }
   }
 
-  detectLanguage(globalData) {
-    if (window.location.pathname.includes("/en/")) {
-      return "en";
-    } else {
-      return globalData.config.idioma.default || "es";
+  detectLanguage() {
+    const pathParts = window.location.pathname.split('/');
+    if (pathParts.includes('en')) {
+      return 'en';
+    } else if (pathParts.includes('es')) {
+      return 'es';
     }
+    return "es"; // Idioma por defecto
   }
 
   getTranslations(lang) {
     return {
       es: {
-      "Eventos": "Eventos",
-      "Seminarios Virtuales": "Seminarios Virtuales", 
-      "Presencial": "Presencial",
-      "Virtual": "Virtual",
-      "Musica": "Música",
-      "Comunidad": "Comunidad", 
-      "Auspiciantes": "Auspiciantes",
-      "Contacto": "Contacto",
-      "Redes Sociales": "Redes Sociales",
-      "Conducta": "Código de Conducta",
-      "Idioma": "Idioma"
+        "Eventos": "Eventos",
+        "Seminarios Virtuales": "Seminarios Virtuales",
+        "Presencial": "Presencial",
+        "Virtual": "Virtual",
+        "Musica": "Música",
+        "Comunidad": "Comunidad",
+        "Auspiciantes": "Auspiciantes",
+        "Contacto": "Contacto",
+        "Redes Sociales": "Redes Sociales",
+        "Conducta": "Código de Conducta",
+        "Idioma": "Idioma"
       },
       en: {
-      "Eventos": "Events",
-      "Seminarios Virtuales": "Virtual Seminars",
-      "Presencial": "In Person",
-      "Virtual": "Virtual", 
-      "Musica": "Music",
-      "Comunidad": "Community",
-      "Auspiciantes": "Sponsors",
-      "Contacto": "Contact",
-      "Redes Sociales": "Social Networks", 
-      "Conducta": "Code of Conduct",
-      "Idioma": "Language"
+        "Eventos": "Events",
+        "Seminarios Virtuales": "Virtual Seminars",
+        "Presencial": "In Person",
+        "Virtual": "Virtual",
+        "Musica": "Music",
+        "Comunidad": "Community",
+        "Auspiciantes": "Sponsors",
+        "Contacto": "Contact",
+        "Redes Sociales": "Social Networks",
+        "Conducta": "Code of Conduct",
+        "Idioma": "Language"
       }
     }[lang];
   }
@@ -101,91 +98,80 @@ class CustomNavbar extends HTMLElement {
   generateNavItems(navItems, lang, translations) {
     let html = "";
     for (const key in navItems) {
-      if (key === "Idioma") continue;
+      if (key === "Idioma") continue; // No generamos esto aquí, ya hay un selector de idioma
       const value = navItems[key];
-  
+
       if (typeof value === "string") {
         html += `<li class="nav-item"><a class="nav-link" href="${this.replaceIdioma(value, lang)}">${translations[key] || key}</a></li>`;
       } else if (typeof value === "object") {
-        html += this.buildDropdown(key, value, lang, translations);  // Aquí es donde debe llamarse correctamente
+        html += this.buildDropdown(key, value, lang, translations);
       }
     }
     return html;
   }
-  
 
-buildDropdown(title, items, lang, translations) {
-  let html = `<li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="${title.replace(/\s/g, '')}Dropdown">${translations[title] || title}</a>
-                <ul class="dropdown-menu">`;
-  
-  for (const subKey in items) {
-    html += `<li><a class="dropdown-item" href="${this.replaceIdioma(items[subKey], lang)}">${translations[subKey] || subKey}</a></li>`;
+  buildDropdown(title, items, lang, translations) {
+    let html = `<li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="${title.replace(/\s/g, '')}Dropdown" role="button" data-bs-toggle="dropdown">
+                    ${translations[title] || title}
+                  </a>
+                  <ul class="dropdown-menu">`;
+
+    for (const subKey in items) {
+      html += `<li><a class="dropdown-item" href="${this.replaceIdioma(items[subKey], lang)}">${translations[subKey] || subKey}</a></li>`;
+    }
+
+    html += `</ul></li>`;
+    return html;
   }
-  
-  html += `</ul></li>`;
-  return html;
-}
-
-
 
   generateLanguageSelector(lang) {
     return `
       <li class="nav-item">
         <div class="language-selector">
           <div class="language-switch ${lang === 'es' ? 'es-active' : 'en-active'}">
-            <a href="${this.getAlternateLanguageLink('en')}" class="lang-btn"><span>ES</span></a>
+            <a href="#" class="lang-btn" data-lang="en"><span>EN</span></a>
             <span class="divider">|</span>
-            <a href="${this.getAlternateLanguageLink('es')}" class="lang-btn"><span>EN</span></a>
+            <a href="#" class="lang-btn" data-lang="es"><span>ES</span></a>
           </div>
         </div>
       </li>
     `;
   }
 
-  generateSecondaryNavbar() {
-    const eventType = this.getAttribute('data-event-type');
-    const eventKey = this.getAttribute('data-event-key');
-
-    if (eventType === "Presencial" && eventKey) {
-      return `
-        <nav class="navbar navbar-expand-lg secondary-navbar">
-          <div class="container">
-            <button class="navbar-toggler" type="button" id="secondary-toggle-button">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="secondaryNavbarNav">
-              <ul class="navbar-nav ms-auto">
-                <!-- Aquí se llenarán los elementos específicos del navbar secundario -->
-              </ul>
-            </div>
-          </div>
-        </nav>
-      `;
+  replaceIdioma(url, lang) {
+    if (typeof url !== "string") {
+      console.warn(`⚠️ replaceIdioma recibió un objeto en lugar de una URL string. Verifica navbar.json`, url);
+      return "#";
     }
-    return "";
+
+    // Si la URL ya tiene "/es/" o "/en/" en el medio, la cambia sin tocar el inicio
+    return url.replace(/\/(es|en)\//, `/${lang}/`);
   }
 
   getAlternateLanguageLink(targetLang) {
-    const currentPath = window.location.pathname;
-    if (currentPath.includes("/es/")) {
-      return currentPath.replace("/es/", `/${targetLang}/`);
-    } else if (currentPath.includes("/en/")) {
-      return currentPath.replace("/en/", `/${targetLang}/`);
-    } else {
-      return `/_pages/${targetLang}${currentPath}`;
+    let currentPath = window.location.pathname.split('/');
+
+    // Buscar si ya hay un "es" o "en" en la estructura
+    const langIndex = currentPath.indexOf('es') !== -1 ? currentPath.indexOf('es') : currentPath.indexOf('en');
+    if (langIndex !== -1) {
+      currentPath[langIndex] = targetLang; // Reemplazar el idioma en su posición actual
     }
+
+    return currentPath.join('/');
   }
 
-  replaceIdioma(url, lang) {
-    if (typeof url !== "string") {
-        console.warn(`⚠️ replaceIdioma recibió un objeto en lugar de una URL string. Verifica navbar.json`, url);
-        return "#"; // Devuelve un enlace vacío en caso de error
-    }
-    return url.replace(/{idioma}/gi, lang);
-}
-
-
+  initLanguageSwitch() {
+    const langButtons = this.shadowRoot.querySelectorAll(".lang-btn");
+    langButtons.forEach(button => {
+      button.addEventListener("click", event => {
+        event.preventDefault();
+        const targetLang = button.getAttribute("data-lang");
+        const newUrl = this.getAlternateLanguageLink(targetLang);
+        window.location.href = newUrl;
+      });
+    });
+  }
 
   initDropdowns() {
     const dropdowns = this.shadowRoot.querySelectorAll('.dropdown-toggle');
@@ -204,14 +190,6 @@ buildDropdown(title, items, lang, translations) {
     if (globalToggle && globalNav) {
       globalToggle.addEventListener("click", () => {
         globalNav.classList.toggle("show");
-      });
-    }
-
-    const secondaryToggle = this.shadowRoot.querySelector("#secondary-toggle-button");
-    const secondaryNav = this.shadowRoot.querySelector("#secondaryNavbarNav");
-    if (secondaryToggle && secondaryNav) {
-      secondaryToggle.addEventListener("click", () => {
-        secondaryNav.classList.toggle("show");
       });
     }
   }
