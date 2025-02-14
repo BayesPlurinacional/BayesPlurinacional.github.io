@@ -1,0 +1,58 @@
+{
+  "Comunidad": {
+    "es": {
+      "Titulo": "Comunidad Bayesiana Plurinacional",
+      "Descripcion": "¿Quién está detrás de esta gran comunidad bayesiana?",
+      "Advertencias": [
+        "Falta incorporar los países con nombres compuestos.",
+        "La última actualización fue realizada en diciembre 2022.",
+        "Falta incorporar palabras claves relacionadas a modelos generativos."
+      ],
+      "Paises": {
+        "Argentina": "https://bayesplurinacional.org/redes/redArgentina.html",
+        "Bolivia": "https://bayesplurinacional.org/redes/redBolivia.html",
+        "Brasil": "https://bayesplurinacional.org/redes/redBrazil.html",
+        "Chile": "https://bayesplurinacional.org/redes/redChile.html",
+        "Colombia": "https://bayesplurinacional.org/redes/redColombia.html",
+        "Cuba": "https://bayesplurinacional.org/redes/redCuba.html",
+        "Ecuador": "https://bayesplurinacional.org/redes/redEcuador.html",
+        "Guatemala": "https://bayesplurinacional.org/redes/redGuatemala.html",
+        "Honduras": "https://bayesplurinacional.org/redes/redHonduras.html",
+        "México": "https://bayesplurinacional.org/redes/redMexico.html",
+        "Nicaragua": "https://bayesplurinacional.org/redes/redNicaragua.html",
+        "Panamá": "https://bayesplurinacional.org/redes/redPanama.html",
+        "Paraguay": "https://bayesplurinacional.org/redes/redParaguay.html",
+        "Perú": "https://bayesplurinacional.org/redes/redPeru.html",
+        "Uruguay": "https://bayesplurinacional.org/redes/redUruguay.html",
+        "Venezuela": "https://bayesplurinacional.org/redes/redVenezuela.html"
+      }
+    },
+    "en": {
+      "Titulo": "Plurinational Bayesian Community",
+      "Descripcion": "Who is behind this great Bayesian community?",
+      "Advertencias": [
+        "Countries with compound names still need to be incorporated.",
+        "The last update was made in December 2022.",
+        "Keywords related to generative models are still missing."
+      ],
+      "Paises": {
+        "Argentina": "https://bayesplurinacional.org/redes/redArgentina.html",
+        "Bolivia": "https://bayesplurinacional.org/redes/redBolivia.html",
+        "Brazil": "https://bayesplurinacional.org/redes/redBrazil.html",
+        "Chile": "https://bayesplurinacional.org/redes/redChile.html",
+        "Colombia": "https://bayesplurinacional.org/redes/redColombia.html",
+        "Cuba": "https://bayesplurinacional.org/redes/redCuba.html",
+        "Ecuador": "https://bayesplurinacional.org/redes/redEcuador.html",
+        "Guatemala": "https://bayesplurinacional.org/redes/redGuatemala.html",
+        "Honduras": "https://bayesplurinacional.org/redes/redHonduras.html",
+        "Mexico": "https://bayesplurinacional.org/redes/redMexico.html",
+        "Nicaragua": "https://bayesplurinacional.org/redes/redNicaragua.html",
+        "Panama": "https://bayesplurinacional.org/redes/redPanama.html",
+        "Paraguay": "https://bayesplurinacional.org/redes/redParaguay.html",
+        "Peru": "https://bayesplurinacional.org/redes/redPeru.html",
+        "Uruguay": "https://bayesplurinacional.org/redes/redUruguay.html",
+        "Venezuela": "https://bayesplurinacional.org/redes/redVenezuela.html"
+      }
+    }
+  }
+}
