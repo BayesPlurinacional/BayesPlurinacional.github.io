@@ -1,5 +1,6 @@
 import './navbar.js';
 import './footer.js';
+import './secondary-navbar.js';  // Asegúrate de importar el nuevo componente
 
 class CustomHeader extends HTMLElement {
   constructor() {
@@ -14,6 +15,11 @@ class CustomHeader extends HTMLElement {
     
     this.shadowRoot.innerHTML = `
       <custom-navbar data-event-type="${eventType}" data-event-key="${eventKey}" data-lang="${lang}"></custom-navbar>
+      ${
+        eventKey 
+          ? `<secondary-navbar data-event-type="${eventType}" data-event-key="${eventKey}" data-lang="${lang}"></secondary-navbar>` 
+          : ""
+      }
       <slot></slot>
       <custom-footer data-lang="${lang}"></custom-footer>
       <style>
