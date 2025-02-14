@@ -1,41 +1,93 @@
-
-
-/* === Estilos del Footer === */
 .footer {
-  background-color: var(--fondo-oscuro);
-  color: white;
+  background-color: #1a1a1a;
+  color: #fff;
   padding: 40px 0;
-  text-align: center;
 }
 
+.footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ✅ Sección de columnas */
+.footer .footer-section {
+  flex: 1;
+  min-width: 200px;
+  padding: 10px;
+}
+
+/* ✅ Títulos */
 .footer h5 {
-  font-family: 'Jost', sans-serif;
-  color: var(--fondo-claro);
-  font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-weight: bold;
 }
 
+/* ✅ Enlaces */
 .footer ul {
-  list-style: none;
-  padding: 0;
+  padding-left: 0;
 }
 
 .footer ul li {
-  margin-bottom: 5px;
+  list-style: none;
+  margin-bottom: 8px;
 }
 
 .footer a {
-  color: white;
+  color: #fff;
   text-decoration: none;
-  font-weight: 500;
+  transition: color 0.3s ease-in-out;
 }
 
 .footer a:hover {
-  color: var(--boton-secundario);
+  text-decoration: underline;
+  color: #f8c291;
 }
 
+/* ✅ Sección de redes sociales */
+.footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.footer .social-icons a:hover {
+  transform: scale(1.2);
+  background: #f8c291;
+}
+
+/* ✅ Línea final */
 .footer-bottom {
-  background-color: var(--fondo-oscuro);
-  padding: 10px 0;
-  font-size: 14px;
+  background-color: #111;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+/* ✅ RESPONSIVE: Footer en móviles */
+@media (max-width: 768px) {
+  .footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer .social-icons {
+    justify-content: center;
+  }
 }
