@@ -1,0 +1,55 @@
+!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galería 2024</title>
+    <script type="module" src="/_components/header.js"></script>
+    <script>
+      async function cargarFotos() {
+        try {
+          const response = await fetch("/_data/galeria.json");
+          const data = await response.json();
+          const fotos = data.Galeria["2025"];
+
+          const contenedor = document.getElementById("fotos-container");
+          fotos.forEach((foto) => {
+            const fotoElement = document.createElement("div");
+            fotoElement.classList.add("col-md-6", "mb-4");
+
+            fotoElement.innerHTML = `
+                        <div class="card shadow-sm">
+                            <img class="card-img-top" src="${foto.imagen}" alt="${foto.nombre}">                            
+                        </div>
+                    `;
+            contenedor.appendChild(fotoElement);
+          });
+        } catch (error) {
+          console.error("Error cargando las fotos:", error);
+        }
+      }
+      document.addEventListener("DOMContentLoaded", cargarFotos);
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/_assets/_css/global.css" />
+  </head>
+  <body>
+    <custom-header data-lang="en">
+      <div class="container musica-container">
+        <div class=>
+            <h1>
+                We're preparing to Bogotá 2025
+            </h1>
+            <p>
+              From October 15 to 17 at the Externado University. More information soon!
+            </p>
+        </div>
+        <div class="row" id="fotos-container"></div>
+    </div>
+    
+    </custom-header>
+  </body>
+</html>

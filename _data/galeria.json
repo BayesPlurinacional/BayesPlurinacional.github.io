@@ -1,0 +1,144 @@
+{
+    "Galeria": {
+        "2024": [
+            {
+                "imagen" : "/_assets/_img/fotos/2024/20240806_080000.jpg",
+                "nombre" : "Imagen 1"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2024/20240806_092000.jpg",
+                "nombre" : "Imagen 2"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2024/20240806_093000.jpeg",
+                "nombre" : "Imagen 3"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2024/20240806_094842.jpg",
+                "nombre" : "Imagen 4"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2024/20240806_100000.jpeg",
+                "nombre" : "Imagen 5"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2024/20240806_110000.jpeg",
+                "nombre" : "Imagen 6"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2024/20240807_101958.jpg",
+                "nombre" : "Imagen 7"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2024/20240807_102004.jpg",
+                "nombre" : "Imagen 8"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2024/20240806_130000.jpeg",
+                "nombre" : "Imagen 9"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2024/20240808_160000.jpg",
+                "nombre" : "Imagen 10"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2024/20240808_150000.jpg",
+                "nombre" : "Imagen 11"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2024/20240808_163000.jpg",
+                "nombre" : "Imagen 12"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2024/20240808_180000.jpg",
+                "nombre" : "Imagen 13"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2024/20240808_170001.jpg",
+                "nombre" : "Imagen 14"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2024/20240806_234555.jpg",
+                "nombre" : "Imagen 15"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2024/20240806_232625.jpg",
+                "nombre" : "Imagen 16"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2024/20240806_230627.jpg",
+                "nombre" : "Imagen 17"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2024/20240809_135422.jpg",
+                "nombre" : "Imagen 18"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2024/20240809_144414.jpg",
+                "nombre" : "Imagen 19"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2024/20240809_144417.jpg",
+                "nombre" : "Imagen 20"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2024/20240809_144442.jpg",
+                "nombre" : "Imagen 21"
+            }
+        ],
+        "2023": [
+            {
+                "imagen" : "/_assets/_img/fotos/2023/01.jpg",
+                "nombre" : "Imagen 1"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2023/02.jpg",
+                "nombre" : "Imagen 2"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2023/03.jpg",
+                "nombre" : "Imagen 3"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2023/04.jpg",
+                "nombre" : "Imagen 4"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2023/05.jpeg",
+                "nombre" : "Imagen 5"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2023/07.jpg",
+                "nombre" : "Imagen 6"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2023/09.jpg",
+                "nombre" : "Imagen 7"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2023/10.jpg", 
+                "nombre" : "Imagen 8"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2023/13.jpg",
+                "nombre" : "Imagen 9"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2023/21.jpg",
+                "nombre" : "Imagen 10"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2023/27.jpg",
+                "nombre" : "Imagen 11"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2023/31.jpg",
+                "nombre" : "Imagen 12"
+            },
+            {
+                "imagen" : "/_assets/_img/fotos/2023/39.jpg",
+                "nombre" : "Imagen 13"
+            }
+        ]
+    }
+}
