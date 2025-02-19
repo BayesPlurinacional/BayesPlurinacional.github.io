@@ -179,22 +179,34 @@
 }
 
 
-/* ------------------------------ */
-/* 📌 Ubicación */
+/* Estilos para la sección de ubicación */
 .ubicacion {
-  background: var(--fondo-claro);
+  background-color: var(--fondo-claro);
+  padding: 60px 0;
+  border-radius: 10px;
 }
 
+/* Estilos para la caja de planificación de viaje */
+.info-viaje {
+  background-color: var(--fondo-oscuro);
+  color: var(--texto-oscuro);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Mapa embebido */
 .mapa-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .mapa {
   width: 100%;
-  max-width: 600px;
-  height: 350px;
+  height: 450px;
+  border: none;
   border-radius: 10px;
-  border: 2px solid var(--titulo-encabezado);
 }
