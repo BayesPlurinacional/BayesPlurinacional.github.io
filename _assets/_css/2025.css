@@ -1,0 +1,148 @@
+ /* ------------------------------ */
+/* 📌 Hero Section Mejorado */
+/* ------------------------------ */
+
+.body{
+  font-family: 'Poppins', sans-serif;
+  background: var(--degradado-innovacion);
+}
+.hero {
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--fondo-oscuro)
+}
+
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.hero .btn-lg {
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  border-radius: 50px;
+  margin: 10px;
+}
+
+/* ------------------------------ */
+/* 📌 Contador Regresivo */
+/* ------------------------------ */
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.count-item {
+  background: var(--fondo-oscuro);
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.count-item span {
+  font-size: 2rem;
+  display: block;
+}
+
+.count-item small {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+
+
+/* ------------------------------ */
+/* 📌 Sección Información del Evento */
+.info-evento {
+  padding: 60px 20px;
+}
+
+.titulo-seccion {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--titulo-encabezado);
+}
+
+/* ------------------------------ */
+/* 📌 Convocatoria */
+.convocatoria {
+  background: var(--degradado-innovacion);
+  padding: 60px 20px;
+}
+
+.convocatoria .btn-principal {
+  background: white;
+  color: var(--boton-principal);
+  border-radius: 50px;
+  font-size: 1.2rem;
+  padding: 12px 24px;
+}
+
+.convocatoria .btn-principal:hover {
+  background: var(--degradado-accion);
+  color: white;
+}
+
+/* ------------------------------ */
+/* 📌 Organizan */
+/* ------------------------------ */
+/* 📌 Organizan */
+.organizan {
+  background: var(--fondo-claro);
+}
+
+.sponsor-logo {
+  max-width: 200px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sponsor-logo:hover {
+  transform: scale(1.1);
+}
+
+.enlace-dinamico {
+  color: var(--elementos-interactivos);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.enlace-dinamico:hover {
+  color: var(--boton-principal);
+}
+
+/* ------------------------------ */
+/* 📌 Ubicación */
+.ubicacion {
+  background: var(--fondo-claro);
+}
+
+.mapa-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.mapa {
+  width: 100%;
+  max-width: 600px;
+  height: 350px;
+  border-radius: 10px;
+  border: 2px solid var(--titulo-encabezado);
+}

@@ -2,17 +2,9 @@
   "Evento": {
     "Presencial": {
       "Evento 2025": {
-        
-        "Organización del evento": "blablabla/{idioma}/organizacion.html",
-          "Cronograma": "blablabla/{idioma}/opcion1.html",
-          "Disertantes": "blablabla/{idioma}/opcion2.html",
-          "Materiales (Biiblliografia)": "blablabla/{idioma}/opcion3.html",
-          "workshops": "blablabla/{idioma}/opcion4.html",
-        "Galeria": "blablabla/{idioma}/galeria.html"
+        "Organización" : "_pages/{idioma}/organizacion.html"
+
       }
-    },
-    "Virtual": {
-      "Evento Virtual": "blablabla/{idioma}/virtual.html"
     }
   }
 }
