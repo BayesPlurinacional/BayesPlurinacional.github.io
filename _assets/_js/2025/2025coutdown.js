@@ -1,5 +1,5 @@
 function actualizarContador() {
-  const fechaEvento = new Date("October 15, 2025 00:00:00").getTime();
+  const fechaEvento = new Date("October 18, 2025 00:00:00").getTime();
   const ahora = new Date().getTime();
   const diferencia = fechaEvento - ahora;
 
