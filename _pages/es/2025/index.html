@@ -51,7 +51,7 @@
 <section class="organizan container text-center py-5">
   <h2 class="titulo-seccion">🤝 Organizan y Apoyan</h2>
   <p class="lead">Este evento es posible gracias a la colaboración de:
-    <a class="lead" href="/organizacion.html">Lista completa de organizadores</a>, junto a
+    <a class="lead" id="organizacion-link" href="/organizacion.html">Lista completa de organizadores</a>, junto a
   </p>
   <div class="d-flex justify-content-center gap-4 flex-wrap">
     <img src="/logos/externado.jpg" alt="Externado" class="sponsor-logo">
@@ -78,5 +78,19 @@
 </section>
 
   </custom-header>
+  <script>
+    // Detecta el idioma basado en la URL y ajusta el enlace de organización
+    document.addEventListener("DOMContentLoaded", function() {
+      const url = window.location.pathname;
+      let idioma = "es"; // Por defecto español
+  
+      if (url.includes("/en/")) {
+        idioma = "en";
+      } 
+  
+      // Ajusta el enlace con la estructura correcta
+      document.getElementById("organizacion-link").href = `/_pages/${idioma}/2025/organizacion.html`;
+    });
+  </script>
 </body>
 </html>
