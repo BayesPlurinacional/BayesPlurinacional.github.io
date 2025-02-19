@@ -128,6 +128,58 @@
 }
 
 /* ------------------------------ */
+/* 📌 Galería de Logos */
+/* ------------------------------ */
+/* Estilos del carrusel */
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+  max-width: 800px; /* Control the visible width */
+  margin: 0 auto;
+}
+
+.logos-carousel {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  animation: scroll-logos 20s linear infinite;
+}
+
+.logo-item {
+  flex: 0 0 150px; /* Fixed width for each logo */
+  width: 150px;
+}
+
+.logo-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.logo-item img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scroll-logos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* Move half the width for seamless loop */
+  }
+}
+
+/* Remove unnecessary styles */
+.logos-carousel::after {
+  display: none;
+}
+
+
+/* ------------------------------ */
 /* 📌 Ubicación */
 .ubicacion {
   background: var(--fondo-claro);
