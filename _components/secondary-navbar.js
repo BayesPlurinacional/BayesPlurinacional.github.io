@@ -96,22 +96,24 @@ class SecondaryNavbar extends HTMLElement {
   getTranslations(lang) {
     return {
       es: {
-        "Organización del evento": "Organización del evento",
+        "Organización": "Organización",
         "Cronograma": "Cronograma",
         "Disertantes": "Disertantes",
         "Materiales (Biiblliografia)": "Materiales (Bibliografía)",
         "workshops": "Workshops",
         "Galeria": "Galería",
-        "Evento Virtual": "Evento Virtual"
+        "Evento Virtual": "Evento Virtual",
+        "Ciudad": "Ciudad"
       },
       en: {
-        "Organización del evento": "Event Organization",
+        "Organización": "Event Organization",
         "Cronograma": "Schedule",
         "Disertantes": "Speakers",
         "Materiales (Biiblliografia)": "Materials (Bibliography)",
         "workshops": "Workshops",
         "Galeria": "Gallery",
-        "Evento Virtual": "Virtual Event"
+        "Evento Virtual": "Virtual Event",
+        "Ciudad": "City"
       }
     }[lang];
   }
