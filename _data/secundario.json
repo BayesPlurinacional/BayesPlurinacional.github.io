@@ -7,6 +7,12 @@
         "Disertantes" : "disertantes.html",
         "Poster" : "poster.html",
         "Ciudad" : "ciudad.html"
+      },
+      "Evento 2024": {
+        "Organización" : "organizacion.html",
+        "Cronograma" : "cronograma.html",
+        "Disertantes" : "disertantes.html",
+        "Ciudad" : "ciudad.html"
       }
     }
   }
