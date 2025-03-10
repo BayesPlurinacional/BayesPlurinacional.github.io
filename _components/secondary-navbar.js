@@ -6,70 +6,38 @@ class SecondaryNavbar extends HTMLElement {
 
   async connectedCallback() {
     try {
-      // Cargar el JSON secundario
-      const response = await fetch('/_data/secundario.json');
+      const response = await fetch("/_data/secundario.json");
+      if (!response.ok) throw new Error("No se pudo cargar secundario.json");
       const data = await response.json();
 
-      // Leer atributos: tipo de evento, clave del evento y idioma
-      const eventType = this.getAttribute('data-event-type') || "";
-      const eventKey = this.getAttribute('data-event-key') || "";
-      const lang = this.getAttribute('data-lang') || this.detectLanguage();
-      const translations = this.getTranslations(lang);
+      // Detectar idioma y evento desde la URL
+      const lang = this.detectLanguage();
+      const eventKey = "Evento 2025"; // 🔹 Nos enfocamos en 2025
+      const eventType = "Presencial";
 
-      // Filtrar la información del JSON según el tipo y clave del evento.
-      // Suponemos que la estructura del JSON es algo así:
-      // {
-      //   "Evento": {
-      //     "Presencial": {
-      //       "Evento 2025": { ... },
-      //       "Evento 2023": { ... }
-      //     },
-      //     "Virtual": {
-      //       "Evento Virtual": "..."
-      //     }
-      //   }
-      // }
-      let navItemsHTML = "";
-      if (
-        data["Evento"] &&
-        data["Evento"][eventType] &&
-        data["Evento"][eventType][eventKey]
-      ) {
-        const eventData = data["Evento"][eventType][eventKey];
+      // Obtener las secciones del evento
+      const eventData = data?.Evento?.[eventType]?.[eventKey] || {};
+      
+      // 🔹 Excluir "Ciudad"
+      const filteredSections = Object.keys(eventData).filter(section => section !== "Ciudad");
 
-        // Recorremos el objeto eventData para construir los enlaces o dropdowns
-        for (const item in eventData) {
-          const value = eventData[item];
-          if (typeof value === 'string') {
-            navItemsHTML += `
-              <li class="secondary-nav-item">
-                <a class="secondary-nav-link" href="${this.replaceIdioma(value, lang)}">
-                  ${translations[item] || item}
-                </a>
-              </li>`;
-          } else if (typeof value === 'object') {
-            // Caso dropdown
-            navItemsHTML += `
-              <li class="secondary-nav-item dropdown">
-                <a href="#" class="secondary-nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                  ${translations[item] || item}
-                </a>
-                <ul class="dropdown-menu">`;
-            for (const subItem in value) {
-              navItemsHTML += `
-                <li>
-                  <a class="dropdown-item" href="${this.replaceIdioma(value[subItem], lang)}">
-                    ${translations[subItem] || subItem}
-                  </a>
-                </li>`;
-            }
-            navItemsHTML += `</ul></li>`;
-          }
-        }
+      if (filteredSections.length === 0) {
+        console.warn("🔸 No hay secciones para mostrar en el navbar secundario.");
+        return;
       }
 
-      // Construir el HTML del secondary navbar
-      const html = `
+      // Generar HTML del navbar secundario
+      const navItemsHTML = filteredSections.map(section => `
+        <li class="secondary-nav-item">
+          <a class="secondary-nav-link" href="${this.replaceIdioma(eventData[section], lang)}">
+            ${this.getTranslations(lang)[section] || section}
+          </a>
+        </li>
+      `).join("");
+
+      // Insertar HTML en el shadow DOM
+      this.shadowRoot.innerHTML = `
+        <link rel="stylesheet" href="/_assets/_css/secondary-navbar.css">
         <nav class="secondary-navbar">
           <div class="container">
             <ul class="secondary-nav">
@@ -79,51 +47,41 @@ class SecondaryNavbar extends HTMLElement {
         </nav>
       `;
 
-      this.shadowRoot.innerHTML = `
-        <link rel="stylesheet" href="/_assets/_css/secondary-navbar.css">
-        ${html}
-      `;
+      // Agregar eventos de clic
+      this.initClickListeners();
     } catch (error) {
       console.error("❌ Error en SecondaryNavbar:", error);
     }
   }
 
   detectLanguage() {
-    const pathParts = window.location.pathname.split('/');
-    return pathParts.includes('en') ? 'en' : 'es';
+    return window.location.pathname.includes("/en/") ? "en" : "es";
   }
 
   getTranslations(lang) {
     return {
       es: {
         "Organización": "Organización",
-        "Cronograma": "Cronograma",
-        "Disertantes": "Disertantes",
-        "Materiales (Biiblliografia)": "Materiales (Bibliografía)",
-        "workshops": "Workshops",
-        "Galeria": "Galería",
-        "Evento Virtual": "Evento Virtual",
-        "Ciudad": "Ciudad"
+        "Disertantes": "Disertantes"
       },
       en: {
-        "Organización": "Event Organization",
-        "Cronograma": "Schedule",
-        "Disertantes": "Speakers",
-        "Materiales (Biiblliografia)": "Materials (Bibliography)",
-        "workshops": "Workshops",
-        "Galeria": "Gallery",
-        "Evento Virtual": "Virtual Event",
-        "Ciudad": "City"
+        "Organización": "Organization",
+        "Disertantes": "Speakers"
       }
     }[lang];
   }
 
   replaceIdioma(url, lang) {
-    if (typeof url !== "string") {
-      console.warn("⚠️ replaceIdioma recibió un valor no string:", url);
-      return "#";
-    }
-    return url.replace("{idioma}", lang);
+    return typeof url === "string" ? url.replace("{idioma}", lang) : "#";
+  }
+
+  initClickListeners() {
+    this.shadowRoot.querySelector(".secondary-navbar").addEventListener("click", (event) => {
+      const target = event.target.closest("a");
+      if (target && target.href) {
+        window.location.href = target.href;
+      }
+    });
   }
 }
 

@@ -1,26 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"></html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speakers | Bayes Plurinacional 2025</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/_assets/_css/global.css">
-    <script type="module" src="/_components/header.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speakers | Bayes Plurinational 2025</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/_assets/_css/global.css">
+  <link rel="stylesheet" href="/_assets/_css/2025.css">
+  <script type="module" src="/_components/header.js"></script>
 </head>
-
 <body>
+  <custom-header data-event-type="In-person" data-event-key="2025 Event" data-lang="en">
 
-  <custom-header data-event-type="Presencial" data-event-key="Evento 2025" data-lang="en">
+    <!-- Speakers Section -->
+    <section class="container py-5 text-center">
+      <h2 class="titulo-seccion">🎤 Speakers</h2>
+      <p class="lead">Meet the experts who will share their knowledge at Bayes Plurinational 2025.</p>
 
-  <!-- Contenido Principal -->
-  <section class="container py-5">
-    <h1 class="text-center titulo-seccion">🎙️ Speakers Plurinational Bayes 2025</h1>
-        
-  </section>
-</custom-header>
+      <!-- Container where speakers will be dynamically loaded -->
+      <div id="speakers-container" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Speakers will be inserted here -->
+      </div>
+    </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </custom-header>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", async function () {
+      const container = document.getElementById("speakers-container");
+      const currentYear = 2025; // Dynamically filter speakers by year
+
+      try {
+        const response = await fetch("/_data/disertantes_en.json");
+        const speakers = await response.json();
+
+        // 🔹 Filter only speakers from the current year
+        const filteredSpeakers = speakers.filter(s => s.year === currentYear);
+
+        if (filteredSpeakers.length === 0) {
+          container.innerHTML = `<p class="text-warning">No speakers registered for this year.</p>`;
+          return;
+        }
+
+        // 🔹 Create speaker cards dynamically
+        filteredSpeakers.forEach(s => {
+          const card = document.createElement("div");
+          card.classList.add("col");
+
+          card.innerHTML = `
+            <div class="card shadow-sm text-center p-3">
+              <img src="${s.image}" class="rounded-circle mx-auto" alt="${s.name}" width="150">
+              <div class="card-body">
+                <h5 class="card-title">${s.name}</h5>
+                <p class="card-text">${s.description}</p>
+              </div>
+            </div>
+          `;
+
+          container.appendChild(card);
+        });
+      } catch (error) {
+        console.error("Error loading speakers:", error);
+        container.innerHTML = `<p class="text-danger">Error loading speakers. Please try again later.</p>`;
+      }
+    });
+  </script>
 </body>
 </html>

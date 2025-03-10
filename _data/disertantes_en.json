@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Mariano Gabitto",
+    "image": "/_assets/_img/expositores/Mariano_Gabitto.jpeg",
+    "description": "Researcher at the Allen Institute for Brain Science, working on cellular diversity and deep generative models.",
+    "year": 2025
+  },
+  {
+    "name": "Cathy O'Neil",
+    "image": "/_assets/_img/expositores/Cathy_Oneil.jpg",
+    "description": "Mathematician, author of 'Weapons of Math Destruction', expert in algorithm auditing and AI ethics.",
+    "year": 2025
+  },
+  {
+    "name": "Gavino Puggioni",
+    "image": "/_assets/_img/expositores/Gavino_Puggioni.jpg",
+    "description": "Professor at the University of Rhode Island, developing Bayesian models for temporal and spatial data.",
+    "year": 2025
+  },
+  {
+    "name": "Valérie Gauthier-Umaña",
+    "image": "/_assets/_img/expositores/Valerie_Gauthier.jpg",
+    "description": "Professor at Universidad de los Andes, researcher in post-quantum cryptography and coding theory.",
+    "year": 2025
+  },
+  {
+    "name": "Jeremias Sulam",
+    "image": "/_assets/_img/expositores/Jeremias_Sulam.jpg",
+    "description": "Professor at Johns Hopkins, working on image processing, inverse problems, and machine learning.",
+    "year": 2025
+  },
+  {
+    "name": "Alberto Cabezas Gonzalez",
+    "image": "/_assets/_img/expositores/Alberto_Cabezas.jpg",
+    "description": "Researcher at the University of Turin, working on transformer models for administrative data.",
+    "year": 2025
+  },
+  {
+    "name": "Vitória Barin Pacela",
+    "image": "/_assets/_img/expositores/Vitoria_BarinPacela.jpeg",
+    "description": "PhD student at Mila, University of Montreal, researching causality and generalization in AI models.",
+    "year": 2025
+  },
+  {
+    "name": "Gustavo Landfried",
+    "image": "/_assets/_img/expositores/GustavoLandfried.jpg",
+    "description": "Professor at UNSAM, developer of the TrueSkill Through Time skill estimator in Python, Julia, and R.",
+    "year": 2025
+  },
+  {
+    "name": "Matías Altamirano Moreno",
+    "image": "/_assets/_img/expositores/Matias_Altamirano.jpg",
+    "description": "PhD student at UCL, specializing in generalized Bayesian methods for time series models.",
+    "year": 2025
+  },
+  {
+    "name": "Gerardo Durán-Martin",
+    "image": "/_assets/_img/expositores/Gerardo_DuranMartin.png",
+    "description": "PhD candidate at Queen Mary University of London, researching learning in non-stationary environments.",
+    "year": 2025
+  }
+]

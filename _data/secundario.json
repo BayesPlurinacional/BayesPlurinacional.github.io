@@ -3,10 +3,9 @@
     "Presencial": {
       "Evento 2025": {
         "Organización" : "organizacion.html",
-        "Cronograma" : "cronograma.html",
         "Disertantes" : "disertantes.html",
-        "Poster" : "poster.html",
-        "Ciudad" : "ciudad.html"
+        "Ciudad" : "index.html#informacion"
+      }
       },
       "Evento 2024": {
         "Organización" : "organizacion.html",
@@ -16,4 +15,4 @@
       }
     }
   }
-}
+

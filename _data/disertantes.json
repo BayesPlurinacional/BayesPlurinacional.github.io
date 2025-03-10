@@ -1,0 +1,62 @@
+[
+  {
+    "nombre": "Mariano Gabitto",
+    "imagen": "/_assets/_img/expositores/Mariano_Gabitto.jpeg",
+    "descripcion": "Investigador en el Allen Institute for Brain Science, trabajando en diversidad celular y modelos generativos profundos.",
+    "año": 2025
+  },
+  {
+    "nombre": "Cathy O'Neil",
+    "imagen": "/_assets/_img/expositores/Cathy_Oneil.jpg",
+    "descripcion": "Matemática, autora de 'Weapons of Math Destruction', experta en auditoría de algoritmos y ética en IA.",
+    "año": 2025
+  },
+  {
+    "nombre": "Gavino Puggioni",
+    "imagen": "/_assets/_img/expositores/Gavino_Puggioni.jpg",
+    "descripcion": "Profesor en la Universidad de Rhode Island, desarrollando modelos bayesianos para datos temporales y espaciales.",
+    "año": 2025
+  },
+  {
+    "nombre": "Valérie Gauthier-Umaña",
+    "imagen": "/_assets/_img/expositores/Valerie_Gauthier.jpg",
+    "descripcion": "Profesora en la Universidad de los Andes, investigadora en criptografía post-cuántica y teoría de códigos.",
+    "año": 2025
+  },
+  {
+    "nombre": "Jeremias Sulam",
+    "imagen": "/_assets/_img/expositores/Jeremias_Sulam.jpg",
+    "descripcion": "Profesor en Johns Hopkins, trabajando en procesamiento de imágenes, problemas inversos y aprendizaje automático.",
+    "año": 2025
+  },
+  {
+    "nombre": "Alberto Cabezas Gonzalez",
+    "imagen": "/_assets/_img/expositores/Alberto_Cabezas.jpg",
+    "descripcion": "Investigador en la Universidad de Turín, trabajando en modelos transformer para datos administrativos.",
+    "año": 2025
+  },
+  {
+    "nombre": "Vitória Barin Pacela",
+    "imagen": "/_assets/_img/expositores/Vitoria_BarinPacela.jpeg",
+    "descripcion": "Doctoranda en Mila, Universidad de Montreal, investigando causalidad y generalización en modelos de IA.",
+    "año": 2025
+  },
+  {
+    "nombre": "Gustavo Landfried",
+    "imagen": "/_assets/_img/expositores/GustavoLandfried.jpg",
+    "descripcion": "Profesor en UNSAM, desarrollador del estimador de habilidad TrueSkill Through Time en Python, Julia y R.",
+    "año": 2025
+  },
+  {
+    "nombre": "Matías Altamirano Moreno",
+    "imagen": "/_assets/_img/expositores/Matias_Altamirano.jpg",
+    "descripcion": "Doctorando en UCL, especializado en métodos bayesianos generalizados para modelos de series temporales.",
+    "año": 2025
+  },
+  {
+    "nombre": "Gerardo Durán-Martin",
+    "imagen": "/_assets/_img/expositores/Gerardo_DuranMartin.png",
+    "descripcion": "Candidato a doctorado en Queen Mary University of London, investigando aprendizaje en entornos no estacionarios.",
+    "año": 2025
+  }
+]
