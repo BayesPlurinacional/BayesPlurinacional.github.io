@@ -2,6 +2,7 @@
   "Evento": {
     "Presencial": {
       "Evento 2025": {
+        "Inicio" : "index.html",
         "Organización" : "organizacion.html",
         "Disertantes" : "disertantes.html",
         "Ciudad" : "index.html#informacion"

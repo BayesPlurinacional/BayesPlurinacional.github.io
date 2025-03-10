@@ -9,7 +9,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 100%;
   top: 0;
-  z-index: 1100;
+  z-index: 1000;
 }
 
 /* Estilos del menú en pantallas grandes */

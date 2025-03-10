@@ -4,14 +4,86 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Comunidad Bayesiana | Bayes Plurinacional</title>
-  <script src="/_components/navbar.js" defer></script>
-  <script src="/_components/footer.js" defer></script>
-  <script src="/_components/comunidad.js" defer></script>
+  <script src="/_components/header.js" defer></script>
   <link rel="stylesheet" href="/_assets/_css/global.css">
+  <script>
+
+    
+    document.addEventListener("DOMContentLoaded", async function() {
+      try {
+        const response = await fetch('/_data/comunidad.json');
+        const data = await response.json();
+        const lang = document.documentElement.lang || "es";
+        const comunidadData = data.Comunidad[lang];
+
+        document.getElementById("titulo-comunidad").textContent = comunidadData.Titulo;
+        document.getElementById("descripcion-comunidad").textContent = comunidadData.Descripcion;
+
+        const advertenciasList = document.getElementById("advertencias");
+        comunidadData.Advertencias.forEach(advertencia => {
+          const li = document.createElement("li");
+          li.textContent = advertencia;
+          advertenciasList.appendChild(li);
+        });
+
+        const paisesContainer = document.getElementById("paises");
+        comunidadData.Paises.forEach(pais => {
+          const col = document.createElement("div");
+          col.className = "col-md-3 col-sm-6 text-center";
+          col.innerHTML = `
+            <h5><a href="${pais.url}" target="_blank">${pais.nombre}</a></h5>
+            <a href="${pais.url}" target="_blank">
+              <img class="img-fluid country-flag" src="/_assets/_img/banderas/${pais.img}" alt="${pais.nombre}">
+            </a>
+          `;
+          paisesContainer.appendChild(col);
+        });
+
+      } catch (error) {
+        console.error("Error al cargar comunidad.json:", error);
+      }
+    });
+  </script>
 </head>
 <body>
-  <custom-header>
-    <custom-comunidad data-lang="en"></custom-comunidad>
+  <custom-header data-lang="es" class="mb-5">
+    <div class="container comunidad-container">
+      <h1 class="text-center" id="titulo-comunidad"></h1>
+      <p class="text-center lead" id="descripcion-comunidad"></p>
+
+      <h3 class="text-center mt-4">Advertencias</h3>
+      <ul class="alert alert-warning" id="advertencias"></ul>
+
+      <div class="row text-center mt-4" id="paises"></div>
+    </div>
   </custom-header>
 </body>
+<style>
+  .comunidad-container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+
+  .country-flag {
+    width: 80%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .country-flag:hover {
+    transform: scale(1.05);
+  }
+
+  ul.alert {
+    list-style-type: none;
+    padding: 20px;
+    background: #ffcc00;
+    border-radius: 8px;
+  }
+
+  ul.alert li {
+    margin-bottom: 5px;
+  }
+</style>
 </html>

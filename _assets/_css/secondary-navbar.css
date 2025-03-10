@@ -7,6 +7,7 @@
   position: sticky;
   top: 85px;
   z-index: 100;
+  z-index: 1100;
 }
 
 .secondary-nav {
