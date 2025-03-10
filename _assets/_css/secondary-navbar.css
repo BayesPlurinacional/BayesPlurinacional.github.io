@@ -1,14 +1,15 @@
 .secondary-navbar {
-  margin-top: 85px;
+
   background-color: var(--fondo-claro);
   padding: 15px 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  position: sticky;
+  position: absolute;
+  width: 100%;
   top: 85px;
-  z-index: 100;
-  z-index: 1100;
+  z-index: 1000; /* 🔥 Se baja para que el dropdown del navbar principal se vea encima */
 }
+
 
 .secondary-nav {
   list-style: none;

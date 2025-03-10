@@ -61,10 +61,12 @@ class SecondaryNavbar extends HTMLElement {
   getTranslations(lang) {
     return {
       es: {
+        "Inicio": "Inicio",
         "Organización": "Organización",
         "Disertantes": "Disertantes"
       },
       en: {
+        "Inicio" : "Home",
         "Organización": "Organization",
         "Disertantes": "Speakers"
       }

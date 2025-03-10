@@ -9,8 +9,10 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 100%;
   top: 0;
-  z-index: 1000;
+  z-index: 1050; /* 🔥 Asegura que el navbar principal esté sobre el secundario */
+  position: absolute ;
 }
+
 
 /* Estilos del menú en pantallas grandes */
 .navbar-collapse {
@@ -62,7 +64,14 @@
 /* === ESTILOS DEL DROPDOWN EN PANTALLAS GRANDES === */
 .dropdown:hover .dropdown-menu {
   display: block;
+ 
 }
+.global-navbar .dropdown-menu {
+  z-index: 1200 !important; /* 🔥 Asegura que los dropdowns se vean sobre el navbar secundario */
+  position: absolute;
+  background-color: var(--fondo-claro);
+}
+
 
 .dropdown-menu {
   background-color: var(--fondo-claro);
@@ -71,11 +80,13 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 10px;
   display: none; /* Aseguramos que no aparezca automáticamente en móviles */
+
 }
 
 .dropdown-menu .dropdown-item {
   padding: 10px 15px;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
+  
 }
 
 .dropdown-menu .dropdown-item:hover {
@@ -89,7 +100,10 @@
   }
 
   .navbar-collapse {
-    display: none;
+    display: none; /* 🔥 Elimina el `!important` */
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
@@ -100,14 +114,14 @@
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    opacity: 0;
-    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
   }
 
   .navbar-collapse.show {
-    display: flex;
+    display: flex; /* 🔥 Se asegura que aparezca correctamente */
     opacity: 1;
+    height: auto;
+    visibility: visible;
     transform: translateY(0);
   }
 

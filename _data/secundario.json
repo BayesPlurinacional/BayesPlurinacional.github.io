@@ -4,8 +4,8 @@
       "Evento 2025": {
         "Inicio" : "index.html",
         "Organización" : "organizacion.html",
-        "Disertantes" : "disertantes.html",
-        "Ciudad" : "index.html#informacion"
+        "Disertantes" : "disertantes.html"
+
       }
       },
       "Evento 2024": {
