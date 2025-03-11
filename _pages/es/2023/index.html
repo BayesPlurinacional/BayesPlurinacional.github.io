@@ -7,46 +7,70 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="/_assets/_css/global.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="/_assets/_css/2025.css"> <!-- Lo agrego porque tiene el carrusel -->
 
   <script type="module" src="/_components/header.js"></script>
 </head>
 
 <body>
   <custom-header data-event-type="Presencial" data-event-key="Evento 2023" data-lang="es">
-    <div class="container aviso-container">
-      <h1 class="text-center">🚧 Estamos Migrando el Contenido</h1>
-      <p class="text-center lead">
-        Actualmente estamos migrando toda la información del evento 2023 a un nuevo sistema para mejorar la experiencia del usuario.
+    <section class="hero d-flex flex-column justify-content-center align-items-center text-center text-white">
+      <div class="container">
+        <h1>Bayes Plurinacional SANTIAGO DEL ESTERO 2023</h1>
+        <p class="lead"><a href="../2023/galeria.html">Fotos del evento</a></p>
+      </div>
+    </section>
+    
+    <!-- Información del Evento -->
+    <section class="info-evento container py-5 text-center">
+      <h3 class="titulo-seccion">Acuerdos intersubjetivos en contextos de incertidumbre</h3>
+      <p class="lead">
+        Impulsando las comunidades bayesianas de latinoamericana, el caribe y los pueblos del sur global. A pesar de que 
+        el conocimientos bajo incertidumbre sea "plural y condicional", la ciencia y la política colonial-moderna se ha 
+        presentado como "singular y definitiva". La transición científica, cultural y ecológica a favor de la pluralidad va a ocurrir.
       </p>
-      <p class="text-center">
-        Agradecemos tu paciencia mientras trabajamos en esto. Pronto podrás acceder a todo el contenido con una mejor organización.
+      <p>Para promover el potencial del enfoque bayesiano en la academia, en la industria, en el estado y en las 
+        organizaciones sociales de América Latina, un grupo de especialistas de diversas regiones decidimos organizar el 
+        primer Congreso Bayesiano Plurinacional el 4, 5 y 6 de Agosto del 2023 en Santiago del Estero, Argentina.<br>
+        La diversidad disciplinar fue extraordinaria: ecología, medicina, astronomía, geología, psicología, cuántica, economía, 
+        ingeniería, filosofía, biología, estadística, computación, antropología, entre otras. La diversidad de regiones también: 
+        Chile, Paraguay, Uruguay, Colombia, Honduras, Brasil, Argentina (Córdoba, Salta, Mendoza, Entre Rios, 
+        Santa Fe, Santiago del Estero, Buenos Aires), tanto del sector privado, del público y de la academia.<br>
+        Compartimos ideas, experiencias y dudas sobre la construcción de conocimiento en ciencias empíricas, usando diferentes 
+        dialecto pero con un mismo lenguaje común, el de la aplicación estricta de las reglas de la probabilidad (aka Bayes) o 
+        el de los acuerdos intersubjetivos en contextos de incertidumbre. El agradecimiento con el equipo de la Secretaría de Ciencia y 
+        Técnica de Santiago del Estero es total, por el profesionalismo integral y humano.<br>
+        Volvimos con la energía renovada. Ya empezamos a armar equipos para organizar las actividades del próximo año. 
+        Además de seminarios virtuales, encuentros de trabajo, cursos presenciales, decidimos organizar una Escuela-Congreso 
+        Bayesiana Plurinacional 2024.</p>
+    </section>
+
+  <!-- Organizan y Apoyan -->
+    <section class="organizan container text-center py-5">
+      <h2 class="titulo-seccion">🤝 Organizan y Apoyan</h2>
+      <p class="lead">
+        ¡Participe de la creciente comunidad bayesiana plurinacional!
       </p>
-      <div class="text-center">
-        <a href="/_pages/es/2025/index.html" class="btn btn-primary">Ir al Evento 2025</a>
-        <a href="/" class="btn btn-secondary">Volver al Inicio</a>
+
+      <!-- Carrusel de Logos -->
+    <div class="carousel-container">
+      <div class="logos-carousel">
+        <div class="logo-item"><a href="https://nodosde.gob.ar/"><img src="/_assets/_img/logos/NODOSdE.png" alt="NODO"></a></div>
+        <div class="logo-item"><a href="http://turnos.sde.gob.ar/secitec/"><img src="/_assets/_img/logos/secretariaSE.png" alt="secretaría Santiago"></a></div>
+        <div class="logo-item"><a href="https://www.fcecon.unr.edu.ar/seccion/facultad/escuela-de-estadistica"><img src="/_assets/_img/logos/logo-UNR.jpg" alt="UNR"></a></div>
+        <div class="logo-item"><a href="https://www.routledge.com/corporate/about-us/crc-press?srsltid=AfmBOoo3itlINOUaNeMk6mGYV-n_qb-zYeqpkDRp03wr5YgbmvC89RIE"><img src="/_assets/_img/logos/CRC.jpg" alt="CRC"></a></div>
+        <div class="logo-item"><a href="https://github.com/PythonNorte"><img src="/_assets/_img/logos/pythonNorte.jpg" alt="PythonNorte"></a></div>
+        <div class="logo-item"><img src="/_assets/_img/logos/redPublicas.jpg" alt="RedPublicas"></a></div>
+        <div class="logo-item"><img src="/_assets/_img/logos/lujan.jpg" alt="Lujan"></a></div>
+        <div class="logo-item"><a href="https://www.s-a-e.org.ar/"><img src="/_assets/_img/logos/sae.jpeg" alt="SAE"></a></div>
+        <div class="logo-item"><a href="https://metodosbayesianos.github.io/"><img src="https://raw.githubusercontent.com/MetodosBayesianos/static/3f0ec047b6425164c18ba2f35333a15574de5975/logos/LMB.svg" alt="Metodos"></a></div>
+        <div class="logo-item"><a href="https://fundacionsadosky.org.ar/"><img src="/_assets/_img/logos/sadosky.jpg" alt="sadosky"></a></div>
       </div>
     </div>
+
+    </section>
   </custom-header>
 </body>
 
-<style>
-  .aviso-container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    max-width: 800px;
-    margin: auto;
-    padding: 40px 20px;
-  }
 
-  .aviso-container .btn {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    border-radius: 5px;
-  }
-</style>
 </html>
