@@ -1,62 +1,72 @@
 [
   {
-    "name": "Mariano Gabitto",
-    "image": "/_assets/_img/expositores/Mariano_Gabitto.jpeg",
-    "description": "Researcher at the Allen Institute for Brain Science, working on cellular diversity and deep generative models.",
-    "year": 2025
+    "nombre": "Mariano Gabitto",
+    "imagen": "/_assets/_img/expositores/Mariano_Gabitto.jpeg",
+    "descripcion": "Researcher at the Allen Institute for Brain Science, where he studies how cellular diversity is generated in the brain. He leads the analysis efforts of the Seattle Alzheimer's Disease Cell Brain Atlas. Previously worked at the Center for Computational Biology at the Flatiron Institute and at the Broad Institute of Harvard and MIT. He developed nonparametric Bayesian methods for super-resolution imaging and deep generative models to represent single-cell information.",
+    "año": 2025,
+    "dia_hora": ""
   },
   {
-    "name": "Cathy O'Neil",
-    "image": "/_assets/_img/expositores/Cathy_Oneil.jpg",
-    "description": "Mathematician, author of 'Weapons of Math Destruction', expert in algorithm auditing and AI ethics.",
-    "year": 2025
+    "nombre": "Cathy O'Neil",
+    "imagen": "/_assets/_img/expositores/Cathy_Oneil.jpg",
+    "descripcion": "Mathematician, data scientist, and author of 'Weapons of Math Destruction'. Expert in algorithm auditing and AI ethics. Founder of ORCAA (O'Neil Risk Consulting & Algorithmic Auditing), a consulting firm dedicated to auditing algorithms and ensuring their ethical use. Has worked in the financial and academic industry, teaching at MIT and Barnard College. Her work focuses on the dangers of mathematical models in society.",
+    "año": 2025,
+    "dia_hora": ""
   },
   {
-    "name": "Gavino Puggioni",
-    "image": "/_assets/_img/expositores/Gavino_Puggioni.jpg",
-    "description": "Professor at the University of Rhode Island, developing Bayesian models for temporal and spatial data.",
-    "year": 2025
+    "nombre": "Gavino Puggioni",
+    "imagen": "/_assets/_img/expositores/Gavino_Puggioni.jpg",
+    "descripcion": "Professor at the University of Rhode Island, specialized in Bayesian models for dependent data analysis such as time series and spatio-temporal data. He obtained his PhD in Statistics from Duke University. His research includes mixture models, stochastic differential equations, and applications in environmental and social sciences.",
+    "año": 2025,
+    "dia_hora": ""
   },
   {
-    "name": "Valérie Gauthier-Umaña",
-    "image": "/_assets/_img/expositores/Valerie_Gauthier.jpg",
-    "description": "Professor at Universidad de los Andes, researcher in post-quantum cryptography and coding theory.",
-    "year": 2025
+    "nombre": "Valérie Gauthier-Umaña",
+    "imagen": "/_assets/_img/expositores/Valerie_Gauthier.jpg",
+    "descripcion": "Professor at Universidad de los Andes, researcher in post-quantum cryptography and coding theory. She obtained her PhD from Danmarks Tekniske Universitet (DTU). Has worked on code-based cryptography and communication systems security. She has also participated in academic publications on cryptographic system attacks.",
+    "año": 2025,
+    "dia_hora": ""
   },
   {
-    "name": "Jeremias Sulam",
-    "image": "/_assets/_img/expositores/Jeremias_Sulam.jpg",
-    "description": "Professor at Johns Hopkins, working on image processing, inverse problems, and machine learning.",
-    "year": 2025
+    "nombre": "Jeremias Sulam",
+    "imagen": "/_assets/_img/expositores/Jeremias_Sulam.jpg",
+    "descripcion": "Professor at Johns Hopkins, specialized in image processing, inverse problems, and machine learning. Has worked on modeling sparse representations and data reconstruction in biomedical signals and computer vision.",
+    "año": 2025,
+    "dia_hora": ""
   },
   {
-    "name": "Alberto Cabezas Gonzalez",
-    "image": "/_assets/_img/expositores/Alberto_Cabezas.jpg",
-    "description": "Researcher at the University of Turin, working on transformer models for administrative data.",
-    "year": 2025
+    "nombre": "Alberto Cabezas Gonzalez",
+    "imagen": "/_assets/_img/expositores/Alberto_Cabezas.jpg",
+    "descripcion": "Researcher at the University of Turin, working on transformer models for administrative data analysis. PhD in Statistics from Lancaster University, with experience in probabilistic artificial intelligence.",
+    "año": 2025,
+    "dia_hora": ""
   },
   {
-    "name": "Vitória Barin Pacela",
-    "image": "/_assets/_img/expositores/Vitoria_BarinPacela.jpeg",
-    "description": "PhD student at Mila, University of Montreal, researching causality and generalization in AI models.",
-    "year": 2025
+    "nombre": "Vitória Barin Pacela",
+    "imagen": "/_assets/_img/expositores/Vitoria_BarinPacela.jpeg",
+    "descripcion": "PhD candidate at Mila, University of Montreal, researching causality and generalization in AI models. Has worked in machine learning for particle physics and at CERN.",
+    "año": 2025,
+    "dia_hora": ""
   },
   {
-    "name": "Gustavo Landfried",
-    "image": "/_assets/_img/expositores/GustavoLandfried.jpg",
-    "description": "Professor at UNSAM, developer of the TrueSkill Through Time skill estimator in Python, Julia, and R.",
-    "year": 2025
+    "nombre": "Gustavo Landfried",
+    "imagen": "/_assets/_img/expositores/GustavoLandfried.jpg",
+    "descripcion": "Professor at UNSAM and developer of the TrueSkill Through Time skill estimator in Python, Julia, and R. Has worked on Bayesian inference and data modeling in video games.",
+    "año": 2025,
+    "dia_hora": ""
   },
   {
-    "name": "Matías Altamirano Moreno",
-    "image": "/_assets/_img/expositores/Matias_Altamirano.jpg",
-    "description": "PhD student at UCL, specializing in generalized Bayesian methods for time series models.",
-    "year": 2025
+    "nombre": "Matías Altamirano Moreno",
+    "imagen": "/_assets/_img/expositores/Matias_Altamirano.jpg",
+    "descripcion": "PhD candidate at UCL, specialized in generalized Bayesian methods for time series models. His PhD is supported by the Bloomberg Data Science PhD Fellowship.",
+    "año": 2025,
+    "dia_hora": ""
   },
   {
-    "name": "Gerardo Durán-Martin",
-    "image": "/_assets/_img/expositores/Gerardo_DuranMartin.png",
-    "description": "PhD candidate at Queen Mary University of London, researching learning in non-stationary environments.",
-    "year": 2025
+    "nombre": "Gerardo Durán-Martin",
+    "imagen": "/_assets/_img/expositores/Gerardo_DuranMartin.png",
+    "descripcion": "PhD candidate at Queen Mary University of London, researching learning in non-stationary environments. Has worked on filtering techniques for streaming data and continuous learning.",
+    "año": 2025,
+    "dia_hora": ""
   }
 ]

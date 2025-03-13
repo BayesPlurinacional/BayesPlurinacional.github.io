@@ -37,6 +37,7 @@ body {
     background-color: var(--fondo-claro);
     color: #333;
     line-height: 1.6;
+    padding-top: 120px;
 }
 
 .musica-container {
@@ -116,4 +117,67 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-secundario:hover {
     background: var(--degradado-ciencia);
+}
+
+.speaker-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, max-height 0.4s ease-in-out;
+  min-height: 320px; /* 🔹 Altura mínima */
+  max-height: 500px; /* 🔹 Altura ajustada */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.speaker-card.expanded {
+  max-height: 800px; /* 📌 Expande sin empujar a otras tarjetas */
+}
+
+.speaker-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* 📌 Estilo del texto truncado */
+.speaker-info {
+  font-size: 0.9rem;
+  color: #666;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  transition: all 0.3s ease-in-out;
+}
+
+.speaker-info.expanded {
+  -webkit-line-clamp: unset;
+}
+
+.ver-mas {
+  color: var(--boton-principal);
+  font-weight: bold;
+  cursor: pointer;
+  display: inline;
+  text-decoration: underline;
+}
+
+.schedule-badge {
+  background: var(--boton-secundario);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-top: 10px;
 }

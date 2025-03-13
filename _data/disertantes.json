@@ -2,61 +2,71 @@
   {
     "nombre": "Mariano Gabitto",
     "imagen": "/_assets/_img/expositores/Mariano_Gabitto.jpeg",
-    "descripcion": "Investigador en el Allen Institute for Brain Science, trabajando en diversidad celular y modelos generativos profundos.",
-    "año": 2025
+    "descripcion": "Investigador en el Allen Institute for Brain Science, donde estudia cómo se genera la diversidad celular observada en el cerebro. Lidera los esfuerzos de análisis del Seattle Alzheimer's Disease Cell Brain Atlas. Anteriormente trabajó en el Center for Computational Biology del Flatiron Institute y en el Broad Institute de Harvard y MIT. Desarrolló métodos bayesianos no paramétricos para imágenes de súper resolución y modelos generativos profundos para representar información de células individuales.",
+    "año": 2025,
+    "dia_hora": ""
   },
   {
     "nombre": "Cathy O'Neil",
     "imagen": "/_assets/_img/expositores/Cathy_Oneil.jpg",
-    "descripcion": "Matemática, autora de 'Weapons of Math Destruction', experta en auditoría de algoritmos y ética en IA.",
-    "año": 2025
+    "descripcion": "Matemática, científica de datos y autora de 'Weapons of Math Destruction'. Experta en auditoría de algoritmos y ética en IA. Fundadora de ORCAA (O’Neil Risk Consulting & Algorithmic Auditing), una firma de consultoría dedicada a auditar algoritmos y garantizar su uso ético. Ha trabajado en la industria financiera y académica, enseñando en MIT y Barnard College. Su trabajo se centra en los peligros de los modelos matemáticos en la sociedad.",
+    "año": 2025,
+    "dia_hora": ""
   },
   {
     "nombre": "Gavino Puggioni",
     "imagen": "/_assets/_img/expositores/Gavino_Puggioni.jpg",
-    "descripcion": "Profesor en la Universidad de Rhode Island, desarrollando modelos bayesianos para datos temporales y espaciales.",
-    "año": 2025
+    "descripcion": "Profesor en la Universidad de Rhode Island, especializado en modelos bayesianos para análisis de datos dependientes como series temporales y datos espacio-temporales. Obtuvo su doctorado en Estadística en la Universidad de Duke. Sus investigaciones incluyen mezclas de modelos, ecuaciones diferenciales estocásticas y aplicaciones en ciencias ambientales y sociales.",
+    "año": 2025,
+    "dia_hora": ""
   },
   {
     "nombre": "Valérie Gauthier-Umaña",
     "imagen": "/_assets/_img/expositores/Valerie_Gauthier.jpg",
-    "descripcion": "Profesora en la Universidad de los Andes, investigadora en criptografía post-cuántica y teoría de códigos.",
-    "año": 2025
+    "descripcion": "Profesora en la Universidad de los Andes, investigadora en criptografía post-cuántica y teoría de códigos. Obtuvo su doctorado en la Danmarks Tekniske Universitet (DTU). Ha trabajado en criptografía basada en códigos y seguridad de sistemas de comunicación. También ha participado en publicaciones académicas sobre ataques a sistemas criptográficos.",
+    "año": 2025,
+    "dia_hora": ""
   },
   {
     "nombre": "Jeremias Sulam",
     "imagen": "/_assets/_img/expositores/Jeremias_Sulam.jpg",
-    "descripcion": "Profesor en Johns Hopkins, trabajando en procesamiento de imágenes, problemas inversos y aprendizaje automático.",
-    "año": 2025
+    "descripcion": "Profesor en Johns Hopkins, especializado en procesamiento de imágenes, problemas inversos y aprendizaje automático. Ha trabajado en modelado de representaciones esparsas y reconstrucción de datos en señales biomédicas y visión por computadora.",
+    "año": 2025,
+    "dia_hora": ""
   },
   {
     "nombre": "Alberto Cabezas Gonzalez",
     "imagen": "/_assets/_img/expositores/Alberto_Cabezas.jpg",
-    "descripcion": "Investigador en la Universidad de Turín, trabajando en modelos transformer para datos administrativos.",
-    "año": 2025
+    "descripcion": "Investigador en la Universidad de Turín, trabajando en modelos transformer para análisis de datos administrativos. Doctor en Estadística por la Universidad de Lancaster, con experiencia en inteligencia artificial probabilística.",
+    "año": 2025,
+    "dia_hora": ""
   },
   {
     "nombre": "Vitória Barin Pacela",
     "imagen": "/_assets/_img/expositores/Vitoria_BarinPacela.jpeg",
-    "descripcion": "Doctoranda en Mila, Universidad de Montreal, investigando causalidad y generalización en modelos de IA.",
-    "año": 2025
+    "descripcion": "Doctoranda en Mila, Universidad de Montreal, investigando causalidad y generalización en modelos de IA. Ha trabajado en aprendizaje automático para física de partículas y en el CERN.",
+    "año": 2025,
+    "dia_hora": ""
   },
   {
     "nombre": "Gustavo Landfried",
     "imagen": "/_assets/_img/expositores/GustavoLandfried.jpg",
-    "descripcion": "Profesor en UNSAM, desarrollador del estimador de habilidad TrueSkill Through Time en Python, Julia y R.",
-    "año": 2025
+    "descripcion": "Profesor en UNSAM y desarrollador del estimador de habilidad TrueSkill Through Time en Python, Julia y R. Ha trabajado en inferencia bayesiana y modelado de datos en videojuegos.",
+    "año": 2025,
+    "dia_hora": ""
   },
   {
     "nombre": "Matías Altamirano Moreno",
     "imagen": "/_assets/_img/expositores/Matias_Altamirano.jpg",
-    "descripcion": "Doctorando en UCL, especializado en métodos bayesianos generalizados para modelos de series temporales.",
-    "año": 2025
+    "descripcion": "Doctorando en UCL, especializado en métodos bayesianos generalizados para modelos de series temporales. Su doctorado cuenta con el respaldo de Bloomberg Data Science PhD Fellowship.",
+    "año": 2025,
+    "dia_hora": ""
   },
   {
     "nombre": "Gerardo Durán-Martin",
     "imagen": "/_assets/_img/expositores/Gerardo_DuranMartin.png",
-    "descripcion": "Candidato a doctorado en Queen Mary University of London, investigando aprendizaje en entornos no estacionarios.",
-    "año": 2025
+    "descripcion": "Candidato a doctorado en Queen Mary University of London, investigando aprendizaje en entornos no estacionarios. Ha trabajado en técnicas de filtrado para datos en flujo y aprendizaje continuo.",
+    "año": 2025,
+    "dia_hora": ""
   }
 ]
