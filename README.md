@@ -1,34 +1,40 @@
 # 📌 Bayes Plurinacional - Proyecto Web
 
 ## 🚀 **Estructura del Proyecto**
-Este proyecto está construido utilizando **HTML, CSS, Bootstrap y Web Components** para facilitar la reutilización de código y mejorar la mantenibilidad.
+Este proyecto está diseñado para gestionar la información del evento Bayes Plurinacional de manera modular y dinámica. Utiliza Web Components para hacer que el código sea reutilizable y fácil de mantener.
 
 ```
 📂 _assets
  ├── 📂 _css
- │   ├── global.css   👈 Estilos globales
- │   ├── navbar.css   👈 Estilos específicos del navbar
- │   ├── footer.css   👈 Estilos específicos del footer
+ │   ├── global.css        👈 Estilos globales para toda la web
+ │   ├── navbar.css        👈 Estilos específicos del navbar principal
+ │   ├── secondary-navbar.css 👈 Estilos del navbar secundario
+ │   ├── footer.css        👈 Estilos específicos del footer
  │
 📂 _components
- ├── 📂 es
- │   ├── navbar.js   👈 Web Component del navbar (dinámico)
- │   ├── footer.js   👈 Web Component del footer (dinámico)
- │   ├── header.js   👈 Web Component para manejar navbar + footer
+ ├── navbar.js             👈 Web Component del navbar principal
+ ├── secondary-navbar.js   👈 Web Component del navbar secundario (dinámico por año)
+ ├── footer.js             👈 Web Component del footer
+ ├── header.js             👈 Componente que une navbar, footer y secondary-navbar
  │
 📂 _data
- ├── navbar.json    👈 Configuración dinámica del navbar
- ├── secondary.json 👈 Configuración específica de eventos
- ├── footer.json    👈 Configuración dinámica del footer
+ ├── navbar.json           👈 Configuración dinámica del navbar principal
+ ├── secundario.json       👈 Configuración del navbar secundario
+ ├── footer.json           👈 Datos dinámicos para el footer
  │
 📂 _pages
  ├── 📂 es
-    ├── ...
- ├── 📂 en
-    ├── ...
+ │   ├── 2025              👈 Secciones del evento 2025
+ │   │   ├── index.html    👈 Página principal del evento 2025
+ │   │   ├── organizacion.html 👈 Información de organizadores
+ │   │   ├── disertantes.html 👈 Lista de disertantes
+ │   │   ├── cronograma.html 👈 Cronograma del evento
+ │── 📂 en
+ │   ├──  ...
 📂 _static
  ├── 📂 img
  ├── 📂 logos
+
 ```
 
 ---
@@ -61,27 +67,26 @@ Ubicación: `_components/es/header.js`
 ## 📌 **Cómo Usarlo en una Página HTML**
 Para utilizar la nueva estructura en cualquier página, simplemente incluimos los scripts de los componentes y usamos `<custom-header>`.
 
-📌 **Ejemplo de `index.html`**
+📌 **Ejemplo de Uso en una Página HTML**
 ```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bayes Plurinacional</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/_assets/_css/global.css">
-    <script src="/_components/es/navbar.js" defer></script>
-    <script src="/_components/es/footer.js" defer></script>
-    <script src="/_components/es/header.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evento 2025 | Bayes Plurinacional</title>
+  <link rel="stylesheet" href="/_assets/_css/global.css">
+  <script type="module" src="/_components/header.js"></script>
 </head>
 <body>
-    <custom-header>
-        <main class="container mt-4">
-            <h1>Bienvenido a Bayes Plurinacional</h1>
-            <p>Esta es la página principal.</p>
-        </main>
-    </custom-header>
+
+  <custom-header data-event-type="Presencial" data-event-key="Evento 2025" data-lang="es">
+    <section class="hero text-center">
+      <h1>¡Nos Preparamos para Bogotá 2025!</h1>
+      <p>Del 15 al 17 de octubre en la Universidad Externado de Colombia.</p>
+    </section>
+  </custom-header>
+
 </body>
 </html>
 ```
@@ -103,29 +108,35 @@ Ubicación: `_data/navbar.json`
 {
   "navbar": {
     "global": {
-      "Eventos": {
-        "Presencial": {
-          "Evento 2023": "/_pages/{idioma}/2023/index.html",
-          "Evento 2024": "/_pages/{idioma}/2024/index.html",
-          "Evento 2025": "/_pages/{idioma}/2025/index.html"
-        },
-        "Galeria": {
-          "Evento 2023": "/_pages/{idioma}/2023/galeria.html",
-          "Evento 2024": "/_pages/{idioma}/2024/galeria.html",
-          "Evento 2025": "/_pages/{idioma}/2025/galeria.html"
-        }
-      },
-      "Seminarios Virtuales": "/_pages/{idioma}/Seminarios.html",
-      "Comunidad": "/_pages/{idioma}/Comunidad.html",
-      "Auspiciantes": "/_pages/{idioma}/Auspiciantes.html",
-      "Contacto": {
-        "Redes Sociales": "/_pages/{idioma}/RedesSociales.html",
-        "Conducta": "/_pages/{idioma}/Conducta.html"
+      "Blog": "/_pages/{idioma}/blog.html"  // 🔥 Se agrega aquí
+    }
+  }
+}
+
+```
+
+### 📌 Modificar el Navbar Secundario (secundario.json)
+#### 📍 Ubicación: _data/secundario.json
+Si queremos agregar una nueva pestaña para un evento, editamos secundario.json.
+
+📌 Ejemplo: Agregar "Cronograma" en Evento 2025
+
+```json
+{
+  "Evento": {
+    "Presencial": {
+      "Evento 2025": {
+        "Inicio": "index.html",
+        "Organización": "organizacion.html",
+        "Disertantes": "disertantes.html",
+        "Cronograma": "cronograma.html"  // 🔥 Agregado aquí
       }
     }
   }
 }
+
 ```
+💡 No es necesario modificar secondary-navbar.js, ya que carga automáticamente las secciones del JSON.
 
 ---
 
@@ -149,10 +160,8 @@ Para mantener una apariencia uniforme, utilizamos **Bootstrap** y definimos una 
 ```
 
 ---
-
-## 📌 **Próximos Pasos**
-✅ Completar el contenido de cada sección en `_pages/es/`.  
-✅ Agregar las páginas de los congresos en `_pages/es/congresos/`.  
-✅ Mejorar la accesibilidad y optimización para SEO.  
-✅ Implementar un sistema de galería de imágenes con filtros.  
-
+# 📌 🔗 Conclusión
+- ✅ Web Components permiten modularidad y mantenimiento fácil.
+- ✅ El navbar.js, secondary-navbar.js y header.js crean una estructura dinámica.
+- ✅ Modificar navbar.json y secundario.json permite agregar o quitar secciones sin tocar código JS.
+- ✅ Cada evento (2025, 2024, etc.) tiene su propio navbar secundario y estructura independiente.
