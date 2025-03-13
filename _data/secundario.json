@@ -2,18 +2,17 @@
   "Evento": {
     "Presencial": {
       "Evento 2025": {
-        "Inicio" : "index.html",
-        "Organización" : "organizacion.html",
-        "Disertantes" : "disertantes.html"
-
+        "Inicio": "index.html",
+        "Organización": "organizacion.html",
+        "Disertantes": "disertantes.html",
+        "Cronograma": "cronograma.html"  
       }
-      },
-      "Evento 2024": {
-        "Organización" : "organizacion.html",
-        "Cronograma" : "cronograma.html",
-        "Disertantes" : "disertantes.html",
-        "Ciudad" : "ciudad.html"
-      }
+    },
+    "Evento 2024": {
+      "Organización": "organizacion.html",
+      "Cronograma": "cronograma.html",
+      "Disertantes": "disertantes.html",
+      "Ciudad": "ciudad.html"
     }
   }
-
+}

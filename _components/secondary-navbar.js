@@ -63,12 +63,14 @@ class SecondaryNavbar extends HTMLElement {
       es: {
         "Inicio": "Inicio",
         "Organización": "Organización",
-        "Disertantes": "Disertantes"
+        "Disertantes": "Disertantes",
+        "Cronograma": "Cronograma",
       },
       en: {
         "Inicio" : "Home",
         "Organización": "Organization",
-        "Disertantes": "Speakers"
+        "Disertantes": "Speakers",
+        "Cronograma": "Schedule",
       }
     }[lang];
   }
