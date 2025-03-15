@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+  <html>
+<!-- BEGIN HEADER -->
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../../css/materialize.min.css"  media="screen,projection"/>
+    <title>2025 Bayes</title>
+    <!--Let browser know website is optimized for mobile-->
+    <!--<link rel="stylesheet" href="../../css/cronograma.css">-->
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/others.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8">
+    <!--Latex Mode-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <!--One way to display figures side by side-->
+    <style>
+    .figcontainer {
+    display: flex;
+    justify-content: center;
+    }
+
+    .figure {
+    margin: 10px;
+    }
+    </style>
+</head>
+    <body>
+    <ul id="dropdown0" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../es/index.html">Castellano</a></li>
+        <li><a href="../en/index.html">English</a></li>
+    </ul>
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../es/index.html">Castellano</a></li>
+        <li><a href="../en/index.html">English</a></li>
+    </ul>
+    <ul id="dropdown_versiones" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../../2025/es/index.html"><b>2025</b></a></li>
+        <li><a href="../../2024/es/index.html">2024</a></li>
+        <li><a href="../../2023/index.html">2023</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../es/plural.html">Plural</a></li>
+        <li><a href="../es/organiza.html">Organización</a></li>
+        <li><a href="../es/comunidad.html">Comunidad</a></li>
+    </ul>
+
+    <ul id="dropdown3" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../es/ciudad.html">Ciudad</a></li>
+        <li><a href="../es/disertantes.html">Disertantes</a></li>
+        <li><a href="../es/cronograma.html">Cronograma</a></li>
+        <li><a href="../es/poster.html">Poster</a></li>
+    </ul>
+
+    <ul id="dropdown4" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../es/seminario.html">Seminario</a></li>
+        <!--<li><a href="../es/hackaton.html">Hackatón</a></li>-->
+    </ul>
+
+    <ul id="dropdown5" class="dropdown-content">
+        <li><a href=""></a></li>
+        <li><a href="../es/auspiciantes.html">Auspiciantes</a></li>
+        <li><a href="../es/redes.html">Redes</a></li>
+        <li><a href="../es/conducta.html">Conducta</a></li>
+    </ul>
+
+    <nav class="blue-grey" role="navigation" style="position:fixed">
+        <div class="nav-wrapper container"><a id="logo-container" href="../es/index.html" class="brand-logo"><em>2025</em></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a class="dropdown-button" href="#!" data-target="dropdown_versiones"><b>2025</b><i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="#!" data-target="dropdown2">Somos<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="#!" data-target="dropdown3">Congreso<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="#!" data-target="dropdown4">Virtual<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="dropdown-button" href="#!" data-target="dropdown5">Contacto<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a href="musica.html">Música</a></li>
+            <li><a class="dropdown-button" href="#!" data-target="dropdown0"><i class="fa fa-language"></i></a></li>
+        </ul>
+    </nav>
+
+    <nav class="blue-grey" role="navigation">
+        <ul id="nav-mobile" class="sidenav">
+            <li><a class="dropdown-button" href="#!" data-target="dropdown1"><i class="fa fa-language"></i></a></li>
+            <li><a href="../es/index.html">Bayes Plurinacional</a></li>
+            <li><a href="">SOMOS:</a></li>
+            <li><a href="../es/plural.html">&#x2022; Plural</a></li>
+            <li><a href="organiza.html">&#x2022; Organización</a></li>
+            <li><a href="../es/comunidad.html">&#x2022; Comunidad</a></li>
+            <li><a href="../es/musica.html">&#x2022; Música</a></li>
+            <li><a href="">EVENTO 2025:</a></li>
+            <li><a href="../es/ciudad.html">&#x2022; Ciudad</a></li>
+            <li><a href="../es/cronograma.html">&#x2022; Cronograma</a></li>
+            <li><a href="../es/disertantes.html">&#x2022; Disertantes</a></li>
+            <li><a href="../es/poster.html">&#x2022; Posters</a></li>
+            <li><a href="">VIRTUAL:</a></li>
+            <li><a href="../es/seminario.html">&#x2022; Seminario</a></li>
+            <!--<li><a href="../es/hackaton.html">&#x2022; Hackatón</a></li>-->
+            <li><a href="">CONTACTO:</a></li>
+            <li><a href="../es/auspiciantes.html">&#x2022; Auspiciantes</a></li>
+            <li><a href="../es/redes.html">&#x2022; Redes</a></li>
+            <li><a href="../es/conducta.html">&#x2022; Conducta</a></li>
+            <!--<li><a href="../es/faq.html">&#x2022; FAQ</a></li>-->
+            <li><a href="">AÑO:</a></li>
+            <li><a href="../../2025/es/index.html">&#x2022; <b>2025</b></a></li>
+            <li><a href="../../2024/es/index.html">&#x2022;    2024</a></li>
+            <li><a href="../../2023/index.html">&#x2022;    2023</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+    <!-- END HEADER -->
+    <link rel="stylesheet" href="../../css/cronograma.css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="section no-pad-bot" id="index-banner">
+            <div class="container">
+            </div>
+        </div>
+
+      <p class="bottom-blank"><!--Vertical spacer--></p>
+
+
+        <div class="row">
+
+               <div class="column">
+               <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left: 20%;margin-bottom: -3%;">
+		                <p><img src="../../archivos/2025/expositores/Mariano_Gabitto.jpeg" alt="Gabitto" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+		                <h5 style="margin-bottom: -3%;"><p>Mariano Gabitto</p></h5>
+		                <!--<h6><p>Coordinador</p></h6>-->
+		                <p class="title">Mariano Gabitto es Investigador Asistente en el Allen Institute for Brain Science donde estudia cómo se genera la diversidad celular observada en el cerebro. Lidera los esfuerzos de análisis del Seattle Alzheimer's Disease Cell Brain Atlas.
+
+                    Previamente Mariano fue investigador en el Center for Computational Biology del Flatiron Institute, parte de la Simons Foundation, y en el Broad Institute de Harvard y MIT. También fue investigador visitante en el grupo de Mike Jordan en la Universidad de California, Berkeley, donde desarrolló métodos bayesianos no paramétricos para imágenes de súper resolución y modelos generativos profundos para representar información de células individuales. Mariano obtuvo su doctorado en Neurociencia en la Universidad de Columbia en el laboratorio de Charles Zuker, donde colaboró con los grupos de Liam Paninski y Larry Abbott.
+            </p>
+                </div>
+		        </div>
+
+                <div class="column">
+                <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left: 20%;margin-bottom: -3%;">
+                    <p><img src="../../archivos/2025/expositores/Cathy_Oneil.jpg" alt="Neder" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3;margin-top: 4%; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+                    <h5 style="margin-bottom: -3%;"><p>Catherine O'Neil </p></h5>
+                    <!--<h6><p>Anfitriona</p></h6>-->
+                    <p>Cathy O'Neil es matemática, científica de datos y autora reconocida por su trabajo en la ética de los algoritmos y el impacto de los datos en la sociedad. Obtuvo un doctorado en Matemáticas por la Universidad de Harvard y trabajó como profesora de Matemáticas en el MIT y Barnard College. Más tarde, incursionó en la industria financiera, trabajando en fondos de cobertura, donde se interesó en el impacto de los modelos matemáticos en la economía.
+
+                    O'Neil es autora del libro <em>Weapons of Math Destruction</em> donde aborda cómo los algoritmos pueden perpetuar la desigualdad y causar daño. También fundó ORCAA (O'Neil Risk Consulting & Algorithmic Auditing), una firma de consultoría dedicada a auditar algoritmos y garantizar su uso ético. Ha escrito otros textos sobre temas relacionados con la equidad, la transparencia y la regulación de los sistemas automatizados.
+                    </p>
+                </div>
+                </div>
+          </div>
+
+
+        <div class="row">
+
+                <div class="column">
+                <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left: 20%;margin-bottom: -3%;">
+                    <p><img src="../../archivos/2025/expositores/Gavino_Puggioni.jpg" alt="Leila" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3;margin-top: 4%; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+                    <h5 style="margin-bottom: -3%;"><p>Gavino Puggioni</p></h5>
+                    <p>
+                    Gavino Puggioni es Profesor Asociado y Jefe de la Sección de Estadística en el Departamento de Ciencias de la Computación y Estadística de la Universidad de Rhode Island, donde también tiene una asignación conjunta con el College of the Environment and Life Sciences.
+
+                    Nacido y criado en Italia, completó sus estudios de licenciatura y maestría en Economía en la Universidad Bocconi. Posteriormente, obtuvo una maestría y un doctorado en Estadística de la Universidad de Duke en 2008.
+                    Tras finalizar su doctorado, realizó estudios postdoctorales en la Universidad de Carolina del Norte en Chapel Hill y en la Universidad de Emory.
+
+                    Sus principales áreas de investigación incluyen el desarrollo y aplicación de métodos bayesianos, con un enfoque particular en el análisis de datos dependientes como series temporales, datos espaciales y espacio-temporales, ecuaciones diferenciales estocásticas, mezclas y promedios de modelos.
+                    </p>
+                </div>
+                </div>
+
+
+               <div class="column">
+               <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left: 20%;margin-bottom: -3%;">
+		                <p><img src="../../archivos/2025/expositores/Valerie_Gauthier.jpg" alt="terHorst" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+		                <h5 style="margin-bottom: -3%;"><p>Valérie Gauthier-Umaña</p></h5>
+		                <!--<h6><p>Coordinador</p></h6>-->
+		                <p class="title">Valérie Gauthier-Umaña es profesora asistente en el Departamento de Ingeniería de Sistemas y Computación de la Universidad de los Andes, Colombia.
+                    Obtuvo su título de Matemática en la misma universidad.
+                    Posteriormente, realizó una maestría en álgebra, geometría y teoría de números en la Universidad de Burdeos I, Francia, y en la Università degli Studi di Padova, Italia.
+                    Completó su doctorado en matemáticas aplicadas, enfocándose en criptografía post-cuántica, en la Danmarks Tekniske Universitet (DTU).
+
+                    Sus áreas de investigación incluyen la criptografía y la teoría de códigos.
+                    Ha contribuido a publicaciones académicas, como la coedición de las actas de la 17ª Conferencia Internacional sobre Criptografía Aplicada y Seguridad de Redes (ACNS 2019) en Bogotá, Colombia.
+                    Además, ha colaborado en investigaciones sobre ataques a sistemas criptográficos basados en códigos de Reed-Solomon y McEliece.
+</p>
+                </div>
+		        </div>
+          </div>
+
+        <div class="row">
+
+                <div class="column">
+               <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left: 20%;margin-bottom: -3%;">
+		                <p><img src="../../archivos/2025/expositores/Jeremias_Sulam.jpg" alt="Bekios" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+		                <h5 style="margin-bottom: -3%;"><p>Jeremias Sulam</p></h5>
+		                <!--<h6><p>Coordinador</p></h6>-->
+		                <p class="title">Jeremias Sulam es Profesor Asistente en el Departamento de Ingeniería Biomédica de la Universidad Johns Hopkins, y es miembro principal del Mathematical Institute for Data Science (MINDS) y del Data Science and AI Insitute de la misma universidad.
+                    Obtuvo su título en Bioingeniería en la Universidad Nacional de Entre Ríos, Argentina, en 2013, y completó su doctorado en Ciencias de la Computación en el Technion - Instituto Tecnológico de Israel en 2018.
+
+                    Jeremias ha recibido el Premio a los Mejores Graduados de la Academia Nacional de Ingeniería de Argentina y el premio Early CAREER de la National Science Foundation (NSF) de Estados Unidos. Sus intereses de investigación incluyen el procesamiento de señales e imágenes, modelado de representaciones esparsas, problemas inversos y aprendizaje automático.
+                    </p>
+                </div>
+                </div>
+
+                <div class="column">
+                <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left: 20%;margin-bottom: -3%;">
+                    <p><img src="../../archivos/2025/expositores/Alberto_Cabezas.jpg" alt="Alberto" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3;margin-top: 4%; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+                    <h5 style="margin-bottom: -3%;"><p>Alberto Cabezas Gonzalez</p></h5>
+                    <p>
+                     Alberto Cabezas es investigador postdoctoral en la Universidad de Turín, donde modela secuencias de tiempo extraídas de datos administrativos, como biografías laborales o visitas al sistema sanitario, utilizando modelos transformer. Es doctor en Estadística de la Universidad de Lancaster, donde trabajó en la intersección de métodos Monte Carlo y Machine Learning. Antes de eso, obtuvo una maestría en Economía y Ciencias Sociales en la Universidad Bocconi, especializándome en modelos bayesianos no paramétricos. Ha desarrollado software en proyectos de inteligencia artificial probabilística, colaborando con instituciones académicas y startups tecnológicas. Es primer autor de trabajos apareciendo en Stat, NeurIPS y AISTATS, que exploran temas como normlazing flows y Markov chain Monte Carlo.
+                    </p>
+                </div>
+                </div>
+          </div>
+
+          <div class="row">
+
+               <div class="column">
+               <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left: 20%;margin-bottom: -3%;">
+		                <p><img src="../../archivos/2025/expositores/Vitoria_BarinPacela.jpeg" alt="Vitoria" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+		                <h5 style="margin-bottom: -3%;"><p>Vitória Barin Pacela</p></h5>
+		                <!--<h6><p>Coordinador</p></h6>-->
+		                <p class="title">
+		                Vitória Barin Pacela es una investigadora en el campo del aprendizaje automático y la inteligencia artificial. Creció en Brasil y se trasladó a Finlandia para realizar su licenciatura en Ciencias de la Computación en la Universidad de Helsinki, donde trabajó en aprendizaje automático para física de partículas, pasando varios veranos en el CERN con los grupos de la Profesora Maria Spiropulu y el Dr. Maurizio Pierini.
+
+                    Posteriormente, obtuvo una maestría en Ciencia de Datos en la misma universidad, donde fue supervisada por el Profesor Aapo Hyvärinen y el Dr. Antti Hyttinen, enfocándose en el análisis de componentes independientes para datos binarios.
+
+                    Actualmente, Vitória es estudiante de doctorado en el laboratorio Mila de la Universidad de Montreal, bajo la supervisión del Profesor Simon Lacoste-Julien. Sus áreas de investigación incluyen causalidad, aprendizaje profundo, generalización fuera de distribución, modelos probabilísticos, aprendizaje de representaciones y robustez.</p>
+
+                </div>
+		        </div>
+
+               <div class="column">
+               <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left:
+               20%;margin-bottom: -3%;">
+		                <p><img src="../../archivos/2024/expositores/GustavoLandfried.jpg" alt="Landfried" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+		                <h5 style="margin-bottom: -3%;"><p>Gustavo Landfried</p></h5>
+		                <p class="title">
+		                Gustavo Landfried es profesor en la Escuela de Ciencia y Técnica de la Universidad Nacional de San Martín, donde dicta cursos sobre Inferencia Bayesiana Causal en la carrera de Ciencia de Datos. Luego de obtener la licenciatura en Antropología Social, Gustavo se doctoró en Ciencias de la Computación por la Facultad de Ciencias Exactas y Naturales de la Universidad de Buenos Aires bajo la supervisión de los directores del Laboratorio de Inteligencia Artificial Aplicada (Diego Slezak) y del Laboratorio interdisciplinarios de Cómputo de Alto Rendimiento (Esteban Mocskos).
+		                Gustavo trabaja actualmente en la industria como Data Scientist Senior desarrollando proyectos de inferencia causal para empresas transnacionales.
+		                Además, es desarrollador y mantenedor del estimador de habilidad estado del arte en la industria del video juego (TrueSkill Through Time) en Python, Julia y R.
+		                Cofundador de Bayes Plurinacional.
+		                </p>
+                </div>
+		        </div>
+          </div>
+
+          <div class="row">
+
+
+
+                <div class="column">
+                <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left: 20%;margin-bottom: -3%;">
+                    <p><img src="../../archivos/2025/expositores/Matias_Altamirano.jpg" alt="Matias" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3;margin-top: 4%; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+                    <h5 style="margin-bottom: -3%;"><p>Matías Altamirano Montero</p></h5>
+                    <p>
+                     Matias Altamirano es estudiante de doctorado en Ciencias Estadísticas en UCL y miembro del grupo de investigación Fundamentals of Statistical Machine Learning, bajo la supervisión de Jeremias Knoblauch y François-Xavier Briol. Su investigación se centra en desarrollar métodos bayesianos generalizados robustos aplicados a modelos de series temporales.
+                     Actualmente, su doctorado cuenta con el respaldo de la Bloomberg Data Science PhD Fellowship.
+                     Antes de comenzar su doctorado, trabajó como ingeniero de investigación en el Centro de Modelamiento Matemático de la Universidad de Chile, donde utilizó ciencia de datos y modelos estocásticos en diversos proyectos interdisciplinarios.
+                    </p>
+                </div>
+                </div>
+
+
+                <div class="column">
+                <div class="figure" style="flex: 0.3; margin-right: 20%;margin-left: 20%;margin-bottom: -3%;">
+                    <p><img src="../../archivos/2025/expositores/Gerardo_DuranMartin.png" alt="Gerardo" style="width:80%"></p>
+                </div>
+                <div class="figure" style="flex: 0.3;margin-top: 4%; margin-right: 4%;margin-left: 4%;margin-bottom: 10%;">
+                    <h5 style="margin-bottom: -3%;"><p>Gerardo Durán-Martin</p></h5>
+                    <p>Gerardo Durán-Martín es un candidato a doctorado en Ciencias Matemáticas en la Queen Mary University of London bajo la supervición de Kevin Murphy y Alexander Shestopaloff, con una estancia como estudiante visitante en el Oxford-Man Institute of Quantitative Finance.
+                    Su investigación se centra en el desarrollo de algoritmos de aprendizaje para datos en flujo en entornos cambiantes, enfocándose en técnicas de filtrado como mecanismos de aprendizaje en contextos no estacionarios y mal especificados.
+                    Esto incluye aplicaciones como el aprendizaje continuo en línea y la extracción de señales en entornos de alta dimensión con baja relación señal-ruido.
+                    </p>
+                </div>
+                </div>
+          </div>
+
+            <!--<div class="row">-->
+
+
+            </div>
+
+        <p class="bottom-blank"><!--Vertical spacer--></p>
+
+        <!-- BEGIN FOOTER -->
+        <nav class="blue-grey" role="navigation" style="background-color:#1a1a1a; height:10%">
+          <div class="nav-wrapper container">
+              <ul class="social-links">
+                  <div class="footer" >
+                    <li><a href="mailto:bayesplurinacional@gmail.com"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="https://twitter.com/BayesPlural" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <!--<li><a href="https://bayes.club/@BayesDelSur" target="_blank"><i class="fab fa-mastodon"></i></a></li>-->
+                    <!--<li><a href="https://facebook.com/bayesdelsur" target="_blank"><i class="fab fa-facebook"></i></a>-->
+                    <li><a href="https://instagram.com/bayesplurinacional" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <li><a href="https://www.linkedin.com/company/bayes-plurinacional/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <!--<li><a href="https://www.youtube.com/@bayesdelsur" target="_blank"><i class="fab fa-youtube"></i></a></li>-->
+                  </div>
+              </ul>
+          </div>
+      </nav>
+      <!--JavaScript at end of body for optimized loading-->
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="../../js/materialize.js"></script>
+      <script src="../../js/init.js"></script>
+      <script>
+          $('.dropdown-button').dropdown({
+              inDuration: 300,
+              outDuration: 225,
+              constrain_width: false, // Does not change width of dropdown to that of the activator
+              gutter: 0, // Spacing from edge
+              alignment: 'left' // Displays dropdown with edge aligned to the left of button
+              }
+          );
+      </script>
+      <!-- END FOOTER -->
+    </body>
+  </html>
