@@ -3,87 +3,139 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Comunidad Bayesiana | Bayes Plurinacional</title>
-  <script src="/_components/header.js" defer></script>
+  <title>Comunidad Bayesiana Plurinacional</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="/_assets/_css/global.css">
-  <script>
-
-    
-    document.addEventListener("DOMContentLoaded", async function() {
-      try {
-        const response = await fetch('/_data/comunidad.json');
-        const data = await response.json();
-        const lang = document.documentElement.lang || "es";
-        const comunidadData = data.Comunidad[lang];
-
-        document.getElementById("titulo-comunidad").textContent = comunidadData.Titulo;
-        document.getElementById("descripcion-comunidad").textContent = comunidadData.Descripcion;
-
-        const advertenciasList = document.getElementById("advertencias");
-        comunidadData.Advertencias.forEach(advertencia => {
-          const li = document.createElement("li");
-          li.textContent = advertencia;
-          advertenciasList.appendChild(li);
-        });
-
-        const paisesContainer = document.getElementById("paises");
-        comunidadData.Paises.forEach(pais => {
-          const col = document.createElement("div");
-          col.className = "col-md-3 col-sm-6 text-center";
-          col.innerHTML = `
-            <h5><a href="${pais.url}" target="_blank">${pais.nombre}</a></h5>
-            <a href="${pais.url}" target="_blank">
-              <img class="img-fluid country-flag" src="/_assets/_img/banderas/${pais.img}" alt="${pais.nombre}">
-            </a>
-          `;
-          paisesContainer.appendChild(col);
-        });
-
-      } catch (error) {
-        console.error("Error al cargar comunidad.json:", error);
-      }
-    });
-  </script>
+  <script type="module" src="/_components/header.js"></script>
+  <style>
+    .flag-container {
+      text-align: center;
+      padding: 20px;
+    }
+    .flag-img {
+      width: 90%;
+      max-width: 250px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .flag-img:hover {
+      transform: scale(1.1);
+    }
+    .intro-text {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  </style>
 </head>
 <body>
-  <custom-header data-lang="es" class="mb-5">
-    <div class="container comunidad-container">
-      <h1 class="text-center" id="titulo-comunidad"></h1>
-      <p class="text-center lead" id="descripcion-comunidad"></p>
+  <custom-header data-lang="es">
+    
+    <!-- Encabezado de la comunidad -->
+    <section class="container text-center py-5">
+      <h1 class="titulo-seccion">Comunidad Bayesiana Plurinacional</h1>
+      <img class="img-fluid rounded shadow-sm my-4" src="https://raw.githubusercontent.com/glandfried/images/master/whipalaNico.jpeg" alt="Whipala">
+      <p class="lead intro-text">
+        Nuestra comunidad busca promover el uso de los Métodos Bayesianos en la América Plurinacional y los pueblos del Sur Global.
+        Abajo encontrarás redes de coautoría bayesianas por país. ¡Explora la comunidad científica!
+      </p>
+    </section>
 
-      <h3 class="text-center mt-4">Advertencias</h3>
-      <ul class="alert alert-warning" id="advertencias"></ul>
+    <!-- Advertencias -->
+    <section class="container text-center alert alert-warning">
+      <h4>⚠️ Advertencias</h4>
+      <ul class="list-unstyled">
+        <li>📌 Falta incorporar países con nombres compuestos.</li>
+        <li>📌 Última actualización: diciembre 2022.</li>
+        <li>📌 Aún faltan modelos generativos en las palabras clave.</li>
+      </ul>
+    </section>
 
-      <div class="row text-center mt-4" id="paises"></div>
-    </div>
+    <!-- Rejilla de banderas -->
+    <section class="container py-5">
+      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+        
+        <!-- Argentina -->
+        <div class="col flag-container">
+          <a href="https://bayesplurinacional.org/redes/redArgentina.html">
+            <img class="flag-img" src="https://raw.githubusercontent.com/glandfried/images/master/argentina.png" alt="Argentina">
+          </a>
+          <h5>Argentina</h5>
+        </div>
+
+        <!-- Bolivia -->
+        <div class="col flag-container">
+          <a href="https://bayesplurinacional.org/redes/redBolivia.html">
+            <img class="flag-img" src="https://raw.githubusercontent.com/glandfried/images/master/bolivia.png" alt="Bolivia">
+          </a>
+          <h5>Bolivia</h5>
+        </div>
+
+        <!-- Brasil -->
+        <div class="col flag-container">
+          <a href="https://bayesplurinacional.org/redes/redBrazil.html">
+            <img class="flag-img" src="https://raw.githubusercontent.com/glandfried/images/master/brasil.png" alt="Brasil">
+          </a>
+          <h5>Brasil</h5>
+        </div>
+
+        <!-- Chile -->
+        <div class="col flag-container">
+          <a href="https://bayesplurinacional.org/redes/redChile.html">
+            <img class="flag-img" src="https://raw.githubusercontent.com/glandfried/images/master/chile.png" alt="Chile">
+          </a>
+          <h5>Chile</h5>
+        </div>
+
+        <!-- Colombia -->
+        <div class="col flag-container">
+          <a href="https://bayesplurinacional.org/redes/redColombia.html">
+            <img class="flag-img" src="https://raw.githubusercontent.com/glandfried/images/master/colombia.png" alt="Colombia">
+          </a>
+          <h5>Colombia</h5>
+        </div>
+
+        <!-- Cuba -->
+        <div class="col flag-container">
+          <a href="https://bayesplurinacional.org/redes/redCuba.html">
+            <img class="flag-img" src="https://raw.githubusercontent.com/glandfried/images/master/cuba.png" alt="Cuba">
+          </a>
+          <h5>Cuba</h5>
+        </div>
+
+        <!-- Ecuador -->
+        <div class="col flag-container">
+          <a href="https://bayesplurinacional.org/redes/redEcuador.html">
+            <img class="flag-img" src="https://raw.githubusercontent.com/glandfried/images/master/ecuador.png" alt="Ecuador">
+          </a>
+          <h5>Ecuador</h5>
+        </div>
+
+        <!-- México -->
+        <div class="col flag-container">
+          <a href="https://bayesplurinacional.org/redes/redMexico.html">
+            <img class="flag-img" src="https://raw.githubusercontent.com/glandfried/images/master/mexico.png" alt="México">
+          </a>
+          <h5>México</h5>
+        </div>
+
+        <!-- Perú -->
+        <div class="col flag-container">
+          <a href="https://bayesplurinacional.org/redes/redPeru.html">
+            <img class="flag-img" src="https://raw.githubusercontent.com/glandfried/images/master/peru.png" alt="Perú">
+          </a>
+          <h5>Perú</h5>
+        </div>
+
+        <!-- Venezuela -->
+        <div class="col flag-container">
+          <a href="https://bayesplurinacional.org/redes/redVenezuela.html">
+            <img class="flag-img" src="https://raw.githubusercontent.com/glandfried/images/master/venezuela.png" alt="Venezuela">
+          </a>
+          <h5>Venezuela</h5>
+        </div>
+
+      </div>
+    </section>
+    
   </custom-header>
 </body>
-<style>
-  .comunidad-container {
-    max-width: 900px;
-    margin: auto;
-    padding: 40px 20px;
-  }
-
-  .country-flag {
-    width: 80%;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .country-flag:hover {
-    transform: scale(1.05);
-  }
-
-  ul.alert {
-    list-style-type: none;
-    padding: 20px;
-    background: #ffcc00;
-    border-radius: 8px;
-  }
-
-  ul.alert li {
-    margin-bottom: 5px;
-  }
-</style>
 </html>
