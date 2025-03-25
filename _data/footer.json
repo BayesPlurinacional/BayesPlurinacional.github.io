@@ -4,15 +4,17 @@
       "es": {
         "Título": "Sobre Nosotros",
         "Enlaces": {
-          "Quiénes Somos": "/_pages/es/quienes-somos.html",
-          "Nuestro Equipo": "/_pages/es/equipo.html"
+          "Communidad": "/_pages/es/Comunidad.html",
+          "Nuestro Equipo": "/_pages/es/2025/organizacion.html",
+          "Musica": "/_pages/es/musica.html"
         }
       },
       "en": {
         "Título": "About Us",
         "Enlaces": {
-          "Who We Are": "/_pages/en/quienes-somos.html",
-          "Our Team": "/_pages/en/equipo.html"
+          "Communidad": "/_pages/es/Comunidad.html",
+          "Our Team":  "/_pages/es/2025/organizacion.html",
+          "Music": "/_pages/en/musica.html"
         }
       }
     },
