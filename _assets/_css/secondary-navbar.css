@@ -1,5 +1,4 @@
 .secondary-navbar {
-
   background-color: var(--fondo-claro);
   padding: 15px 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
@@ -10,19 +9,33 @@
   z-index: 1000; /* Se baja para que el dropdown del navbar principal se vea encima */
 }
 
-
 .secondary-nav {
   list-style: none;
   margin: 0;
-  padding: 0 20px;
+  padding: 0 10px; /* Reducción fuerte */
   display: flex;
   gap: 25px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  scroll-padding-left: 16px; /* 💡 Nuevo */
+}
+
+.secondary-nav::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .secondary-nav {
+    width: 120%;
+    padding-left: 150px;
+    padding-right: 50px;
+    justify-content: center;
+  }
 }
 
 .secondary-nav-item {
