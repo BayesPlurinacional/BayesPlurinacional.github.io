@@ -68,5 +68,12 @@
     "descripcion": "Candidato a doctorado en Queen Mary University of London, investigando aprendizaje en entornos no estacionarios. Ha trabajado en técnicas de filtrado para datos en flujo y aprendizaje continuo.",
     "año": 2025,
     "dia_hora": ""
+  },
+  {
+    "nombre": "Camila Neder",
+    "imagen": "/_assets/_img/expositores/Perfil_Camila_Neder.jpeg",
+    "descripcion": "Científica en ecología marina y comunicadora. Doctora en Ciencias Biológicas por la Universidad Nacional de Córdoba. Investiga hábitats y distribución de organismos antárticos usando modelos de nicho, enfocándose en respuestas al cambio climático. Ha colaborado con instituciones en España, Alemania y Chile. Fundadora de Comunica al Natural y Coordinadora Ejecutiva de Bayes Plurinacional.",
+    "año": 2025,
+    "dia_hora": ""
   }
 ]
