@@ -40,15 +40,15 @@
       "es": {
         "Título": "Contacto",
         "Enlaces": {
-          "Correo": "mailto:admin@bayesplural.org",
-          "Redes Sociales": "/_pages/en/RedesSociales.html"
+          "Correo": "mailto:contacto@bayesplurinacional.com",
+          "Soporte": "/_pages/es/soporte.html"
         }
       },
       "en": {
         "Título": "Contact",
         "Enlaces": {
-          "Email": "mailto:admin@bayesplural.org",
-          "Redes Sociales": "/_pages/en/RedesSociales.html"
+          "Email": "mailto:contact@bayesplurinacional.com",
+          "Support": "/_pages/en/soporte.html"
         }
       }
     },
