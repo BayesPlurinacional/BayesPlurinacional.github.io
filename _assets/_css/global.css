@@ -165,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .ver-mas {
-  color: var(--boton-principal);
+  color: var(--elementos-interactivos);
   font-weight: bold;
   cursor: pointer;
   display: inline;
@@ -173,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .schedule-badge {
-  background: var(--boton-secundario);
+  background: var(--degradado-innovacion);
   color: white;
   padding: 5px 10px;
   border-radius: 8px;
