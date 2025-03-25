@@ -37,10 +37,21 @@ class CustomFooter extends HTMLElement {
           .map(([name, url]) => `
             <a href="${url}" target="_blank" class="social-icon">
               <i class="${socialIcons[name] || 'fas fa-link'}"></i>
+              <span class="social-name">${name}</span>
             </a>
           `)
           .join('');
       };
+
+      // Asegurar que Font Awesome esté cargado
+      const fontAwesomeLink = document.querySelector('link[href*="font-awesome"]');
+      if (fontAwesomeLink) {
+        fontAwesomeLink.addEventListener('load', () => {
+          this.shadowRoot.querySelectorAll('.social-icon i').forEach(icon => {
+            icon.style.visibility = 'visible';
+          });
+        });
+      }
 
       this.shadowRoot.innerHTML = `
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
