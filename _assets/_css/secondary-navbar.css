@@ -19,6 +19,10 @@
   gap: 25px;
   justify-content: center;
   align-items: center;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
 }
 
 .secondary-nav-item {
