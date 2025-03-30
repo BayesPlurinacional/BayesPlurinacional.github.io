@@ -1,5 +1,5 @@
 const SOCIAL_MEDIA = {
-  email: "bayesplurinacional@gmail.com",
+  email: "admin@bayesplural.org",
   twitter: "https://twitter.com/BayesPlural",
   instagram: "https://instagram.com/bayesplurinacional",
   linkedin: "https://www.linkedin.com/company/bayes-plurinacional/",
