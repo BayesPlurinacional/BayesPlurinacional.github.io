@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"></html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Event 2024 | Bayes Plurinacional</title>
+  <title>Evento 2024 | Bayes Plurinacional</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="/_assets/_css/global.css">
+  <link rel="stylesheet" href="/_assets/_css/2025.css"> <!-- Lo agrego porque tiene el carrusel -->
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
   <script type="module" src="/_components/header.js"></script>
@@ -13,21 +15,119 @@
 
 <body>
   <custom-header data-event-type="Presencial" data-event-key="Evento 2024" data-lang="en">
-    <div class="container aviso-container">
-      <h1 class="text-center">🚧 We Are Migrating the Content</h1>
-      <p class="text-center lead">
-        We are currently migrating all information from the 2024 event to a new system to enhance user experience.
+    
+    <br><br><br>
+
+    <section class="text-center">
+        <h1>Plurinational Bayes SALTA 2024!</h1>
+        <p class="lead"><a href="../2024/galeria.html">Videos, documents and photos</a></p>
+    </section>
+    
+   
+    <!-- Información del Evento -->
+    <section class="container py-5 text-center">
+      <h3>Promoting Bayesian Intelligence in Plurinational America and the Global South.</h3>
+      <p class="lead">
+        Preserving the previous belief that remains compatible with the data.
+        Predicting with the contribution of all hypotheses.
+        Optimal belief distribution given the available information.
+        Intersubjective agreements in contexts of uncertainty.
+        Memory, Truth and Justice
       </p>
-      <p class="text-center">
-        We appreciate your patience while we work on this. Soon, you will be able to access all the content with better organization.
-      </p>
-      <div class="text-center">
-        <a href="/_pages/en/2025/index.html" class="btn btn-primary">Go to Event 2025</a>
-        <a href="/" class="btn btn-secondary">Back to Home</a>
-      </div>
+    </section>
+
+   <!-- Organizan y Apoyan -->
+   <section class="organizan container text-center py-5">
+    <h2 class="titulo-seccion">🤝 Sponsors</h2>
+    <p class="lead">
+      With the support of the Latin American Artificial Intelligence organization KHIPU and the National University of Salta, Argentina.
+    </p>
+
+    <!-- Carrusel de Logos -->
+  <div class="carousel-container">
+    <div class="logos-carousel">
+      <div class="logo-item"><img src="/logos/UNSa-extension.jpg" alt="Extension"></div>
+      <div class="logo-item"><img src="/logos/UNSa.png" alt="UNSa"></div>
+      <div class="logo-item"><img src="/logos/UNSa-FCN.png" alt="FCN"></div>
+      <div class="logo-item"><img src="/logos/Metodos2.png" alt="Metodos"></div>
+      <div class="logo-item"><img src="/logos/khipuX2.jpg" alt="Khipu"></div>
+      <div class="logo-item"><img src="/logos/quipu.png" alt="Khipu"></div>
+      <div class="logo-item"><img src="/logos/ComunicaNatural.png" alt="Comunica"></div>
+      <div class="logo-item"><img src="/logos/pythonNorte.jpg" alt="PythonNorte"></div>
     </div>
+  </div>
+
+  </section>
+    
+  <!-- 🔹 Nueva Sección: Galería 2024 -->
+  <section class="galeria container  text-center">
+    <h2 class="titulo-seccion">📸 See how we did in 2024</h2>
+    <p class="lead">
+      Bayes Plurinational 2024 was successfully held from August 6-10 at the National University of Salta, Argentina.  
+      It was an amazing experience, full of learning and community. Here are some pictures of the past event!
+    </p>
+
+    <!-- Carrusel de imágenes -->
+    <div id="carouselGaleria" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner" id="carousel-images"></div>
+
+      <!-- Controles del carrusel -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </section>
+  
+
+  <br><br>
+
   </custom-header>
+  <script>
+    // Detecta el idioma basado en la URL y ajusta el enlace de organización
+    document.addEventListener("DOMContentLoaded", function() {
+      const url = window.location.pathname;
+      let idioma = "es"; // Por defecto español
+  
+      if (url.includes("/en/")) {
+        idioma = "en";
+      } 
+  
+      // Ajusta el enlace con la estructura correcta
+      document.getElementById("organizacion-link").href = `/_pages/${idioma}/2025/organizacion.html`;
+    });
+
+    // Carga dinámica de imágenes para la galería 2024
+    async function cargarGaleria() {
+      try {
+        const response = await fetch("/_data/galeria.json");
+        const data = await response.json();
+        const fotos = data.Galeria["2024"];
+        const carousel = document.getElementById("carousel-images");
+
+        fotos.forEach((foto, index) => {
+          const div = document.createElement("div");
+          div.classList.add("carousel-item");
+          if (index === 0) div.classList.add("active");
+
+          div.innerHTML = `<img src="${foto.imagen}" class="d-block w-100 h-100 rounded" alt="Galería 2024">`;
+          carousel.appendChild(div);
+        });
+      } catch (error) {
+        console.error("Error cargando la galería:", error);
+      }
+    }
+    
+    document.addEventListener("DOMContentLoaded", cargarGaleria);
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
 </body>
+
 
 <style>
   .aviso-container {
