@@ -12,18 +12,18 @@
     "global": {
       "Eventos": {
         "Presencial": {
-          "Evento 2023": "/_pages/{idioma}/2023/index.html",
-          "Evento 2024": "/_pages/{idioma}/2024/index.html",
-          "Evento 2025": "/_pages/{idioma}/2025/index.html"
+          "2023": "/_pages/{idioma}/2023/index.html",
+          "2024": "/_pages/{idioma}/2024/index.html",
+          "2025": "/_pages/{idioma}/2025/index.html"
         },
-        "Galeria": {
-        "Evento 2023":  "/_pages/{idioma}/2023/galeria.html",
-        "Evento 2024": "/_pages/{idioma}/2024/galeria.html"
-  
+        "Virtual": {
+          "Seminarios": "/_pages/{idioma}/Seminarios.html"
       }
+      }, 
+      "Plural": { 
+        "Comunidad": "/_pages/{idioma}/Comunidad.html",
+        "Inteligencia": "/_pages/{idioma}/Plural.html"
       },
-      "Seminarios Virtuales": "/_pages/{idioma}/Seminarios.html",
-      "Comunidad": "/_pages/{idioma}/Comunidad.html",
       "Auspiciantes": "/_pages/{idioma}/Auspiciantes.html",
       "Contacto": {
         "Redes Sociales": "/_pages/{idioma}/RedesSociales.html",
