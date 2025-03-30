@@ -41,14 +41,14 @@
         "Título": "Contacto",
         "Enlaces": {
           "Correo": "mailto:admin@bayesplural.org",
-          "Redes Sociales": "_pages/en/RedesSociales.html"
+          "Redes Sociales": "/_pages/en/RedesSociales.html"
         }
       },
       "en": {
         "Título": "Contact",
         "Enlaces": {
           "Email": "mailto:admin@bayesplural.org",
-          "Redes Sociales": "_pages/en/RedesSociales.html"
+          "Redes Sociales": "/_pages/en/RedesSociales.html"
         }
       }
     },
@@ -57,14 +57,14 @@
         "Título": "Síguenos",
         "Enlaces": {
           "Twitter": "https://x.com/BayesPlural",
-          "Instagram": "https://www.linkedin.com/company/bayes-plurinacional/posts/?feedView=all"
+          "Instagram": "https://www.instagram.com/bayesplurinacional/"
         }
       },
       "en": {
         "Título": "Follow Us",
         "Enlaces": {
           "Twitter": "https://x.com/BayesPlural",
-          "Instagram": "https://www.linkedin.com/company/bayes-plurinacional/posts/?feedView=all"
+          "Instagram": "https://www.instagram.com/bayesplurinacional/"
         }
       }
     },
