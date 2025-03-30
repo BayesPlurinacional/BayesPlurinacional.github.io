@@ -12,13 +12,13 @@ class SecondaryNavbar extends HTMLElement {
 
       // Detectar idioma y evento desde la URL
       const lang = this.detectLanguage();
-      const eventKey = "Evento 2025"; // 🔹 Nos enfocamos en 2025
+      const eventKey = "Evento 2025"; // Nos enfocamos en 2025
       const eventType = "Presencial";
 
       // Obtener las secciones del evento
       const eventData = data?.Evento?.[eventType]?.[eventKey] || {};
       
-      // 🔹 Excluir "Ciudad"
+      // Excluir "Ciudad"
       const filteredSections = Object.keys(eventData).filter(section => section !== "Ciudad");
 
       if (filteredSections.length === 0) {
@@ -50,7 +50,7 @@ class SecondaryNavbar extends HTMLElement {
       // Agregar eventos de clic
       this.initClickListeners();
     } catch (error) {
-      console.error("❌ Error en SecondaryNavbar:", error);
+      console.error("Error en SecondaryNavbar:", error);
     }
   }
 

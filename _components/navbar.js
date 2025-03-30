@@ -50,7 +50,7 @@ class CustomNavbar extends HTMLElement {
       this.initDropdowns();
       this.initLanguageSwitch();
     } catch (error) {
-      console.error("❌ Error en CustomNavbar:", error);
+      console.error("Error en CustomNavbar:", error);
     }
   }
 
@@ -171,7 +171,7 @@ buildEventsDropdown(title, items, lang, translations) {
 
   replaceIdioma(url, lang) {
     if (typeof url !== "string") {
-        console.warn(`⚠️ replaceIdioma recibió un objeto en lugar de una URL string. Verifica navbar.json`, url);
+        console.warn(`replaceIdioma recibió un objeto en lugar de una URL string. Verifica navbar.json`, url);
         return "#";
     }
 

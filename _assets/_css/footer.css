@@ -12,20 +12,20 @@
   margin: 0 auto;
 }
 
-/* ✅ Sección de columnas */
+/* Sección de columnas */
 .footer .footer-section {
   flex: 1;
   min-width: 200px;
   padding: 10px;
 }
 
-/* ✅ Títulos */
+/* Títulos */
 .footer h5 {
   margin-bottom: 15px;
   font-weight: bold;
 }
 
-/* ✅ Enlaces */
+/* Enlaces */
 .footer ul {
   padding-left: 0;
 }
@@ -46,7 +46,7 @@
   color: #f8c291;
 }
 
-/* ✅ Sección de redes sociales */
+/* Sección de redes sociales */
 .footer .social-icons {
   display: flex;
   justify-content: center;
@@ -71,7 +71,7 @@
   background: #f8c291;
 }
 
-/* ✅ Línea final */
+/* Línea final */
 .footer-bottom {
   background-color: #111;
   font-size: 0.9rem;
@@ -80,7 +80,7 @@
   margin-top: 20px;
 }
 
-/* ✅ RESPONSIVE: Footer en móviles */
+/* RESPONSIVE: Footer en móviles */
 @media (max-width: 768px) {
   .footer .container {
     flex-direction: column;

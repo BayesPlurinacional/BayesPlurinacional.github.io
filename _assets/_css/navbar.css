@@ -9,7 +9,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 100%;
   top: 0;
-  z-index: 1050; /* 🔥 Asegura que el navbar principal esté sobre el secundario */
+  z-index: 1050; /* Asegura que el navbar principal esté sobre el secundario */
   position: absolute ;
 }
 
@@ -67,7 +67,7 @@
  
 }
 .global-navbar .dropdown-menu {
-  z-index: 1200 !important; /* 🔥 Asegura que los dropdowns se vean sobre el navbar secundario */
+  z-index: 1200 !important; /* Asegura que los dropdowns se vean sobre el navbar secundario */
   position: absolute;
   background-color: var(--fondo-claro);
 }
@@ -100,7 +100,7 @@
   }
 
   .navbar-collapse {
-    display: none; /* 🔥 Elimina el `!important` */
+    display: none; /* Elimina el `!important` */
     opacity: 0;
     visibility: hidden;
     height: 0;
@@ -118,7 +118,7 @@
   }
 
   .navbar-collapse.show {
-    display: flex; /* 🔥 Se asegura que aparezca correctamente */
+    display: flex; /* Se asegura que aparezca correctamente */
     opacity: 1;
     height: auto;
     visibility: visible;

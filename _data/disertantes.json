@@ -2,7 +2,7 @@
   {
     "nombre": "Mariano Gabitto",
     "imagen": "/_assets/_img/expositores/Mariano_Gabitto.jpeg",
-    "descripcion": "Investigador en el Allen Institute for Brain Science, donde estudia cómo se genera la diversidad celular observada en el cerebro. Lidera los esfuerzos de análisis del Seattle Alzheimer's Disease Cell Brain Atlas. Anteriormente trabajó en el Center for Computational Biology del Flatiron Institute y en el Broad Institute de Harvard y MIT. Desarrolló métodos bayesianos no paramétricos para imágenes de súper resolución y modelos generativos profundos para representar información de células individuales.",
+    "descripcion": "Investigador en el Allen Institute for Brain Science, estudia la generación de diversidad celular en el cerebro. Impulsa el proyecto Seattle Alzheimer's Disease Cell Brain Atlas. Trabajó en el Center for Computational Biology del Flatiron Institute y en el Broad Institute de Harvard y MIT. Desarrolló métodos bayesianos no paramétricos para estudiar células individuales mediante modelos generativos profundos para imágenes de súper resolución.",    
     "año": 2025,
     "dia_hora": ""
   },
@@ -16,56 +16,49 @@
   {
     "nombre": "Gavino Puggioni",
     "imagen": "/_assets/_img/expositores/Gavino_Puggioni.jpg",
-    "descripcion": "Profesor en la Universidad de Rhode Island, especializado en modelos bayesianos para análisis de datos dependientes como series temporales y datos espacio-temporales. Obtuvo su doctorado en Estadística en la Universidad de Duke. Sus investigaciones incluyen mezclas de modelos, ecuaciones diferenciales estocásticas y aplicaciones en ciencias ambientales y sociales.",
+    "descripcion": "Profesor en la Universidad de Rhode Island, especializado en modelos bayesianos no paramétricos para datos espacio-temporales. Obtuvo su doctorado en Estadística en la Universidad de Duke. Licenciado y magister en Economía por la Universidad Bocconi. Sus investigaciones incluyen mezclas de modelos, ecuaciones diferenciales estocásticas y aplicaciones en ciencias ambientales y sociales.",
     "año": 2025,
     "dia_hora": ""
   },
   {
     "nombre": "Valérie Gauthier-Umaña",
     "imagen": "/_assets/_img/expositores/Valerie_Gauthier.jpg",
-    "descripcion": "Profesora en la Universidad de los Andes, investigadora en criptografía post-cuántica y teoría de códigos. Obtuvo su doctorado en la Danmarks Tekniske Universitet (DTU). Ha trabajado en criptografía basada en códigos y seguridad de sistemas de comunicación. También ha participado en publicaciones académicas sobre ataques a sistemas criptográficos.",
+    "descripcion": "Profesora en la Universidad de los Andes. Completó su doctorado en matemáticas aplicadas trabajando sobre criptografía post-cuántica en la Danmarks Tekniske Universitet (DTU). Sus áreas de investigación incluyen la criptografía y la teoría de códigos. Ha participado en publicaciones académicas sobre ataques a sistemas criptográficos basados en códigos de Reed-Solomon y McEliece.",
     "año": 2025,
     "dia_hora": ""
   },
   {
     "nombre": "Jeremias Sulam",
     "imagen": "/_assets/_img/expositores/Jeremias_Sulam.jpg",
-    "descripcion": "Profesor en Johns Hopkins, especializado en procesamiento de imágenes, problemas inversos y aprendizaje automático. Ha trabajado en modelado de representaciones esparsas y reconstrucción de datos en señales biomédicas y visión por computadora.",
+    "descripcion": "Profesor Asistente en la Universidad Johns Hopkins. Bioingeniero por la Universidad Nacional de Entre Ríos, se doctoró en Ciencias de la Computación en el Technion - Instituto Tecnológico de Israel. Ha recibido el Premios. Especializado en procesamiento de imágenes, problemas inversos y aprendizaje automático. Ha trabajado en modelado de representaciones esparsas y reconstrucción de datos en señales biomédicas.",
     "año": 2025,
     "dia_hora": ""
   },
   {
     "nombre": "Alberto Cabezas Gonzalez",
     "imagen": "/_assets/_img/expositores/Alberto_Cabezas.jpg",
-    "descripcion": "Investigador en la Universidad de Turín, trabajando en modelos transformer para análisis de datos administrativos. Doctor en Estadística por la Universidad de Lancaster, con experiencia en inteligencia artificial probabilística.",
-    "año": 2025,
-    "dia_hora": ""
-  },
-  {
-    "nombre": "Vitória Barin Pacela",
-    "imagen": "/_assets/_img/expositores/Vitoria_BarinPacela.jpeg",
-    "descripcion": "Doctoranda en Mila, Universidad de Montreal, investigando causalidad y generalización en modelos de IA. Ha trabajado en aprendizaje automático para física de partículas y en el CERN.",
-    "año": 2025,
-    "dia_hora": ""
-  },
-  {
-    "nombre": "Gustavo Landfried",
-    "imagen": "/_assets/_img/expositores/GustavoLandfried.jpg",
-    "descripcion": "Profesor en UNSAM y desarrollador del estimador de habilidad TrueSkill Through Time en Python, Julia y R. Ha trabajado en inferencia bayesiana y modelado de datos en videojuegos.",
-    "año": 2025,
-    "dia_hora": ""
-  },
-  {
-    "nombre": "Matías Altamirano Moreno",
-    "imagen": "/_assets/_img/expositores/Matias_Altamirano.jpg",
-    "descripcion": "Doctorando en UCL, especializado en métodos bayesianos generalizados para modelos de series temporales. Su doctorado cuenta con el respaldo de Bloomberg Data Science PhD Fellowship.",
+    "descripcion": "Investigador en la Universidad de Turín, modela historias de vida utilizando modelos transformer. Doctor en Estadística por la Universidad de Lancaster, donde desarrolló métodos Monte Carlo. Magister en Economía y Ciencias Sociales por la Universidad Bocconi, donde se especializó en modelos bayesianos no paramétricos. Primer autor en Stat, NeurIPS y AISTATS sobre normlazing flows y Markov chain Monte Carlo.",
     "año": 2025,
     "dia_hora": ""
   },
   {
     "nombre": "Gerardo Durán-Martin",
     "imagen": "/_assets/_img/expositores/Gerardo_DuranMartin.png",
-    "descripcion": "Candidato a doctorado en Queen Mary University of London, investigando aprendizaje en entornos no estacionarios. Ha trabajado en técnicas de filtrado para datos en flujo y aprendizaje continuo.",
+    "descripcion": "Candidato a doctorado en Matemáticas por la Queen Mary University of London bajo la supervición de Kevin Murphy y Alexander Shestopaloff. Desarrolla algoritmos de aprendizaje para datos en flujo en entornos cambiantes, enfocándose en técnicas de filtrado en contextos no estacionarios y mal especificados como el aprendizaje continuo en línea y la extracción de señales en entornos de alta dimensión con baja relación señal-ruido.",
+    "año": 2025,
+    "dia_hora": ""
+  },
+  {
+    "nombre": "Vitória Barin Pacela",
+    "imagen": "/_assets/_img/expositores/Vitoria_BarinPacela.jpeg",
+    "descripcion": "Candidata a doctora por la Universidad de Montreal en en el laboratorio Mila bajo la supervisión de Simon Lacoste-Julien. Sus áreas de investigación incluyen causalidad y aprendizaje automático. Licenciada y Magister por la Universidad de Helsinki, trabajó bajo la supervisión de Aapo Hyvärinen y Antti Hyttinen sobre ICA y bajo la supervisión de Maria Spiropulu y Maurizio Pierini en el CERN.",
+    "año": 2025,
+    "dia_hora": ""
+  },
+  {
+    "nombre": "Matías Altamirano Moreno",
+    "imagen": "/_assets/_img/expositores/Matias_Altamirano.jpg",
+    "descripcion": "Candidato a doctor en Ciencias Estadísticas por la UCL, trabaja en el grupo Fundamentals of Statistical Machine Learning bajo la supervisión de Jeremias Knoblauch y François-Xavier Briol. Desarrollar métodos bayesianos generalizados robustos aplicados a series temporales. Cuenta con el respaldo de la Bloomberg Data Science PhD Fellowship. Previamente trabajó en el Centro de Modelamiento Matemático de la Universidad de Chile.",
     "año": 2025,
     "dia_hora": ""
   },
@@ -73,6 +66,13 @@
     "nombre": "Camila Neder",
     "imagen": "/_assets/_img/expositores/Perfil_Camila_Neder.jpeg",
     "descripcion": "Científica en ecología marina y comunicadora. Doctora en Ciencias Biológicas por la Universidad Nacional de Córdoba. Investiga hábitats y distribución de organismos antárticos usando modelos de nicho, enfocándose en respuestas al cambio climático. Ha colaborado con instituciones en España, Alemania y Chile. Fundadora de Comunica al Natural y Coordinadora Ejecutiva de Bayes Plurinacional.",
+    "año": 2025,
+    "dia_hora": ""
+  },
+  {
+    "nombre": "Gustavo Landfried",
+    "imagen": "/_assets/_img/expositores/GustavoLandfried.jpg",
+    "descripcion": "Cofundador de Bayes Plurinacional. Licenciado en Antropología Social y doctor en Ciencias de la Computación por la Universidad de Buenos Aires. Profesor en Ciencia de Datos, Gustavo trabaja en la industria del software impulsando proyectos de inferencia causal para empresas transnacionales. Es el desarrollador y mantenedor del estimador de habilidad de la industria del video juego (TrueSkill Through Time) en Python, Julia y R.",
     "año": 2025,
     "dia_hora": ""
   }

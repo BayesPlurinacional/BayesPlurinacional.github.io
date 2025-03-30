@@ -77,7 +77,7 @@ class CustomFooter extends HTMLElement {
         </footer>
       `;
     } catch (error) {
-      console.error("❌ Error al cargar el footer:", error);
+      console.error("Error al cargar el footer:", error);
     }
   }
 }

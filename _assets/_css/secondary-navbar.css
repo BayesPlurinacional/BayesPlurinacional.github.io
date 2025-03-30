@@ -7,7 +7,7 @@
   position: absolute;
   width: 100%;
   top: 85px;
-  z-index: 1000; /* 🔥 Se baja para que el dropdown del navbar principal se vea encima */
+  z-index: 1000; /* Se baja para que el dropdown del navbar principal se vea encima */
 }
 
 

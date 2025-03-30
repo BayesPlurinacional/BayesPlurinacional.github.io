@@ -1,6 +1,6 @@
 import './navbar.js';
 import './footer.js';
-import './secondary-navbar.js';  // Asegúrate de importar el nuevo componente
+import './secondary-navbar.js'; 
 
 class CustomHeader extends HTMLElement {
   constructor() {

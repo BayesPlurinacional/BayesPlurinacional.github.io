@@ -2,7 +2,7 @@
   {
     "nombre": "Mariano Gabitto",
     "imagen": "/_assets/_img/expositores/Mariano_Gabitto.jpeg",
-    "descripcion": "Researcher at the Allen Institute for Brain Science, where he studies how cellular diversity is generated in the brain. He leads the analysis efforts of the Seattle Alzheimer's Disease Cell Brain Atlas. Previously worked at the Center for Computational Biology at the Flatiron Institute and at the Broad Institute of Harvard and MIT. He developed nonparametric Bayesian methods for super-resolution imaging and deep generative models to represent single-cell information.",
+    "descripcion": "Researcher at the Allen Institute for Brain Science, studying the generation of cellular diversity in the brain. He leads the Seattle Alzheimer's Disease Cell Brain Atlas project. He has worked at the Center for Computational Biology at the Flatiron Institute and at the Broad Institute of Harvard and MIT. He developed nonparametric Bayesian methods to study individual cells using deep generative models for super-resolution imaging.",
     "año": 2025,
     "dia_hora": ""
   },
@@ -16,56 +16,49 @@
   {
     "nombre": "Gavino Puggioni",
     "imagen": "/_assets/_img/expositores/Gavino_Puggioni.jpg",
-    "descripcion": "Professor at the University of Rhode Island, specialized in Bayesian models for dependent data analysis such as time series and spatio-temporal data. He obtained his PhD in Statistics from Duke University. His research includes mixture models, stochastic differential equations, and applications in environmental and social sciences.",
+    "descripcion": "Professor at the University of Rhode Island, specializing in nonparametric Bayesian models for spatiotemporal data. He earned his PhD in Statistics from Duke University and holds a Bachelor's and a Master's degree in Economics from Bocconi University. His research includes model mixtures, stochastic differential equations, and applications in environmental and social sciences",
     "año": 2025,
     "dia_hora": ""
   },
   {
     "nombre": "Valérie Gauthier-Umaña",
     "imagen": "/_assets/_img/expositores/Valerie_Gauthier.jpg",
-    "descripcion": "Professor at Universidad de los Andes, researcher in post-quantum cryptography and coding theory. She obtained her PhD from Danmarks Tekniske Universitet (DTU). Has worked on code-based cryptography and communication systems security. She has also participated in academic publications on cryptographic system attacks.",
+    "descripcion": "Professor at the University of the Andes. She completed her PhD in Applied Mathematics, focusing on post-quantum cryptography at the Technical University of Denmark (DTU). Her research areas include cryptography and coding theory. She has contributed to academic publications on attacks against cryptographic systems based on Reed-Solomon and McEliece codes.",
     "año": 2025,
     "dia_hora": ""
   },
   {
     "nombre": "Jeremias Sulam",
     "imagen": "/_assets/_img/expositores/Jeremias_Sulam.jpg",
-    "descripcion": "Professor at Johns Hopkins, specialized in image processing, inverse problems, and machine learning. Has worked on modeling sparse representations and data reconstruction in biomedical signals and computer vision.",
+    "descripcion": "Assistant Professor at Johns Hopkins University. A bioengineer from the National University of Entre Ríos, he earned his PhD in Computer Science from the Technion – Israel Institute of Technology. He has received awards for his work. Specializing in image processing, inverse problems, and machine learning, he has worked on sparse representation modeling and data reconstruction in biomedical signals.",
     "año": 2025,
     "dia_hora": ""
   },
   {
     "nombre": "Alberto Cabezas Gonzalez",
     "imagen": "/_assets/_img/expositores/Alberto_Cabezas.jpg",
-    "descripcion": "Researcher at the University of Turin, working on transformer models for administrative data analysis. PhD in Statistics from Lancaster University, with experience in probabilistic artificial intelligence.",
-    "año": 2025,
-    "dia_hora": ""
-  },
-  {
-    "nombre": "Vitória Barin Pacela",
-    "imagen": "/_assets/_img/expositores/Vitoria_BarinPacela.jpeg",
-    "descripcion": "PhD candidate at Mila, University of Montreal, researching causality and generalization in AI models. Has worked in machine learning for particle physics and at CERN.",
-    "año": 2025,
-    "dia_hora": ""
-  },
-  {
-    "nombre": "Gustavo Landfried",
-    "imagen": "/_assets/_img/expositores/GustavoLandfried.jpg",
-    "descripcion": "Professor at UNSAM and developer of the TrueSkill Through Time skill estimator in Python, Julia, and R. Has worked on Bayesian inference and data modeling in video games.",
-    "año": 2025,
-    "dia_hora": ""
-  },
-  {
-    "nombre": "Matías Altamirano Moreno",
-    "imagen": "/_assets/_img/expositores/Matias_Altamirano.jpg",
-    "descripcion": "PhD candidate at UCL, specialized in generalized Bayesian methods for time series models. His PhD is supported by the Bloomberg Data Science PhD Fellowship.",
+    "descripcion": "Researcher at the University of Turin, modeling life histories using transformer models. Holds a PhD in Statistics from Lancaster University, where he developed Monte Carlo methods. Earned a Master's degree in Economics and Social Sciences from Bocconi University, specializing in nonparametric Bayesian models. First author in *Stat*, NeurIPS, and AISTATS on normalizing flows and Markov chain Monte Carlo.",
     "año": 2025,
     "dia_hora": ""
   },
   {
     "nombre": "Gerardo Durán-Martin",
     "imagen": "/_assets/_img/expositores/Gerardo_DuranMartin.png",
-    "descripcion": "PhD candidate at Queen Mary University of London, researching learning in non-stationary environments. Has worked on filtering techniques for streaming data and continuous learning.",
+    "descripcion": "PhD candidate in Mathematics at Queen Mary University of London under the supervision of Kevin Murphy and Alexander Shestopaloff. Develops learning algorithms for streaming data in changing environments, focusing on filtering techniques in non-stationary and misspecified contexts, such as online continual learning and signal extraction in high-dimensional environments with a low signal-to-noise ratio.",
+    "año": 2025,
+    "dia_hora": ""
+  },
+  {
+    "nombre": "Vitória Barin Pacela",
+    "imagen": "/_assets/_img/expositores/Vitoria_BarinPacela.jpeg",
+    "descripcion": "PhD candidate at the University of Montreal in the Mila laboratory under the supervision of Simon Lacoste-Julien. Her research areas include causality and machine learning. She holds a Bachelor's and a Master's degree from the University of Helsinki, where she worked under the supervision of Aapo Hyvärinen and Antti Hyttinen on ICA, and under the supervision of Maria Spiropulu and Maurizio Pierini at CERN.",
+    "año": 2025,
+    "dia_hora": ""
+  },
+  {
+    "nombre": "Matías Altamirano Moreno",
+    "imagen": "/_assets/_img/expositores/Matias_Altamirano.jpg",
+    "descripcion": "PhD candidate in Statistical Sciences at UCL, working in the Fundamentals of Statistical Machine Learning group under the supervision of Jeremias Knoblauch and François-Xavier Briol. Develops robust generalized Bayesian methods applied to time series. He is supported by the Bloomberg Data Science PhD Fellowship. Previously, he worked at the Center for Mathematical Modeling at the University of Chile.",
     "año": 2025,
     "dia_hora": ""
   },
@@ -75,5 +68,12 @@
     "descripcion": "Marine ecologist and science communicator. PhD in Biological Sciences from the National University of Córdoba. Researches Antarctic habitats and organism distribution using niche models, focusing on responses to climate change. Has collaborated with institutions in Spain, Germany, and Chile. Founder of Comunica al Natural and Executive Coordinator of Bayes Plurinacional.",
     "año": 2025,
     "ddia_hora": ""
+  },
+  {
+    "nombre": "Gustavo Landfried",
+    "imagen": "/_assets/_img/expositores/GustavoLandfried.jpg",
+    "descripcion": "Co-founder of Plurinational Bayes. Holds a degree in Social Anthropology and a PhD in Computer Science from the University of Buenos Aires. A professor in Data Science, Gustavo works in the software industry driving causal inference projects for multinational companies. He is the developer and maintainer of the skill estimator of the video games industry (TrueSkill Through Time) in Python, Julia, and R.",
+    "año": 2025,
+    "dia_hora": ""
   }
   ]

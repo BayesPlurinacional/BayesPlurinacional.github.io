@@ -1,5 +1,5 @@
  /* ------------------------------ */
-/* 📌 Hero Section Mejorado */
+/* Hero Section Mejorado */
 /* ------------------------------ */
 
 .body{
@@ -36,7 +36,7 @@
 }
 
 /* ------------------------------ */
-/* 📌 Contador Regresivo */
+/* Contador Regresivo */
 /* ------------------------------ */
 .countdown {
   display: flex;
@@ -67,7 +67,7 @@
 
 
 /* ------------------------------ */
-/* 📌 Sección Información del Evento */
+/* Sección Información del Evento */
 .info-evento {
   padding: 60px 20px;
 }
@@ -79,7 +79,7 @@
 }
 
 /* ------------------------------ */
-/* 📌 Convocatoria */
+/* Convocatoria */
 .convocatoria {
   background: var(--degradado-innovacion);
   padding: 60px 20px;
@@ -99,9 +99,9 @@
 }
 
 /* ------------------------------ */
-/* 📌 Organizan */
+/* Organizan */
 /* ------------------------------ */
-/* 📌 Organizan */
+/* Organizan */
 .organizan {
   background: var(--fondo-claro);
 }
@@ -128,7 +128,7 @@
 }
 
 /* ------------------------------ */
-/* 📌 Galería de Logos */
+/* Galería de Logos */
 /* ------------------------------ */
 /* Estilos del carrusel */
 .carousel-container {

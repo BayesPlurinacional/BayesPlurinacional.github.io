@@ -5,7 +5,7 @@
 
 
 :root {
-    /* 🎨 PALETA DE COLORES */
+    /* PALETA DE COLORES */
     --fondo-claro: #F8F9FA;
     --titulo-encabezado: #2A2D6F;
     --elementos-interactivos: #0096D6;
@@ -13,18 +13,18 @@
     --boton-secundario: #E67E22;
     --boton-principal: #D13438;
 
-    /* 🔥 DEGRADADOS */
+    /* DEGRADADOS */
     --degradado-innovacion: linear-gradient(90deg, #0096D6, #2A2D6F);
     --degradado-ciencia: linear-gradient(90deg, #702963, #E67E22);
     --degradado-accion: linear-gradient(90deg, #D13438, #E67E22);
 
-    /* 🌙 MODO OSCURO (opcional, se puede activar con clases) */
+    /* MODO OSCURO (opcional, se puede activar con clases) */
     --fondo-oscuro: #1A1A1A;
     --texto-oscuro: #E0E0E0;
 }
 
 /* ------------------------------ */
-/* 📌 RESETEO Y BASE GENERAL */
+/* RESETEO Y BASE GENERAL */
 /* ------------------------------ */
 * {
     margin: 0;
@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* ------------------------------ */
-/* 📌 BOTONES */
+/* BOTONES */
 /* ------------------------------ */
 .btn-principal {
     background: var(--boton-principal);
@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .speaker-card.expanded {
-  max-height: 800px; /* 📌 Expande sin empujar a otras tarjetas */
+  max-height: 800px; /* Expande sin empujar a otras tarjetas */
 }
 
 .speaker-img {
@@ -149,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
-/* 📌 Estilo del texto truncado */
+/* Estilo del texto truncado */
 .speaker-info {
   font-size: 0.9rem;
   color: #666;
