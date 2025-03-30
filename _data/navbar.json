@@ -22,7 +22,8 @@
       }, 
       "Plural": { 
         "Comunidad": "/_pages/{idioma}/Comunidad.html",
-        "Inteligencia": "/_pages/{idioma}/Plural.html"
+        "Inteligencia": "/_pages/{idioma}/Plural.html",
+        "Música": "/_pages/{idioma}/musica.html"
       },
       "Auspiciantes": "/_pages/{idioma}/Auspiciantes.html",
       "Contacto": {
