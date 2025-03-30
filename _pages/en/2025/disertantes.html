@@ -32,7 +32,7 @@
       const currentYear = 2025;
 
       try {
-        const response = await fetch("/_data/disertantes_en.json");
+        const response = await fetch("/_pages/en/2025/data/disertantes_en.json");
         const speakers = await response.json();
 
         const filteredSpeakers = speakers.filter(d => d.año === currentYear);
@@ -42,12 +42,12 @@
           return;
         }
 
-        // 🔹 Create speaker cards
+        // Create speaker cards
         filteredSpeakers.forEach(d => {
           const card = document.createElement("div");
           card.classList.add("col");
 
-          const shortText = d.descripcion.substring(0, 120); // 🔹 Maximum 120 characters before "See more"
+          const shortText = d.descripcion.substring(0, 120); // Maximum 120 characters before "See more"
           const fullText = d.descripcion;
 
           card.innerHTML = `
@@ -85,7 +85,7 @@
             parent.classList.add('expanded');
           }
 
-          setupVerMas(); // 🔄 Re-add events after change
+          setupVerMas(); // Re-add events after change
         });
       });
     }
