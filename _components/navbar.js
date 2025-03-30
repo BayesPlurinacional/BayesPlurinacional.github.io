@@ -24,7 +24,7 @@ class CustomNavbar extends HTMLElement {
         <nav class="navbar navbar-expand-lg global-navbar fixed-top">
           <div class="container">
             <a class="navbar-brand" href="/">
-              <img src="/_assets/_img/logos/PB.svg" alt="Logo" width="120">
+              <img src="/_assets/_img/logos/PB.svg" alt="Logo" width="180">
             </a>
             <button class="navbar-toggler" type="button" id="global-toggle-button">
               <span class="navbar-toggler-icon"></span>
