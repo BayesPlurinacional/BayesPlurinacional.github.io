@@ -236,15 +236,29 @@ buildEventsDropdown(title, items, lang, translations) {
       globalToggle.setAttribute("aria-expanded", isExpanded ? "false" : "true");
     });
   
-    // 2️⃣ Cerrar el menú cuando se haga click en un enlace
     const navLinks = this.shadowRoot.querySelectorAll(".navbar-nav .nav-link");
-    navLinks.forEach(link => {
-      link.addEventListener("click", () => {
-        globalNav.classList.remove("show");
-        globalNav.style.display = "none"; // 🔥 OCULTAR EL MENÚ
-        globalToggle.setAttribute("aria-expanded", "false");
-      });
-    });
+
+navLinks.forEach(link => {
+  link.addEventListener("click", (event) => {
+    const isDropdownToggle = link.classList.contains("dropdown-toggle");
+
+    // Si es dropdown, prevenir que se cierre y alternar la visibilidad del submenú
+    if (isDropdownToggle) {
+      event.preventDefault();
+
+      const dropdownMenu = link.nextElementSibling;
+      if (dropdownMenu && dropdownMenu.classList.contains("dropdown-menu")) {
+        dropdownMenu.classList.toggle("show");
+      }
+    } else {
+      // Si es link normal, cerrar el menú
+      globalNav.classList.remove("show");
+      globalNav.style.display = "none";
+      globalToggle.setAttribute("aria-expanded", "false");
+    }
+  });
+});
+
   
     document.addEventListener("click", (event) => {
       // Obtenemos el recorrido completo del evento
