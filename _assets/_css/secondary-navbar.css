@@ -29,14 +29,7 @@
   display: none;
 }
 
-@media (min-width: 768px) {
-  .secondary-nav {
-    width: 120%;
-    padding-left: 150px;
-    padding-right: 50px;
-    justify-content: center;
-  }
-}
+
 
 .secondary-nav-item {
   position: relative;
