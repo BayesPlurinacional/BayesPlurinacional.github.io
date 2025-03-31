@@ -88,6 +88,7 @@ class CustomNavbar extends HTMLElement {
         "Seminarios Virtuales": "Virtual Seminars",
         "Presencial": "In Person",
         "Virtual": "Virtual",
+        "Musica": "Music",
         "Comunidad": "Community",
         "Aprendizaje": "Learning",
         "Música": "Music",
