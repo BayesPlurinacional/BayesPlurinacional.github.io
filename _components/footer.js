@@ -29,15 +29,16 @@ class CustomFooter extends HTMLElement {
       // Función para redes sociales con iconos dinámicos
       const socialIcons = {
         "Twitter": "fab fa-twitter",
-        "Instagram": "fab fa-instagram"
+        "Instagram": "fab fa-instagram",
+        "Linkedin": "fab fa-linkedin",
+        "YouTube": "fab fa-youtube"
       };
 
       const buildSocialIcons = linksObj => {
         return Object.entries(linksObj)
           .map(([name, url]) => `
-            <a href="${url}" target="_blank" class="social-icon">
+            <a href="${url}" target="_blank" class="social-icon" title="${name}">
               <i class="${socialIcons[name] || 'fas fa-link'}"></i>
-              <span class="social-name">${name}</span>
             </a>
           `)
           .join('');

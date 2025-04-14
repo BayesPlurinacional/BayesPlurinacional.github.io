@@ -40,15 +40,15 @@
       "es": {
         "Título": "Contacto",
         "Enlaces": {
-          "Correo": "mailto:contacto@bayesplurinacional.com",
-          "Soporte": "/_pages/es/soporte.html"
+          "Correo": "mailto:admin@bayesplural.org",
+          "Auspiciantes": "/_pages/es/Auspiciantes.html"
         }
       },
       "en": {
         "Título": "Contact",
         "Enlaces": {
-          "Email": "mailto:contact@bayesplurinacional.com",
-          "Support": "/_pages/en/soporte.html"
+          "Email": "mailto:admin@bayesplural.org",
+          "Sponsors": "/_pages/en/Auspiciantes.html"
         }
       }
     },
@@ -56,15 +56,19 @@
       "es": {
         "Título": "Síguenos",
         "Enlaces": {
-          "Twitter": "https://twitter.com/",
-          "Instagram": "https://instagram.com/"
+            "Twitter": "https://twitter.com/BayesPlural",
+            "Instagram": "https://instagram.com/bayesplurinacional",
+            "Linkedin": "https://www.linkedin.com/company/bayes-plurinacional/",
+            "YouTube": "https://www.youtube.com/@bayesplurinacional"
         }
       },
       "en": {
         "Título": "Follow Us",
         "Enlaces": {
-          "Twitter": "https://twitter.com/",
-          "Instagram": "https://instagram.com/"
+          "Twitter": "https://twitter.com/BayesPlural",
+          "Instagram": "https://instagram.com/bayesplurinacional",
+          "Linkedin": "https://www.linkedin.com/company/bayes-plurinacional/",
+          "YouTube": "https://www.youtube.com/@bayesplurinacional"
         }
       }
     },

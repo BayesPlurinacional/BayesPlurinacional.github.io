@@ -12,9 +12,9 @@
     "global": {
       "Eventos": {
         "Presencial": {
-          "2023": "/_pages/{idioma}/2023/index.html",
+          "2025": "/_pages/{idioma}/2025/index.html",
           "2024": "/_pages/{idioma}/2024/index.html",
-          "2025": "/_pages/{idioma}/2025/index.html"
+          "2023": "/_pages/{idioma}/2023/index.html"
         },
         "Virtual": {
           "Seminarios": "/_pages/{idioma}/Seminarios.html"

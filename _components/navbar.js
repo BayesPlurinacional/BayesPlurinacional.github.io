@@ -121,7 +121,6 @@ class CustomNavbar extends HTMLElement {
     }
     return html;
 }
-
 buildEventsDropdown(title, items, lang, translations) {
   let html = `<li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="${title.replace(/\s/g, '')}Dropdown" role="button" data-bs-toggle="dropdown">
@@ -129,23 +128,24 @@ buildEventsDropdown(title, items, lang, translations) {
                 </a>
                 <ul class="dropdown-menu">`;
 
-  // Separamos los eventos por categorías (Presencial y Galería)
   for (const category in items) {
-      html += `<li class="dropdown-subtitle">${translations[category] || category}</li>`; // Agregar subtítulo
+      html += `<li class="dropdown-subtitle">${translations[category] || category}</li>`;
 
       const subItems = items[category];
-      for (const eventName in subItems) {
-          const link = this.replaceIdioma(subItems[eventName], lang);
-          html += `<li><a class="dropdown-item" href="${link}">${eventName}</a></li>`;
+      // Ordenar años en orden descendente
+      const sortedYears = Object.keys(subItems).sort((a, b) => b.localeCompare(a));
+
+      for (const year of sortedYears) {
+          const link = this.replaceIdioma(subItems[year], lang);
+          html += `<li><a class="dropdown-item" href="${link}">${year}</a></li>`;
       }
 
-      html += `<li><hr class="dropdown-divider"></li>`; // Separador entre categorías
+      html += `<li><hr class="dropdown-divider"></li>`;
   }
 
   html += `</ul></li>`;
   return html;
 }
-
 
 
   buildDropdown(title, items, lang, translations) {

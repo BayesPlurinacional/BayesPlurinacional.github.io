@@ -1,3 +1,8 @@
+const fontAwesomeLink = document.createElement('link');
+fontAwesomeLink.rel = 'stylesheet';
+fontAwesomeLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css';
+document.head.appendChild(fontAwesomeLink);
+
 import './navbar.js';
 import './footer.js';
 import './secondary-navbar.js'; 

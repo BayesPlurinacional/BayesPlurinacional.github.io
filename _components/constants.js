@@ -3,7 +3,7 @@ const SOCIAL_MEDIA = {
   twitter: "https://twitter.com/BayesPlural",
   instagram: "https://instagram.com/bayesplurinacional",
   linkedin: "https://www.linkedin.com/company/bayes-plurinacional/",
-  youtube: "https://www.youtube.com/@bayesdelsur"
+  youtube: "https://www.youtube.com/@bayesplurinacional"
 };
 
 const FOOTER_LINKS = {
