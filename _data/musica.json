@@ -1,12 +1,6 @@
 {
   "Musica": [
     {
-      "nombre": "Radio Izarra",
-      "url": "https://dattavolt.com/8030/stream",
-      "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/acobamba.jpg",
-      "Activo": true
-    },
-    {
       "nombre": "El Charco",
       "url": "https://stream-21.zeno.fm/u1nngtkfp9duv?zs=pjrIHCHKTkG6elMKwOW69w&listening-from-radio-garden=1665234330",
       "imagen": "https://raw.githubusercontent.com/glandfried/images/master/radios/charco.jpg",
