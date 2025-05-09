@@ -18,7 +18,7 @@
     "imagen": "/_assets/_img/expositores/Gavino_Puggioni.jpg",
     "descripcion": "Professor at the University of Rhode Island, specializing in nonparametric Bayesian models for spatiotemporal data. He earned his PhD in Statistics from Duke University and holds a Bachelor's and a Master's degree in Economics from Bocconi University. His research includes model mixtures, stochastic differential equations, and applications in environmental and social sciences",
     "año": 2025,
-    "dia_hora": "Algorithmic trading and reinforcement learning"
+    "dia_hora": "Keynote lecture 3"
   },
   {
     "nombre": "Valérie Gauthier-Umaña",
@@ -61,6 +61,13 @@
     "descripcion": "PhD candidate in Statistical Sciences at UCL, working in the Fundamentals of Statistical Machine Learning group under the supervision of Jeremias Knoblauch and François-Xavier Briol. Develops robust generalized Bayesian methods applied to time series. He is supported by the Bloomberg Data Science PhD Fellowship. Previously, he worked at the Center for Mathematical Modeling at the University of Chile.",
     "año": 2025,
     "dia_hora": "Post-Bayesian approach"
+  },
+  {
+    "nombre": "Julián Fernando Sánchez",
+    "imagen": "/_assets/_img/expositores/SANCHEZ-LOPEZ-JULIAN-FERNANDO.jpg",
+    "descripcion": "PhD candidate in Economics and Master in Quantitative Finance from Universidad del Rosario, Colombia. 20 years of university teaching experience in the field of applied mathematics for quantitative finance. Degree and Master's in Mathematics Education from Universidad Pedagógica Nacional. Committed to training highly skilled professionals.",
+    "año": 2025,
+    "dia_hora": "Algorithmic trading and reinforcement learning"
   },
   {
     "nombre": "Camila Neder",

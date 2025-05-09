@@ -18,7 +18,7 @@
     "imagen": "/_assets/_img/expositores/Gavino_Puggioni.jpg",
     "descripcion": "Profesor en la Universidad de Rhode Island, especializado en modelos bayesianos no paramétricos para datos espacio-temporales. Obtuvo su doctorado en Estadística en la Universidad de Duke. Licenciado y magister en Economía por la Universidad Bocconi. Sus investigaciones incluyen mezclas de modelos, ecuaciones diferenciales estocásticas y aplicaciones en ciencias ambientales y sociales.",
     "año": 2025,
-    "dia_hora": "Trading algorítmico y aprendizaje por refuerzo"
+    "dia_hora": "Conferencia magistral 3"
   },
   {
     "nombre": "Valérie Gauthier-Umaña",
@@ -61,6 +61,13 @@
     "descripcion": "Candidato a doctor en Ciencias Estadísticas por la UCL, trabaja en el grupo Fundamentals of Statistical Machine Learning bajo la supervisión de Jeremias Knoblauch y François-Xavier Briol. Desarrollar métodos bayesianos generalizados robustos aplicados a series temporales. Cuenta con el respaldo de la Bloomberg Data Science PhD Fellowship. Previamente trabajó en el Centro de Modelamiento Matemático de la Universidad de Chile.",
     "año": 2025,
     "dia_hora": "Enfoque Post-Bayesiano"
+  },
+  {
+    "nombre": "Julián Fernando Sánchez",
+    "imagen": "/_assets/_img/expositores/SANCHEZ-LOPEZ-JULIAN-FERNANDO.jpg",
+    "descripcion": "Candidato a doctor en Economía y Magíster en finanzas cuantitativas por la Universidad del Rosario, Colombia. 20 años de docecia universitario en el campo de las matemáticas aplicadas a finanzas cuantitativas. Licenciado en matemáticas y magíster en docencia de las matemáticas de la Universidad Pedagógica Nacional. Compromiso con la formación de profesionales altamente capacitados.",
+    "año": 2025,
+    "dia_hora": "Trading algorítmico y aprendizaje por refuerzo"
   },
   {
     "nombre": "Camila Neder",
