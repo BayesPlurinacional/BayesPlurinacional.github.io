@@ -11,10 +11,10 @@
   "navbar": {
     "global": {
       "Sobre Bayes Plurinacional": {
-        "Quienes somos": "/_pages/{idioma}/quienes_somos.html",
-        "Comunidad": "/_pages/{idioma}/comunidad.html"
+        "Quienes somos": "/{idioma}/quienes_somos.html",
+        "Comunidad": "/{idioma}/comunidad.html"
       },
-      "Conducta": "/_pages/{idioma}/conducta.html",
+      "Conducta": "/{idioma}/conducta.html",
       "Redes": {
         "Correo Electrónico": "admin@bayesplural.org",
         "Grupo de mails": "https://groups.google.com/g/bayes-plurinacional",
@@ -134,12 +134,12 @@
             }
           ],
           "Sobre el evento": {
-            "Descripcion": "/_pages/es/evento/descripcion_2023.html",
-            "Ciudad": "/_pages/es/evento/ciudad_2023.html",
-            "Cronograma": "/_pages/es/evento/cronograma_2023.html",
-            "Charlas": "/_pages/es/evento/charlas_2023.html",
-            "Talleres": "/_pages/es/evento/talleres_2023.html",
-            "Becas": "/_pages/es/evento/becas_2023.html"
+            "Descripcion": "/es/evento/descripcion_2023.html",
+            "Ciudad": "/es/evento/ciudad_2023.html",
+            "Cronograma": "/es/evento/cronograma_2023.html",
+            "Charlas": "/es/evento/charlas_2023.html",
+            "Talleres": "/es/evento/talleres_2023.html",
+            "Becas": "/es/evento/becas_2023.html"
           }
         },
         "2024": {
@@ -398,10 +398,10 @@
             ]
           },
           "Sobre el evento": {
-            "Cronograma": "/_pages/es/evento/cronograma_2024.html",
-            "Disertantes": "/_pages/es/evento/disertantes_2024.html",
-            "Tu viaje": "/_pages/es/evento/tu_viaje_2024.html",
-            "Evento 2024": "/_pages/es/evento/evento_2024.html"
+            "Cronograma": "/es/evento/cronograma_2024.html",
+            "Disertantes": "/es/evento/disertantes_2024.html",
+            "Tu viaje": "/es/evento/tu_viaje_2024.html",
+            "Evento 2024": "/es/evento/evento_2024.html"
           }
         },
         "2025": {
@@ -495,10 +495,10 @@
             }
           ],
           "Sobre el evento": {
-            "Cronograma": "/_pages/es/evento/cronograma_2025.html",
-            "Disertantes": "/_pages/es/evento/disertantes_2025.html",
-            "Tu viaje": "/_pages/es/evento/tu_viaje_2025.html",
-            "Evento 2025": "/_pages/es/evento/evento_2025.html"
+            "Cronograma": "/es/evento/cronograma_2025.html",
+            "Disertantes": "/es/evento/disertantes_2025.html",
+            "Tu viaje": "/es/evento/tu_viaje_2025.html",
+            "Evento 2025": "/es/evento/evento_2025.html"
           }
         }
       },

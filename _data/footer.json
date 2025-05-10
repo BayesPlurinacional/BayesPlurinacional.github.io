@@ -4,17 +4,17 @@
       "es": {
         "Título": "Sobre Nosotros",
         "Enlaces": {
-          "Communidad": "/_pages/es/Comunidad.html",
-          "Nuestro Equipo": "/_pages/es/2025/organizacion.html",
-          "Musica": "/_pages/es/musica.html"
+          "Communidad": "/es/Comunidad.html",
+          "Nuestro Equipo": "/es/2025/organizacion.html",
+          "Musica": "/es/musica.html"
         }
       },
       "en": {
         "Título": "About Us",
         "Enlaces": {
-          "Communidad": "/_pages/es/Comunidad.html",
-          "Our Team":  "/_pages/es/2025/organizacion.html",
-          "Music": "/_pages/en/musica.html"
+          "Communidad": "/es/Comunidad.html",
+          "Our Team":  "/es/2025/organizacion.html",
+          "Music": "/en/musica.html"
         }
       }
     },
@@ -22,17 +22,17 @@
       "es": {
         "Título": "Últimos Eventos",
         "Enlaces": {
-          "Evento 2023": "/_pages/es/2023/index.html",
-          "Evento 2024": "/_pages/es/2024/index.html",
-          "Evento 2025": "/_pages/es/2025/index.html"
+          "Evento 2023": "/es/2023/index.html",
+          "Evento 2024": "/es/2024/index.html",
+          "Evento 2025": "/es/2025/index.html"
         }
       },
       "en": {
         "Título": "Latest Events",
         "Enlaces": {
-          "Event 2023": "/_pages/en/2023/index.html",
-          "Event 2024": "/_pages/en/2024/index.html",
-          "Event 2025": "/_pages/en/2025/index.html"
+          "Event 2023": "/en/2023/index.html",
+          "Event 2024": "/en/2024/index.html",
+          "Event 2025": "/en/2025/index.html"
         }
       }
     },
@@ -41,14 +41,14 @@
         "Título": "Contacto",
         "Enlaces": {
           "Correo": "mailto:admin@bayesplural.org",
-          "Auspiciantes": "/_pages/es/Auspiciantes.html"
+          "Auspiciantes": "/es/Auspiciantes.html"
         }
       },
       "en": {
         "Título": "Contact",
         "Enlaces": {
           "Email": "mailto:admin@bayesplural.org",
-          "Sponsors": "/_pages/en/Auspiciantes.html"
+          "Sponsors": "/en/Auspiciantes.html"
         }
       }
     },

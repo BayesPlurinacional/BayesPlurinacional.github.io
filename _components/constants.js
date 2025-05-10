@@ -7,7 +7,7 @@ const SOCIAL_MEDIA = {
 };
 
 const FOOTER_LINKS = {
-  somos: "/_pages/es/somos.html",
-  galeria: "/_pages/es/galeria.html",
-  contacto: "/_pages/es/contacto.html",
+  somos: "/es/somos.html",
+  galeria: "/es/galeria.html",
+  contacto: "/es/contacto.html",
 };
