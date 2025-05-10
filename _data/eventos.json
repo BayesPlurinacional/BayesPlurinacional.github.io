@@ -14,7 +14,7 @@
         "Presencial": "#",
         "Virtual": "#"
       },
-      "Comunidad": "/_pages/{idioma}/comunidad.html",
+      "Comunidad": "/{idioma}/comunidad.html",
       "Contacto": {
         "Redes": {
           "Correo Electrónico": "admin@bayesplural.org",
@@ -24,57 +24,57 @@
           "Twitter": "https://twitter.com/BayesPlurinacio",
           "Linkedin": "https://www.linkedin.com/company/bayes-plurinacional/"
         },
-        "Conducta": "/_pages/{idioma}/conducta.html"
+        "Conducta": "/{idioma}/conducta.html"
       },
       "Idioma": {
-        "Español": "/_pages/es/index.html",
-        "English": "/_pages/en/index.html"
+        "Español": "/es/index.html",
+        "English": "/en/index.html"
       }
     },
     "secundario": {
       "Presencial": {
         "2023": {
           "Sobre nosotros": {
-            "Somos Plural": "/_pages/es/evento/somos_plural_2023.html",
-            "Organización del evento": "/_pages/es/evento/organizacion_2023.html"
+            "Somos Plural": "/es/evento/somos_plural_2023.html",
+            "Organización del evento": "/es/evento/organizacion_2023.html"
           },
-          "Auspiciantes": "/_pages/es/evento/auspiciantes_2023.html",
-          "Música": "/_pages/es/evento/musica_2023.html",
+          "Auspiciantes": "/es/evento/auspiciantes_2023.html",
+          "Música": "/es/evento/musica_2023.html",
           "Sobre el evento": {
-            "Descripcion": "/_pages/es/evento/descripcion_2023.html",
-            "Ciudad": "/_pages/es/evento/ciudad_2023.html",
-            "Cronograma": "/_pages/es/evento/cronograma_2023.html",
-            "Charlas": "/_pages/es/evento/charlas_2023.html",
-            "Talleres": "/_pages/es/evento/talleres_2023.html",
-            "Becas": "/_pages/es/evento/becas_2023.html"
+            "Descripcion": "/es/evento/descripcion_2023.html",
+            "Ciudad": "/es/evento/ciudad_2023.html",
+            "Cronograma": "/es/evento/cronograma_2023.html",
+            "Charlas": "/es/evento/charlas_2023.html",
+            "Talleres": "/es/evento/talleres_2023.html",
+            "Becas": "/es/evento/becas_2023.html"
           }
         },
         "2024": {
           "Sobre nosotros": {
-            "Somos Plural": "/_pages/es/evento/somos_plural_2024.html",
-            "Organización del evento": "/_pages/es/evento/organizacion_2024.html"
+            "Somos Plural": "/es/evento/somos_plural_2024.html",
+            "Organización del evento": "/es/evento/organizacion_2024.html"
           },
-          "Auspiciantes": "/_pages/es/evento/auspiciantes_2024.html",
-          "Música": "/_pages/es/evento/musica_2024.html",
+          "Auspiciantes": "/es/evento/auspiciantes_2024.html",
+          "Música": "/es/evento/musica_2024.html",
           "Sobre el evento": {
-            "Cronograma": "/_pages/es/evento/cronograma_2024.html",
-            "Disertantes": "/_pages/es/evento/disertantes_2024.html",
-            "Tu viaje": "/_pages/es/evento/tu_viaje_2024.html",
-            "Evento 2024": "/_pages/es/evento/evento_2024.html"
+            "Cronograma": "/es/evento/cronograma_2024.html",
+            "Disertantes": "/es/evento/disertantes_2024.html",
+            "Tu viaje": "/es/evento/tu_viaje_2024.html",
+            "Evento 2024": "/es/evento/evento_2024.html"
           }
         },
         "2025": {
           "Sobre nosotros": {
-            "Somos Plural": "/_pages/es/evento/somos_plural_2025.html",
-            "Organización del evento": "/_pages/es/evento/organizacion_2025.html"
+            "Somos Plural": "/es/evento/somos_plural_2025.html",
+            "Organización del evento": "/es/evento/organizacion_2025.html"
           },
-          "Auspiciantes": "/_pages/es/evento/auspiciantes_2025.html",
-          "Música": "/_pages/es/evento/musica_2025.html",
+          "Auspiciantes": "/es/evento/auspiciantes_2025.html",
+          "Música": "/es/evento/musica_2025.html",
           "Sobre el evento": {
-            "Cronograma": "/_pages/es/evento/cronograma_2025.html",
-            "Disertantes": "/_pages/es/evento/disertantes_2025.html",
-            "Tu viaje": "/_pages/es/evento/tu_viaje_2025.html",
-            "Evento 2025": "/_pages/es/evento/evento_2025.html"
+            "Cronograma": "/es/evento/cronograma_2025.html",
+            "Disertantes": "/es/evento/disertantes_2025.html",
+            "Tu viaje": "/es/evento/tu_viaje_2025.html",
+            "Evento 2025": "/es/evento/evento_2025.html"
           }
         }
       },

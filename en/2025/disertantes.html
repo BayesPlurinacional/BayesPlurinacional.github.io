@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speakers | Bayes Plurinacional 2025</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/_assets/_css/global.css">
+  <link rel="stylesheet" href="/_assets/_css/2025.css">
+  <script type="module" src="/_components/header.js"></script>
+
+</head>
+<body>
+  <custom-header data-event-type="In-person" data-event-key="Event 2025" data-lang="en">
+
+    <!-- Speakers Section -->
+    <section class="container py-5 text-center">
+      <h2 class="titulo-seccion">🎤 Speakers</h2>
+      <p class="lead">Meet the experts who will share their knowledge at Bayes Plurinacional 2025.</p>
+
+      <!-- Container where speakers will be loaded dynamically -->
+      <div id="disertantes-container" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <!-- Speakers will be inserted here -->
+      </div>
+    </section>
+
+  </custom-header>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", async function () {
+      const container = document.getElementById("disertantes-container");
+      const currentYear = 2025;
+
+      try {
+        const response = await fetch("/en/2025/data/disertantes_en.json");
+        const speakers = await response.json();
+
+        const filteredSpeakers = speakers.filter(d => d.año === currentYear);
+
+        if (filteredSpeakers.length === 0) {
+          container.innerHTML = `<p class="text-warning">No speakers registered for this year.</p>`;
+          return;
+        }
+
+        // Create speaker cards
+        filteredSpeakers.forEach(d => {
+          const card = document.createElement("div");
+          card.classList.add("col");
+
+          const shortText = d.descripcion.substring(0, 120); // Maximum 120 characters before "See more"
+          const fullText = d.descripcion;
+
+          card.innerHTML = `
+            <div class="speaker-card">
+              <img src="${d.imagen}" class="speaker-img" alt="${d.nombre}">
+              <h5 class="speaker-name">${d.nombre}</h5>
+              <p class="speaker-info" data-full-text="${fullText}">
+                ${shortText}... <span class="ver-mas">See more</span>
+              </p>
+              <span class="schedule-badge ">${d.dia_hora || "Schedule to be defined"}</span>
+            </div>
+          `;
+
+          container.appendChild(card);
+        });
+
+        setupVerMas();
+      } catch (error) {
+        console.error("Error loading speakers:", error);
+        container.innerHTML = `<p class="text-danger">Error loading speakers. Please try again later.</p>`;
+      }
+    });
+
+    function setupVerMas() {
+      document.querySelectorAll('.ver-mas').forEach(button => {
+        button.addEventListener('click', function () {
+          const parent = this.parentElement;
+          const fullText = parent.getAttribute('data-full-text');
+
+          if (parent.classList.contains('expanded')) {
+            parent.innerHTML = `${fullText.substring(0, 120)}... <span class="ver-mas">See more</span>`;
+            parent.classList.remove('expanded');
+          } else {
+            parent.innerHTML = `${fullText} <span class="ver-mas">See less</span>`;
+            parent.classList.add('expanded');
+          }
+
+          setupVerMas(); // Re-add events after change
+        });
+      });
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

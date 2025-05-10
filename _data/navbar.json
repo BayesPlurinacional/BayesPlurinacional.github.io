@@ -12,27 +12,27 @@
     "global": {
       "Eventos": {
         "Presencial": {
-          "2025": "/_pages/{idioma}/2025/index.html",
-          "2024": "/_pages/{idioma}/2024/index.html",
-          "2023": "/_pages/{idioma}/2023/index.html"
+          "2025": "/{idioma}/2025/index.html",
+          "2024": "/{idioma}/2024/index.html",
+          "2023": "/{idioma}/2023/index.html"
         },
         "Virtual": {
-          "Seminarios": "/_pages/{idioma}/Seminarios.html"
+          "Seminarios": "/{idioma}/Seminarios.html"
       }
       }, 
       "Plural": { 
-        "Comunidad": "/_pages/{idioma}/Comunidad.html",
-        "Inteligencia": "/_pages/{idioma}/Plural.html",
-        "Música": "/_pages/{idioma}/musica.html"
+        "Comunidad": "/{idioma}/Comunidad.html",
+        "Inteligencia": "/{idioma}/Plural.html",
+        "Música": "/{idioma}/musica.html"
       },
-      "Auspiciantes": "/_pages/{idioma}/Auspiciantes.html",
+      "Auspiciantes": "/{idioma}/Auspiciantes.html",
       "Contacto": {
-        "Redes Sociales": "/_pages/{idioma}/RedesSociales.html",
-        "Conducta": "/_pages/{idioma}/Conducta.html"
+        "Redes Sociales": "/{idioma}/RedesSociales.html",
+        "Conducta": "/{idioma}/Conducta.html"
       },
       "Idioma" : {
-        "es": "/_pages/es/Home.html",
-        "en": "/_pages/en/Home.html"
+        "es": "/es/Home.html",
+        "en": "/en/Home.html"
       }
     }
   }

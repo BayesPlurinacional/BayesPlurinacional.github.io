@@ -1,0 +1,107 @@
+[
+  {
+    "nombre": "Tomás Capretto",
+    "imagen": "/../../archivos/2024/expositores/TomasCapretto-foto.png",
+    "descripcion": "Estadístico de la Universidad Nacional de Rosario, Argentina, trabaja en PyMC Labs, donde utiliza modelos bayesianos para resolver problemas aplicados en diversos sectores.Tomás es también profesor en la Licenciatura en Estadística de la Universidad Nacional de Rosario y colabora con proyectos de código abierto como PyMC, ArviZ y Bambi.",    
+    "año": 2024,
+    "dia_hora": "Taller. Estadística Bayesiana con PyMC"
+  },
+  {
+    "nombre": "Camila Neder",
+    "imagen": "/../../archivos/2024/expositores/CamilaNeder-crop.jpg",
+    "descripcion": "Doctora en Ciencias Biológicas especialidad Ecología Marina, Universidad Nacional de Córdoba. Investiga el bentos antártico y su respuesta al cambio climático (CONICET-IDEA), con múltiples publicaciones y becas internacionales. Ha participado en expediciones antárticas, es hábil en análisis espacial y comunicación científica en varios idiomas.",
+    "año": 2024,
+    "dia_hora": "Modelos de distribución de especies"
+  },
+  {
+    "nombre": "Enrique Ter Horst",
+    "imagen": "/../../archivos/2024/expositores/EnriqueterHorst-crop.jpg",
+    "descripcion": "Doctor en Estadísticas y Ciencias de la Decisión de Duke University, Enrique ha trabajado en Morgan Stanley, Credit Suisse, e institutos de Adminstración de varios países. Actualmente es Profesor en la Universidad de los Andes, Colombia, especializado en estadísticas empresariales y gestión de riesgos con un enfoque en métodos bayesianos aplicados a las finanzas.",
+    "año": 2024,
+    "dia_hora": "Nonparametric analysis of cryptocurrencies"
+  },
+  {
+    "nombre": "Sofía Asplanato",
+    "imagen": "/../../archivos/2024/expositores/LeilaSofiaAsplanato-foto.jpeg",
+    "descripcion": "Licenciada en Física por la Universidad de Buenos Aires, realizó una tesis sobre 'Inferencia causal' en estudios observacionales usando modelos bayesianos (aplicada a deserción estudiantil). Actualmente realiza un doctorado en la Universidad Nacional de San Martín, sobre 'Modelos de aprendizaje automático e inferencia causal en apoyo a la educación y la formación permanente'.",
+    "año": 2024,
+    "dia_hora": "Inferencia causal bayesiana: método deconfounder para datos observacionales"
+  },
+  {
+    "nombre": "Sergio Davis",
+    "imagen": "/../../archivos/2024/expositores/SergioDavis-crop.jpg",
+    "descripcion": "Ingeniero Físico por la Universidad de Santiago y Doctor en Física por el Royal Institute of Technology de Suecia, trabajó en la Universidad de Chile. Actualmente es Investigador de la Comisión Chilena de Energía Nuclear, y Profesor en la Universidad Andrés Bello publicando cerca de 100 artículos científicos sobre Física Estadística, Teoría de Información, entre otros.",
+    "año": 2024,
+    "dia_hora": "Visión bayesiana de la probabilidad en mecánica estadística y fundamentos de la termodinámica"
+  },
+  {
+    "nombre": "Macarena Piaggio",
+    "imagen": "/../../archivos/2024/expositores/MacarenaPiaggio-crop.jpeg",
+    "descripcion": "Licenciatura en Ciencias de la Computación con una tesis sobre 'Aproximación de la inferencia en sistemas de recomendación SVD mediante Pasaje de Mensajes Variacionales'. Jefa de Trabajos Prácticos de la Universidad de Buenos Aires. Ex becaria en el Instituto de Ciencias de la Computación y en el National Institute of Informatics de Japón.",
+    "año": 2024,
+    "dia_hora": "Sistema de recomendación bayesiano eficiente mediante inferencia por pasaje de mensajes"
+  },
+  {
+    "nombre": "Rafael Tovar",
+    "imagen": "/../../archivos/2024/expositores/RafaelTovar-crop.jpg",
+    "descripcion": "Estadístico Universidad del Valle, Colombia, maestría en Estadística Pontificia Universidad Católica de Chile, doctorado en Estadística Universidad Estatal de Campinas Brasil y posdoctorado Universidad de Sao Paulo, Brasil. Inferencia Bayesiana y Estadística Aplicada. Profesor de la Escuela de Estadística de la Universidad del Valle en Cali, Colombia.",
+    "año": 2024,
+    "dia_hora": "Clinical classifiers using signs and symptoms reported by the patient"
+  },
+  {
+    "nombre": "Oxana Krymina",
+    "imagen": "/../../archivos/2024/expositores/OxanaKrymina-crop.jpg",
+    "descripcion": "Jefa de Ciencia de Datos Actuariales en la compañía de seguros VSK, Oxana utiliza estadísticas bayesianas para la reserva de pérdidas. Ocupó cargos de científica de datos en el Laboratorio de Consultoría Financiera de MIPT. Oxana obtuvo su maestría en matemáticas de la Universidad Estatal de Moscú en 1997 y actualmente reside en Uruguay.",
+    "año": 2024,
+    "dia_hora": "Why to use Bayesian approach in actuarial modelling"
+  },
+  {
+    "nombre": "Francisco Ortega Culaciati",
+    "imagen": "/../../archivos/2024/expositores/FranciscoHernanOrtegaCulaciati-crop.jpg",
+    "descripcion": "Ingeniero Civil y Doctor en Geofísica, actualmente profesor en la Universidad de Chile, especializado en tectónica activa, geodesia y modelización de terremotos. Ha liderado diversos proyectos de investigación y publicado numerosas contribuciones científicas en el campo de la deformación sísmica y la estimación del deslizamiento de fallas.",
+    "año": 2024,
+    "dia_hora": "Métodos bayesiano para el entendimiento del cíclo sísmico y la fuente de terremotos" 
+  },
+  {
+    "nombre": "Josefina Lacasa",
+    "imagen": "/../../archivos/2024/expositores/JosefinaLacasa.png",
+    "descripcion": "Profesora asistente en el Departamento de Estadística de Kansas State University y Doctora en Agronomía y magister en Estadística de la misma institución. Su investigación se centra en modelos de diagnóstico de nutrición de cultivos y ha recibido el premio Nelson Yield-Limiting Factors de la American Society of Agronomy en 2023.",
+    "año": 2024,
+    "dia_hora": "A Bayesian approach for estimating and checking block design in agricultural experiments"
+  },
+  {
+    "nombre": "Gabriel Alzamendi",
+    "imagen": "/../../archivos/2024/expositores/GabrielAlzamendi2-crop.jpg",
+    "descripcion": "Doctor en Ingeniería y Bioingeniero, es investigador asistente en el Instituto de Investigación y Desarrollo en Bioingeniería y Bioinformática (CONICET-UNER) y docente en la Facultad de Ingeniería de la Universidad Nacional de Entre Ríos. Su trabajo se centra en el modelado de señales biomédicas a partir de la fonación, con múltiples publicaciones científicas",
+    "año": 2024,
+    "dia_hora": "Filtrado inverso de los mecanísmos vocales de la fonación humana."
+  },
+  {
+    "nombre": "Yasmín Navarrete",
+    "imagen": "/../../archivos/2024/expositores/YasminNavareteDiaz-foto.jpg",
+    "descripcion": "Licenciada y Magister en Ciencias Físicas de la Universidad de Chile, actualmente trabaja en el Instituto de Filosofía y Ciencias de la Complejidad de la Comisión Chilena de Energía Atómica. Con 10 años de experiencia docente e investigación en física aplicada a neurociencias y mecánica cuántica, Yasmín se dedica a la divulgación científica.",
+    "año": 2024,
+    "dia_hora": "Transiciones de fase de primer orden desde el punto de vista de inferencia de Máxima Entropía."
+  },
+  {
+    "nombre": "Fernando Mono",
+    "imagen": "/../../archivos/2024/expositores/FernandoRobertoMomo.JPG",
+    "descripcion": "Licenciado y Doctor en Ciencias Biológicas por la Universidad de Buenos Aires, especializado en Ecología Matemática y Ecología Teórica, ha publicado más de 80 trabajos científicas y libros sobre ecología y sistemas complejos. Presidió la Asociación Argentina de Ecología y la Sociedad Latinoamericana de Biomatemática. Actualmente es Profesor Emérito de la Universidad Nacional de Luján.",
+    "año": 2024,
+    "dia_hora": "Organizador de la mesa debate. Epistemología y Ética"
+  },
+  {
+    "nombre": "Daniel Fortuna",
+    "imagen": "/../../archivos/2024/expositores/DanielFortuna2.jpeg",
+    "descripcion": "Licenciado en Economía de la Universidad de Buenos Aires (UBA) y MBA en la Universidad Kuepa (UK) de México. Director de Estudios en el Instituto Privado de la Cámara Argentina de Comercio. Profesor de Estadística para Administradores en la Facultad de Ciencias Económicas de la UBA, contenidista y docente del área de Finanzas de la UK.",
+    "año": 2024,
+    "dia_hora": "Toma de decisiones empresariales"
+  },
+  {
+    "nombre": "Gustavo Landfried",
+    "imagen": "/../../archivos/2024/expositores/GustavoLandfried.jpg",
+    "descripcion": "Cofundador de Bayes Plurinacional. Licenciado en Antropología Social y Doctor en Ciencias de la Computación por la Universidad de Buenos Aires, Gustavo  es actualmente investigador y docente en el Departamento de Computación. Su trabajo se enfoca en la aplicación de los métodos bayesianos en campos como la salud, los deportes y la educación.",
+    "año": 2024,
+    "dia_hora": "Talleres: Inferencia causal; series temporales; toma de decisiones"
+  }
+]

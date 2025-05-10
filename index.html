@@ -28,15 +28,15 @@
             let lang = navigator.language || navigator.userLanguage;
             if (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1") {
                 if (lang.startsWith("es")) {
-                    window.location.href = "/_pages/es/2025/index.html";
+                    window.location.href = "/es/2025/index.html";
                 } else {
-                    window.location.href = "/_pages/en/2025/index.html";
+                    window.location.href = "/en/2025/index.html";
                 }
             }
         })();
 
         function redirectTo(lang) {
-            window.location.href = `/_pages/${lang}/2025/index.html`;
+            window.location.href = `/${lang}/2025/index.html`;
         }
     </script>
 </head>
