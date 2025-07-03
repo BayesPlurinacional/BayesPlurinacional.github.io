@@ -10,6 +10,7 @@
     --titulo-encabezado: #2A2D6F;
     --elementos-interactivos: #0096D6;
     --resaltado-secundario: #702963;
+    --boton-pasado: #888888;
     --boton-secundario: #E67E22;
     --boton-principal: #D13438;
 
@@ -17,6 +18,7 @@
     --degradado-innovacion: linear-gradient(90deg, #0096D6, #2A2D6F);
     --degradado-ciencia: linear-gradient(90deg, #702963, #E67E22);
     --degradado-accion: linear-gradient(90deg, #D13438, #E67E22);
+    --degradado-pasado: linear-gradient(90deg, #555555, #999999);
 
     /* MODO OSCURO (opcional, se puede activar con clases) */
     --fondo-oscuro: #1A1A1A;
@@ -118,6 +120,20 @@ h1, h2, h3, h4, h5, h6 {
 .btn-secundario:hover {
     background: var(--degradado-ciencia);
 }
+
+.btn-pasado {
+    background: var(--boton-pasado);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.btn-pasado:hover {
+    background: var(--degradado-pasado);
+}
+
 
 .speaker-card {
   background: white;
