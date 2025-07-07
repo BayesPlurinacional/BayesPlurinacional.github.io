@@ -43,8 +43,8 @@
   },
   {
     "nombre": "Gerardo Durán-Martin",
-    "imagen": "/_assets/_img/expositores/Gerardo_DuranMartin.png",
-    "descripcion": "PhD candidate in Mathematics at Queen Mary University of London under the supervision of Kevin Murphy and Alexander Shestopaloff. Develops learning algorithms for streaming data in changing environments, focusing on filtering techniques in non-stationary and misspecified contexts, such as online continual learning and signal extraction in high-dimensional environments with a low signal-to-noise ratio.",
+    "imagen": "/_assets/_img/expositores/Gerardo_DuranMartin.jpg",
+    "descripcion": "Researcher at the Oxford-Man Institute of Quantitative Finance. He completed his PhD in Mathematics at Queen Mary University of London, focusing on sequential Bayesian methods, under the supervision of Kevin Murphy and Alexander Shestopaloff. He worked on systematic trading and risk calibration at Man AHL (2022–2024), where he adapted algorithms from MATLAB to Python using JAX. He has been awarded a doctoral fellowship by EPSRC and a postgraduate scholarship by CONACyT.",
     "año": 2025,
     "dia_hora": "Real-time Bayesian learning"
   },
