@@ -22,7 +22,7 @@
       }, 
       "Plural": { 
         "Comunidad": "/{idioma}/Comunidad.html",
-        "Inteligencia": "/{idioma}/Plural.html",
+        "Misión": "/{idioma}/Plural.html",
         "Música": "/{idioma}/musica.html"
       },
       "Auspiciantes": "/{idioma}/Auspiciantes.html",
