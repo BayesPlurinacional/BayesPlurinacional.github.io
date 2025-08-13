@@ -1,0 +1,136 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+
+\input{encabezado.tex} % imports varios
+\input{tikzlibrarybayesnet.code.tex} % Para graficar redes bayesianas
+
+% Para escribir en 2 idiomas con un if
+\newif\ifen
+\newif\ifes
+\newcommand{\en}[1]{\ifen#1\fi}
+\newcommand{\es}[1]{\ifes#1\fi}
+\entrue
+
+%opening
+\title{El enfoque bayesiano de la inteligencia artificial y el aprendizaje automático}
+\author{Primer autor$^{1,2,\alpha}$, Segundo autor$^{3, \beta}$}
+\affil{\small 1. Universidad Plurinacional de las Américas. Facultad de Ciencias Exactas y Naturales.\\ \small 2. Universidad Nacional de San Martín. Escuela de Ciencia y Técnica. \\ \small 3. Laboratorios de Métodos Bayesianos}
+
+\affil{$\alpha$ \texttt{nombre.apellido@uni.edu} \\
+$\beta$ \texttt{segundo.autor@lmb.com}}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Un muy breve resumen. \lipsum[2]
+\end{abstract}
+
+\section{Introducción}
+
+Los antecedentes, sus citas \cite{pearl1986-beliefNetworks}. \lipsum[2]
+
+\lipsum[2]
+\section{Metodología}
+
+En el figura \ref{fig_ModeloCausalMemoria} se especifica la teoría causal.
+%
+ \begin{figure}[ht!]\centering
+\centering
+\scalebox{0.5}{
+\tikz{
+    \node[latent] (d) {\includegraphics[width=0.05\textwidth]{img/dedo.png}} ;
+     \node[invisible, below=of d, yshift=0.6cm] (inv_d) {} ;
+     \node[factor, above=of d, xshift=-0.4cm] (fd0) {};
+     \node[invisible, above=of fd0, xshift=-0.4cm, yshift=0.2cm] (inv_fd0) {};
+    \node[factor, above=of d, xshift=0.4cm] (fd1) {};
+     \node[invisible, above=of fd1, xshift=0.4cm, yshift=0.2cm] (inv_fd1) {};
+
+     \node[latent, line width=0cm, yshift=4.8cm] (a) {\includegraphics[width=0.06\textwidth]{img/prendido-apagado.png}};
+
+    \vgate {fd} {(fd0)(inv_fd0)} {$0$} {(fd1)(inv_fd1)} {$1$} {a};
+
+    \node[const, left=of fd] (nfd0) {$P(s_t|r_t)$};
+    \node[const, right=of fd] (nfd1) {$P(s_t|r_t,c_t)$};
+
+    \node[latent, above=of fd, xshift=-2.5cm, yshift=-0.2cm] (r) {\includegraphics[width=0.06\textwidth]{img/regalo.png}} ;
+    \node[factor, above=of r] (fr) {};
+    \node[const, left=of fr] (nr) {\text{\Large $P(r_t)$}};
+
+    \node[latent, fill=black!30, above=of fd, xshift=2.5cm, yshift=-0.2cm] (c) {\includegraphics[width=0.06\textwidth]{img/cerradura.png}} ;
+    \node[factor, above=of c] (fc) {};
+    \node[const, right=of fc] (nc) {\text{\Large $P(c_t)$}};
+
+    \node[latent, line width=0cm, yshift=4.8cm] (a) {\includegraphics[width=0.06\textwidth]{img/prendido-apagado.png}};
+    \node[factor, above=of a] (fa) {};
+
+    \node[const, right=of fa] (na) {\text{\Large $P(a_t|p)$}};
+
+
+    \node[latent, above=of fa, yshift=-0.3cm] (m) {\includegraphics[width=0.06\textwidth]{img/cerebro.jpg}};
+    \node[factor, above=of m] (fm) {};
+    \node[const, right=of fm] (nm) {\text{\Large $P(p)$}};
+
+
+    \edge[-] {r,c} {fd1};
+
+    \edge[-] {r} {fd0};
+    \edge {fd1} {d};
+
+    \edge {fd0} {d};
+    \edge {fc} {c};
+    \edge {fr} {r};
+    \edge {fm} {m};
+    \edge {m} {a};
+
+    \plate {B} {(inv_d)(a)(r)(c)(fa)(na)(nc)(nr)} {$t \in \{0, \dots, T-1\} $};
+}
+}
+\caption{Red bayesiana causal, con intervenciones.}
+\label{fig_ModeloCausalMemoria}
+\end{figure}
+%
+\lipsum[2]
+
+\begin{equation*}
+P(\text{Modelo}|\text{Datos}) = \frac{P(\text{Datos}|\text{Modelo})P(\text{Modelo})}{P(\text{Datos})}
+\end{equation*}
+
+
+\lipsum[2]
+
+\section{Resultados}
+
+Al calcular el posterior de los modelos a medida que vamos incorporando nuevos datos observamos que,
+%
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth]{img/posterior2.pdf}
+\caption{Posterior de los modelos causales alternativos}
+\end{figure}
+%
+
+
+\lipsum[2]
+
+
+\lipsum[2]
+
+\section{Conclusiones}
+
+
+\lipsum[2]
+
+
+\lipsum[2]
+
+{\footnotesize
+\bibliographystyle{plos2015.bst}
+\bibliography{biblio}
+}
+
+
+
+\end{document}
