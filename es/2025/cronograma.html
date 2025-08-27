@@ -1,109 +1,218 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cronograma | Bayes Plurinacional 2025</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/_assets/_css/global.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/_assets/_css/global.css" />
     <script type="module" src="/_components/header.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
+    <custom-header
+      data-event-type="Presencial"
+      data-event-key="Evento 2025"
+      data-lang="es"
+    >
+      <!-- Contenido Principal -->
+      <section class="container py-5">
+        <h1 class="text-center titulo-seccion">
+          📅 Cronograma Bayes Plurinacional 2025
+        </h1>
 
-  <custom-header data-event-type="Presencial" data-event-key="Evento 2025" data-lang="es">
+        <br />
 
-  <!-- Contenido Principal -->
-  <section class="container py-5">
-    <h1 class="text-center titulo-seccion">📅 Cronograma Bayes Plurinacional 2025</h1>
-    
-    <br>
+        <div id="instrucciones-participantes" class="text-center lead">
+          <h2 class="titulo-seccion">Instrucciones para participantes</h2>
 
-    <p  class="text-center lead">
-    <ul>
-          <li>Los <b>resumenes extendidos</b> deben ser de 3 carillas máximo.
-            Deden enviar un archivo comprimido editable al correo de Bayes Plurinacional antes del inicio del evento siguiendo el espíritu de este
-            <a href="https://bayesplurinacional.org/archivos/template/resumen_latex/article.pdf">pdf</a>.
-            Recomendamos usar el siguiente formato <a href="https://bayesplurinacional.org/archivos/template/resumen_latex.zip">latex</a>. 
-        </li>
-          <li>Los <b>póster</b> deben ser de tamaño A0 vertical. Proponemos el siguiente <a href="https://bayesplurinacional.org/archivos/template/poster_ppt/poster.pdf">pdf</a> como referencia.
-            Se facilita el siguiente formato <a href="https://bayesplurinacional.org/archivos/template/poster_latex.zip">latex</a> (<a href="https://bayesplurinacional.org/archivos/template/poster_latex/poster.pdf">pdf</a>) para quién lo desée. 
-        </li>
-          <li><b>Tiempos</b> de las exposiciones orales (ver el tipo de tu exposición <a href="https://docs.google.com/spreadsheets/d/1nmOlfdXOWKxFUov8ei2LnVbtyZ4u71ukBi-EHZpNrHc/edit?usp=sharing">aquí</a>):
-          <ul>
-            <li>Tipo "Ponencia": 15 minutos + 5 de preguntas</li>
-            <li>Tipo "Pitch" (opcional): 5 minutos de pitch talk para presentar e invitar al poster</li>
-            <li>Tipo "Póster": 1h durante cada sesión prevista.</li>
+          <div id="resumenes-extendidos" class="mt-3 text-start">
+            <h3>Resúmenes extendidos</h3>
+            <p>
+              Los resúmenes extendidos deben ser de 3 carillas máximo, indicando
+              título, autores, afiliaciones, email de contacto, introducción,
+              metodología, hallazgos principales, conclusiones, y figuras,
+              tablas y ecuaciones según corresponda.
+            </p>
+            <p>
+              Deben enviar un archivo comprimido editable al correo de Bayes
+              Plurinacional:
+              <a href="mailto:bayesplurinacional@gmail.com"
+                >bayesplurinacional@gmail.com</a
+              >
+              antes del inicio del Congreso, siguiendo el estilo de
+              <a
+                href="https://bayesplurinacional.org/archivos/template/resumen_latex/article.pdf"
+                >este PDF</a
+              >. Recomendamos usar el siguiente formato
+              <a
+                href="https://bayesplurinacional.org/archivos/template/resumen_latex.zip"
+                >LaTeX</a
+              >
+              o
+              <span
+                ><!-- TODO(link-plantilla-word) -->Word<!-- TODO(link-plantilla-word) --></span
+              >.
+            </p>
+          </div>
+
+          <div id="presentaciones-orales" class="mt-3 text-start">
+            <h3>Presentaciones orales</h3>
+            <p>
+              Se recomienda preparar las presentaciones en PowerPoint o un
+              software similar para entregar al inicio de la sesión. Si desea,
+              podrá subirla a nuestra plataforma Drive el día del Congreso.
+            </p>
+          </div>
+
+          <div id="posters" class="mt-3 text-start">
+            <h3>Pósters</h3>
+            <p>
+              Los póster deben ser de tamaño A0 vertical. Idioma español
+              preferentemente o inglés. Tamaño de fuente ≥ 16. Considere las
+              sugerencias de las secciones anteriores para un póster claro.
+            </p>
+            <p>
+              Proponemos
+              <a
+                href="https://bayesplurinacional.org/archivos/template/poster_ppt/poster.pdf"
+                >el siguiente PDF</a
+              >
+              como referencia. Se facilita el siguiente formato
+              <a
+                href="https://bayesplurinacional.org/archivos/template/poster_latex.zip"
+                >LaTeX</a
+              >
+              (y formatos PPT para quien lo desee).
+            </p>
+          </div>
+
+          <div id="recursos-posters" class="mt-3 text-start">
+            <h3>Recursos para diseño de pósters</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://blogs.lse.ac.uk/impactofsocialsciences/2018/05/11/how-to-design-an-award-winning-conference-poster/"
+                  target="_blank"
+                  rel="noopener"
+                  >How to design an award-winning conference poster (LSE)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://guides.nyu.edu/posters"
+                  target="_blank"
+                  rel="noopener"
+                  >Poster guide – NYU</a
+                >
+              </li>
             </ul>
-          </li>
-    </ul>
-    </p>
+          </div>
+        </div>
 
-
-    <h3 class="text-center titulo-seccion"> 
-        Horario tentativos:
-    </h3>
-    <div class="horario">
-        <b>Miércoles 15</b> 
-        <ul class="list-group list-group-flush">
+        <h3 class="text-center titulo-seccion">Horario tentativos:</h3>
+        <div class="horario">
+          <b>Miércoles 15</b>
+          <ul class="list-group list-group-flush">
             <li class="list-group-item">8:00 – 9:00: Acreditación</li>
-            <li class="list-group-item"><b>9:00 – 10:00:</b> Conferencia sala principal</li>
-            <li class="list-group-item"><b>10:00 – 12:00:</b> Talleres en salas paralelas</li>
-            <li class="list-group-item"><b>12:00 – 14:00:</b> Almuerzo (+ pósters)</li>
-            <li class="list-group-item"><b>14:00 – 16:00:</b> Talleres en salas paralelas</li>
-            <li class="list-group-item"><b>16:00 – 17:30:</b> Ponencias de 20 minutos en salas paralelas</li>
-        </ul>
-        <br>
-        <b>Jueves 16</b> 
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item"><b>8:00 – 10:00:</b> Conferencia sala principal</li>
-            <li class="list-group-item"><b>10:00 – 12:00:</b> Talleres en salas paralelas</li>
-            <li class="list-group-item"><b>12:00 – 14:00:</b> Almuerzo (+ pósters)</li>
-            <li class="list-group-item"><b>14:00 – 16:00:</b> Talleres en salas paralelas</li>
-            <li class="list-group-item"><b>16:00 – 17:30:</b> Ponencias de 20 minutos en salas paralelas</li>
-        </ul>
-        <br>
-        <b>Viernes 17</b> 
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item"><b>8:00 – 10:00:</b> Talleres en salas paralelas</li>
-            <li class="list-group-item"><b>10:00 – 12:00:</b> Talleres en salas paralelas</li>
+            <li class="list-group-item">
+              <b>9:00 – 10:00:</b> Conferencia sala principal
+            </li>
+            <li class="list-group-item">
+              <b>10:00 – 12:00:</b> Talleres en salas paralelas
+            </li>
+            <li class="list-group-item">
+              <b>12:00 – 14:00:</b> Almuerzo (+ pósters)
+            </li>
+            <li class="list-group-item">
+              <b>14:00 – 16:00:</b> Talleres en salas paralelas
+            </li>
+            <li class="list-group-item">
+              <b>16:00 – 17:30:</b> Ponencias de 20 minutos en salas paralelas
+            </li>
+          </ul>
+          <br />
+          <b>Jueves 16</b>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <b>8:00 – 10:00:</b> Conferencia sala principal
+            </li>
+            <li class="list-group-item">
+              <b>10:00 – 12:00:</b> Talleres en salas paralelas
+            </li>
+            <li class="list-group-item">
+              <b>12:00 – 14:00:</b> Almuerzo (+ pósters)
+            </li>
+            <li class="list-group-item">
+              <b>14:00 – 16:00:</b> Talleres en salas paralelas
+            </li>
+            <li class="list-group-item">
+              <b>16:00 – 17:30:</b> Ponencias de 20 minutos en salas paralelas
+            </li>
+          </ul>
+          <br />
+          <b>Viernes 17</b>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <b>8:00 – 10:00:</b> Talleres en salas paralelas
+            </li>
+            <li class="list-group-item">
+              <b>10:00 – 12:00:</b> Talleres en salas paralelas
+            </li>
             <li class="list-group-item"><b>12:00 – 13:00:</b> Almuerzo</li>
             <li class="list-group-item"><b>13:00 – 15:30:</b> Networking</li>
-        </ul>
-        <br>
-    </div>
+          </ul>
+          <br />
+        </div>
 
+        <p class="text-center lead mt-4">
+          Los siguientes son los talleres prácticos:
+        </p>
 
-    <p class="text-center lead mt-4">
-        Los siguientes son los talleres prácticos:
-    </p>
-
-    <div class="horario">
-        <ul class="list-group list-group-flush">
-            Sesiones miércoles y jueves de 10:00 a 12:00 y viernes de 8:00 a 10:00
-            <li class="list-group-item">Cryptography: From Classical to Post-Quantum</li>
-            <li class="list-group-item">Data-driven methods for inverse problems</li>
-            <li class="list-group-item">Robustez en Métodos Bayesianos: Un Enfoque Post-Bayesiano</li>
-        </ul>
-        <br>
-        <ul class="list-group list-group-flush">
-            Sesiones miércoles y jueves de 14:00 a 16:00 y viernes de 10:00 a 12:00.
-            <li class="list-group-item">Trading Algorítmico y Aprendizaje por Refuerzo</li>
-            <li class="list-group-item">Modelando secuencias humanas con Transformers: del dato tabular al GPU</li>
-            <li class="list-group-item">RDe la Incertidumbre a la Acción: Aprendizaje Bayesiano en Tiempo Real</li>
-        </ul>
-        <br>
-        <ul class="list-group list-group-flush">
+        <div class="horario">
+          <ul class="list-group list-group-flush">
+            Sesiones miércoles y jueves de 10:00 a 12:00 y viernes de 8:00 a
+            10:00
+            <li class="list-group-item">
+              Cryptography: From Classical to Post-Quantum
+            </li>
+            <li class="list-group-item">
+              Data-driven methods for inverse problems
+            </li>
+            <li class="list-group-item">
+              Robustez en Métodos Bayesianos: Un Enfoque Post-Bayesiano
+            </li>
+          </ul>
+          <br />
+          <ul class="list-group list-group-flush">
+            Sesiones miércoles y jueves de 14:00 a 16:00 y viernes de 10:00 a
+            12:00.
+            <li class="list-group-item">
+              Trading Algorítmico y Aprendizaje por Refuerzo
+            </li>
+            <li class="list-group-item">
+              Modelando secuencias humanas con Transformers: del dato tabular al
+              GPU
+            </li>
+            <li class="list-group-item">
+              RDe la Incertidumbre a la Acción: Aprendizaje Bayesiano en Tiempo
+              Real
+            </li>
+          </ul>
+          <br />
+          <ul class="list-group list-group-flush">
             Sesión especial en inglés viernes de 8:00 a 10:00
-            <li class="list-group-item">A Tutorial on Variational Autoencoders</li>
-        </ul>
-    </div>
+            <li class="list-group-item">
+              A Tutorial on Variational Autoencoders
+            </li>
+          </ul>
+        </div>
+      </section>
+    </custom-header>
 
-
-  </section>
-  </custom-header>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
