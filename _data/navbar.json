@@ -19,7 +19,12 @@
         "Virtual": {
           "Seminarios": "/{idioma}/Seminarios.html"
       }
-      }, 
+      },
+      "Formación": {
+        "Teoría": "/{idioma}/formacion/teoria.html",
+        "Percepción": "/{idioma}/formacion/percepcion.html",
+        "Acción": "/{idioma}/formacion/accion.html"
+      },
       "Plural": { 
         "Comunidad": "/{idioma}/Comunidad.html",
         "Misión": "/{idioma}/Plural.html",
