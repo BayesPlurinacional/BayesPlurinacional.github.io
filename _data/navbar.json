@@ -25,6 +25,9 @@
         "Misión": "/{idioma}/Plural.html",
         "Música": "/{idioma}/musica.html"
       },
+      "Curso": {
+        "IBC 2026": "/{idioma}/curso/IBC2026/index.html"
+      },
       "Auspiciantes": "/{idioma}/Auspiciantes.html",
       "Contacto": {
         "Redes Sociales": "/{idioma}/RedesSociales.html",

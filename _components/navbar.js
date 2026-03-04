@@ -81,6 +81,7 @@ class CustomNavbar extends HTMLElement {
         "Contacto": "Contacto",
         "Redes Sociales": "Redes Sociales",
         "Conducta": "Código de Conducta",
+        "Curso": "Curso",
         "Idioma": "Idioma",
       },
       en: {
@@ -99,6 +100,7 @@ class CustomNavbar extends HTMLElement {
         "Contacto": "Contact",
         "Redes Sociales": "Social Networks",
         "Conducta": "Code of Conduct",
+        "Curso": "Course",
         "Idioma": "Language"
       }
     }[lang];
