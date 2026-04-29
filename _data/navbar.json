@@ -12,6 +12,7 @@
     "global": {
       "Eventos": {
         "Presencial": {
+          "2026": "/{idioma}/2026/index.html",
           "2025": "/{idioma}/2025/index.html",
           "2024": "/{idioma}/2024/index.html",
           "2023": "/{idioma}/2023/index.html"
