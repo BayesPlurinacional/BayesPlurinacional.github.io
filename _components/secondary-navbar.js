@@ -12,7 +12,9 @@ class SecondaryNavbar extends HTMLElement {
 
       // Detectar idioma y evento desde la URL
       const lang = this.detectLanguage();
-      const eventKey = "Evento 2025"; // Nos enfocamos en 2025
+      const yearMatch = window.location.pathname.match(/\/(20\d\d)\//);
+      const year = yearMatch ? yearMatch[1] : "2025";
+      const eventKey = `Evento ${year}`;
       const eventType = "Presencial";
 
       // Obtener las secciones del evento
