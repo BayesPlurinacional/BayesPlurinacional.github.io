@@ -27,6 +27,8 @@
         "Música": "/{idioma}/musica.html"
       },
       "Métodos": {
+        "Inicio": "/{idioma}/metodos/index.html",
+        "---": "",
         "Capacitación": "/{idioma}/metodos/capacitacion/index.html",
         "Certificación": "/{idioma}/metodos/certificacion/index.html",
         "Introducción": "/{idioma}/metodos/introduccion/index.html"

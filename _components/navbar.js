@@ -82,6 +82,8 @@ class CustomNavbar extends HTMLElement {
         "Redes Sociales": "Redes Sociales",
         "Conducta": "Código de Conducta",
         "Curso": "Curso",
+        "Métodos": "Métodos",
+        "Inicio": "Inicio",
         "Idioma": "Idioma",
       },
       en: {
@@ -101,6 +103,8 @@ class CustomNavbar extends HTMLElement {
         "Redes Sociales": "Social Networks",
         "Conducta": "Code of Conduct",
         "Curso": "Course",
+        "Métodos": "Methods",
+        "Inicio": "Home",
         "Idioma": "Language"
       }
     }[lang];
@@ -160,7 +164,11 @@ buildEventsDropdown(title, items, lang, translations) {
                   <ul class="dropdown-menu">`;
 
     for (const subKey in items) {
-      html += `<li><a class="dropdown-item" href="${this.replaceIdioma(items[subKey], lang)}">${translations[subKey] || subKey}</a></li>`;
+      if (subKey === "---") {
+        html += `<li><hr class="dropdown-divider"></li>`;
+      } else {
+        html += `<li><a class="dropdown-item" href="${this.replaceIdioma(items[subKey], lang)}">${translations[subKey] || subKey}</a></li>`;
+      }
     }
 
     html += `</ul></li>`;
