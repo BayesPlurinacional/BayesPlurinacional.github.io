@@ -5,7 +5,7 @@ document.head.appendChild(fontAwesomeLink);
 
 import './navbar.js';
 import './footer.js';
-import './secondary-navbar.js'; 
+import './secondary-navbar.js';
 
 class CustomHeader extends HTMLElement {
   constructor() {
@@ -17,12 +17,15 @@ class CustomHeader extends HTMLElement {
     const eventType = this.getAttribute('data-event-type') || "";
     const eventKey = this.getAttribute('data-event-key') || "";
     const lang = this.getAttribute('data-lang') || "";
-    
+    const section = this.getAttribute('data-section') || "";
+
+    const showSecondary = eventKey || section;
+
     this.shadowRoot.innerHTML = `
       <custom-navbar data-event-type="${eventType}" data-event-key="${eventKey}" data-lang="${lang}"></custom-navbar>
       ${
-        eventKey 
-          ? `<secondary-navbar data-event-type="${eventType}" data-event-key="${eventKey}" data-lang="${lang}"></secondary-navbar>` 
+        showSecondary
+          ? `<secondary-navbar data-event-type="${eventType}" data-event-key="${eventKey}" data-lang="${lang}" data-section="${section}"></secondary-navbar>`
           : ""
       }
       <slot></slot>

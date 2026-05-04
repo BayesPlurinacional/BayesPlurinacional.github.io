@@ -1,4 +1,10 @@
 {
+  "Métodos": {
+    "Inicio": "/{idioma}/metodos/index.html",
+    "Capacitación": "/{idioma}/metodos/capacitacion/index.html",
+    "Certificación": "/{idioma}/metodos/certificacion/index.html",
+    "Introducción": "/{idioma}/metodos/introduccion/index.html"
+  },
   "Evento": {
     "Presencial": {
       "Evento 2026": {
@@ -10,14 +16,21 @@
         "Inicio": "index.html",
         "Organización": "organizacion.html",
         "Disertantes": "disertantes.html",
-        "Cronograma": "cronograma.html"  
+        "Cronograma": "cronograma.html"
+      },
+      "Evento 2024": {
+        "Inicio": "index.html",
+        "Organización": "organizacion.html",
+        "Cronograma": "cronograma.html",
+        "Disertantes": "disertantes.html",
+        "Ciudad": "ciudad.html"
+      },
+      "Evento 2023": {
+        "Inicio": "index.html",
+        "Organización": "organizacion.html",
+        "Disertantes": "disertantes.html",
+        "Cronograma": "cronograma.html"
       }
-    },
-    "Evento 2024": {
-      "Organización": "organizacion.html",
-      "Cronograma": "cronograma.html",
-      "Disertantes": "disertantes.html",
-      "Ciudad": "ciudad.html"
     }
   }
 }

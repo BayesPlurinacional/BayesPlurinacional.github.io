@@ -10,50 +10,78 @@ class SecondaryNavbar extends HTMLElement {
       if (!response.ok) throw new Error("No se pudo cargar secundario.json");
       const data = await response.json();
 
-      // Detectar idioma y evento desde la URL
       const lang = this.detectLanguage();
-      const yearMatch = window.location.pathname.match(/\/(20\d\d)\//);
-      const year = yearMatch ? yearMatch[1] : "2025";
-      const eventKey = `Evento ${year}`;
-      const eventType = "Presencial";
+      const section = this.getAttribute("data-section");
 
-      // Obtener las secciones del evento
-      const eventData = data?.Evento?.[eventType]?.[eventKey] || {};
-      
-      // Excluir "Ciudad"
-      const filteredSections = Object.keys(eventData).filter(section => section !== "Ciudad");
-
-      if (filteredSections.length === 0) {
-        console.warn("🔸 No hay secciones para mostrar en el navbar secundario.");
-        return;
+      if (section === "metodos") {
+        this.renderNav(data?.["Métodos"] || {}, lang);
+      } else {
+        this.renderEventNav(data, lang);
       }
-
-      // Generar HTML del navbar secundario
-      const navItemsHTML = filteredSections.map(section => `
-        <li class="secondary-nav-item">
-          <a class="secondary-nav-link" href="${this.replaceIdioma(eventData[section], lang)}">
-            ${this.getTranslations(lang)[section] || section}
-          </a>
-        </li>
-      `).join("");
-
-      // Insertar HTML en el shadow DOM
-      this.shadowRoot.innerHTML = `
-        <link rel="stylesheet" href="/_assets/_css/secondary-navbar.css">
-        <nav class="secondary-navbar">
-          <div class="container">
-            <ul class="secondary-nav">
-              ${navItemsHTML}
-            </ul>
-          </div>
-        </nav>
-      `;
-
-      // Agregar eventos de clic
-      this.initClickListeners();
     } catch (error) {
       console.error("Error en SecondaryNavbar:", error);
     }
+  }
+
+  renderNav(items, lang) {
+    const translations = this.getTranslations(lang);
+    const navItemsHTML = Object.entries(items).map(([label, url]) => `
+      <li class="secondary-nav-item">
+        <a class="secondary-nav-link" href="${this.replaceIdioma(url, lang)}">
+          ${translations[label] || label}
+        </a>
+      </li>
+    `).join("");
+
+    if (!navItemsHTML) return;
+
+    this.shadowRoot.innerHTML = `
+      <link rel="stylesheet" href="/_assets/_css/secondary-navbar.css">
+      <nav class="secondary-navbar">
+        <div class="container">
+          <ul class="secondary-nav">
+            ${navItemsHTML}
+          </ul>
+        </div>
+      </nav>
+    `;
+
+    this.initClickListeners();
+  }
+
+  renderEventNav(data, lang) {
+    const eventType = this.getAttribute("data-event-type") || "Presencial";
+    const eventKey = this.getAttribute("data-event-key") || "";
+
+    const eventData = data?.Evento?.[eventType]?.[eventKey] || {};
+    const filteredSections = Object.keys(eventData).filter(section => section !== "Ciudad");
+
+    if (filteredSections.length === 0) {
+      console.warn("🔸 No hay secciones para mostrar en el navbar secundario.");
+      return;
+    }
+
+    const translations = this.getTranslations(lang);
+    const navItemsHTML = filteredSections.map(section => `
+      <li class="secondary-nav-item">
+        <a class="secondary-nav-link" href="${this.replaceIdioma(eventData[section], lang)}">
+          ${translations[section] || section}
+        </a>
+      </li>
+    `).join("");
+
+    this.shadowRoot.innerHTML = `
+      <link rel="stylesheet" href="/_assets/_css/secondary-navbar.css">
+      <nav class="secondary-navbar">
+        <div class="container">
+          <ul class="secondary-nav">
+            ${navItemsHTML}
+          </ul>
+        </div>
+      </nav>
+    `;
+
+    this.initClickListeners();
   }
 
   detectLanguage() {
@@ -64,12 +92,18 @@ class SecondaryNavbar extends HTMLElement {
     return {
       es: {
         "Inicio": "Inicio",
+        "Capacitación": "Capacitación",
+        "Certificación": "Certificación",
+        "Introducción": "Introducción",
         "Organización": "Organización",
         "Disertantes": "Disertantes",
         "Cronograma": "Cronograma",
       },
       en: {
-        "Inicio" : "Home",
+        "Inicio": "Home",
+        "Capacitación": "Training",
+        "Certificación": "Certification",
+        "Introducción": "Introduction",
         "Organización": "Organization",
         "Disertantes": "Speakers",
         "Cronograma": "Schedule",
