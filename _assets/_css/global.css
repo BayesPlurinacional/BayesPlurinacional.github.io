@@ -34,6 +34,12 @@
     box-sizing: border-box;
 }
 
+.container,
+.container-fluid {
+    padding-right: calc(var(--bs-gutter-x, 1.5rem) * .5);
+    padding-left: calc(var(--bs-gutter-x, 1.5rem) * .5);
+}
+
 body {
     font-family: 'Manrope', sans-serif;
     background-color: var(--fondo-claro);

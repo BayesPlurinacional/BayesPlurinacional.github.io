@@ -5,15 +5,15 @@
         "Título": "Sobre Nosotros",
         "Enlaces": {
           "Communidad": "/es/Comunidad.html",
-          "Nuestro Equipo": "/es/2025/organizacion.html",
+          "Nuestro Equipo": "/es/2026/organizacion.html",
           "Musica": "/es/musica.html"
         }
       },
       "en": {
         "Título": "About Us",
         "Enlaces": {
-          "Communidad": "/es/Comunidad.html",
-          "Our Team":  "/es/2025/organizacion.html",
+          "Communidad": "/en/Comunidad.html",
+          "Our Team":  "/en/2026/organizacion.html",
           "Music": "/en/musica.html"
         }
       }
