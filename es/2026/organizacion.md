@@ -24,8 +24,7 @@ Los horarios disponibles para reuniones se pueden mantener actualizados en [http
 
 **Scope / Alcance**: Gestión integral del evento anual presencial. Este equipo es responsable de la planificación logística, la coordinación con la sede local y la ejecución operativa del congreso. Su misión es asegurar que el evento ocurra en las fechas estipuladas, con la infraestructura necesaria y alineado a los estándares de la comunidad y de la ISBA.
 
-\* **Responsable**: Lucía Concepción Morán Figueredo  
-\* **Asociada**: Neder, Camila  
+\* **Responsable**: Camila Neder & Lucía Concepción Morán Figueredo  
 \* **Miembros**: Cabezas González, Alberto; Oliveira, Anderson; Saenz, Manuel; Moffatt Luciano; Martinez, Domingo.  
 \* **Representación Universidad Nacional de Ciudad del Este (UNE):** Paola Sánchez Blás Benítez, Sandro Cristobal
 
