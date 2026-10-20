@@ -58,6 +58,8 @@ class CustomNavbar extends HTMLElement {
     const pathParts = window.location.pathname.split('/');
     if (pathParts.includes('en')) {
       return 'en';
+    } else if (pathParts.includes('pt')) {
+      return 'pt';
     } else if (pathParts.includes('es')) {
       return 'es';
     }
@@ -106,6 +108,27 @@ class CustomNavbar extends HTMLElement {
         "Métodos": "Methods",
         "Inicio": "Home",
         "Idioma": "Language"
+      },
+      pt: {
+        "Eventos": "Eventos",
+        "Seminarios": "Seminários",
+        "Seminarios Virtuales": "Seminários Virtuais",
+        "Presencial": "Presencial",
+        "Virtual": "Virtual",
+        "Musica": "Música",
+        "Comunidad": "Comunidade",
+        "Aprendizaje": "Aprendizagem",
+        "Música": "Música",
+        "Inteligencia": "Inteligência",
+        "Misión": "Missão",
+        "Auspiciantes": "Patrocinadores",
+        "Contacto": "Contato",
+        "Redes Sociales": "Redes Sociais",
+        "Conducta": "Código de Conduta",
+        "Curso": "Curso",
+        "Métodos": "Métodos",
+        "Inicio": "Início",
+        "Idioma": "Idioma"
       }
     }[lang];
   }
@@ -179,10 +202,12 @@ buildEventsDropdown(title, items, lang, translations) {
     return `
       <li class="nav-item">
         <div class="language-selector">
-          <div class="language-switch ${lang === 'es' ? 'es-active' : 'en-active'}">
+          <div class="language-switch ${lang}-active">
             <a href="#" class="lang-btn" data-lang="en"><span>EN</span></a>
             <span class="divider">|</span>
             <a href="#" class="lang-btn" data-lang="es"><span>ES</span></a>
+            <span class="divider">|</span>
+            <a href="#" class="lang-btn" data-lang="pt"><span>PT</span></a>
           </div>
         </div>
       </li>
@@ -203,8 +228,8 @@ buildEventsDropdown(title, items, lang, translations) {
   getAlternateLanguageLink(targetLang) {
     let currentPath = window.location.pathname.split('/');
 
-    // Buscar si ya hay un "es" o "en" en la estructura
-    const langIndex = currentPath.indexOf('es') !== -1 ? currentPath.indexOf('es') : currentPath.indexOf('en');
+    // Buscar si ya hay un "es", "en" o "pt" en la estructura
+    const langIndex = currentPath.findIndex(part => ['es', 'en', 'pt'].includes(part));
     if (langIndex !== -1) {
       currentPath[langIndex] = targetLang; // Reemplazar el idioma en su posición actual
     }
@@ -228,23 +253,23 @@ buildEventsDropdown(title, items, lang, translations) {
     const globalNav = this.shadowRoot.querySelector("#globalNavbarNav");
     const globalToggle = this.shadowRoot.querySelector("#global-toggle-button");
   
-    if (!globalToggle || !globalNav) return; // 🚨 Evitar errores si no existen los elementos
+    if (!globalToggle || !globalNav) return; // Evitar errores si no existen los elementos
   
-    // 1️⃣ FORZAMOS evento de click en el botón hamburguesa
+    // FORZAMOS evento de click en el botón hamburguesa
     globalToggle.addEventListener("click", (event) => {
       event.preventDefault();
       
-      // ⬇️ Abrir o cerrar el menú
+      // Abrir o cerrar el menú
       const isExpanded = globalNav.classList.contains("show");
       if (isExpanded) {
         globalNav.classList.remove("show");
-        globalNav.style.display = "none"; // 🔥 FORZAMOS QUE SE OCULTE
+        globalNav.style.display = "none"; // FORZAMOS QUE SE OCULTE
       } else {
         globalNav.classList.add("show");
-        globalNav.style.display = "flex"; // 🔥 FORZAMOS QUE SE MUESTRE
+        globalNav.style.display = "flex"; // FORZAMOS QUE SE MUESTRE
       }
   
-      // ⬇️ Actualizar el estado del botón
+      // Actualizar el estado del botón
       globalToggle.setAttribute("aria-expanded", isExpanded ? "false" : "true");
     });
   
@@ -278,7 +303,7 @@ navLinks.forEach(link => {
       // Verificamos si el host (this) está en el recorrido
       if (!path.includes(this) && globalNav.classList.contains("show")) {
         globalNav.classList.remove("show");
-        globalNav.style.display = "none"; // 🔥 OCULTAR EL MENÚ
+        globalNav.style.display = "none"; // OCULTAR EL MENÚ
         globalToggle.setAttribute("aria-expanded", "false");
       }
     });

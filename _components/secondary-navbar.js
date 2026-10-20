@@ -57,7 +57,7 @@ class SecondaryNavbar extends HTMLElement {
     const filteredSections = Object.keys(eventData).filter(section => section !== "Ciudad");
 
     if (filteredSections.length === 0) {
-      console.warn("🔸 No hay secciones para mostrar en el navbar secundario.");
+      console.warn("No hay secciones para mostrar en el navbar secundario.");
       return;
     }
 
@@ -85,7 +85,10 @@ class SecondaryNavbar extends HTMLElement {
   }
 
   detectLanguage() {
-    return window.location.pathname.includes("/en/") ? "en" : "es";
+    const path = window.location.pathname;
+    if (path.includes("/en/")) return "en";
+    if (path.includes("/pt/")) return "pt";
+    return "es";
   }
 
   getTranslations(lang) {
@@ -107,6 +110,15 @@ class SecondaryNavbar extends HTMLElement {
         "Organización": "Organization",
         "Disertantes": "Speakers",
         "Cronograma": "Schedule",
+      },
+      pt: {
+        "Inicio": "Início",
+        "Capacitación": "Capacitação",
+        "Certificación": "Certificação",
+        "Introducción": "Introdução",
+        "Organización": "Organização",
+        "Disertantes": "Palestrantes",
+        "Cronograma": "Programação",
       }
     }[lang];
   }

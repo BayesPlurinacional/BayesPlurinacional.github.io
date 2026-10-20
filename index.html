@@ -29,6 +29,8 @@
             if (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1") {
                 if (lang.startsWith("es")) {
                     window.location.href = "/es/index.html";
+                } else if (lang.startsWith("pt")) {
+                    window.location.href = "/pt/index.html";
                 } else {
                     window.location.href = "/en/index.html";
                 }
@@ -44,8 +46,9 @@
     <div class="text-center">
         <img src="/_assets/_img/logos/BP.svg" alt="Logo" width="650">
         <div class="btn-container mt-3">
-            <button class="btn btn-primary btn-lg me-3" onclick="redirectTo('es')">🌎 Español</button>
-            <button class="btn btn-danger btn-lg" onclick="redirectTo('en')">🌍 English</button>
+            <button class="btn btn-primary btn-lg me-3" onclick="redirectTo('es')">Español</button>
+            <button class="btn btn-danger btn-lg me-3" onclick="redirectTo('en')">English</button>
+            <button class="btn btn-success btn-lg" onclick="redirectTo('pt')">Português</button>
         </div>
     </div>
 

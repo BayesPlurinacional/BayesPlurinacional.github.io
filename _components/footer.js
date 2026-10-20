@@ -6,7 +6,8 @@ class CustomFooter extends HTMLElement {
   
   async connectedCallback() {
     try {
-      let lang = this.getAttribute('data-lang') || (window.location.pathname.includes("/en/") ? "en" : "es");
+      const path = window.location.pathname;
+      const lang = this.getAttribute('data-lang') || (path.includes("/en/") ? "en" : path.includes("/pt/") ? "pt" : "es");
 
       const response = await fetch('/_data/footer.json');
       const data = await response.json();

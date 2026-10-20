@@ -1,5 +1,5 @@
 /* ------------------------------ */
-/* 📌 FUENTES - Jost y Manrope */
+/* FUENTES - Jost y Manrope */
 /* ------------------------------ */
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&family=Manrope:wght@400;600&display=swap');
 
@@ -148,8 +148,8 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease-in-out, max-height 0.4s ease-in-out;
-  min-height: 320px; /* 🔹 Altura mínima */
-  max-height: 500px; /* 🔹 Altura ajustada */
+  min-height: 320px; /* Altura mínima */
+  max-height: 500px; /* Altura ajustada */
   display: flex;
   flex-direction: column;
   justify-content: space-between;

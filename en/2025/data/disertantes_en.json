@@ -30,7 +30,7 @@
   {
     "nombre": "Jeremias Sulam",
     "imagen": "/_assets/_img/expositores/Jeremias_Sulam.jpg",
-    "descripcion": "Assistant Professor at Johns Hopkins University. A bioengineer from the National University of Entre Ríos, he earned his PhD in Computer Science from the Technion – Israel Institute of Technology. He has received awards for his work. Specializing in image processing, inverse problems, and machine learning, he has worked on sparse representation modeling and data reconstruction in biomedical signals.",
+    "descripcion": "Assistant Professor at Johns Hopkins University. A bioengineer from the National University of Entre Ríos, he earned his PhD in Computer Science from the Technion - Israel Institute of Technology. He has received awards for his work. Specializing in image processing, inverse problems, and machine learning, he has worked on sparse representation modeling and data reconstruction in biomedical signals.",
     "año": 2025,
     "dia_hora": "Data-driven methods for inverse problems"
   },
@@ -44,7 +44,7 @@
   {
     "nombre": "Gerardo Durán-Martin",
     "imagen": "/_assets/_img/expositores/Gerardo_DuranMartin.jpg",
-    "descripcion": "Researcher at the Oxford-Man Institute of Quantitative Finance. He completed his PhD in Mathematics at Queen Mary University of London, focusing on sequential Bayesian methods, under the supervision of Kevin Murphy and Alexander Shestopaloff. He worked on systematic trading and risk calibration at Man AHL (2022–2024), where he adapted algorithms from MATLAB to Python using JAX. He has been awarded a doctoral fellowship by EPSRC and a postgraduate scholarship by CONACyT.",
+    "descripcion": "Researcher at the Oxford-Man Institute of Quantitative Finance. He completed his PhD in Mathematics at Queen Mary University of London, focusing on sequential Bayesian methods, under the supervision of Kevin Murphy and Alexander Shestopaloff. He worked on systematic trading and risk calibration at Man AHL (2022-2024), where he adapted algorithms from MATLAB to Python using JAX. He has been awarded a doctoral fellowship by EPSRC and a postgraduate scholarship by CONACyT.",
     "año": 2025,
     "dia_hora": "Real-time Bayesian learning"
   },

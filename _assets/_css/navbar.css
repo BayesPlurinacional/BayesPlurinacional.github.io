@@ -156,7 +156,7 @@
   }
 
   .language-switch {
-    width: 80px;
+    width: 120px;
     margin: 10px auto; /* Centrado */
     padding: 4px 10px;
     display: flex;
@@ -206,7 +206,8 @@
 
 /* Idioma ACTIVO - ahora es más visible */
 .es-active .lang-btn[data-lang="es"],
-.en-active .lang-btn[data-lang="en"] {
+.en-active .lang-btn[data-lang="en"],
+.pt-active .lang-btn[data-lang="pt"] {
   color: black;
   background: white;
   opacity: 1;
@@ -217,7 +218,11 @@
 
 /* Idioma INACTIVO - ahora es opaco */
 .es-active .lang-btn[data-lang="en"],
-.en-active .lang-btn[data-lang="es"] {
+.es-active .lang-btn[data-lang="pt"],
+.en-active .lang-btn[data-lang="es"],
+.en-active .lang-btn[data-lang="pt"],
+.pt-active .lang-btn[data-lang="es"],
+.pt-active .lang-btn[data-lang="en"] {
   color: black;
   background: rgba(255, 255, 255, 0.7);
   opacity: 0.3;

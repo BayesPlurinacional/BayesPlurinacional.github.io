@@ -22,7 +22,7 @@
   scrollbar-width: none;
   -ms-overflow-style: none;
 
-  scroll-padding-left: 16px; /* 💡 Nuevo */
+  scroll-padding-left: 16px; /* Nuevo */
 }
 
 .secondary-nav::-webkit-scrollbar {

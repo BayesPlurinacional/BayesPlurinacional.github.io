@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palestrantes | Bayes Plurinacional 2025</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/_assets/_css/global.css">
+  <link rel="stylesheet" href="/_assets/_css/2025.css">
+  <script type="module" src="/_components/header.js"></script>
+
+</head>
+<body>
+  <custom-header data-event-type="Presencial" data-event-key="Evento 2025" data-lang="pt">
+
+    <!-- Sección de Disertantes -->
+    <section class="container py-5 text-center">
+      <h2 class="titulo-seccion">Palestrantes</h2>
+      <p class="lead">
+      
+      Conheça os especialistas que compartilharão seu conhecimento no Bayes Plurinacional 2025.
+      A seguir estão listadas as conferências e oficinas. Para revisar a lista completa 
+      de trabalhos científicos que acompanharão o evento, vocês podem acessar o seguinte
+      <a href="https://docs.google.com/spreadsheets/d/1nmOlfdXOWKxFUov8ei2LnVbtyZ4u71ukBi-EHZpNrHc/edit?usp=sharing">documento</a> no Drive.
+      </p>
+
+      <div id="disertantes-container" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <script>
+          document.addEventListener("DOMContentLoaded", async function () {
+            const container = document.getElementById("disertantes-container");
+            const añoActual = 2025;
+      
+            try {
+              const response = await fetch("/pt/2025/data/disertantes.json");
+              const disertantes = await response.json();
+      
+              const disertantesFiltrados = disertantes.filter(d => d.año === añoActual);
+      
+              if (disertantesFiltrados.length === 0) {
+                container.innerHTML = `<p class="text-warning">Não há palestrantes registrados para este ano.</p>`;
+                return;
+              }
+      
+              // Crear tarjetas de disertantes
+              disertantesFiltrados.forEach(d => {
+                const card = document.createElement("div");
+                card.classList.add("col");
+      
+                const shortText = d.descripcion.substring(0, 120); // Máximo 120 caracteres antes de "Ver más"
+                const fullText = d.descripcion;
+      
+                card.innerHTML = `
+                  <div class="speaker-card">
+                    <img src="${d.imagen}" class="speaker-img" alt="${d.nombre}">
+                    <h5 class="speaker-name">${d.nombre}</h5>
+                    <p class="speaker-info" data-full-text="${fullText}">
+                      ${shortText}... <span class="ver-mas">Ver mais</span>
+                    </p>
+                    <span class="schedule-badge">${d.dia_hora || "Horário a definir"}</span>
+                  </div>
+                `;
+      
+                container.appendChild(card);
+              });
+      
+              setupVerMas();
+            } catch (error) {
+              console.error("Error al cargar disertantes:", error);
+              container.innerHTML = `<p class="text-danger">Erro ao carregar os palestrantes.</p>`;
+            }
+          });
+      
+          function setupVerMas() {
+        document.querySelectorAll('.ver-mas').forEach(button => {
+          button.addEventListener('click', function () {
+            const parent = this.parentElement;
+            const fullText = parent.getAttribute('data-full-text');
+      
+            if (parent.classList.contains('expanded')) {
+              parent.innerHTML = `${fullText.substring(0, 120)}... <span class="ver-mas">Ver mais</span>`;
+              parent.classList.remove('expanded');
+            } else {
+              parent.innerHTML = `${fullText} <span class="ver-mas">Ver menos</span>`;
+              parent.classList.add('expanded');
+            }
+      
+            setupVerMas(); // Vuelve a agregar los eventos después del cambio
+          });
+        });
+      }
+      
+          
+        </script>
+      
+      </div>
+    </section>
+
+  </custom-header>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

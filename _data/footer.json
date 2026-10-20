@@ -13,8 +13,16 @@
         "Título": "About Us",
         "Enlaces": {
           "Communidad": "/en/Comunidad.html",
-          "Our Team":  "/en/2026/organizacion.html",
+          "Our Team": "/en/2026/organizacion.html",
           "Music": "/en/musica.html"
+        }
+      },
+      "pt": {
+        "Título": "Sobre Nós",
+        "Enlaces": {
+          "Comunidade": "/pt/Comunidad.html",
+          "Nossa Equipe": "/pt/2026/organizacion.html",
+          "Música": "/pt/musica.html"
         }
       }
     },
@@ -34,6 +42,14 @@
           "Event 2024": "/en/2024/index.html",
           "Event 2025": "/en/2025/index.html"
         }
+      },
+      "pt": {
+        "Título": "Últimos Eventos",
+        "Enlaces": {
+          "Evento 2023": "/pt/2023/index.html",
+          "Evento 2024": "/pt/2024/index.html",
+          "Evento 2025": "/pt/2025/index.html"
+        }
       }
     },
     "Contacto": {
@@ -50,16 +66,23 @@
           "Email": "mailto:bayesplurinacional@gmail.com",
           "Sponsors": "/en/Auspiciantes.html"
         }
+      },
+      "pt": {
+        "Título": "Contato",
+        "Enlaces": {
+          "E-mail": "mailto:bayesplurinacional@gmail.com",
+          "Patrocinadores": "/pt/Auspiciantes.html"
+        }
       }
     },
     "Redes Sociales": {
       "es": {
         "Título": "Síguenos",
         "Enlaces": {
-            "Twitter": "https://twitter.com/BayesPlural",
-            "Instagram": "https://instagram.com/bayesplurinacional",
-            "Linkedin": "https://www.linkedin.com/company/bayes-plurinacional/",
-            "YouTube": "https://www.youtube.com/@bayesplurinacional"
+          "Twitter": "https://twitter.com/BayesPlural",
+          "Instagram": "https://instagram.com/bayesplurinacional",
+          "Linkedin": "https://www.linkedin.com/company/bayes-plurinacional/",
+          "YouTube": "https://www.youtube.com/@bayesplurinacional"
         }
       },
       "en": {
@@ -70,11 +93,21 @@
           "Linkedin": "https://www.linkedin.com/company/bayes-plurinacional/",
           "YouTube": "https://www.youtube.com/@bayesplurinacional"
         }
+      },
+      "pt": {
+        "Título": "Siga-nos",
+        "Enlaces": {
+          "Twitter": "https://twitter.com/BayesPlural",
+          "Instagram": "https://instagram.com/bayesplurinacional",
+          "Linkedin": "https://www.linkedin.com/company/bayes-plurinacional/",
+          "YouTube": "https://www.youtube.com/@bayesplurinacional"
+        }
       }
     },
     "Copy": {
-      "es": "© 2026 Bayes Plurinacional - Todos los derechos reservados.",
-      "en": "© 2026 Bayes Plurinacional - All rights reserved."
+      "es": "(c) 2026 Bayes Plurinacional - Todos los derechos reservados.",
+      "en": "(c) 2026 Bayes Plurinacional - All rights reserved.",
+      "pt": "(c) 2026 Bayes Plurinacional - Todos os direitos reservados."
     }
   }
 }

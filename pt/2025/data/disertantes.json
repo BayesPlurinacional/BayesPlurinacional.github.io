@@ -1,0 +1,86 @@
+[
+  {
+    "nombre": "Mariano Gabitto",
+    "imagen": "/_assets/_img/expositores/Mariano_Gabitto.jpeg",
+    "descripcion": "Pesquisador no Allen Institute for Brain Science, estuda a geração de diversidade celular no cérebro. Impulsiona o projeto Seattle Alzheimer's Disease Cell Brain Atlas. Trabalhou no Center for Computational Biology do Flatiron Institute e no Broad Institute de Harvard e MIT. Desenvolveu métodos bayesianos não paramétricos para estudar células individuais por meio de modelos generativos profundos para imagens de super-resolução.",    
+    "año": 2025,
+    "dia_hora": "Conferência magistral 1"
+  },
+  {
+    "nombre": "Cathy O'Neil",
+    "imagen": "/_assets/_img/expositores/Cathy_Oneil.jpg",
+    "descripcion": "Matemática, cientista de dados e autora de 'Weapons of Math Destruction'. Especialista em auditoria de algoritmos e ética em IA. Fundadora da ORCAA (O'Neil Risk Consulting & Algorithmic Auditing), uma empresa de consultoria dedicada a auditar algoritmos e garantir seu uso ético. Trabalhou na indústria financeira e na academia, lecionando no MIT e no Barnard College. Seu trabalho se concentra nos perigos dos modelos matemáticos na sociedade.",
+    "año": 2025,
+    "dia_hora": "Conferência magistral 2 "
+  },
+  {
+    "nombre": "Gavino Puggioni",
+    "imagen": "/_assets/_img/expositores/Gavino_Puggioni.jpg",
+    "descripcion": "Professor na Universidade de Rhode Island, especializado em modelos bayesianos não paramétricos para dados espaço-temporais. Obteve seu doutorado em Estatística na Universidade Duke. Graduado e mestre em Economia pela Universidade Bocconi. Suas pesquisas incluem misturas de modelos, equações diferenciais estocásticas e aplicações em ciências ambientais e sociais.",
+    "año": 2025,
+    "dia_hora": "Conferência magistral 3"
+  },
+  {
+    "nombre": "Valérie Gauthier-Umaña",
+    "imagen": "/_assets/_img/expositores/Valerie_Gauthier.jpg",
+    "descripcion": "Professora na Universidad de los Andes. Concluiu seu doutorado em matemática aplicada trabalhando com criptografia pós-quântica na Danmarks Tekniske Universitet (DTU). Suas áreas de pesquisa incluem a criptografia e a teoria de códigos. Participou de publicações acadêmicas sobre ataques a sistemas criptográficos baseados em códigos de Reed-Solomon e McEliece.",
+    "año": 2025,
+    "dia_hora": "Criptografia: da clássica à Post-Quantum"
+  },
+  {
+    "nombre": "Jeremias Sulam",
+    "imagen": "/_assets/_img/expositores/Jeremias_Sulam.jpg",
+    "descripcion": "Professor Assistente na Universidade Johns Hopkins. Bioengenheiro pela Universidad Nacional de Entre Ríos, doutorou-se em Ciência da Computação no Technion - Instituto de Tecnologia de Israel. Recebeu prêmios por seu trabalho. Especializado em processamento de imagens, problemas inversos e aprendizado de máquina. Trabalhou com modelagem de representações esparsas e reconstrução de dados em sinais biomédicos.",
+    "año": 2025,
+    "dia_hora": "Problemas inversos baseados em dados"
+  },
+  {
+    "nombre": "Alberto Cabezas Gonzalez",
+    "imagen": "/_assets/_img/expositores/Alberto_Cabezas.jpg",
+    "descripcion": "Pesquisador na Universidade de Turim, modela histórias de vida utilizando modelos transformer. Doutor em Estatística pela Universidade de Lancaster, onde desenvolveu métodos Monte Carlo. Mestre em Economia e Ciências Sociais pela Universidade Bocconi, onde se especializou em modelos bayesianos não paramétricos. Primeiro autor em Stat, NeurIPS e AISTATS sobre normalizing flows e Markov chain Monte Carlo.",
+    "año": 2025,
+    "dia_hora": "Histórias de vida com Transformers"
+  },
+  {
+    "nombre": "Gerardo Durán-Martin",
+    "imagen": "/_assets/_img/expositores/Gerardo_DuranMartin.jpg",
+    "descripcion": "Pesquisador no Oxford-Man Institute of Quantitative Finance. Fez seu doutorado em Matemática na Queen Mary University of London, sobre métodos bayesianos sequenciais, sob a supervisão de Kevin Murphy e Alexander Shestopaloff. Trabalhou com trading sistemático e calibração de risco na Man AHL (2022-2024) e adaptou algoritmos de MATLAB para Python com JAX. É bolsista de doutorado do EPSRC e de pós-graduação do CONACyT.",
+    "año": 2025,
+    "dia_hora": " Aprendizado bayesiano em tempo real"
+  },
+  {
+    "nombre": "Vitória Barin Pacela",
+    "imagen": "/_assets/_img/expositores/Vitoria_BarinPacela.jpeg",
+    "descripcion": "Candidata a doutora pela Universidade de Montreal, no laboratório Mila, sob a supervisão de Simon Lacoste-Julien. Suas áreas de pesquisa incluem causalidade e aprendizado de máquina. Graduada e mestre pela Universidade de Helsinque, trabalhou sob a supervisão de Aapo Hyvärinen e Antti Hyttinen com ICA e sob a supervisão de Maria Spiropulu e Maurizio Pierini no CERN.",
+    "año": 2025,
+    "dia_hora": "Variational Autoencoders"
+  },
+  {
+    "nombre": "Matías Altamirano Montero",
+    "imagen": "/_assets/_img/expositores/Matias_Altamirano.jpg",
+    "descripcion": "Candidato a doutor em Ciências Estatísticas pela UCL, trabalha no grupo Fundamentals of Statistical Machine Learning sob a supervisão de Jeremias Knoblauch e François-Xavier Briol. Desenvolve métodos bayesianos generalizados robustos aplicados a séries temporais. Conta com o apoio da Bloomberg Data Science PhD Fellowship. Anteriormente, trabalhou no Centro de Modelamiento Matemático da Universidad de Chile.",
+    "año": 2025,
+    "dia_hora": "Abordagem Pós-Bayesiana"
+  },
+  {
+    "nombre": "Julián Fernando Sánchez",
+    "imagen": "/_assets/_img/expositores/SANCHEZ-LOPEZ-JULIAN-FERNANDO.jpg",
+    "descripcion": "Candidato a doutor em Economia e mestre em finanças quantitativas pela Universidad del Rosario, Colômbia. 20 anos de docência universitária na área da matemática aplicada a finanças quantitativas. Graduado em matemática e mestre em ensino da matemática pela Universidad Pedagógica Nacional. Compromisso com a formação de profissionais altamente capacitados.",
+    "año": 2025,
+    "dia_hora": "Trading algorítmico e aprendizado por reforço"
+  },
+  {
+    "nombre": "Camila Neder",
+    "imagen": "/_assets/_img/expositores/Perfil_Camila_Neder.jpeg",
+    "descripcion": "Cientista em ecologia marinha e comunicadora. Doutora em Ciências Biológicas pela Universidad Nacional de Córdoba. Pesquisa habitats e a distribuição de organismos antárticos usando modelos de nicho, com foco nas respostas às mudanças climáticas. Colaborou com instituições na Espanha, Alemanha e Chile. Fundadora do Comunica al Natural e Coordenadora Executiva do Bayes Plurinacional.",
+    "año": 2025,
+    "dia_hora": "Interdisciplinaridade na inferência bayesiana"
+  },
+  {
+    "nombre": "Gustavo Landfried",
+    "imagen": "/_assets/_img/expositores/GustavoLandfried.jpg",
+    "descripcion": "Cofundador do Bayes Plurinacional. Graduado em Antropologia Social e doutor em Ciência da Computação pela Universidad de Buenos Aires. Professor de Ciência de Dados, Gustavo trabalha na indústria de software impulsionando projetos de inferência causal para empresas transnacionais. É o desenvolvedor e mantenedor do estimador de habilidade da indústria de videogames (TrueSkill Through Time) em Python, Julia e R.",
+    "año": 2025,
+    "dia_hora": "Crenças ótimas dada a informação disponível"
+  }
+]
