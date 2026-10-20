@@ -1,5 +1,47 @@
 {
     "Galeria": {
+        "2026": [
+            {
+                "imagen" : "/static/2026/galeria/DJI_20260819185232_0072_D.jpg",
+                "nombre" : "Imagen 1"
+            },
+            {
+                "imagen" : "/static/2026/galeria/DJI_20260819185340_0075_D.jpg",
+                "nombre" : "Imagen 2"
+            },
+            {
+                "imagen" : "/static/2026/galeria/IMG_0207.jpg",
+                "nombre" : "Imagen 3"
+            },
+            {
+                "imagen" : "/static/2026/galeria/IMG_0208.jpg",
+                "nombre" : "Imagen 4"
+            },
+            {
+                "imagen" : "/static/2026/galeria/IMG_6284.jpg",
+                "nombre" : "Imagen 5"
+            },
+            {
+                "imagen" : "/static/2026/galeria/IMG_6512.jpg",
+                "nombre" : "Imagen 6"
+            },
+            {
+                "imagen" : "/static/2026/galeria/IMG_6535.jpg",
+                "nombre" : "Imagen 7"
+            },
+            {
+                "imagen" : "/static/2026/galeria/IMG_6548.jpg",
+                "nombre" : "Imagen 8"
+            },
+            {
+                "imagen" : "/static/2026/galeria/IMG_6550.jpg",
+                "nombre" : "Imagen 9"
+            },
+            {
+                "imagen" : "/static/2026/galeria/IMG_E6534.jpg",
+                "nombre" : "Imagen 10"
+            }
+        ],
         "2024": [
             {
                 "imagen" : "/_assets/_img/fotos/2024/20240806_080000.jpg",

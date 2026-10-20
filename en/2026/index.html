@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="/_assets/_css/global.css" />
     <link rel="stylesheet" href="/_assets/_css/2025.css" />
     <script type="module" src="/_components/header.js"></script>
-    <script src="/_assets/_js/2025/2025coutdown.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -29,18 +28,9 @@
       
       <br /> <br />  
 
-      <h1 class="text-center titulo-seccion">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScQlJwzIkfEP5vvRobffcjnT0UPOx7fKg-PhZJ2bOovkz1T7Q/viewform">
-          Register here</a>
-      </h1>
-      <h1 class="text-center titulo-seccion">
-        <a href="https://forms.gle/qgwgCVoP6dZyGmdN6">
-        Submit your talk here</a>
-      </h1>
-
       <br /> <br />  
 
-          <img src="/static/2026/facultad-filosofia.jpg" alt="Logo" class="img-fluid" style="max-width: 1200px; width: 90%;">
+          <img src="/static/2026/general.jpg" alt="Logo" class="img-fluid" style="max-width: 1200px; width: 90%;">
       
     </div>
 
@@ -67,7 +57,7 @@
           A new congress with Bayesian evidence for action and decision-making.
           Bayes in Science, Industry, Education, and Society.
 
-          We will feature:
+          We featured:
           <strong
             >keynote lectures, debates, posters, talks, and
             the Causal Bayesian Inference course</strong
@@ -76,16 +66,31 @@
         </p>
         <p class="lead">
           <strong
-            >See you from August 18 to 20 in Paraguay. Welcome to our community!</strong
+            >We met from August 18 to 20 in Ciudad del Este, Paraguay.
+            Thank you to everyone who took part!</strong
           >
         </p>
+      </section>
+
+      <section class="galeria container text-center">
+        <h2 class="titulo-seccion">2026 Gallery</h2>
+        <p class="lead">Some pictures from the gathering at the Universidad Nacional del Este.</p>
+        <div id="carouselGaleria" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner" id="carousel-images"></div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
       </section>
 
       <!-- Location -->
       <section class="ubicacion container text-center py-5">
         <h2 class="titulo-seccion">Location</h2>
         <p class="lead">
-          The event will take place at the
+          The event took place at the
           <a
             href="https://filosofiaune.edu.py/v3/"
             target="_blank"
@@ -100,7 +105,6 @@
         <br />
         <b>Bayes Plurinacional Congress:</b> August 18–20.
       </p>
-      <div id="countdown" class="countdown"></div>
       <br/>
    
         <p><strong>Campus Universitario Km 8 lado Acaray, Calle Universidad Nacional del Este y Rca. del Paraguay - Barrio San Juan, Ciudad del Este, Paraguay</strong></p>
@@ -120,23 +124,6 @@
 
             <section class="container py-5">
         
-        <!-- Travel Information -->
-        <div class="info-viaje text-center">
-          <p>
-            More information coming soon.
-          </p>
-          <p>
-            Join our WhatsApp group to receive real-time updates:
-          </p>
-          <a
-            href="https://chat.whatsapp.com/CWFZiP8On7RDRDGNL8y5US"
-            target="_blank"
-            class="btn btn-primary btn-lg"
-          >
-            Join the WhatsApp Group
-          </a>
-        </div>
-
         <div class="section text-center">
           <br /><br />
           <h4>🌟 Platinum Level</h4>
@@ -181,10 +168,15 @@
       </section>
     </custom-header>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const idioma = window.location.pathname.includes("/en/") ? "en" : "es";
-        document.getElementById("organizacion-link").href = `/${idioma}/2026/organizacion.html`;
-      });
+      fetch("/_data/galeria.json")
+        .then((response) => response.json())
+        .then((data) => {
+          const carousel = document.getElementById("carousel-images");
+          data.Galeria["2026"].forEach((foto, i) => {
+            carousel.innerHTML += `<div class="carousel-item ${i === 0 ? "active" : ""}"><img src="${foto.imagen}" class="d-block w-100" style="height: 70vh; object-fit: contain" alt="${foto.nombre}"></div>`;
+          });
+        });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

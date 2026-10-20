@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="/_assets/_css/global.css" />
     <link rel="stylesheet" href="/_assets/_css/2025.css" />
     <script type="module" src="/_components/header.js"></script>
-    <script src="/_assets/_js/2025/2025coutdown.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -29,20 +28,9 @@
       
       <br /> <br />  
 
-      <div class="d-flex justify-content-center flex-wrap gap-3">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScQlJwzIkfEP5vvRobffcjnT0UPOx7fKg-PhZJ2bOovkz1T7Q/viewform"
-           target="_blank" class="btn btn-primary btn-lg">
-          Inscríbete al congreso
-        </a>
-        <a href="https://forms.gle/qgwgCVoP6dZyGmdN6"
-           target="_blank" class="btn btn-success btn-lg">
-          Postulá tu exposición aquí
-        </a>
-      </div>
-      
       <br /> <br />    
       
-          <img src="/static/2026/facultad-filosofia.jpg" alt="Logo" class="img-fluid" style="max-width: 1200px; width: 90%;">
+          <img src="/static/2026/general.jpg" alt="Logo" class="img-fluid" style="max-width: 1200px; width: 90%;">
       
     </div>
 
@@ -69,7 +57,7 @@
           Un nuevo Congreso con evidencias bayesianas para la acción y la toma de decisiones.
           Bayes en la Ciencia, en la Industria, en la Educación y en la Sociedad.
           
-          Contaremos con:
+          Contamos con:
           <strong
             >conferencias magistrales, debates, pósters, charlas y
             el curso de Inferencia Bayesiana Causal</strong
@@ -79,17 +67,31 @@
         <p class="lead">
                   
           <strong
-            >Nos vemos del 18 al 20 de agosto en Paraguay. ¡Bienvenidos y
-            bienvenidas a nuestra comunidad!</strong
+            >Nos encontramos del 18 al 20 de agosto en Ciudad del Este, Paraguay.
+            ¡Gracias a todas las personas que participaron!</strong
           >
         </p>
+      </section>
+
+      <section class="galeria container text-center">
+        <h2 class="titulo-seccion">Galería 2026</h2>
+        <p class="lead">Algunas imágenes del encuentro en la Universidad Nacional del Este.</p>
+        <div id="carouselGaleria" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner" id="carousel-images"></div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
       </section>
 
       <!-- Ubicación -->
       <section class="ubicacion container text-center py-5">
         <h2 class="titulo-seccion">📍 Ubicación</h2>
         <p class="lead">
-          El evento se realizará en la
+          El evento se realizó en la
           <a
             href="https://filosofiaune.edu.py/v3/"
             target="_blank"
@@ -105,7 +107,6 @@
         <b> Congreso Bayes Plurinacional:</b> 18 al 20 de agosto.
       
       </p>
-      <div id="countdown" class="countdown"></div>
       <br/>
    
         <p><strong>Campus Universitario Km 8 lado Acaray, Calle Universidad Nacional del Este y Rca. del Paraguay - Barrio San Juan, Ciudad del Este, Paraguay</strong></p>
@@ -125,24 +126,6 @@
 
             <section class="container py-5">
 
-
-        <!-- Planificación de Viaje -->
-        <div class="info-viaje text-center">
-          <p>
-            Pronto tendremos más información
-          </p>
-          <p>
-            Únete a nuestro grupo de WhatsApp para recibir información en tiempo
-            real:
-          </p>
-          <a
-            href="https://chat.whatsapp.com/CWFZiP8On7RDRDGNL8y5US"
-            target="_blank"
-            class="btn btn-primary btn-lg"
-          >
-            🔗 Unirse al Grupo de WhatsApp
-          </a>
-        </div>
 
         <div class="section text-center">
           <br /><br />
@@ -188,20 +171,15 @@
       </section>
     </custom-header>
     <script>
-      // Detecta el idioma basado en la URL y ajusta el enlace de organización
-      document.addEventListener("DOMContentLoaded", function () {
-        const url = window.location.pathname;
-        let idioma = "es"; // Por defecto español
-
-        if (url.includes("/en/")) {
-          idioma = "en";
-        }
-
-        // Ajusta el enlace con la estructura correcta
-        document.getElementById(
-          "organizacion-link"
-        ).href = `/${idioma}/2025/organizacion.html`;
-      });
+      fetch("/_data/galeria.json")
+        .then((response) => response.json())
+        .then((data) => {
+          const carousel = document.getElementById("carousel-images");
+          data.Galeria["2026"].forEach((foto, i) => {
+            carousel.innerHTML += `<div class="carousel-item ${i === 0 ? "active" : ""}"><img src="${foto.imagen}" class="d-block w-100" style="height: 70vh; object-fit: contain" alt="${foto.nombre}"></div>`;
+          });
+        });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
